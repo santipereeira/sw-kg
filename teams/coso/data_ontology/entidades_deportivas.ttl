@@ -1,0 +1,123 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dep: <http://example.org/def/dep#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dep: a owl:Ontology ;
+    dc:creator "Yara Costas, Livia Xavier, Daniel Souto" ;
+    dc:title "Entidades deportivas" ;
+    owl:versionInfo "0.1." ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+dep:codProvincia a owl:DatatypeProperty ;
+    rdfs:label "cod provincia" ;
+    rdfs:domain dep:Provincia ;
+    rdfs:range xsd:int .
+
+dep:codigoConcello a owl:DatatypeProperty ;
+    rdfs:label "codigo concello" ;
+    rdfs:domain dep:Concello .
+
+dep:codigoPostal a owl:DatatypeProperty ;
+    rdfs:label "codigo postal" ;
+    rdfs:domain dep:Enderezo .
+
+dep:dataAlta a owl:DatatypeProperty ;
+    rdfs:label "data alta" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:Date .
+
+dep:estaEn a owl:ObjectProperty ;
+    rdfs:label "esta en" ;
+    rdfs:domain dep:Concello,
+        dep:Enderezo ;
+    rdfs:range dep:Concello,
+        dep:Provincia .
+
+dep:nif a owl:DatatypeProperty ;
+    rdfs:label "nif" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:String .
+
+dep:nome a owl:DatatypeProperty ;
+    rdfs:label "nome" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:String .
+
+dep:nomeEspecialidade a owl:DatatypeProperty ;
+    rdfs:label "nome especialidade" ;
+    rdfs:domain dep:Especialidade ;
+    rdfs:range xsd:String .
+
+dep:nomeRua a owl:DatatypeProperty ;
+    rdfs:label "nome rua" ;
+    rdfs:domain dep:Enderezo ;
+    rdfs:range xsd:str .
+
+dep:numero a owl:DatatypeProperty ;
+    rdfs:label "numero" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:int .
+
+dep:paxinaWeb a owl:DatatypeProperty ;
+    rdfs:label "paxina web" ;
+    rdfs:domain dep:Concello,
+        dep:Deporte,
+        dep:Equipo,
+        dep:Provincia ;
+    rdfs:range xsd:String .
+
+dep:resideEn a owl:ObjectProperty ;
+    rdfs:label "reside en" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range dep:Enderezo .
+
+dep:telefono a owl:DatatypeProperty ;
+    rdfs:label "telefono" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:int .
+
+dep:tipoEntidade a owl:DatatypeProperty ;
+    rdfs:label "tipo entidade" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range xsd:String .
+
+dep:xoga a owl:ObjectProperty ;
+    rdfs:label "xoga" ;
+    rdfs:domain dep:Equipo ;
+    rdfs:range dep:Deporte .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+owl:sameAs a owl:DatatypeProperty ;
+    rdfs:label "same as" ;
+    rdfs:domain dep:Concello,
+        dep:Deporte,
+        dep:Provincia ;
+    rdfs:range xsd:anyURI .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+dep:Especialidade a owl:Class ;
+    rdfs:label "Especialidade" .
+
+dep:Deporte a owl:Class ;
+    rdfs:label "Deporte" ;
+    rdfs:subClassOf dep:Especialidade .
+
+dep:Enderezo a owl:Class ;
+    rdfs:label "Enderezo" .
+
+dep:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
+
+dep:Concello a owl:Class ;
+    rdfs:label "Concello" .
+
+dep:Equipo a owl:Class ;
+    rdfs:label "Equipo" .
+

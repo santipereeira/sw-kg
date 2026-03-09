@@ -1,0 +1,492 @@
+[
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENDEREZO",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Dividir columna ENDEREZO por separador"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ENDEREZO 2",
+    "newColumnName": "Numero",
+    "description": "Renombra la columna ENDEREZO 2 a Numero"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Numero",
+    "newColumnName": "Número",
+    "description": "Renombra la columna Numero a Número"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ENDEREZO 1",
+    "newColumnName": "ENDEREZO",
+    "description": "Renombra la columna ENDEREZO 1 a ENDEREZO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número",
+    "expression": "grel:value.replace('s/n','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Número usando la expresión grel:value.replace('s/n','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Número",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Número usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORDENADAS",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Dividir columna COORDENADAS por separador"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADAS 1",
+    "newColumnName": "LATITUD",
+    "description": "Renombra la columna COORDENADAS 1 a LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "COORDENADAS 2",
+    "newColumnName": "LONGUITUD",
+    "description": "Renombra la columna COORDENADAS 2 a LONGUITUD"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONCELLO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2276925",
+        "name": "municipality of Galicia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CONCELLO to type Q2276925"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONCELLO",
+    "similarValue": "Pontevedra",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12411",
+      "name": "Pontevedra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pontevedra (Q12411) para las celdas que contienen \"Pontevedra\" en la columna CONCELLO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONCELLO",
+    "similarValue": "Tui",
+    "judgment": "matched",
+    "match": {
+      "id": "Q824122",
+      "name": "Tui",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Tui (Q824122) para las celdas que contienen \"Tui\" en la columna CONCELLO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENDEREZO",
+    "expression": "grel:value.replace('Avenida','Avda.')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna ENDEREZO usando la expresión grel:value.replace('Avenida','Avda.')"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESPAZO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q24354",
+        "name": "theatre building"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ESPAZO to type Q24354"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q162620"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESPAZO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q28564",
+        "name": "public library"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ESPAZO to type Q28564"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESPAZO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q11396180",
+        "name": "library branch"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ESPAZO to type Q11396180"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ESPAZO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q24354",
+        "name": "theatre building"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ESPAZO to type Q24354"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "ESPAZO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "ESPAZO",
+          "from": 36,
+          "to": 56,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "ESPAZO",
+    "similarValue": "Forum Metropolitano",
+    "judgment": "matched",
+    "match": {
+      "id": "Q85819399",
+      "name": "Biblioteca Municipal de A Coruña - Fórum Metropolitano",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Biblioteca Municipal de A Coruña - Fórum Metropolitano (Q85819399) para las celdas que contienen \"Forum Metropolitano\" en la columna ESPAZO"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "ESPAZO: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "ESPAZO",
+          "from": 36,
+          "to": 56,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "AFORAMENTO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna AFORAMENTO usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENDEREZO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q79007",
+        "name": "street"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column ENDEREZO to type Q79007"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CONCELLO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "id_concello",
+    "columnInsertIndex": 5,
+    "description": "Crear la columna id_concello en el índice 5 basada en la columna CONCELLO usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "id_concello",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + value",
+    "onError": "set-to-blank",
+    "newColumnName": "URL_concello",
+    "columnInsertIndex": 6,
+    "description": "Crear la columna URL_concello en el índice 6 basada en la columna id_concello usando la expresión grel:\"https://www.wikidata.org/wiki/\" + value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "ID_provincia",
+    "columnInsertIndex": 8,
+    "description": "Crear la columna ID_provincia en el índice 8 basada en la columna PROVINCIA usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ID_provincia",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + value",
+    "onError": "set-to-blank",
+    "newColumnName": "URL_provincia",
+    "columnInsertIndex": 9,
+    "description": "Crear la columna URL_provincia en el índice 9 basada en la columna ID_provincia usando la expresión grel:\"https://www.wikidata.org/wiki/\" + value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "id_concello",
+    "description": "Eliminar columna id_concello"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "ID_provincia",
+    "description": "Eliminar columna ID_provincia"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "ESPAZO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Id_espazo",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna Id_espazo en el índice 1 basada en la columna ESPAZO usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Id_espazo",
+    "expression": "grel:\"https://www.wikidata.org/wiki/\" + value",
+    "onError": "set-to-blank",
+    "newColumnName": "URL_ESPAZO",
+    "columnInsertIndex": 2,
+    "description": "Crear la columna URL_ESPAZO en el índice 2 basada en la columna Id_espazo usando la expresión grel:\"https://www.wikidata.org/wiki/\" + value"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENDEREZO",
+    "clearData": false,
+    "description": "Descartar juicios de cotejo para celdas en la columna ENDEREZO"
+  },
+  {
+    "op": "core/recon-discard-judgments",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ENDEREZO",
+    "clearData": true,
+    "description": "Descartar juicios de cotejo y borrar datos de reconocimiento para celdas en la columna ENDEREZO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Id_espazo",
+    "description": "Eliminar columna Id_espazo"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Número",
+    "newColumnName": "NUMERO",
+    "description": "Renombra la columna Número a NUMERO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "URL_concello",
+    "newColumnName": "URL_CONCELLO",
+    "description": "Renombra la columna URL_concello a URL_CONCELLO"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "URL_provincia",
+    "newColumnName": "URL_PROVINCIA",
+    "description": "Renombra la columna URL_provincia a URL_PROVINCIA"
+  }
+]

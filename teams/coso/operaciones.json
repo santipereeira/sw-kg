@@ -1,0 +1,1084 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "FECHA_ALTA",
+    "expression": "grel:split(value,\"-\")[2]+\"-\"+split(value,\"-\")[1]+\"-\"+split(value,\"-\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna FECHA_ALTA usando la expresión grel:split(value,\"-\")[2]+\"-\"+split(value,\"-\")[1]+\"-\"+split(value,\"-\")[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "ENDEREZO",
+    "expression": "grel:with(value.trim(), v,\n  if(v.contains(\",\"), v.split(\",\")[0].trim(), v)\n)",
+    "onError": "set-to-blank",
+    "newColumnName": "nombre_calle",
+    "columnInsertIndex": 7,
+    "description": "Crear la columna nombre_calle en el índice 7 basada en la columna ENDEREZO usando la expresión grel:with(value.trim(), v,\n  if(v.contains(\",\"), v.split(\",\")[0].trim(), v)\n)"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "CONCELLO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2276925",
+        "name": "municipality of Galicia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CONCELLO to type Q2276925"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CONCELLO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "CONCELLO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "CONCELLO",
+    "similarValue": "PONTEVEDRA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12411",
+      "name": "Pontevedra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pontevedra (Q12411) para las celdas que contienen \"PONTEVEDRA\" en la columna CONCELLO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CONCELLO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "CONCELLO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "CONCELLO",
+    "similarValue": "TUI",
+    "judgment": "matched",
+    "match": {
+      "id": "Q824122",
+      "name": "Tui",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Tui (Q824122) para las celdas que contienen \"TUI\" en la columna CONCELLO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CONCELLO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "CONCELLO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "CONCELLO",
+    "similarValue": "MONDARIZ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q639229",
+      "name": "Mondariz",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Mondariz (Q639229) para las celdas que contienen \"MONDARIZ\" en la columna CONCELLO"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CONCELLO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "CONCELLO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "baseColumnName": "CONCELLO",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_concellos",
+    "columnInsertIndex": 13,
+    "description": "Crear la columna wikidata_concellos en el índice 13 basada en la columna CONCELLO usando la expresión grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "CONCELLO: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "CONCELLO",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q162620",
+        "name": "province of Spain"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q162620"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_provincias",
+    "columnInsertIndex": 11,
+    "description": "Crear la columna wikidata_provincias en el índice 11 basada en la columna PROVINCIA usando la expresión grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "PROVINCIA: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "PROVINCIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PONTEVEDRA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PONTEVEDRA"
+      }
+    ],
+    "description": "Editar celdas en masa en columna PROVINCIA"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "PROVINCIA: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "PROVINCIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "(unreconciled)",
+                "l": "(unreconciled)"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2276925",
+        "name": "municipality of Galicia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q2276925"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "PROVINCIA: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "PROVINCIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "PONTEVEDRA",
+    "judgment": "matched",
+    "match": {
+      "id": "Q95086",
+      "name": "Pontevedra Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pontevedra Province (Q95086) para las celdas que contienen \"PONTEVEDRA\" en la columna PROVINCIA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "PROVINCIA: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "PROVINCIA",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "nombre_calle",
+    "expression": "grel:value\n.replace(/(?i)\\s*,?\\s*N[ºo°\\.]?\\s*\\d+[A-Z]?(?:\\s*-\\s*\\d+[A-Z]?)?.*$/, \"\")\n.replace(/(?i)\\s*,?\\s*\\d+[A-Z]?(?:\\s*-\\s*\\d+[A-Z]?)?.*$/, \"\")\n.replace(/(?i)\\s*,?\\s*S\\s*\\/\\s*N.*$/, \"\")\n.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna nombre_calle usando la expresión grel:value\n.replace(/(?i)\\s*,?\\s*N[ºo°\\.]?\\s*\\d+[A-Z]?(?:\\s*-\\s*\\d+[A-Z]?)?.*$/, \"\")\n.replace(/(?i)\\s*,?\\s*\\d+[A-Z]?(?:\\s*-\\s*\\d+[A-Z]?)?.*$/, \"\")\n.replace(/(?i)\\s*,?\\s*S\\s*\\/\\s*N.*$/, \"\")\n.trim()"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q31629",
+        "name": "type of sport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MODALIDADES to type Q31629"
+  },
+  {
+    "op": "core/multivalued-cell-split",
+    "columnName": "MODALIDADES",
+    "keyColumnName": "NÚMERO",
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "description": "Separa celdas con múltiples valores en columna MODALIDADES"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q31629",
+        "name": "type of sport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MODALIDADES to type Q31629"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "BILLAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3341285",
+      "name": "cue sports",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento cue sports (Q3341285) para las celdas que contienen \"BILLAR\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "FÚTBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2736",
+      "name": "association football",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento association football (Q2736) para las celdas que contienen \"FÚTBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "KUNG-FU",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208607",
+      "name": "kung fu",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento kung fu (Q208607) para las celdas que contienen \"KUNG-FU\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " FÚTBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2736",
+      "name": "association football",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento association football (Q2736) para las celdas que contienen \" FÚTBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " CICLISMO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2215841",
+      "name": "cycle sport",
+      "types": [
+        "Q31629"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento cycle sport (Q2215841) para las celdas que contienen \" CICLISMO\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q31629",
+        "name": "type of sport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MODALIDADES to type Q31629"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " VOLEIBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1734",
+      "name": "volleyball",
+      "types": [
+        "Q31629",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento volleyball (Q1734) para las celdas que contienen \" VOLEIBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " CICLISMO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2215841",
+      "name": "cycle sport",
+      "types": [
+        "Q31629"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento cycle sport (Q2215841) para las celdas que contienen \" CICLISMO\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " FÚTBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2736",
+      "name": "association football",
+      "types": [
+        "Q31629",
+        "Q216048",
+        "Q212434",
+        "Q4356073",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento association football (Q2736) para las celdas que contienen \" FÚTBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " DEPORTES DE INVERNO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q204686",
+      "name": "winter sport",
+      "types": [
+        ""
+      ],
+      "score": 48.5
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento winter sport (Q204686) para las celdas que contienen \" DEPORTES DE INVERNO\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "VOLEIBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1734",
+      "name": "volleyball",
+      "types": [
+        "Q31629",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento volleyball (Q1734) para las celdas que contienen \"VOLEIBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "MODALIDADES: juicio",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "MODALIDADES",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " TRÍATLON E PENTATLÓN MODERNO",
+    "judgment": "matched",
+    "match": {
+      "id": "Q10980",
+      "name": "triathlon",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento triathlon (Q10980) para las celdas que contienen \" TRÍATLON E PENTATLÓN MODERNO\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "baseColumnName": "MODALIDADES",
+    "expression": "grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "web_modalidades",
+    "columnInsertIndex": 5,
+    "description": "Crear la columna web_modalidades en el índice 5 basada en la columna MODALIDADES usando la expresión grel:\"http://www.wikidata.org/entity/\"+cell.recon.match.id"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q31629",
+        "name": "type of sport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column MODALIDADES to type Q31629"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "BILLAR",
+    "judgment": "matched",
+    "match": {
+      "id": "Q11020",
+      "name": "pool",
+      "types": [
+        "Q2312410"
+      ],
+      "score": 71
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento pool (Q11020) para las celdas que contienen \"BILLAR\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "FÚTBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2736",
+      "name": "association football",
+      "types": [
+        "Q31629",
+        "Q216048",
+        "Q212434",
+        "Q4356073",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento association football (Q2736) para las celdas que contienen \"FÚTBOL\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": "KUNG-FU",
+    "judgment": "matched",
+    "match": {
+      "id": "Q208607",
+      "name": "kung fu",
+      "types": [
+        ""
+      ],
+      "score": 50
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento kung fu (Q208607) para las celdas que contienen \"KUNG-FU\" en la columna MODALIDADES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "MODALIDADES",
+    "similarValue": " FÚTBOL",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2736",
+      "name": "association football",
+      "types": [
+        "Q31629",
+        "Q216048",
+        "Q212434",
+        "Q4356073",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento association football (Q2736) para las celdas que contienen \" FÚTBOL\" en la columna MODALIDADES"
+  }
+]
