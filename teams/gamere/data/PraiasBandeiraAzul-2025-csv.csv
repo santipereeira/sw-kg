@@ -1,4 +1,4 @@
-﻿PROVINCIA;CÓDIGO PROVINCIA;CONCELLO;CÓDIGO CONCELLO;PRAIA;LUGAR E PARROQUIA;LONXITUDE;TIPO;TIPO DE AREA;COORDENADAS;Coordenada X;Coordenada Y;MaIS INFORMACIÓN EN TURGALICIA
+﻿PROVINCIA;CODIGO_PROVINCIA;CONCELLO;CODIGO_CONCELLO;PRAIA;LUGAR_E_PARROQUIA;LONXITUDE;TIPO;TIPO_DE_AREA;COORDENADAS;Coordenada_X;Coordenada_Y;MAIS_INFORMACION_EN_TURGALICIA
 A Coruña;15;Arteixo;15005;A Salsa;;20;Praia resgardada;Cantos rodados;43.320555,-8.525277;43.320555;-8.525277;http://www.turismo.gal/ficha-recurso?cod_rec=268679921
 A Coruña;15;Arteixo;15005;Playa Valcovo;Valcovo - Arteixo (Santiago);300;Praia aberta;Fina;43.315444,-8.533555;43.315444;-8.533555;http://www.turismo.gal/ficha-recurso?cod_rec=10268
 A Coruña;15;Arteixo;15143;Suevos;Suevos;20;Praia resgardada;Fina;43.35271,-8.48791;43.35271;-8.48791;https://www.turismo.gal/recurso/-/detalle/268643064/area-grande-suevos
@@ -107,3 +107,4 @@ Pontevedra Province;36;Vigo;36057;Q65897252;;;Praia resgardada;Fina;42.220083,-8
 Pontevedra Province;36;Vigo;36057;Bouzas;Vigo;450;Praia resgardada;Fina;42.22649888193796, -8.754172974181202;42.22649888193796; -8.754172974181202;https://www.turismo.gal/recurso/-/detalle/268730720/o-adro
 Pontevedra Province;36;Vilagarcía de Arousa;36060;Bamio;O Campanario - Bamio (San Xens);130;Praia resgardada;Fina;42.632789,-8.7626038;42.632789;-8.7626038;http://www.turismo.gal/ficha-recurso?cod_rec=11353 
 Pontevedra Province;36;Vilagarcía de Arousa;36060;Compostela;Vilagarcía (Santa Baia);2000;Praia resgardada;Fina;42.604798,-8.7695076;42.604798;-8.7695076;http://www.turismo.gal/ficha-recurso?cod_rec=10090 
+
