@@ -1,25 +1,34 @@
 @prefix : <http://example.org/def/gamere#> .
-@prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix gamere: <http://example.org/def/gamere#> .
-@base <http://example.org/def/gamere#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://example.org/def/gamere#> .
 
 <http://example.org/def/gamere#> rdf:type owl:Ontology ;
-    rdfs:label "Ontología de las Playas con bandera azul 2025 de Galicia" ;
     dc:title "Ontología de las Playas con bandera azul 2025 de Galicia" ;
+    dcterms:title "Ontología de las Playas con bandera azul 2025 de Galicia" ;
+    rdfs:label "Ontología de las Playas con bandera azul 2025 de Galicia" ;
     dcterms:description "Ontología diseñada para describir las playas con bandera azul 2025 de Galicia, incluyendo su ubicación, concellos y provincias" ;
+    owl:versionInfo "1.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
