@@ -1,6 +1,7 @@
 <http://example.org/def/gamere#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://example.org/def/gamere#> <http://purl.org/dc/elements/1.1/title> "Ontología de las Playas con bandera azul 2025 de Galicia" .
 <http://example.org/def/gamere#> <http://purl.org/dc/terms/description> "Ontología diseñada para describir las playas con bandera azul 2025 de Galicia, incluyendo su ubicación, concellos y provincias" .
+<http://example.org/def/gamere#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología de las Playas con bandera azul 2025 de Galicia" .
 <http://example.org/def/gamere#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 # 
 # 
