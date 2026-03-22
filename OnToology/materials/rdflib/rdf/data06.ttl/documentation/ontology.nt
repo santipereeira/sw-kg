@@ -1,0 +1,107 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://oeg.fi.upm.es/def/people#hasColleague
+<http://oeg.fi.upm.es/def/people#hasColleague> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://oeg.fi.upm.es/def/people#hasHomePage
+<http://oeg.fi.upm.es/def/people#hasHomePage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://oeg.fi.upm.es/def/people#hasName
+<http://oeg.fi.upm.es/def/people#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://oeg.fi.upm.es/def/people#knows
+<http://oeg.fi.upm.es/def/people#knows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://oeg.fi.upm.es/def/people#ownsPet
+<http://oeg.fi.upm.es/def/people#ownsPet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://oeg.fi.upm.es/def/people#Animal
+<http://oeg.fi.upm.es/def/people#Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://oeg.fi.upm.es/def/people#AssociateProfessor
+<http://oeg.fi.upm.es/def/people#AssociateProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://oeg.fi.upm.es/def/people#AssociateProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oeg.fi.upm.es/def/people#Professor> .
+# 
+# http://oeg.fi.upm.es/def/people#FullProfessor
+<http://oeg.fi.upm.es/def/people#FullProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://oeg.fi.upm.es/def/people#FullProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oeg.fi.upm.es/def/people#Professor> .
+# 
+# http://oeg.fi.upm.es/def/people#InterimAssociateProfessor
+<http://oeg.fi.upm.es/def/people#InterimAssociateProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://oeg.fi.upm.es/def/people#InterimAssociateProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oeg.fi.upm.es/def/people#AssociateProfessor> .
+# 
+# http://oeg.fi.upm.es/def/people#Person
+<http://oeg.fi.upm.es/def/people#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://oeg.fi.upm.es/def/people#Professor
+<http://oeg.fi.upm.es/def/people#Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://oeg.fi.upm.es/def/people#Professor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oeg.fi.upm.es/def/people#Person> .
+# 
+# http://oeg.fi.upm.es/def/people#Student
+<http://oeg.fi.upm.es/def/people#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://oeg.fi.upm.es/def/people#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oeg.fi.upm.es/def/people#Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://oeg.fi.upm.es/def/people#Asun
+<http://oeg.fi.upm.es/def/people#Asun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://oeg.fi.upm.es/def/people#Asun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://oeg.fi.upm.es/def/people#FullProfessor> .
+<http://oeg.fi.upm.es/def/people#Asun> <http://oeg.fi.upm.es/def/people#hasColleague> <http://oeg.fi.upm.es/def/people#Raul> .
+<http://oeg.fi.upm.es/def/people#Asun> <http://oeg.fi.upm.es/def/people#hasHomePage> "http://www.oeg-upm.net/" .
+<http://oeg.fi.upm.es/def/people#Asun> <http://oeg.fi.upm.es/def/people#knows> <http://oeg.fi.upm.es/def/people#Rocky> .
+<http://oeg.fi.upm.es/def/people#Asun> <http://www.w3.org/2000/01/rdf-schema#label> "Asun" .
+# 
+# http://oeg.fi.upm.es/def/people#Fantasma
+<http://oeg.fi.upm.es/def/people#Fantasma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://oeg.fi.upm.es/def/people#Fantasma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://oeg.fi.upm.es/def/people#Animal> .
+<http://oeg.fi.upm.es/def/people#Fantasma> <http://oeg.fi.upm.es/def/people#knows> <http://oeg.fi.upm.es/def/people#Rocky> .
+<http://oeg.fi.upm.es/def/people#Fantasma> <http://www.w3.org/2000/01/rdf-schema#label> "Fantasma" .
+# 
+# http://oeg.fi.upm.es/def/people#Oscar
+<http://oeg.fi.upm.es/def/people#Oscar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://oeg.fi.upm.es/def/people#AssociateProfessor> .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://oeg.fi.upm.es/def/people#hasColleague> <http://oeg.fi.upm.es/def/people#Asun> .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://oeg.fi.upm.es/def/people#hasName> "Oscar Corcho García" .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://oeg.fi.upm.es/def/people#knows> <http://oeg.fi.upm.es/def/people#Fantasma> .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://oeg.fi.upm.es/def/people#ownsPet> <http://oeg.fi.upm.es/def/people#Fantasma> .
+<http://oeg.fi.upm.es/def/people#Oscar> <http://www.w3.org/2000/01/rdf-schema#label> "Oscar" .
+# 
+# http://oeg.fi.upm.es/def/people#Raul
+<http://oeg.fi.upm.es/def/people#Raul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://oeg.fi.upm.es/def/people#Raul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://oeg.fi.upm.es/def/people#InterimAssociateProfessor> .
+<http://oeg.fi.upm.es/def/people#Raul> <http://oeg.fi.upm.es/def/people#hasColleague> <http://oeg.fi.upm.es/def/people#Asun> .
+<http://oeg.fi.upm.es/def/people#Raul> <http://oeg.fi.upm.es/def/people#knows> <http://oeg.fi.upm.es/def/people#Rocky> .
+<http://oeg.fi.upm.es/def/people#Raul> <http://oeg.fi.upm.es/def/people#ownsPet> <http://oeg.fi.upm.es/def/people#Rocky> .
+<http://oeg.fi.upm.es/def/people#Raul> <http://www.w3.org/2000/01/rdf-schema#label> "Raul" .
+# 
+# http://oeg.fi.upm.es/def/people#Rocky
+<http://oeg.fi.upm.es/def/people#Rocky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://oeg.fi.upm.es/def/people#Rocky> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://oeg.fi.upm.es/def/people#Animal> .
+<http://oeg.fi.upm.es/def/people#Rocky> <http://oeg.fi.upm.es/def/people#knows> <http://oeg.fi.upm.es/def/people#Fantasma> .
+<http://oeg.fi.upm.es/def/people#Rocky> <http://www.w3.org/2000/01/rdf-schema#label> "Rocky" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

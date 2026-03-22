@@ -1,0 +1,43 @@
+{
+  "@context" : {
+    "Professor" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#Professor"
+    },
+    "hasName" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#hasName"
+    },
+    "AssociateProfessor" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#AssociateProfessor"
+    },
+    "FullProfessor" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#FullProfessor"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Animal" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#Animal"
+    },
+    "ownsPet" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#ownsPet"
+    },
+    "Person" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#Person"
+    },
+    "hasColleague" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#hasColleague"
+    },
+    "knows" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#knows"
+    },
+    "Student" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#Student"
+    },
+    "hasHomePage" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#hasHomePage"
+    },
+    "InterimAssociateProfessor" : {
+      "@id" : "http://oeg.fi.upm.es/def/people#InterimAssociateProfessor"
+    }
+  }
+}
