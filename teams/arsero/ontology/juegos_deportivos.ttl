@@ -17,7 +17,7 @@
 
 <http://example.org/def/juegosdeportivosmunicipalesmadrid#> a owl:Ontology ;
     dcterms:title "Ontology of Municipal Sports Games of Madrid"@en ;
-    dcterms:description "Ontology to model competitions, matches, teams, venues, districts, phases, groups and seasons of the Municipal Sports Games of Madrid."@en ;
+    dcterms:description "Ontology for modelling competitions and matches in Madrid municipal sports games."@en ;
     dcterms:created "2026-03-21"^^xsd:date ;
     dcterms:creator "Diana Rozados Gaiteiro", "Raúl Seara Suárez", "Roque de Arcos Lago" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
