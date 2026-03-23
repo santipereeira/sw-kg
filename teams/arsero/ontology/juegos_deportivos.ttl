@@ -30,49 +30,41 @@
 #    Object Properties
 #################################
 
-## ta:tieneEquipoVisitante
 ta:tieneEquipoVisitante rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Equipo ;
 		rdfs:label "tiene equipo visitante" .
 
-## ta:perteneceAGrupo
 ta:perteneceAGrupo rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Grupo ;
 		rdfs:label "pertenece a grupo" .
 
-## ta:perteneceACompeticion
 ta:perteneceACompeticion rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Competicion ;
 		rdfs:label "pertenece a competicion" .
 
-## ta:seJuegaEn
 ta:seJuegaEn rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Campo ;
 		rdfs:label "se juega en" .
 
-## ta:tieneTemporada
 ta:tieneTemporada rdf:type owl:ObjectProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range ta:Temporada ;
         rdfs:label "tiene temporada" .
 
-## ta:estaEn
 ta:estaEn rdf:type owl:ObjectProperty ;
         rdfs:domain ta:Campo ;
         rdfs:range ta:DistritoMunicipal ;
         rdfs:label "esta en" .
 
-## ta:tieneEquipoLocal
 ta:tieneEquipoLocal rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Equipo ;
 		rdfs:label "tiene equipo local" .
 
-## ta:perteneceAFase
 ta:perteneceAFase rdf:type owl:ObjectProperty ;
 		rdfs:domain ta:Partido ;
 		rdfs:range ta:Fase ;
@@ -82,157 +74,131 @@ ta:perteneceAFase rdf:type owl:ObjectProperty ;
 #    Data Properties
 #################################
 
-## ta:numeroPartido
 ta:numeroPartido rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:integer ;
         rdfs:label "numero partido" .
 
-## ta:jornada
 ta:jornada rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:integer ;
         rdfs:label "jornada" .
 
-## ta:fecha
 ta:fecha rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:date ;
         rdfs:label "fecha" .
 
-## ta:hora
 ta:hora rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:time ;
         rdfs:label "hora" .
 
-## ta:resultadoLocal
 ta:resultadoLocal rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:integer ;
         rdfs:label "resultado local" .
 
-## ta:resultadoVisitante
 ta:resultadoVisitante rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:integer ;
         rdfs:label "resultado visitante" .
 
-## ta:programado
 ta:programado rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:integer ;
         rdfs:label "programado" .
 
-## ta:estado
 ta:estado rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Partido ;
         rdfs:range xsd:string ;
         rdfs:label "estado" .
 
-## ta:codigoEquipo
 ta:codigoEquipo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Equipo ;
         rdfs:range xsd:integer ;
         rdfs:label "codigo equipo" .
 
-## ta:nombreEquipo
 ta:nombreEquipo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Equipo ;
         rdfs:range xsd:string ;
         rdfs:label "nombre equipo" .
 
-## ta:nombreCampo
 ta:nombreCampo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Campo ;
         rdfs:range xsd:string ;
         rdfs:label "nombre campo" .
 
-## ta:codigoCampo
 ta:codigoCampo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Campo ;
         rdfs:range xsd:integer ;
         rdfs:label "codigo campo" .
 
-## ta:coordX
 ta:coordX rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Campo ;
         rdfs:range xsd:decimal ;
         rdfs:label "coord x" .
 
-## ta:coordY
 ta:coordY rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Campo ;
         rdfs:range xsd:decimal ;
         rdfs:label "coord y" .
 
-## ta:codigoCompeticion
 ta:codigoCompeticion rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range xsd:integer ;
         rdfs:label "codigo competicion" .
 
-## ta:nombreCompeticion
 ta:nombreCompeticion rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range xsd:string ;
         rdfs:label "nombre competicion" .
 
-## ta:nombreDeporte
 ta:nombreDeporte rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range xsd:string ;
         rdfs:label "nombre deporte" .
 
-## ta:nombreCategoria
 ta:nombreCategoria rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range xsd:string ;
         rdfs:label "nombre categoria" .
 
-## ta:sistemaCompeticion
 ta:sistemaCompeticion rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Competicion ;
         rdfs:range xsd:string ;
         rdfs:label "sistema competicion" .
 
-## ta:nombreTemporada
 ta:nombreTemporada rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Temporada ;
         rdfs:range xsd:string ;
         rdfs:label "nombre temporada" .
 
-## ta:nombreDistrito
 ta:nombreDistrito rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:DistritoMunicipal ;
         rdfs:range xsd:string ;
         rdfs:label "nombre distrito" .
 
-## ta:codigoGrupo
 ta:codigoGrupo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Grupo ;
         rdfs:range xsd:integer ;
         rdfs:label "codigo grupo" .
 
-## ta:nombreGrupo
 ta:nombreGrupo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Grupo ;
         rdfs:range xsd:string ;
         rdfs:label "nombre grupo" .
 
-## ta:sexoGrupo
 ta:sexoGrupo rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Grupo ;
         rdfs:range xsd:string ;
         rdfs:label "sexo grupo" .
 
-## ta:codigoFase
 ta:codigoFase rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Fase ;
         rdfs:range xsd:integer ;
         rdfs:label "codigo fase" .
 
-## ta:nombreFase
 ta:nombreFase rdf:type owl:DatatypeProperty ;
         rdfs:domain ta:Fase ;
         rdfs:range xsd:string ;
@@ -242,35 +208,27 @@ ta:nombreFase rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################
 
-## ta:Partido
 ta:Partido rdf:type owl:Class ;
 	rdfs:label "Partido" .
 
-## ta:Equipo
 ta:Equipo rdf:type owl:Class ;
 	rdfs:label "Equipo" .
 
-## ta:Campo
 ta:Campo rdf:type owl:Class ;
 	rdfs:label "Campo" .
 
-## ta:Competicion
 ta:Competicion rdf:type owl:Class ;
 	rdfs:label "Competicion" .
 
-## ta:Temporada
 ta:Temporada rdf:type owl:Class ;
 	rdfs:label "Temporada" .
 
-## ta:DistritoMunicipal
 ta:DistritoMunicipal rdf:type owl:Class ;
 	rdfs:label "Distrito Municipal" .
 
-## ta:Grupo
 ta:Grupo rdf:type owl:Class ;
 	rdfs:label "Grupo" .
 
-## ta:Fase
 ta:Fase rdf:type owl:Class ;
 	rdfs:label "Fase" .
 
