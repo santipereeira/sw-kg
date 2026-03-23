@@ -1,0 +1,81 @@
+prefixes:
+  ta: "http://example.org/def/teatrosyauditorios#"
+  ex: "http://example.org/resource/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+
+  ESPAZO:
+    sources:
+      - ['data/teatros-auditorios.csv~csv']
+    s: ex:espazo/$(ESPAZO)
+    po:
+      - [a, ta:Espazo]
+      - [ta:label, $(ESPAZO)]
+      - p: ta:aforamiento
+        o:
+          value: $(AFORAMENTO)
+          datatype: xsd:integer
+      - p: ta:estaen
+        o:
+          value: ex:enderezo/$(ESPAZO)
+          type: iri
+      - p: ta:tiene
+        o:
+          value: ex:contacto/$(ESPAZO)
+          type: iri
+
+  ENDEREZO:
+    sources:
+      - ['data/teatros-auditorios.csv~csv']
+    s: ex:enderezo/$(ESPAZO)
+    po:
+      - [a, ta:Enderezo]
+      - [ta:calle, $(ENDEREZO)]
+      - [ta:numero, $(NUMERO)]
+      - p: ta:latitud
+        o:
+          value: $(LATITUD)
+          datatype: xsd:decimal
+      - p: ta:longitud
+        o:
+          value: $(LONGUITUD)
+          datatype: xsd:decimal
+      - p: ta:pertenece
+        o:
+          value: ex:concello/$(CONCELLO)
+          type: iri
+
+  DATOCONTACTO:
+    sources:
+      - ['data/teatros-auditorios.csv~csv']
+    s: ex:contacto/$(ESPAZO)
+    po:
+      - [a, ta:DatoContacto]
+      - [ta:telefono, $(TELÉFONO)]
+      - [ta:email, $(E-MAIL)]
+      - [ta:web, $(WEB)]
+
+  CONCELLO:
+    sources:
+      - ['data/teatros-auditorios.csv~csv']
+    s: ex:concello/$(CONCELLO)
+    po:
+      - [a, ta:Concello]
+      - [ta:nombre, $(CONCELLO)]
+      - p: ta:CP
+        o:
+          value: $(CÓDIGO POSTAL)
+          datatype: xsd:integer
+      - p: ta:ubicadoen
+        o:
+          value: ex:provincia/$(PROVINCIA)
+          type: iri
+
+  PROVINCIA:
+    sources:
+      - ['data/teatros-auditorios.csv~csv']
+    s: ex:provincia/$(PROVINCIA)
+    po:
+      - [a, ta:Provincia]
+      - [ta:nombre, $(PROVINCIA)]
