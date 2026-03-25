@@ -74,10 +74,6 @@ Relaciones principales:
 
 ---
 
-## Enlaces a la publicación
+## Enlace a la publicación
 
-(Se añadirá tras OnToology)
-
-- Documentación: [URL]
-- Evaluación: [URL]
-- Diagramas: [URL]
+[URL] (Se añadirá tras resolver el problema de OnToology)
