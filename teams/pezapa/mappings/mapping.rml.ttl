@@ -1,0 +1,307 @@
+@prefix ta: <http://example.org/def/teatrosyauditorios#>.
+@prefix ex: <http://example.org/resource/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix comp: <http://semweb.mmlab.be/ns/rml-compression#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
+@base <http://example.com/ns#>.
+
+
+<ESPAZO_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../data cleaning/teatros-auditorios.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://example.org/resource/espazo/{ESPAZO}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ta:Espazo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:label;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "ESPAZO";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:aforamiento;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "AFORAMENTO";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:estaen;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://example.org/resource/enderezo/{ESPAZO}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:tiene;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://example.org/resource/contacto/{ESPAZO}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<ENDEREZO_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../data cleaning/teatros-auditorios.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://example.org/resource/enderezo/{ESPAZO}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ta:Enderezo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:calle;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "ENDEREZO";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:numero;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "NUMERO";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:CP;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "CÓDIGO POSTAL";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:latitud;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "LATITUD";
+			rr:datatype xsd:decimal
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:longitud;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "LONGUITUD";
+			rr:datatype xsd:decimal
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:pertenece;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://example.org/resource/concello/{CONCELLO}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<DATOCONTACTO_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../data cleaning/teatros-auditorios.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://example.org/resource/contacto/{ESPAZO}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ta:DatoContacto;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:telefono;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "TELÉFONO";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:email;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "E-MAIL";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:web;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "WEB";
+		];
+	].
+
+
+<CONCELLO_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../data cleaning/teatros-auditorios.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://example.org/resource/concello/{CONCELLO}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ta:Concello;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:nombre;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "CONCELLO";
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:ubicadoen;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://example.org/resource/provincia/{PROVINCIA}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<PROVINCIA_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "../data cleaning/teatros-auditorios.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "http://example.org/resource/provincia/{PROVINCIA}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ta:Provincia;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ta:nombre;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "PROVINCIA";
+		];
+	].
+
+

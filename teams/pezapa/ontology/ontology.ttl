@@ -1,132 +1,124 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ta: <http://example.org/def/teatrosyauditorios#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix ns0: <http://purl.org/vocab/vann/> .
-@prefix ns1: <https://w3id.org/mod#> .
 
-<http://example.org/def/teatrosyauditorios#CP>
-  a owl:DatatypeProperty ;
-  rdfs:label "c p" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Concello> .
+ta:CP a owl:DatatypeProperty ;
+    rdfs:label "c p" ;
+    rdfs:domain ta:Enderezo .
 
-<http://example.org/def/teatrosyauditorios#aforamiento>
-  a owl:DatatypeProperty ;
-  rdfs:label "aforamiento" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Espazo> .
+ta:aforamiento a owl:DatatypeProperty ;
+    rdfs:label "aforamiento" ;
+    rdfs:domain ta:Espazo .
 
-<http://example.org/def/teatrosyauditorios#calle>
-  a owl:DatatypeProperty ;
-  rdfs:label "calle" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Enderezo> ;
-  rdfs:range xsd:string .
+ta:calle a owl:DatatypeProperty ;
+    rdfs:label "calle" ;
+    rdfs:domain ta:Enderezo ;
+    rdfs:range xsd:string .
 
-<http://example.org/def/teatrosyauditorios#email>
-  a owl:DatatypeProperty ;
-  rdfs:label "email" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#DatoContacto> .
+ta:email a owl:DatatypeProperty ;
+    rdfs:label "email" ;
+    rdfs:domain ta:DatoContacto .
 
-<http://example.org/def/teatrosyauditorios#estaen>
-  a owl:ObjectProperty ;
-  rdfs:label "estaen" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Espazo> ;
-  rdfs:range <http://example.org/def/teatrosyauditorios#Enderezo> .
+ta:estaen a owl:ObjectProperty ;
+    rdfs:label "estaen" ;
+    rdfs:domain ta:Espazo ;
+    rdfs:range ta:Enderezo .
 
-<http://example.org/def/teatrosyauditorios#label>
-  a owl:DatatypeProperty ;
-  rdfs:label "label" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Espazo> .
+ta:label a owl:DatatypeProperty ;
+    rdfs:label "label" ;
+    rdfs:domain ta:Espazo .
 
-<http://example.org/def/teatrosyauditorios#latitud>
-  a owl:DatatypeProperty ;
-  rdfs:label "latitud" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Enderezo> .
+ta:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud" ;
+    rdfs:domain ta:Enderezo .
 
-<http://example.org/def/teatrosyauditorios#longitud>
-  a owl:DatatypeProperty ;
-  rdfs:label "longitud" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Enderezo> .
+ta:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud" ;
+    rdfs:domain ta:Enderezo .
 
-<http://example.org/def/teatrosyauditorios#nombre>
-  a owl:DatatypeProperty ;
-  rdfs:label "nombre" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Concello>, <http://example.org/def/teatrosyauditorios#Provincia> ;
-  rdfs:range xsd:string .
+ta:nombre a owl:DatatypeProperty ;
+    rdfs:label "nombre" ;
+    rdfs:domain ta:Concello,
+        ta:Provincia ;
+    rdfs:range xsd:string .
 
-<http://example.org/def/teatrosyauditorios#numero>
-  a owl:DatatypeProperty ;
-  rdfs:label "numero" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Enderezo> .
+ta:numero a owl:DatatypeProperty ;
+    rdfs:label "numero" ;
+    rdfs:domain ta:Enderezo .
 
-<http://example.org/def/teatrosyauditorios#pertenece>
-  a owl:ObjectProperty ;
-  rdfs:label "pertenece" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Enderezo> ;
-  rdfs:range <http://example.org/def/teatrosyauditorios#Concello> .
+ta:pertenece a owl:ObjectProperty ;
+    rdfs:label "pertenece" ;
+    rdfs:domain ta:Enderezo ;
+    rdfs:range ta:Concello .
 
-<http://example.org/def/teatrosyauditorios#telefono>
-  a owl:DatatypeProperty ;
-  rdfs:label "telefono" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#DatoContacto> ;
-  rdfs:range xsd:integer .
+ta:telefono a owl:DatatypeProperty ;
+    rdfs:label "telefono" ;
+    rdfs:domain ta:DatoContacto ;
+    rdfs:range xsd:integer .
 
-<http://example.org/def/teatrosyauditorios#tiene>
-  a owl:ObjectProperty ;
-  rdfs:label "tiene" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Espazo> ;
-  rdfs:range <http://example.org/def/teatrosyauditorios#DatoContacto> .
+ta:tiene a owl:ObjectProperty ;
+    rdfs:label "tiene" ;
+    rdfs:domain ta:Espazo ;
+    rdfs:range ta:DatoContacto .
 
-<http://example.org/def/teatrosyauditorios#ubicadoen>
-  a owl:ObjectProperty ;
-  rdfs:label "ubicadoen" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#Concello> ;
-  rdfs:range <http://example.org/def/teatrosyauditorios#Provincia> .
+ta:ubicadoen a owl:ObjectProperty ;
+    rdfs:label "ubicadoen" ;
+    rdfs:domain ta:Concello ;
+    rdfs:range ta:Provincia .
 
-<http://example.org/def/teatrosyauditorios#web>
-  a owl:DatatypeProperty ;
-  rdfs:label "web" ;
-  rdfs:domain <http://example.org/def/teatrosyauditorios#DatoContacto> .
+ta:web a owl:DatatypeProperty ;
+    rdfs:label "web" ;
+    rdfs:domain ta:DatoContacto .
 
-dc:created a owl:AnnotationProperty .
-dc:creator a owl:AnnotationProperty .
-dc:description a owl:AnnotationProperty .
-dc:license a owl:AnnotationProperty .
-dc:title a owl:AnnotationProperty .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> a owl:AnnotationProperty .
-<http://purl.org/vocab/vann/preferredNamespaceUri> a owl:AnnotationProperty .
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
 owl:priorVersion a owl:AnnotationProperty .
+
 owl:versionIRI a owl:AnnotationProperty .
+
 owl:versionInfo a owl:AnnotationProperty .
-<https://w3id.org/example#>
-  a owl:Ontology ;
-  dc:created "2026-03-05"^^xsd:date ;
-  dc:creator "Óscar Padín Devesa, Pablo Pérez Rodríguez, Jaime Zapico López" ;
-  dc:description "Ontología basada en datos recogidos de localizacion y datos de contacto de teatros y auditorios en la comunidad autónoma de Galicia."@es ;
-  dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  dc:title "Teatros y Auditorios en Galicia"@es ;
-  ns0:preferredNamespacePrefix "choosenprefix" ;
-  ns0:preferredNamespaceUri <https://w3id.org/example#> ;
-  owl:priorVersion <https://w3id.org/example/1.0.0> ;
-  owl:versionIRI <https://w3id.org/example/1.0.1> ;
-  owl:versionInfo "0.0.1" ;
-  ns1:createdWith <https://chowlk.linkeddata.es/> .
 
-<http://example.org/def/teatrosyauditorios#Provincia>
-  a owl:Class ;
-  rdfs:label "Provincia" .
+<https://w3id.org/example#> a owl:Ontology ;
+    dcterms:created "2026-03-05"^^xsd:date ;
+    dcterms:creator "Óscar Padín Devesa, Pablo Pérez Rodríguez, Jaime Zapico López" ;
+    dcterms:description "Ontología basada en datos recogidos de localizacion y datos de contacto de teatros y auditorios en la comunidad autónoma de Galicia."@es ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Teatros y Auditorios en Galicia"@es ;
+    vann:preferredNamespacePrefix "choosenprefix" ;
+    vann:preferredNamespaceUri <https://w3id.org/example#> ;
+    owl:priorVersion <https://w3id.org/example/1.0.0> ;
+    owl:versionIRI <https://w3id.org/example/1.0.1> ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
 
-<http://example.org/def/teatrosyauditorios#Concello>
-  a owl:Class ;
-  rdfs:label "Concello" .
+ta:Provincia a owl:Class ;
+    rdfs:label "Provincia" .
 
-<http://example.org/def/teatrosyauditorios#DatoContacto>
-  a owl:Class ;
-  rdfs:label "Dato Contacto" .
+ta:Concello a owl:Class ;
+    rdfs:label "Concello" .
 
-<http://example.org/def/teatrosyauditorios#Espazo>
-  a owl:Class ;
-  rdfs:label "Espazo" .
+ta:DatoContacto a owl:Class ;
+    rdfs:label "Dato Contacto" .
 
-<http://example.org/def/teatrosyauditorios#Enderezo>
-  a owl:Class ;
-  rdfs:label "Enderezo" .
+ta:Espazo a owl:Class ;
+    rdfs:label "Espazo" .
+
+ta:Enderezo a owl:Class ;
+    rdfs:label "Enderezo" .
+
