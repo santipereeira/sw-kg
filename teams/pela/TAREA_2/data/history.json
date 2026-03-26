@@ -1,0 +1,766 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Observaciones",
+    "description": "Eliminar columna Observaciones"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Codigo_competicion",
+    "description": "Eliminar columna Codigo_competicion"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Codigo_temporada",
+    "description": "Eliminar columna Codigo_temporada"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Nombre_competicion",
+    "description": "Eliminar columna Nombre_competicion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha",
+    "expression": "grel:value.split('/')[2] + '/' + value.split('/')[1] + '/' + value.split('/')[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha usando la expresión grel:value.split('/')[2] + '/' + value.split('/')[1] + '/' + value.split('/')[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORD_X_CAMPO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna COORD_X_CAMPO usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "COORD_Y_CAMPO",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna COORD_Y_CAMPO usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Nombre_jornada",
+    "description": "Eliminar columna Nombre_jornada"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codigo_fase",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Codigo_fase usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codigo_grupo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Codigo_grupo usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Jornada",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Jornada usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Partido",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Partido usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codigo_equipo1",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Codigo_equipo1 usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codigo_equipo2",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Codigo_equipo2 usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Resultado1",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Resultado1 usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Resultado2",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Resultado2 usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Codigo_campo",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Codigo_campo usando la expresión value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Codigo_fase",
+    "description": "Eliminar columna Codigo_fase"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Estado",
+    "expression": "grel:if(value.trim().length() == 0, \"no jugado\",\n  if(or(value.trim().toLowercase() == \"o\", value.trim().toLowercase() == \"a\"), \"aplazado\",\n    if(value.trim().toLowercase() == \"f\", \"finalizado\",\n      if(value.trim().toLowercase() == \"s\", \"suspendido\", value)\n    )\n  )\n)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Estado usando la expresión grel:if(value.trim().length() == 0, \"no jugado\",\n  if(or(value.trim().toLowercase() == \"o\", value.trim().toLowercase() == \"a\"), \"aplazado\",\n    if(value.trim().toLowercase() == \"f\", \"finalizado\",\n      if(value.trim().toLowercase() == \"s\", \"suspendido\", value)\n    )\n  )\n)"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Codigo_equipo1",
+          "expression": "value",
+          "columnName": "Codigo_equipo1",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 0,
+                "l": "0"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Codigo_equipo2",
+          "expression": "value",
+          "columnName": "Codigo_equipo2",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 0,
+                "l": "0"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Codigo_campo",
+          "expression": "value",
+          "columnName": "Codigo_campo",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": 0,
+                "l": "0"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Estado",
+    "expression": "grel:value.replace(/No presentado.*/, \"No presentado\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Estado usando la expresión grel:value.replace(/No presentado.*/, \"No presentado\")"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Estado",
+          "expression": "value",
+          "columnName": "Estado",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "C",
+                "l": "C"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Estado",
+          "expression": "value",
+          "columnName": "Estado",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "C         ",
+                "l": "C         "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_deporte",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q31629",
+        "name": "type of sport"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Nombre_deporte to type Q31629"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Nombre_deporte",
+          "expression": "value",
+          "columnName": "Nombre_deporte",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "MINIBALONCESTO                                    ",
+                "l": "MINIBALONCESTO                                    "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_deporte",
+    "similarValue": "MINIBALONCESTO                                    ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q114049601",
+      "name": "minibasketball",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento minibasketball (Q114049601) para las celdas que contienen \"MINIBALONCESTO                                    \" en la columna Nombre_deporte"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Nombre_deporte",
+          "expression": "value",
+          "columnName": "Nombre_deporte",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "VOLEIBOL                                          ",
+                "l": "VOLEIBOL                                          "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_deporte",
+    "similarValue": "VOLEIBOL                                          ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1734",
+      "name": "volleyball",
+      "types": [
+        "Q31629",
+        "Q47728"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento volleyball (Q1734) para las celdas que contienen \"VOLEIBOL                                          \" en la columna Nombre_deporte"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Nombre_deporte",
+          "expression": "value",
+          "columnName": "Nombre_deporte",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "HOCKEY                                            ",
+                "l": "HOCKEY                                            "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_deporte",
+    "similarValue": "HOCKEY                                            ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1622659",
+      "name": "hockey",
+      "types": [
+        "Q31629"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento hockey (Q1622659) para las celdas que contienen \"HOCKEY                                            \" en la columna Nombre_deporte"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Nombre_deporte",
+          "expression": "value",
+          "columnName": "Nombre_deporte",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "FUTBOL                                            ",
+                "l": "FUTBOL                                            "
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Nombre_deporte",
+    "similarValue": "FUTBOL                                            ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1081491",
+      "name": "football",
+      "types": [
+        "Q31629"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento football (Q1081491) para las celdas que contienen \"FUTBOL                                            \" en la columna Nombre_deporte"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Fecha",
+    "expression": "grel:value.substring(0, 11) + cells[\"Hora\"].value + \":00Z\"",
+    "onError": "set-to-blank",
+    "newColumnName": "Fecha_Hora",
+    "columnInsertIndex": 9,
+    "description": "Crear la columna Fecha_Hora en el índice 9 basada en la columna Fecha usando la expresión grel:value.substring(0, 11) + cells[\"Hora\"].value + \":00Z\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Hora",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha_Hora usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Fecha",
+    "description": "Eliminar columna Fecha"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Hora",
+    "description": "Eliminar columna Hora"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q3032114",
+        "name": "district of Madrid"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column Distrito to type Q3032114"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Distrito: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "Distrito",
+          "from": 90,
+          "to": 100.1,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Hora",
+    "expression": "grel:value.replace(/T(\\d):/, \"T0$1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha_Hora usando la expresión grel:value.replace(/T(\\d):/, \"T0$1\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Distrito: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "Distrito",
+          "from": 90,
+          "to": 100.1,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Hora",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha_Hora usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Distrito: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "Distrito",
+          "from": 90,
+          "to": 100.1,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Hora",
+    "expression": "grel:value.replace(/T(\\d{2})(\\d{2})/, \"T$1:$2\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha_Hora usando la expresión grel:value.replace(/T(\\d{2})(\\d{2})/, \"T$1:$2\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Distrito: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "Distrito",
+          "from": 90,
+          "to": 100.1,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Fecha_Hora",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Fecha_Hora usando la expresión value.toDate()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Distrito: puntuación del mejor candidato",
+          "expression": "cell.recon.best.score",
+          "columnName": "Distrito",
+          "from": 90,
+          "to": 100.1,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Distrito",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna Distrito usando la expresión null"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Nombre_deporte",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Deporte_ID",
+    "columnInsertIndex": 15,
+    "description": "Crear la columna Deporte_ID en el índice 15 basada en la columna Nombre_deporte usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Distrito",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "Distrito_ID",
+    "columnInsertIndex": 22,
+    "description": "Crear la columna Distrito_ID en el índice 22 basada en la columna Distrito usando la expresión grel:cell.recon.match.id"
+  }
+]
