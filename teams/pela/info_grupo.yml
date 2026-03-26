@@ -8,6 +8,6 @@ members:
     
 dataset:
   name: "Deportes. Competiciones deportivas municipales de deportes colectivos. Temporadas anteriores."
-  url: "https://datos.gob.es/es/catalogo/l01280796-deportes-competiciones-deportivas-municipales-de-deportes-colectivos-temporadas-anteriores1"
+  url: "https://datos.gob.es/es/catalogo/l01280796-deportes-competiciones-deportivas-municipales-de-deportes-colectivos-temporadas-anteriores"
   description: "Usaremos en concreto el dataset .csv de los partidos de la temporada 2014-2015.
    Lo usaremos porque contiene un número sustancial de columnas y es apropiado para el trabajo."
