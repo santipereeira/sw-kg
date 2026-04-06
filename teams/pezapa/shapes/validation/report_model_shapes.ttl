@@ -1,0 +1,1426 @@
+@prefix ps: <http://example.org/shapes/pezapa/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ta: <http://example.org/def/teatrosyauditorios#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 573 601" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
+            sh:resultPath ta:CP ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb7 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 520 008" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 391 144" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 745 100" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Edificio%20Multiusos> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 402 501" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Edificio%20Multiusos> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Edificio%20Multiusos> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20da%20Beneficencia> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "639 043 936" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 619 115" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 520 008" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 770 100" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 535 940" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 622 001" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 131 565" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 704 300" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "988 320 053" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:numero" ;
+            sh:resultPath ta:numero ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb6 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
+                    sh:resultPath ta:pertenece ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb10 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
+                    sh:resultPath ta:longitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb9 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
+                    sh:resultPath ta:CP ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb7 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
+                    sh:resultPath ta:calle ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb5 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
+                    sh:resultPath ta:latitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb8 ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "Value does not conform to Shape ps:EnderezoShape. See details for more information." ;
+            sh:resultPath ta:estaen ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb3 ;
+            sh:value <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 884 991" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 400 300" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 784 004" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:web" ;
+            sh:resultPath ta:web ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb13 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 610 000" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 770 100" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 828 104" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 400 300" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 580 683" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 810 239" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "649 876 614" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
+            sh:resultPath ta:CP ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb7 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Centro%20Cultural%20Avenida> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "988 310 116" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 622 001" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Sala%20Bah%C3%ADa> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 140 027" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 304 108" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
+            sh:resultPath ta:longitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb9 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20da%20Beneficencia> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "639 043 936" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20da%20Beneficencia> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20da%20Beneficencia> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Centro%20Cultural%20Avenida> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "988 310 116" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Centro%20Cultural%20Avenida> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Centro%20Cultural%20Avenida> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 641 803" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 297 217" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 542 347" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 391 144" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 641 803" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "988 391 290" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 610 000" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Jofre> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 944 244" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:telefono" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 716 001" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 134 450" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 134 450" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 848 425" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "988 530 007" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 184 293" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 363 913" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 762 294" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:email" ;
+                    sh:resultPath ta:email ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb12 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
+                    sh:resultPath ta:web ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb13 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:telefono" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 512 600" ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 304 108" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 848 425" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
+            sh:resultPath ta:calle ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb5 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "988 391 290" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 542 347" ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:web" ;
+                    sh:resultPath ta:web ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb13 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
+                    sh:resultPath ta:email ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb12 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "988 317 960" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Principal> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 884 991" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 704 300" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 619 115" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
+            sh:resultPath ta:pertenece ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb10 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 512 600" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 363 913" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 603 625" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 391 144" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 440 344" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 661 674" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 560 162" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 297 217" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 833 061" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 745 100" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "988 320 053" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 440 344" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:email" ;
+            sh:resultPath ta:email ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb12 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 762 294" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:aforamiento" ;
+            sh:resultPath ta:aforamiento ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb2 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 828 104" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 131 565" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:latitud" ;
+            sh:resultPath ta:latitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb8 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 580 683" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "881 867 223" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 535 940" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "986 833 061" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
+            sh:resultPath ta:web ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb13 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 603 625" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "649 876 614" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 560 162" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
+            sh:resultPath ta:pertenece ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb10 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 184 293" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "988 317 960" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 391 144" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
+            sh:resultPath ta:longitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb9 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
+            sh:resultPath ta:email ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb12 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
+            sh:resultPath ta:latitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb8 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "881 867 223" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Jofre> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "981 944 244" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Jofre> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Jofre> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
+            sh:resultPath ta:calle ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb5 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 833 061" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Edificio%20Multiusos> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "982 402 501" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 833 061" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "988 530 007" ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 784 004" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 573 601" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 810 239" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Sala%20Bah%C3%ADa> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "982 140 027" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Sala%20Bah%C3%ADa> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Sala%20Bah%C3%ADa> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
+                    sh:resultPath ta:pertenece ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb10 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:latitud" ;
+                    sh:resultPath ta:latitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb8 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
+                    sh:resultPath ta:longitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb9 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:numero" ;
+                    sh:resultPath ta:numero ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb6 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
+                    sh:resultPath ta:calle ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb5 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
+                    sh:resultPath ta:CP ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb7 ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "Value does not conform to Shape ps:EnderezoShape. See details for more information." ;
+            sh:resultPath ta:estaen ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb3 ;
+            sh:value <http://example.org/resource/enderezo/Teatro%20Principal> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> ;
+                    sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+                    sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+                    sh:value "986 661 674" ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> ;
+            sh:resultMessage "Value does not conform to Shape ps:DatoContactoShape. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb4 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> ;
+            sh:resultMessage "Value is not Literal with datatype xsd:integer" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:DatatypeConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb11 ;
+            sh:value "981 716 001" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Teatro%20Principal>->ta:aforamiento" ;
+            sh:resultPath ta:aforamiento ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n84aac08d6b4848288282b32f311e180cb2 ] .
+
+_:n84aac08d6b4848288282b32f311e180cb2 sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:aforamiento .
+
+_:n84aac08d6b4848288282b32f311e180cb3 sh:class ta:Enderezo ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:node ps:EnderezoShape ;
+    sh:path ta:estaen .
+
+_:n84aac08d6b4848288282b32f311e180cb6 sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:path ta:numero .
+
+_:n84aac08d6b4848288282b32f311e180cb10 sh:class ta:Concello ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:node ps:ConcelloShape ;
+    sh:path ta:pertenece .
+
+_:n84aac08d6b4848288282b32f311e180cb12 sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:email .
+
+_:n84aac08d6b4848288282b32f311e180cb13 sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:web .
+
+_:n84aac08d6b4848288282b32f311e180cb5 sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:calle .
+
+_:n84aac08d6b4848288282b32f311e180cb7 sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:CP .
+
+_:n84aac08d6b4848288282b32f311e180cb8 sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:latitud .
+
+_:n84aac08d6b4848288282b32f311e180cb9 sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:longitud .
+
+_:n84aac08d6b4848288282b32f311e180cb4 sh:class ta:DatoContacto ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:node ps:DatoContactoShape ;
+    sh:path ta:tiene .
+
+_:n84aac08d6b4848288282b32f311e180cb11 sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ta:telefono .
+
