@@ -1,0 +1,14 @@
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?municipality ?municipalityName ?wd (COUNT(?space) AS ?numSpaces) (AVG(?capacity) AS ?avgCapacity)
+WHERE {
+  ?space a ta:Espazo ;
+         ta:aforamiento ?capacity ;
+         ta:estaen/ta:pertenece ?municipality .
+
+  ?municipality ta:nombre ?municipalityName ;
+                owl:sameAs ?wd .
+}
+GROUP BY ?municipality ?municipalityName ?wd
+ORDER BY DESC(?numSpaces) DESC(?avgCapacity) ?municipalityName

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pezapa KG linked spaces</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, #f7ede2, #fff1e6);
+      color: #1d3557;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 100vh;
+    }
+    .panel {
+      padding: 28px 24px;
+      border-right: 1px solid rgba(29, 53, 87, 0.15);
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(10px);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      color: #b56576;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .metric {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(29, 53, 87, 0.15);
+    }
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .panel {
+        border-right: 0;
+        border-bottom: 1px solid rgba(29, 53, 87, 0.15);
+      }
+      #map {
+        height: 70vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <section class="panel">
+      <div class="eyebrow">LOT4KG Task 6</div>
+      <h1>Linked spaces in Galicia</h1>
+      <p>
+        This map combines local coordinates from the Pezapa KG with Wikidata
+        metadata for the spaces that have a direct external link.
+      </p>
+      <div class="metric"><strong>8</strong> linked cultural spaces mapped.</div>
+      <div class="metric">
+        Local KG coordinates are used for positioning, while Wikidata contributes
+        labels, types, opening dates and official websites when available.
+      </div>
+    </section>
+    <div id="map"></div>
+  </div>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script>
+    const points = [{"Index": 0, "space": "http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n", "spaceName": "Pazo da Cultura de Narón", "wd": "http://www.wikidata.org/entity/Q12397270", "capacity": 900, "lat": 43.496674, "lon": -8.195536, "inception": null, "coord": "Point(-8.195212388 43.496212446)", "wikidataLabel": "Palau de Cultura de Narón", "instanceOfLabel": "teatro | edificio", "officialWebsite": null, "wikidataLat": 43.496212446, "wikidataLon": -8.195212388, "popup": "<strong>Pazo da Cultura de Narón</strong><br>Capacity: 900 seats<br>Wikidata label: Palau de Cultura de Narón<br>Type: teatro | edificio<br>Inception: Unknown opening year<br>No official website"}, {"Index": 1, "space": "http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro", "spaceName": "Teatro Rosalía de Castro", "wd": "http://www.wikidata.org/entity/Q12400946", "capacity": 662, "lat": 43.370504, "lon": -8.398303, "inception": "1868-01-01T00:00:00Z", "coord": "Point(-8.39861 43.3703)", "wikidataLabel": "Teatro Rosalía de Castro", "instanceOfLabel": "teatro", "officialWebsite": "https://www.coruna.gal/cultura/es/espacios/detalle-para-entidad/teatro-rosalia-castro/entidad/1150819583294?argIdioma=es", "wikidataLat": 43.3703, "wikidataLon": -8.39861, "popup": "<strong>Teatro Rosalía de Castro</strong><br>Capacity: 662 seats<br>Wikidata label: Teatro Rosalía de Castro<br>Type: teatro<br>Inception: 1868-01-01T00:00:00Z<br><a href=\"https://www.coruna.gal/cultura/es/espacios/detalle-para-entidad/teatro-rosalia-castro/entidad/1150819583294?argIdioma=es\" target=\"_blank\" rel=\"noreferrer\">official website</a>"}, {"Index": 2, "space": "http://example.org/resource/espazo/Teatro%20Jofre", "spaceName": "Teatro Jofre", "wd": "http://www.wikidata.org/entity/Q11951077", "capacity": 556, "lat": 43.482547, "lon": -8.23376, "inception": "1892-01-01T00:00:00Z", "coord": "Point(-8.23368 43.4824)", "wikidataLabel": "Teatro Jofre", "instanceOfLabel": "teatro", "officialWebsite": "http://www.ferrol.es/jofre_es/Paginas/SelEvento.aspx", "wikidataLat": 43.4824, "wikidataLon": -8.23368, "popup": "<strong>Teatro Jofre</strong><br>Capacity: 556 seats<br>Wikidata label: Teatro Jofre<br>Type: teatro<br>Inception: 1892-01-01T00:00:00Z<br><a href=\"http://www.ferrol.es/jofre_es/Paginas/SelEvento.aspx\" target=\"_blank\" rel=\"noreferrer\">official website</a>"}, {"Index": 3, "space": "http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre", "spaceName": "Pontevedra Principal Theatre", "wd": "http://www.wikidata.org/entity/Q12400945", "capacity": 434, "lat": 42.432473, "lon": -8.646487, "inception": "1878-01-01T00:00:00Z", "coord": "Point(-8.646257833 42.432433)", "wikidataLabel": "Teatro Principal de Pontevedra", "instanceOfLabel": "teatro", "officialWebsite": null, "wikidataLat": 42.432433, "wikidataLon": -8.646257833, "popup": "<strong>Pontevedra Principal Theatre</strong><br>Capacity: 434 seats<br>Wikidata label: Teatro Principal de Pontevedra<br>Type: teatro<br>Inception: 1878-01-01T00:00:00Z<br>No official website"}, {"Index": 4, "space": "http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo", "spaceName": "Cultural Center of Carballo", "wd": "http://www.wikidata.org/entity/Q12397271", "capacity": 350, "lat": 43.211588, "lon": -8.695261, "inception": "2002-01-01T00:00:00Z", "coord": "Point(-8.695575562 43.211446162)", "wikidataLabel": "Cultural Center of Carballo", "instanceOfLabel": "teatro", "officialWebsite": null, "wikidataLat": 43.211446162, "wikidataLon": -8.695575562, "popup": "<strong>Cultural Center of Carballo</strong><br>Capacity: 350 seats<br>Wikidata label: Cultural Center of Carballo<br>Type: teatro<br>Inception: 2002-01-01T00:00:00Z<br>No official website"}, {"Index": 5, "space": "http://example.org/resource/espazo/Teatro%20Coliseo%20Noela", "spaceName": "Teatro Coliseo Noela", "wd": "http://www.wikidata.org/entity/Q12400937", "capacity": 342, "lat": 42.7827855, "lon": -8.8893874, "inception": "1921-01-01T00:00:00Z", "coord": "Point(-8.887182687 42.782783163)", "wikidataLabel": "Q12400937", "instanceOfLabel": "teatro", "officialWebsite": null, "wikidataLat": 42.782783163, "wikidataLon": -8.887182687, "popup": "<strong>Teatro Coliseo Noela</strong><br>Capacity: 342 seats<br>Wikidata label: Q12400937<br>Type: teatro<br>Inception: 1921-01-01T00:00:00Z<br>No official website"}, {"Index": 6, "space": "http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano", "spaceName": "Biblioteca Municipal de A Coruña - Fórum Metropolitano", "wd": "http://www.wikidata.org/entity/Q85819399", "capacity": 300, "lat": 43.355734, "lon": -8.398987, "inception": "1996-01-01T00:00:00Z", "coord": "Point(-8.40006 43.3556)", "wikidataLabel": "Biblioteca Municipal de A Coruña - Fórum Metropolitano", "instanceOfLabel": "biblioteca pública | biblioteca sucursal", "officialWebsite": "http://www.coruna.es/bibliotecas", "wikidataLat": 43.3556, "wikidataLon": -8.40006, "popup": "<strong>Biblioteca Municipal de A Coruña - Fórum Metropolitano</strong><br>Capacity: 300 seats<br>Wikidata label: Biblioteca Municipal de A Coruña - Fórum Metropolitano<br>Type: biblioteca pública | biblioteca sucursal<br>Inception: 1996-01-01T00:00:00Z<br><a href=\"http://www.coruna.es/bibliotecas\" target=\"_blank\" rel=\"noreferrer\">official website</a>"}, {"Index": 7, "space": "http://example.org/resource/espazo/Teatro%20da%20Beneficencia", "spaceName": "Teatro da Beneficencia", "wd": "http://www.wikidata.org/entity/Q12400943", "capacity": 250, "lat": 43.684543, "lon": -7.854775, "inception": "1850-01-01T00:00:00Z", "coord": "Point(-7.854537937 43.684465802)", "wikidataLabel": "Q12400943", "instanceOfLabel": "teatro", "officialWebsite": null, "wikidataLat": 43.684465802, "wikidataLon": -7.854537937, "popup": "<strong>Teatro da Beneficencia</strong><br>Capacity: 250 seats<br>Wikidata label: Q12400943<br>Type: teatro<br>Inception: 1850-01-01T00:00:00Z<br>No official website"}];
+    const map = L.map("map").setView([43.227106, -8.414062], 8);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    points.forEach((point) => {
+      L.circleMarker([point.lat, point.lon], {
+        radius: 6 + Math.min(point.capacity / 180, 8),
+        color: "#1d3557",
+        weight: 1,
+        fillColor: "#e76f51",
+        fillOpacity: 0.85
+      })
+        .bindPopup(point.popup)
+        .addTo(map);
+    });
+  </script>
+</body>
+</html>

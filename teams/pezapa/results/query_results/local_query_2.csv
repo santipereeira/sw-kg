@@ -1,0 +1,41 @@
+municipality,municipalityName,wd,numSpaces,avgCapacity
+http://example.org/resource/concello/Ourense,Ourense,http://www.wikidata.org/entity/Q99151,3,572.6666666666666
+http://example.org/resource/concello/Santiago%20de%20Compostela,Santiago de Compostela,http://www.wikidata.org/entity/Q14314,3,355.3333333333333
+http://example.org/resource/concello/Cangas,Cangas,http://www.wikidata.org/entity/Q1628188,2,722.0
+http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa,Vilagarcía de Arousa,http://www.wikidata.org/entity/Q1442637,2,722.0
+http://example.org/resource/concello/Nar%C3%B3n,Narón,http://www.wikidata.org/entity/Q1368896,2,642.0
+http://example.org/resource/concello/Pontevedra,Pontevedra,http://www.wikidata.org/entity/Q12411,2,593.0
+http://example.org/resource/concello/A%20Coru%C3%B1a,A Coruña,http://www.wikidata.org/entity/Q8757,2,481.0
+http://example.org/resource/concello/Ames,Ames,http://www.wikidata.org/entity/Q1353997,2,183.0
+http://example.org/resource/concello/Lugo,Lugo,http://www.wikidata.org/entity/Q11125,1,850.0
+http://example.org/resource/concello/Burela,Burela,http://www.wikidata.org/entity/Q1619456,1,824.0
+http://example.org/resource/concello/Ferrol,Ferrol,http://www.wikidata.org/entity/Q485329,1,556.0
+http://example.org/resource/concello/Tui,Tui,http://www.wikidata.org/entity/Q824122,1,554.0
+http://example.org/resource/concello/Monforte%20de%20Lemos,Monforte de Lemos,http://www.wikidata.org/entity/Q818341,1,478.0
+http://example.org/resource/concello/O%20Carballi%C3%B1o,O Carballiño,http://www.wikidata.org/entity/Q1607558,1,426.0
+http://example.org/resource/concello/Vimianzo,Vimianzo,http://www.wikidata.org/entity/Q1616162,1,420.0
+http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez,As Pontes de García Rodríguez,http://www.wikidata.org/entity/Q1442761,1,402.0
+http://example.org/resource/concello/Oleiros,Oleiros,http://www.wikidata.org/entity/Q688611,1,400.0
+http://example.org/resource/concello/Ponteareas,Ponteareas,http://www.wikidata.org/entity/Q617119,1,400.0
+http://example.org/resource/concello/Viveiro,Viveiro,http://www.wikidata.org/entity/Q641221,1,393.0
+http://example.org/resource/concello/A%20Estrada,A Estrada,http://www.wikidata.org/entity/Q1621191,1,388.0
+http://example.org/resource/concello/Carballo,Carballo,http://www.wikidata.org/entity/Q166137,1,350.0
+http://example.org/resource/concello/Noia,Noia,http://www.wikidata.org/entity/Q818601,1,342.0
+http://example.org/resource/concello/Ribadeo,Ribadeo,http://www.wikidata.org/entity/Q824076,1,330.0
+http://example.org/resource/concello/Tomi%C3%B1o,Tomiño,http://www.wikidata.org/entity/Q1628263,1,322.0
+http://example.org/resource/concello/Lal%C3%ADn,Lalín,http://www.wikidata.org/entity/Q1374736,1,320.0
+http://example.org/resource/concello/Arteixo,Arteixo,http://www.wikidata.org/entity/Q996161,1,300.0
+http://example.org/resource/concello/Sada,Sada,http://www.wikidata.org/entity/Q1616081,1,300.0
+http://example.org/resource/concello/Boiro,Boiro,http://www.wikidata.org/entity/Q735282,1,289.0
+http://example.org/resource/concello/Vigo,Vigo,http://www.wikidata.org/entity/Q8745,1,283.0
+http://example.org/resource/concello/Redondela,Redondela,http://www.wikidata.org/entity/Q833032,1,278.0
+http://example.org/resource/concello/O%20Barco%20de%20Valdeorras,O Barco de Valdeorras,http://www.wikidata.org/entity/Q1607428,1,275.0
+http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras,A Rúa de Valdeorras,http://www.wikidata.org/entity/Q1607619,1,265.0
+http://example.org/resource/concello/Cambados,Cambados,http://www.wikidata.org/entity/Q695477,1,250.0
+http://example.org/resource/concello/Foz,Foz,http://www.wikidata.org/entity/Q917878,1,250.0
+http://example.org/resource/concello/Gondomar,Gondomar,http://www.wikidata.org/entity/Q1607596,1,250.0
+http://example.org/resource/concello/Ortigueira,Ortigueira,http://www.wikidata.org/entity/Q1375842,1,250.0
+http://example.org/resource/concello/Cedeira,Cedeira,http://www.wikidata.org/entity/Q1113395,1,240.0
+http://example.org/resource/concello/Betanzos,Betanzos,http://www.wikidata.org/entity/Q671341,1,220.0
+http://example.org/resource/concello/Cee,Cee,http://www.wikidata.org/entity/Q988707,1,175.0
+http://example.org/resource/concello/Muros,Muros,http://www.wikidata.org/entity/Q578957,1,160.0

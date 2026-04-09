@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este directorio recoge el trabajo del grupo `pezapa` para las tareas 1 a 5 de la metodologia LOT4KG. El proyecto toma como dominio los teatros y auditorios de Galicia y construye un flujo completo desde la preparacion de datos hasta la validacion SHACL del Knowledge Graph.
+Este directorio recoge el trabajo del grupo `pezapa` para las tareas 1 a 6 de la metodologia LOT4KG. El proyecto toma como dominio los teatros y auditorios de Galicia y construye un flujo completo desde la preparacion de datos hasta la explotacion SPARQL del Knowledge Graph con enriquecimiento desde Wikidata.
 
 ## Equipo y dataset
 
@@ -35,6 +35,29 @@ mappings/
   config.ini
 kg/
   output.ttl
+queries/
+  local_query_1.rq
+  local_query_2.rq
+  local_query_3.rq
+  federated_query_1.rq
+  federated_query_2.rq
+src/
+  run_queries.py
+  app.py
+results/
+  query_results/
+    local_query_1.csv
+    local_query_2.csv
+    local_query_3.csv
+    federated_query_1.csv
+    federated_query_2.csv
+    municipalities_enriched.csv
+    linked_spaces_enriched.csv
+  figures/
+    spaces_by_province.png
+    municipalities_spaces_vs_population.png
+  maps/
+    linked_spaces_map.html
 shapes/
   shapes_from_data.ttl
   shapes_from_ontology_or_mappings.ttl
@@ -330,6 +353,151 @@ Municipios y provincias quedaron completamente enlazados, pero la reconciliacion
 
 El CSV limpio ya contenia URLs a Wikidata, pero el mapping base no las materializaba en el KG. Para dejar el grafo preparado para explotacion federada, se incorporo un paso reproducible de enriquecimiento posterior a la materializacion.
 
+## Tarea 6 - Explotacion del Knowledge Graph
+
+### Artefactos entregados
+
+- Consultas locales:
+  - `queries/local_query_1.rq`
+  - `queries/local_query_2.rq`
+  - `queries/local_query_3.rq`
+- Consultas a Wikidata:
+  - `queries/federated_query_1.rq`
+  - `queries/federated_query_2.rq`
+- Script de ejecucion de consultas: `src/run_queries.py`
+- Script de visualizacion: `src/app.py`
+- Resultados tabulares: `results/query_results/`
+- Figuras: `results/figures/`
+- Mapa HTML: `results/maps/linked_spaces_map.html`
+
+### Objetivo de la explotacion
+
+La tarea 6 se planteo como una pequena exploracion analitica del KG de teatros y auditorios de Galicia con dos capas:
+
+1. consulta del KG local para obtener rankings y subconjuntos relevantes
+2. enriquecimiento con Wikidata a partir de los enlaces presentes en `owl:sameAs` y `rdfs:seeAlso`
+
+Con esto se cubren los minimos obligatorios del enunciado:
+
+- uso de SPARQL sobre el KG propio
+- uso de Wikidata como fuente externa
+- explotacion posterior mediante una pequena aplicacion Python que genera tablas, figuras y un mapa
+
+### Consultas SPARQL locales
+
+Las consultas locales se ejecutan con `RDFLib` sobre `kg/output.ttl`:
+
+- `local_query_1.rq`: cuenta cuantos espacios culturales hay por provincia
+- `local_query_2.rq`: obtiene estadisticas por municipio enlazado con Wikidata (`numSpaces`, `avgCapacity`)
+- `local_query_3.rq`: selecciona los espacios con enlace directo a Wikidata y coordenadas consistentes
+
+Estas consultas generan:
+
+- `results/query_results/local_query_1.csv`
+- `results/query_results/local_query_2.csv`
+- `results/query_results/local_query_3.csv`
+
+### Consultas a Wikidata
+
+Las consultas federadas se apoyan en los enlaces ya presentes en el KG:
+
+- `owl:sameAs` para municipios
+- `rdfs:seeAlso` para espacios culturales enlazados
+
+Para garantizar reproducibilidad en este entorno, la federacion se implemento en dos pasos:
+
+1. se extraen del KG local los IRIs de Wikidata con SPARQL
+2. `src/run_queries.py` ejecuta las consultas `federated_query_1.rq` y `federated_query_2.rq` contra el endpoint de Wikidata usando `VALUES`
+
+Este enfoque sigue explotando el KG como punto de partida y evita depender de `SERVICE`, que dio problemas de ejecucion con `RDFLib` en local.
+
+Las consultas remotas recuperan:
+
+- para municipios: `population`, `coord` y `officialWebsite`
+- para espacios: `instanceOfLabel`, `inception`, `coord` y `officialWebsite`
+
+Los resultados se guardan en:
+
+- `results/query_results/federated_query_1.csv`
+- `results/query_results/federated_query_2.csv`
+- `results/query_results/municipalities_enriched.csv`
+- `results/query_results/linked_spaces_enriched.csv`
+
+### Script de explotacion y visualizacion
+
+El flujo reproducible es:
+
+```bash
+python3 -m pip install --user rdflib pandas matplotlib SPARQLWrapper
+python3 src/run_queries.py
+python3 src/app.py
+```
+
+`src/run_queries.py`:
+
+- carga el KG local
+- ejecuta las consultas SPARQL locales
+- reutiliza los enlaces a Wikidata extraidos del propio grafo
+- consulta Wikidata y fusiona los resultados externos con los locales
+
+`src/app.py`:
+
+- genera la figura `results/figures/spaces_by_province.png`
+- genera la figura `results/figures/municipalities_spaces_vs_population.png`
+- genera el mapa `results/maps/linked_spaces_map.html`
+
+### Resultados obtenidos
+
+#### Consulta local por provincia
+
+La distribucion de espacios culturales por provincia es:
+
+- `A Coruña Province`: `22`
+- `Pontevedra Province`: `13`
+- `Lugo Province`: `6`
+- `Ourense`: `5`
+
+Este resultado queda visualizado en `results/figures/spaces_by_province.png`.
+
+#### Enriquecimiento de municipios con Wikidata
+
+Tras fusionar los resultados locales con Wikidata, `municipalities_enriched.csv` contiene `40` municipios enlazados. Algunos resultados destacados son:
+
+- `Ourense`: `3` espacios y capacidad media `572.67`
+- `Santiago de Compostela`: `3` espacios y capacidad media `355.33`
+- `Cangas`: `2` espacios y `7.49` espacios por cada `100000` habitantes
+
+La figura `results/figures/municipalities_spaces_vs_population.png` combina:
+
+- numero de espacios locales
+- poblacion obtenida de Wikidata
+- capacidad media de los espacios
+
+### Espacios enlazados y mapa
+
+El KG contiene `8` espacios culturales con enlace directo a Wikidata y coordenadas consistentes tras filtrar recursos ambiguos o fusionados. El mas grande es:
+
+- `Pazo da Cultura de Narón`: `900` plazas
+
+El mapa `results/maps/linked_spaces_map.html` representa estos espacios con:
+
+- coordenadas del KG local
+- tipo e informacion temporal desde Wikidata
+- enlace a sitio oficial cuando esta disponible
+
+### Interpretacion
+
+La explotacion confirma que los enlaces a Wikidata aportan valor practico al KG:
+
+- permiten cruzar estadisticas locales con poblacion y metadatos externos
+- facilitan visualizaciones mas ricas que una consulta aislada sobre el RDF local
+- muestran que el KG puede servir como base para exploracion y analisis reproducibles
+
+Tambien aparecen dos limitaciones del dataset y del modelado:
+
+- la interlinking de espacios sigue siendo parcial (`8` casos explotables de forma limpia)
+- las colisiones de URI detectadas en la tarea 5 obligan a filtrar algunos recursos antes de explotarlos
+
 ## Conclusiones
 
 El proyecto cubre el flujo completo de LOT4KG para este caso de uso:
@@ -340,12 +508,11 @@ El proyecto cubre el flujo completo de LOT4KG para este caso de uso:
 - definicion de mappings YARRRML/RML y materializacion del KG
 - enriquecimiento reproducible del KG con enlaces a Wikidata
 - validacion SHACL desde datos y desde modelo
+- explotacion del grafo mediante SPARQL, enriquecimiento con Wikidata y visualizacion
 
 La validacion final fue especialmente util para detectar dos problemas reales del proyecto:
 
 - la construccion de URIs con colisiones por nombres no unicos
 - la incoherencia entre el datatype definido para `ta:telefono` y los valores que llegan desde los datos
 
-Estos resultados muestran la diferencia entre describir como son los datos y prescribir como deberian ser segun el modelo, que era precisamente uno de los objetivos de la tarea 5.
-
-Con el estado actual, el proyecto queda ademas preparado para la tarea 6, ya que el KG local contiene enlaces explotables a Wikidata en un formato util para consultas SPARQL federadas.
+Estos resultados muestran la diferencia entre describir como son los datos, prescribir como deberian ser segun el modelo y explotarlos despues con fuentes externas. Ese encadenamiento entre tareas era precisamente uno de los objetivos de LOT4KG en este proyecto.

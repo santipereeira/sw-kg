@@ -1,0 +1,21 @@
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?space ?spaceName ?wd (SAMPLE(?capacity) AS ?capacity) (SAMPLE(?lat) AS ?lat) (SAMPLE(?lon) AS ?lon)
+WHERE {
+  ?space a ta:Espazo ;
+         ta:label ?spaceName ;
+         ta:aforamiento ?capacity ;
+         ta:estaen ?address ;
+         rdfs:seeAlso ?wd .
+
+  ?address ta:latitud ?lat ;
+           ta:longitud ?lon .
+}
+GROUP BY ?space ?spaceName ?wd
+HAVING (
+  COUNT(DISTINCT ?capacity) = 1 &&
+  COUNT(DISTINCT ?lat) = 1 &&
+  COUNT(DISTINCT ?lon) = 1
+)
+ORDER BY DESC(SAMPLE(?capacity)) ?spaceName

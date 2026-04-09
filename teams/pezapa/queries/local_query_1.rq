@@ -1,0 +1,11 @@
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+
+SELECT ?province ?provinceName (COUNT(?space) AS ?numSpaces)
+WHERE {
+  ?space a ta:Espazo ;
+         ta:estaen/ta:pertenece/ta:ubicadoen ?province .
+
+  ?province ta:nombre ?provinceName .
+}
+GROUP BY ?province ?provinceName
+ORDER BY DESC(?numSpaces) ?provinceName
