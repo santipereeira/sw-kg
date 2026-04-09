@@ -11,20 +11,20 @@
             sh:node :Enderezo ;
             sh:path ta:estaen ],
         [ a sh:PropertyShape ;
-            sh:datatype xsd:integer ;
+            sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:aforamiento ],
+            sh:path ta:label ],
         [ a sh:PropertyShape ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:node :DatoContacto ;
             sh:path ta:tiene ],
         [ a sh:PropertyShape ;
-            sh:datatype xsd:string ;
+            sh:datatype xsd:integer ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:label ],
+            sh:path ta:aforamiento ],
         [ a sh:PropertyShape ;
             sh:in ( ta:Espazo ) ;
             sh:maxCount 1 ;
@@ -34,11 +34,6 @@
 
 :Concello a sh:NodeShape ;
     sh:property [ a sh:PropertyShape ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:node :Provincia ;
-            sh:path ta:ubicadoen ],
-        [ a sh:PropertyShape ;
             sh:in ( ta:Concello ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -47,7 +42,12 @@
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:nombre ] ;
+            sh:path ta:nombre ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Provincia ;
+            sh:path ta:ubicadoen ] ;
     sh:targetClass ta:Concello .
 
 :DatoContacto a sh:NodeShape ;
@@ -57,15 +57,15 @@
             sh:minCount 1 ;
             sh:path ta:email ],
         [ a sh:PropertyShape ;
-            sh:in ( ta:DatoContacto ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path rdf:type ],
-        [ a sh:PropertyShape ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:path ta:telefono ],
+        [ a sh:PropertyShape ;
+            sh:in ( ta:DatoContacto ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
         [ a sh:PropertyShape ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
@@ -75,10 +75,15 @@
 
 :Enderezo a sh:NodeShape ;
     sh:property [ a sh:PropertyShape ;
-            sh:datatype xsd:string ;
+            sh:in ( ta:Enderezo ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:calle ],
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ta:longitud ],
         [ a sh:PropertyShape ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -90,15 +95,10 @@
             sh:minCount 1 ;
             sh:path ta:CP ],
         [ a sh:PropertyShape ;
-            sh:datatype xsd:decimal ;
+            sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:longitud ],
-        [ a sh:PropertyShape ;
-            sh:in ( ta:Enderezo ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path rdf:type ],
+            sh:path ta:calle ],
         [ a sh:PropertyShape ;
             sh:datatype xsd:decimal ;
             sh:maxCount 1 ;
@@ -108,14 +108,14 @@
 
 :Provincia a sh:NodeShape ;
     sh:property [ a sh:PropertyShape ;
-            sh:in ( ta:Provincia ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:path rdf:type ],
-        [ a sh:PropertyShape ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
-            sh:path ta:nombre ] ;
+            sh:path ta:nombre ],
+        [ a sh:PropertyShape ;
+            sh:in ( ta:Provincia ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
     sh:targetClass ta:Provincia .
 

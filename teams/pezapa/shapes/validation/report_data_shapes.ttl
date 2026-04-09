@@ -6,246 +6,47 @@
 [] a sh:ValidationReport ;
     sh:conforms false ;
     sh:result [ a sh:ValidationResult ;
-            sh:detail [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
-                    sh:resultPath ta:pertenece ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db17 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
-                    sh:resultPath ta:latitud ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db22 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
-                    sh:resultPath ta:calle ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db16 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
-                    sh:resultPath ta:CP ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db18 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
-                    sh:resultPath ta:longitud ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db19 ] ;
-            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "Value does not conform to Shape :Enderezo. See details for more information." ;
-            sh:resultPath ta:estaen ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db1 ;
-            sh:value <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
-            sh:resultPath ta:longitud ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db19 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:email" ;
-            sh:resultPath ta:email ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db11 ],
-        [ a sh:ValidationResult ;
-            sh:detail [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
-                    sh:resultPath ta:pertenece ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db17 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
-                    sh:resultPath ta:longitud ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db19 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
-                    sh:resultPath ta:CP ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db18 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:latitud" ;
-                    sh:resultPath ta:latitud ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db22 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
-                    sh:resultPath ta:calle ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db16 ] ;
-            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
-            sh:resultMessage "Value does not conform to Shape :Enderezo. See details for more information." ;
-            sh:resultPath ta:estaen ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db1 ;
-            sh:value <http://example.org/resource/enderezo/Teatro%20Principal> ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
-            sh:resultPath ta:CP ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db18 ],
-        [ a sh:ValidationResult ;
             sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
             sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:latitud" ;
             sh:resultPath ta:latitud ;
             sh:resultSeverity sh:Violation ;
             sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db22 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Teatro%20Principal>->ta:aforamiento" ;
-            sh:resultPath ta:aforamiento ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db2 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
-            sh:resultPath ta:telefono ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db14 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
-            sh:resultPath ta:calle ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db16 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
-            sh:resultPath ta:web ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db15 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:telefono" ;
-            sh:resultPath ta:telefono ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db14 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
-            sh:resultPath ta:pertenece ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db17 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
-            sh:resultPath ta:latitud ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db22 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
-            sh:resultPath ta:CP ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db18 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
-            sh:resultPath ta:email ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db11 ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
-            sh:resultPath ta:pertenece ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db17 ],
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb22 ],
         [ a sh:ValidationResult ;
             sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
             sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:web" ;
             sh:resultPath ta:web ;
             sh:resultSeverity sh:Violation ;
             sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db15 ],
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb15 ],
         [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
-            sh:resultPath ta:longitud ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
+            sh:resultPath ta:email ;
             sh:resultSeverity sh:Violation ;
             sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db19 ],
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb11 ],
         [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:aforamiento" ;
+            sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb14 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:email" ;
+            sh:resultPath ta:email ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb11 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Teatro%20Principal>->ta:aforamiento" ;
             sh:resultPath ta:aforamiento ;
             sh:resultSeverity sh:Violation ;
             sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db2 ],
-        [ a sh:ValidationResult ;
-            sh:detail [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
-                    sh:resultPath ta:telefono ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db14 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:web" ;
-                    sh:resultPath ta:web ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db15 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
-                    sh:resultPath ta:email ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db11 ] ;
-            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
-            sh:resultMessage "Value does not conform to Shape :DatoContacto. See details for more information." ;
-            sh:resultPath ta:tiene ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db3 ;
-            sh:value <http://example.org/resource/contacto/Teatro%20Principal> ],
-        [ a sh:ValidationResult ;
-            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
-            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
-            sh:resultPath ta:calle ;
-            sh:resultSeverity sh:Violation ;
-            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db16 ],
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb2 ],
         [ a sh:ValidationResult ;
             sh:detail [ a sh:ValidationResult ;
                     sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
@@ -253,90 +54,289 @@
                     sh:resultPath ta:email ;
                     sh:resultSeverity sh:Violation ;
                     sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db11 ],
-                [ a sh:ValidationResult ;
-                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
-                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
-                    sh:resultPath ta:web ;
-                    sh:resultSeverity sh:Violation ;
-                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db15 ],
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb11 ],
                 [ a sh:ValidationResult ;
                     sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
                     sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:telefono" ;
                     sh:resultPath ta:telefono ;
                     sh:resultSeverity sh:Violation ;
                     sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
-                    sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db14 ] ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb14 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
+                    sh:resultPath ta:web ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb15 ] ;
             sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
             sh:resultMessage "Value does not conform to Shape :DatoContacto. See details for more information." ;
             sh:resultPath ta:tiene ;
             sh:resultSeverity sh:Violation ;
             sh:sourceConstraintComponent sh:NodeConstraintComponent ;
-            sh:sourceShape _:nd31ca3a8cd204ae890e78edcc44f2a4db3 ;
-            sh:value <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ] .
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb3 ;
+            sh:value <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
+            sh:resultPath ta:pertenece ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb17 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:web" ;
+                    sh:resultPath ta:web ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb15 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:telefono" ;
+                    sh:resultPath ta:telefono ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb14 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/contacto/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Teatro%20Principal>->ta:email" ;
+                    sh:resultPath ta:email ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb11 ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "Value does not conform to Shape :DatoContacto. See details for more information." ;
+            sh:resultPath ta:tiene ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb3 ;
+            sh:value <http://example.org/resource/contacto/Teatro%20Principal> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
+            sh:resultPath ta:CP ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb18 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
+            sh:resultPath ta:pertenece ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
+            sh:resultPath ta:calle ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb16 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
+            sh:resultPath ta:calle ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb16 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
+            sh:resultPath ta:longitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb19 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
+            sh:resultPath ta:latitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb22 ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
+                    sh:resultPath ta:longitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb19 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:CP" ;
+                    sh:resultPath ta:CP ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb18 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:latitud" ;
+                    sh:resultPath ta:latitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb22 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:calle" ;
+                    sh:resultPath ta:calle ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb16 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:pertenece" ;
+                    sh:resultPath ta:pertenece ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb17 ] ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "Value does not conform to Shape :Enderezo. See details for more information." ;
+            sh:resultPath ta:estaen ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb1 ;
+            sh:value <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ],
+        [ a sh:ValidationResult ;
+            sh:detail [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:longitud" ;
+                    sh:resultPath ta:longitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb19 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:pertenece" ;
+                    sh:resultPath ta:pertenece ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb17 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
+                    sh:resultPath ta:CP ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb18 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:latitud" ;
+                    sh:resultPath ta:latitud ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb22 ],
+                [ a sh:ValidationResult ;
+                    sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+                    sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:calle" ;
+                    sh:resultPath ta:calle ;
+                    sh:resultSeverity sh:Violation ;
+                    sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+                    sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb16 ] ;
+            sh:focusNode <http://example.org/resource/espazo/Teatro%20Principal> ;
+            sh:resultMessage "Value does not conform to Shape :Enderezo. See details for more information." ;
+            sh:resultPath ta:estaen ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:NodeConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb1 ;
+            sh:value <http://example.org/resource/enderezo/Teatro%20Principal> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Teatro%20Principal> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Teatro%20Principal>->ta:CP" ;
+            sh:resultPath ta:CP ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb18 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:longitud" ;
+            sh:resultPath ta:longitud ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb19 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:telefono" ;
+            sh:resultPath ta:telefono ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb14 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado>->ta:web" ;
+            sh:resultPath ta:web ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb15 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+            sh:resultMessage "More than 1 values on <http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado>->ta:aforamiento" ;
+            sh:resultPath ta:aforamiento ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:n75cd92a1f32f4c54b10eadc3347241fcb2 ] .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db1 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb1 a sh:PropertyShape ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:node :Enderezo ;
     sh:path ta:estaen .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db2 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb2 a sh:PropertyShape ;
     sh:datatype xsd:integer ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:aforamiento .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db3 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb3 a sh:PropertyShape ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:node :DatoContacto ;
     sh:path ta:tiene .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db11 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb11 a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:email .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db14 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb14 a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:telefono .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db15 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb15 a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:web .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db16 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb16 a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:calle .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db17 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb17 a sh:PropertyShape ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:node :Concello ;
     sh:path ta:pertenece .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db18 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb18 a sh:PropertyShape ;
     sh:datatype xsd:integer ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:CP .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db19 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb19 a sh:PropertyShape ;
     sh:datatype xsd:decimal ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path ta:longitud .
 
-_:nd31ca3a8cd204ae890e78edcc44f2a4db22 a sh:PropertyShape ;
+_:n75cd92a1f32f4c54b10eadc3347241fcb22 a sh:PropertyShape ;
     sh:datatype xsd:decimal ;
     sh:maxCount 1 ;
     sh:minCount 1 ;

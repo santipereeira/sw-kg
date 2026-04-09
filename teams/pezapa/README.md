@@ -1,79 +1,250 @@
-# Tarea 5 - Validacion del Knowledge Graph
+# Proyecto LOT4KG - Pezapa
 
 ## Resumen
 
-En esta tarea se ha validado el Knowledge Graph generado en `kg/output.ttl` a partir del dataset de teatros y auditorios de Galicia. La validacion se ha planteado desde dos enfoques:
+Este directorio recoge el trabajo del grupo `pezapa` para las tareas 1 a 5 de la metodologia LOT4KG. El proyecto toma como dominio los teatros y auditorios de Galicia y construye un flujo completo desde la preparacion de datos hasta la validacion SHACL del Knowledge Graph.
 
-- uno basado en los datos materializados, generando shapes con SheXer
-- otro basado en el modelo del proyecto, a partir de la ontologia y del mapping RML
+## Equipo y dataset
 
-El objetivo no era solo ejecutar `pyshacl`, sino comprobar si el KG cumple las restricciones que se observan en los datos y las restricciones que deberia cumplir segun el modelo.
+### Equipo
 
-## Recursos utilizados
+- Pablo Perez Rodriguez - <https://github.com/Veleiroo>
+- Jaime Jose Zapico Lopez - <https://github.com/jaimezl03>
+- Oscar Padin Devesa - <https://github.com/oscarpd13>
 
-- KG materializado: `kg/output.ttl`
-- Ontologia: `ontology/ontology.ttl`
-- Mapping RML: `mappings/mapping.rml.ttl`
+### Dataset seleccionado
 
-Las clases principales del grafo son `ta:Espazo`, `ta:Enderezo`, `ta:DatoContacto`, `ta:Concello` y `ta:Provincia`.
+- Nombre: `Teatros e auditorios`
+- Fuente original: <https://abertos.xunta.gal/catalogo/cultura-ocio-deporte/-/dataset/0305/teatros-auditorios>
+- Dominio: espacios culturales de Galicia con informacion de ubicacion, contacto y aforamiento
 
-## Estructura de entrega
+## Estructura de la carpeta
 
-- `shapes/shapes_from_data.ttl`
-- `shapes/shapes_from_ontology_or_mappings.ttl`
-- `shapes/validation/generate_data_shapes.py`
-- `shapes/validation/validate_shapes.py`
-- `shapes/validation/validate_data_shapes.py`
-- `shapes/validation/validate_ontology_or_mappings_shapes.py`
-- `shapes/validation/report_data_shapes.ttl`
-- `shapes/validation/report_model_shapes.ttl`
+```text
+group_info.yml
+README.md
+data cleaning/
+  history.json
+  teatros-auditorios.csv
+ontology/
+  Modelo.png
+  ontology.ttl
+mappings/
+  mappings.yarrrm.yaml
+  mapping.rml.ttl
+  config.ini
+kg/
+  output.ttl
+shapes/
+  shapes_from_data.ttl
+  shapes_from_ontology_or_mappings.ttl
+  validation/
+    generate_data_shapes.py
+    validate_shapes.py
+    validate_data_shapes.py
+    validate_ontology_or_mappings_shapes.py
+    report_data_shapes.ttl
+    report_model_shapes.ttl
+```
 
-## Metodologia seguida
+## Tarea 1 - Registro del grupo
 
-### 1. Shapes a partir del RDF materializado
+La trazabilidad del grupo se deja en `group_info.yml`, donde se recogen:
 
-Se ha utilizado SheXer para inferir shapes SHACL directamente desde `kg/output.ttl`. El script `shapes/validation/generate_data_shapes.py` genera el fichero `shapes/shapes_from_data.ttl`.
+- los integrantes del equipo
+- el dataset elegido
+- la URL oficial del recurso
+- una descripcion breve del dominio de trabajo
 
-Decisiones relevantes:
+Con esto queda fijado desde el inicio el caso de uso del proyecto y la fuente de datos que se reutiliza en el resto de tareas.
 
-- se ha usado `all_classes_mode=True` para cubrir todas las clases con instancias en el KG
-- se ha configurado la extraccion de forma relativamente estricta para que afloren recursos fusionados y cardinalidades anomales
-- se ha corregido la salida de SheXer de `sh:dataType` a `sh:datatype` para asegurar compatibilidad con `pyshacl`
+## Tarea 2 - Data preparation con OpenRefine
 
-### 2. Shapes a partir de ontologia y mappings
+### Ficheros entregados
 
-Se ha construido un segundo conjunto de shapes en `shapes/shapes_from_ontology_or_mappings.ttl`, derivado de:
+- Dataset limpio: `data cleaning/teatros-auditorios.csv`
+- Historial reproducible de OpenRefine: `data cleaning/history.json`
+- Fuente original del dataset: URL del portal de datos abiertos indicada arriba
 
-- las clases y propiedades definidas en `ontology/ontology.ttl`
-- los datatypes y rangos del modelo
-- las cardinalidades que se desprenden del `mapping.rml.ttl`
+### Trabajo realizado
 
-No se ha usado una herramienta automatica tipo SCOOP. En su lugar, se han definido shapes manuales y razonadas, lo cual sigue cumpliendo el objetivo de validar el KG contra restricciones del modelo.
+El fichero `history.json` contiene `35` operaciones de OpenRefine. Las transformaciones principales fueron:
 
-Decision relevante:
+- separacion de la columna `ENDEREZO` para extraer `ENDEREZO` y `NUMERO`
+- separacion de `COORDENADAS` en `LATITUD` y `LONGUITUD`
+- normalizacion de valores como `Avenida` -> `Avda.`
+- limpieza de `s/n` y conversion de `NUMERO` a valor numerico cuando fue posible
+- conversion de `AFORAMENTO` a numero
+- reconciliacion con Wikidata de `CONCELLO`, `PROVINCIA` y varios valores de `ESPAZO`
 
-- `ta:numero` se ha dejado como propiedad opcional porque en el dataset hay muchos registros sin ese valor
+### Resultado del dataset limpio
 
-### 3. Validacion con pySHACL
+El CSV limpio contiene `46` filas. Ademas, la reconciliacion deja columnas con identificadores externos:
 
-La validacion se ha hecho con `pyshacl` mediante:
+- `URL_CONCELLO`: `46/46` filas con enlace
+- `URL_PROVINCIA`: `46/46` filas con enlace
+- `URL_ESPAZO`: `12/46` filas con enlace
 
-- `shapes/validation/validate_data_shapes.py`
-- `shapes/validation/validate_ontology_or_mappings_shapes.py`
+Este resultado deja el dataset listo para el mapping a RDF, con municipios y provincias ya enlazados de forma estable y una parte de los espacios reconciliados contra Wikidata.
 
-Ambos scripts reutilizan `shapes/validation/validate_shapes.py`, que:
+## Tarea 3 - Modelado de la ontologia
 
-- carga el KG
-- carga el fichero de shapes correspondiente
-- ejecuta la validacion
-- muestra por pantalla si el grafo conforma o no
-- guarda el informe de validacion en RDF
+### Artefactos entregados
 
-No se ha activado inferencia RDFS en la validacion final por defecto, para evitar que los tipos inferidos desde la ontologia distorsionen la lectura de los informes.
+- Diagrama del modelo: `ontology/Modelo.png`
+- Ontologia en Turtle: `ontology/ontology.ttl`
 
-## Comandos ejecutados
+### Alcance del modelo
 
-Los siguientes comandos se ejecutan desde la carpeta `teams/pezapa`:
+La ontologia representa espacios culturales y sus datos minimos de localizacion y contacto. El nucleo del modelo se basa en cinco clases:
+
+- `ta:Espazo`
+- `ta:Enderezo`
+- `ta:DatoContacto`
+- `ta:Concello`
+- `ta:Provincia`
+
+Las relaciones principales son:
+
+- `ta:estaen` entre `Espazo` y `Enderezo`
+- `ta:tiene` entre `Espazo` y `DatoContacto`
+- `ta:pertenece` entre `Enderezo` y `Concello`
+- `ta:ubicadoen` entre `Concello` y `Provincia`
+
+Los atributos literales mas relevantes son:
+
+- `ta:label`
+- `ta:aforamiento`
+- `ta:calle`
+- `ta:numero`
+- `ta:CP`
+- `ta:latitud`
+- `ta:longitud`
+- `ta:telefono`
+- `ta:email`
+- `ta:web`
+- `ta:nombre`
+
+### Herramienta y decision de modelado
+
+La ontologia se modelo con Chowlk y se exporto a Turtle. En `ontology/ontology.ttl` se conserva la metadata generada, incluyendo `mod:createdWith <https://chowlk.linkeddata.es/>`.
+
+El espacio de nombres funcional usado en clases y propiedades es:
+
+```text
+http://example.org/def/teatrosyauditorios#
+```
+
+### Nota sobre publicacion
+
+En esta carpeta se conservan el diagrama y el fichero TTL de la ontologia. No se incluye localmente una carpeta de documentacion automatica de OnToology ni una URL publica de GitHub Pages.
+
+## Tarea 4 - Construccion del Knowledge Graph
+
+### Ficheros entregados
+
+- Mapping en YARRRML: `mappings/mappings.yarrrm.yaml`
+- Mapping traducido a RML: `mappings/mapping.rml.ttl`
+- Configuracion de Morph-KGC: `mappings/config.ini`
+- Grafo materializado: `kg/output.ttl`
+
+### Diseno del mapping
+
+El mapping genera cinco tipos de recursos:
+
+- `ex:espazo/{ESPAZO}`
+- `ex:enderezo/{ESPAZO}`
+- `ex:contacto/{ESPAZO}`
+- `ex:concello/{CONCELLO}`
+- `ex:provincia/{PROVINCIA}`
+
+La transformacion parte del CSV limpio y crea cinco Triples Maps, uno por entidad principal:
+
+- `ESPAZO`
+- `ENDEREZO`
+- `DATOCONTACTO`
+- `CONCELLO`
+- `PROVINCIA`
+
+Las decisiones de modelado mas importantes fueron:
+
+- separar la informacion del espacio, su direccion y su contacto en recursos distintos
+- tipar `AFORAMENTO` y `CÓDIGO POSTAL` como enteros y `LATITUD` y `LONGUITUD` como decimales
+- enlazar ayuntamientos y provincias mediante URIs propias construidas desde el CSV
+
+### Comandos de trabajo
+
+Un flujo compatible con los ficheros entregados es:
+
+```bash
+yatter -i mappings/mappings.yarrrm.yaml -o mappings/mapping.rml.ttl
+python3 -m morph_kgc mappings/config.ini
+```
+
+### Resultado del KG
+
+El Knowledge Graph conservado en `kg/output.ttl` contiene `840` triples y materializa:
+
+- `44` recursos `ta:Espazo`
+- `44` recursos `ta:Enderezo`
+- `44` recursos `ta:DatoContacto`
+- `40` recursos `ta:Concello`
+- `4` recursos `ta:Provincia`
+
+El CSV limpio tiene `46` filas, pero el KG solo contiene `44` espacios porque hay nombres duplicados que generan colisiones de URI al usar `ESPAZO` como identificador:
+
+- `Auditorio Rocio Jurado`
+- `Teatro Principal`
+
+En ambos casos, filas de municipios distintos acaban fusionadas en un mismo recurso RDF.
+
+### Observacion sobre la salida
+
+El fichero `mappings/config.ini` apunta a una salida en N-Triples, mientras que el grafo que se conserva en la carpeta esta serializado en Turtle como `kg/output.ttl`.
+
+## Tarea 5 - Validacion del Knowledge Graph
+
+### Artefactos entregados
+
+- Shapes desde datos: `shapes/shapes_from_data.ttl`
+- Shapes desde ontologia y mappings: `shapes/shapes_from_ontology_or_mappings.ttl`
+- Script generico de validacion: `shapes/validation/validate_shapes.py`
+- Scripts especificos:
+  - `shapes/validation/validate_data_shapes.py`
+  - `shapes/validation/validate_ontology_or_mappings_shapes.py`
+- Informes RDF:
+  - `shapes/validation/report_data_shapes.ttl`
+  - `shapes/validation/report_model_shapes.ttl`
+
+### Enfoque seguido
+
+La validacion se planteo comparando dos perspectivas:
+
+1. validacion basada en datos, con shapes inferidas desde el RDF materializado mediante SheXer
+2. validacion basada en modelo, con shapes definidas a partir de la ontologia y del mapping RML
+
+### Shapes desde datos
+
+Para inferir shapes desde el KG se uso `SheXer`. El script `shapes/validation/generate_data_shapes.py`:
+
+- toma como entrada `kg/output.ttl`
+- genera `shapes/shapes_from_data.ttl`
+- usa una configuracion relativamente estricta
+- corrige la serializacion `sh:dataType` a `sh:datatype` para que sea compatible con `pyshacl`
+
+### Shapes desde modelo y mappings
+
+El fichero `shapes/shapes_from_ontology_or_mappings.ttl` se definio manualmente a partir de:
+
+- las clases y propiedades de `ontology/ontology.ttl`
+- los datatypes esperados por el modelo
+- las cardinalidades sugeridas por `mapping.rml.ttl`
+
+Como decision concreta, `ta:numero` se dejo opcional porque el dataset contiene muchos registros sin ese valor.
+
+### Ejecucion de la validacion
+
+Los scripts se ejecutan desde `teams/pezapa` con:
 
 ```bash
 python3 -m pip install --user shexer pyshacl
@@ -96,52 +267,64 @@ python3 shapes/validation/validate_shapes.py \
   --report shapes/validation/report_model_shapes.ttl
 ```
 
-## Resultados de validacion
+### Resultados
 
-### Validacion con shapes inferidas desde datos
-
-Resultado:
+#### Validacion con shapes inferidas desde datos
 
 - `Conforms: False`
-- resumen textual de `pyshacl`: `22` violaciones
+- `22` resultados en el resumen textual de pySHACL
 - informe RDF: `shapes/validation/report_data_shapes.ttl`
 
 Interpretacion:
 
-- casi todas las violaciones son de `sh:maxCount`
-- los recursos mas problematicos son `Auditorio Rocio Jurado` y `Teatro Principal`
-- aparecen multiples valores en propiedades que deberian ser unicas: `aforamiento`, `calle`, `CP`, `latitud`, `longitud`, `telefono`, `email`, `web` y `pertenece`
+- predominan violaciones de `sh:maxCount`
+- los recursos mas conflictivos son `Auditorio Rocio Jurado` y `Teatro Principal`
+- aparecen multiples valores donde el modelo esperado es unico: `aforamiento`, `calle`, `CP`, `latitud`, `longitud`, `telefono`, `email`, `web` y `pertenece`
 
-### Validacion con shapes del modelo
-
-Resultado:
+#### Validacion con shapes del modelo
 
 - `Conforms: False`
-- resumen textual de `pyshacl`: `111` violaciones
+- `111` resultados en el resumen textual de pySHACL
 - informe RDF: `shapes/validation/report_model_shapes.ttl`
 
 Interpretacion:
 
-- se mantienen las violaciones de cardinalidad asociadas a recursos fusionados
-- ademas aparecen muchas violaciones de datatype en `ta:telefono`
-- la ontologia define `ta:telefono` con rango `xsd:integer`, pero el KG contiene literales como `"981 716 001"`
+- se mantienen las colisiones de URI detectadas con las shapes inferidas desde datos
+- se anaden muchas violaciones de datatype en `ta:telefono`
+- la ontologia define `ta:telefono` con rango `xsd:integer`, pero el KG contiene literales como `"981 716 001"` o `"986 304 108"`
 
-Nota:
+## Problemas detectados y decisiones de diseno
 
-- en los informes RDF aparecen mas nodos `sh:ValidationResult` que en el resumen textual porque `pyshacl` serializa tambien detalles anidados de las violaciones por `sh:node`
+### 1. Colisiones de URI en el mapping
 
-## Problemas detectados
+El uso de `{ESPAZO}` como identificador para `Espazo`, `Enderezo` y `DatoContacto` provoca fusiones de recursos cuando dos filas distintas comparten nombre. Esto ocurre al menos con:
 
-### 1. Colision de URIs en el mapping
+- `Auditorio Rocio Jurado`
+- `Teatro Principal`
 
-La principal fuente de errores parece estar en el mapping. Varias URIs se construyen solo con `{ESPAZO}`, por ejemplo para:
+Una mejora natural seria construir las URIs con mas contexto, por ejemplo combinando nombre y municipio o reutilizando identificadores externos cuando existan.
 
-- `Espazo`
-- `Enderezo`
-- `DatoContacto`
+### 2. Desajuste entre ontologia y datos
 
-Esto provoca que dos filas distintas con el mismo nombre de espacio acaben materializadas como un unico recurso RDF. Como consecuencia, ese recurso acumula varios valores en propiedades que conceptualmente deberian ser unicas.
+La ontologia modela `ta:telefono` como `xsd:integer`, mientras que el CSV limpio conserva telefonos con espacios y el mapping los materializa como cadenas. La validacion basada en modelo detecta este problema de forma inmediata.
 
-### 2. Inconsistencia entre modelo y datos
+### 3. Cobertura desigual de reconciliacion
 
-En la ontologia, `ta:telefono` esta modelado como `xsd:integer`, pero en el KG se genera como string con espacios. La validacion basada en modelo detecta esta inconsistencia de forma inmediata.
+Municipios y provincias quedaron completamente enlazados, pero la reconciliacion de espacios fue parcial (`12/46`). Esto no impide construir el KG, pero limita la interlinking externa del recurso principal.
+
+## Conclusiones
+
+El proyecto cubre el flujo completo de LOT4KG para este caso de uso:
+
+- seleccion del dominio y registro del grupo
+- limpieza y enriquecimiento del dataset con OpenRefine
+- modelado de una ontologia propia
+- definicion de mappings YARRRML/RML y materializacion del KG
+- validacion SHACL desde datos y desde modelo
+
+La validacion final fue especialmente util para detectar dos problemas reales del proyecto:
+
+- la construccion de URIs con colisiones por nombres no unicos
+- la incoherencia entre el datatype definido para `ta:telefono` y los valores que llegan desde los datos
+
+Estos resultados muestran la diferencia entre describir como son los datos y prescribir como deberian ser segun el modelo, que era precisamente uno de los objetivos de la tarea 5.
