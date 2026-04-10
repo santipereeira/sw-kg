@@ -92,13 +92,14 @@ mappings:
   PARTIDO:
     sources:
       - ['data/partidos.csv~csv']
-    s: ex:Partido/$(numeroPartido)
+    s: ex:Partido/$(numeroPartido)-$(codigoCompeticion)-$(fecha)-$(hora)
     po:
       - [a, ta:Partido]
       - [ta:numeroPartido, $(numeroPartido), xsd:integer]
       - [ta:jornada, $(jornada), xsd:integer]
-      - [ta:fecha, $(fecha)]
-      - [ta:hora, $(hora)]
+      - [ta:fecha, $(fecha), xsd:date]
+      - [ta:hora, $(hora), xsd:time]
+      - [ta:programado, $(estado)]
       - [ta:resultadoLocal, $(resultadoLocal), xsd:integer]
       - [ta:resultadoVisitante, $(resultadoVisitante), xsd:integer]
       - [ta:estado, $(estado)]

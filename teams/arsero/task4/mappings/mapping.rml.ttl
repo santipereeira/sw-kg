@@ -399,7 +399,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "http://example.org/resource/Partido/{numeroPartido}";
+		rr:template "http://example.org/resource/Partido/{numeroPartido}-{codigoCompeticion}-{fecha}-{hora}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -441,6 +441,7 @@
 		rr:objectMap [
 			a rr:ObjectMap;
 			rml:reference "fecha";
+			rr:datatype xsd:date
 		];
 	];
 	rr:predicateObjectMap [
@@ -451,6 +452,7 @@
 		rr:objectMap [
 			a rr:ObjectMap;
 			rml:reference "hora";
+			rr:datatype xsd:time
 		];
 	];
 	rr:predicateObjectMap [
