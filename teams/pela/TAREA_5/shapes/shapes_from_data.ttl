@@ -1,0 +1,207 @@
+@prefix : <http://weso.es/shapes/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Competicion a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Deporte ;
+            sh:path <https://example.org/partidos/tipoDe> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/sistemaCompeticion> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Competicion> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Grupo ;
+            sh:path <https://example.org/partidos/tieneGrupo> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/temporada> ] ;
+    sh:targetClass <https://example.org/partidos/Competicion> .
+
+:Campo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:float ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/coorY> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Distrito ;
+            sh:path <https://example.org/partidos/localizadoEn> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:float ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/coorX> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/codigoCampo> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Campo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/nombreCampo> ] ;
+    sh:targetClass <https://example.org/partidos/Campo> .
+
+:Deporte a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Deporte> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/nombreDeporte> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <https://example.org/partidos/sameAsDeporte> ] ;
+    sh:targetClass <https://example.org/partidos/Deporte> .
+
+:Distrito a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <https://example.org/partidos/sameAsDistrito> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/nombreDistrito> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Distrito> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <https://example.org/partidos/Distrito> .
+
+:Grupo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/sexo> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Jornada ;
+            sh:path <https://example.org/partidos/tieneJornada> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Grupo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/nombreGrupo> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/fase> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/categoria> ] ;
+    sh:targetClass <https://example.org/partidos/Grupo> .
+
+:Jornada a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/codigoJornada> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:dateTime ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/fecha> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Jornada> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Partido ;
+            sh:path <https://example.org/partidos/tienePartido> ] ;
+    sh:targetClass <https://example.org/partidos/Jornada> .
+
+:Partido a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/resultado1> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Partido> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/resultado2> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Campo ;
+            sh:path <https://example.org/partidos/ocurreEn> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/estado> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Equipo ;
+            sh:path <https://example.org/partidos/tieneEquipoLocal> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:boolean ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/programado> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:dateTime ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/hora> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Equipo ;
+            sh:path <https://example.org/partidos/tieneEquipoVisitante> ] ;
+    sh:targetClass <https://example.org/partidos/Partido> .
+
+:Equipo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/nombreEquipo> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <https://example.org/partidos/codigoEquipo> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <https://example.org/partidos/Equipo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <https://example.org/partidos/Equipo> .
+

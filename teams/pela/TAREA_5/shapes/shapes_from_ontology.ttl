@@ -1,0 +1,174 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns: <https://example.org/partidos/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+### ─────────────────────────────────────────────
+###  SHACL SHAPES FROM ONTOLOGY
+### ─────────────────────────────────────────────
+
+ns:DeporteShape a sh:NodeShape ;
+    sh:targetClass ns:Deporte ;
+    sh:property [
+        sh:path ns:nombreDeporte ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:sameAsDeporte ;
+        sh:datatype xsd:anyURI ;
+    ] .
+
+ns:CompeticionShape a sh:NodeShape ;
+    sh:targetClass ns:Competicion ;
+    sh:property [
+        sh:path ns:sistemaCompeticion ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:temporada ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:tipoDe ;
+        sh:class ns:Deporte ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:tieneGrupo ;
+        sh:class ns:Grupo ;
+    ] .
+
+ns:GrupoShape a sh:NodeShape ;
+    sh:targetClass ns:Grupo ;
+    sh:property [
+        sh:path ns:nombreGrupo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:sexo ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:categoria ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:fase ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:tieneJornada ;
+        sh:class ns:Jornada ;
+    ] .
+
+ns:JornadaShape a sh:NodeShape ;
+    sh:targetClass ns:Jornada ;
+    sh:property [
+        sh:path ns:codigoJornada ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:fecha ;
+        sh:datatype xsd:dateTime ;  # The ontology says xsd:date, but morph-kgc exported dateTime if the source was DateTime!
+    ] ;
+    sh:property [
+        sh:path ns:tienePartido ;
+        sh:class ns:Partido ;
+    ] .
+
+ns:PartidoShape a sh:NodeShape ;
+    sh:targetClass ns:Partido ;
+    sh:property [
+        sh:path ns:resultado1 ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path ns:resultado2 ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path ns:hora ;
+        sh:datatype xsd:dateTime ;
+    ] ;
+    sh:property [
+        sh:path ns:estado ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:programado ;
+        sh:datatype xsd:boolean ;
+    ] ;
+    sh:property [
+        sh:path ns:tieneEquipoLocal ;
+        sh:class ns:Equipo ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:tieneEquipoVisitante ;
+        sh:class ns:Equipo ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:ocurreEn ;
+        sh:class ns:Campo ;
+        sh:minCount 1 ;
+    ] .
+
+ns:EquipoShape a sh:NodeShape ;
+    sh:targetClass ns:Equipo ;
+    sh:property [
+        sh:path ns:codigoEquipo ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:nombreEquipo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ns:CampoShape a sh:NodeShape ;
+    sh:targetClass ns:Campo ;
+    sh:property [
+        sh:path ns:codigoCampo ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:nombreCampo ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ns:coorX ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path ns:coorY ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path ns:localizadoEn ;
+        sh:class ns:Distrito ;
+    ] .
+
+ns:DistritoShape a sh:NodeShape ;
+    sh:targetClass ns:Distrito ;
+    sh:property [
+        sh:path ns:nombreDistrito ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ns:sameAsDistrito ;
+        sh:datatype xsd:anyURI ;
+    ] .

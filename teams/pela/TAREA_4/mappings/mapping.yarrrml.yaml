@@ -1,0 +1,101 @@
+prefixes:
+  ns: "https://example.org/partidos/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  wd: "http://www.wikidata.org/entity/"
+
+mappings:
+  deporte:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:deporte/$(Nombre_deporte)
+    po:
+      - [a, ns:Deporte]
+      - [ns:nombreDeporte, $(Nombre_deporte), xsd:string]
+      - [ns:sameAsDeporte, wd:$(Deporte_ID)~iri]
+
+  competicion:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:competicion/$(SISTEMA_COMPETICION)_$(Nombre_temporada)_$(Nombre_deporte)
+    po:
+      - [a, ns:Competicion]
+      - [ns:sistemaCompeticion, $(SISTEMA_COMPETICION), xsd:string]
+      - [ns:temporada, $(Nombre_temporada), xsd:string]
+      - [ns:tipoDe, ns:deporte/$(Nombre_deporte)~iri]
+      - [ns:tieneGrupo, ns:grupo/$(Codigo_grupo)~iri]
+
+  grupo:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:grupo/$(Codigo_grupo)
+    po:
+      - [a, ns:Grupo]
+      - [ns:nombreGrupo, $(Nombre_grupo), xsd:string]
+      - [ns:sexo, $(Sexo_grupo), xsd:string]
+      - [ns:categoria, $(Nombre_categoria), xsd:string]
+      - [ns:fase, $(Nombre_fase), xsd:string]
+      - [ns:tieneJornada, ns:jornada/$(Codigo_grupo)_$(Jornada)~iri]
+
+  jornada:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:jornada/$(Codigo_grupo)_$(Jornada)
+    po:
+      - [a, ns:Jornada]
+      - [ns:codigoJornada, $(Jornada), xsd:integer]
+      - [ns:fecha, $(Fecha_Hora), xsd:dateTime]
+      - [ns:tienePartido, ns:partido/$(Codigo_grupo)_$(Jornada)_$(Partido)~iri]
+
+  partido:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:partido/$(Codigo_grupo)_$(Jornada)_$(Partido)
+    po:
+      - [a, ns:Partido]
+      - [ns:resultado1, $(Resultado1), xsd:integer]
+      - [ns:resultado2, $(Resultado2), xsd:integer]
+      - [ns:hora, $(Fecha_Hora), xsd:dateTime]
+      - [ns:estado, $(Estado), xsd:string]
+      - [ns:programado, $(Programado), xsd:boolean]
+      - [ns:tieneEquipoLocal, ns:equipo/$(Codigo_equipo1)~iri]
+      - [ns:tieneEquipoVisitante, ns:equipo/$(Codigo_equipo2)~iri]
+      - [ns:ocurreEn, ns:campo/$(Codigo_campo)~iri]
+
+  equipo_local:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:equipo/$(Codigo_equipo1)
+    po:
+      - [a, ns:Equipo]
+      - [ns:codigoEquipo, $(Codigo_equipo1), xsd:integer]
+      - [ns:nombreEquipo, $(Equipo_local), xsd:string]
+
+  equipo_visitante:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:equipo/$(Codigo_equipo2)
+    po:
+      - [a, ns:Equipo]
+      - [ns:codigoEquipo, $(Codigo_equipo2), xsd:integer]
+      - [ns:nombreEquipo, $(Equipo_visitante), xsd:string]
+
+  campo:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:campo/$(Codigo_campo)
+    po:
+      - [a, ns:Campo]
+      - [ns:codigoCampo, $(Codigo_campo), xsd:integer]
+      - [ns:nombreCampo, $(Campo), xsd:string]
+      - [ns:coorX, $(COORD_X_CAMPO), xsd:float]
+      - [ns:coorY, $(COORD_Y_CAMPO), xsd:float]
+      - [ns:localizadoEn, ns:distrito/$(Distrito)~iri]
+
+  distrito:
+    sources:
+      - ['data/ontologia-deportes.csv~csv']
+    s: ns:distrito/$(Distrito)
+    po:
+      - [a, ns:Distrito]
+      - [ns:nombreDistrito, $(Distrito), xsd:string]
+      - [ns:sameAsDistrito, wd:$(Distrito_ID)~iri]
