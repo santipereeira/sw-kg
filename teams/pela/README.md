@@ -1,4 +1,0 @@
-- una breve descripción del dataset usado,
-- una explicación breve de cómo habéis modelado la transformación,
-- los comandos utilizados para ejecutar Yatter y Morph-KGC,
-- observaciones o decisiones de diseño relevantes.
