@@ -1,4 +1,5 @@
 @prefix ns1: <http://example.org/def/teatrosyauditorios#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> a ns1:Espazo ;
@@ -269,139 +270,173 @@
 
 <http://example.org/resource/concello/A%20Estrada> a ns1:Concello ;
     ns1:nombre "A Estrada" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1621191> .
 
 <http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> a ns1:Concello ;
     ns1:nombre "A Rúa de Valdeorras" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607619> .
 
 <http://example.org/resource/concello/Arteixo> a ns1:Concello ;
     ns1:nombre "Arteixo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q996161> .
 
 <http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> a ns1:Concello ;
     ns1:nombre "As Pontes de García Rodríguez" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442761> .
 
 <http://example.org/resource/concello/Betanzos> a ns1:Concello ;
     ns1:nombre "Betanzos" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q671341> .
 
 <http://example.org/resource/concello/Boiro> a ns1:Concello ;
     ns1:nombre "Boiro" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q735282> .
 
 <http://example.org/resource/concello/Burela> a ns1:Concello ;
     ns1:nombre "Burela" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1619456> .
 
 <http://example.org/resource/concello/Cambados> a ns1:Concello ;
     ns1:nombre "Cambados" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q695477> .
 
 <http://example.org/resource/concello/Cangas> a ns1:Concello ;
     ns1:nombre "Cangas" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628188> .
 
 <http://example.org/resource/concello/Carballo> a ns1:Concello ;
     ns1:nombre "Carballo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q166137> .
 
 <http://example.org/resource/concello/Cedeira> a ns1:Concello ;
     ns1:nombre "Cedeira" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113395> .
 
 <http://example.org/resource/concello/Cee> a ns1:Concello ;
     ns1:nombre "Cee" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q988707> .
 
 <http://example.org/resource/concello/Ferrol> a ns1:Concello ;
     ns1:nombre "Ferrol" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q485329> .
 
 <http://example.org/resource/concello/Foz> a ns1:Concello ;
     ns1:nombre "Foz" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q917878> .
 
 <http://example.org/resource/concello/Gondomar> a ns1:Concello ;
     ns1:nombre "Gondomar" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607596> .
 
 <http://example.org/resource/concello/Lal%C3%ADn> a ns1:Concello ;
     ns1:nombre "Lalín" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1374736> .
 
 <http://example.org/resource/concello/Lugo> a ns1:Concello ;
     ns1:nombre "Lugo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11125> .
 
 <http://example.org/resource/concello/Monforte%20de%20Lemos> a ns1:Concello ;
     ns1:nombre "Monforte de Lemos" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818341> .
 
 <http://example.org/resource/concello/Muros> a ns1:Concello ;
     ns1:nombre "Muros" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q578957> .
 
 <http://example.org/resource/concello/Noia> a ns1:Concello ;
     ns1:nombre "Noia" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818601> .
 
 <http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> a ns1:Concello ;
     ns1:nombre "O Barco de Valdeorras" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607428> .
 
 <http://example.org/resource/concello/O%20Carballi%C3%B1o> a ns1:Concello ;
     ns1:nombre "O Carballiño" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607558> .
 
 <http://example.org/resource/concello/Oleiros> a ns1:Concello ;
     ns1:nombre "Oleiros" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q688611> .
 
 <http://example.org/resource/concello/Ortigueira> a ns1:Concello ;
     ns1:nombre "Ortigueira" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1375842> .
 
 <http://example.org/resource/concello/Ponteareas> a ns1:Concello ;
     ns1:nombre "Ponteareas" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q617119> .
 
 <http://example.org/resource/concello/Redondela> a ns1:Concello ;
     ns1:nombre "Redondela" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q833032> .
 
 <http://example.org/resource/concello/Ribadeo> a ns1:Concello ;
     ns1:nombre "Ribadeo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824076> .
 
 <http://example.org/resource/concello/Sada> a ns1:Concello ;
     ns1:nombre "Sada" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616081> .
 
 <http://example.org/resource/concello/Tomi%C3%B1o> a ns1:Concello ;
     ns1:nombre "Tomiño" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628263> .
 
 <http://example.org/resource/concello/Tui> a ns1:Concello ;
     ns1:nombre "Tui" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824122> .
 
 <http://example.org/resource/concello/Vigo> a ns1:Concello ;
     ns1:nombre "Vigo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8745> .
 
 <http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> a ns1:Concello ;
     ns1:nombre "Vilagarcía de Arousa" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442637> .
 
 <http://example.org/resource/concello/Vimianzo> a ns1:Concello ;
     ns1:nombre "Vimianzo" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616162> .
 
 <http://example.org/resource/concello/Viveiro> a ns1:Concello ;
     ns1:nombre "Viveiro" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q641221> .
 
 <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> a ns1:DatoContacto ;
     ns1:email "nieves.lema@vimianzo.gal" ;
@@ -985,37 +1020,47 @@
 
 <http://example.org/resource/concello/A%20Coru%C3%B1a> a ns1:Concello ;
     ns1:nombre "A Coruña" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8757> .
 
 <http://example.org/resource/concello/Ames> a ns1:Concello ;
     ns1:nombre "Ames" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1353997> .
 
 <http://example.org/resource/concello/Nar%C3%B3n> a ns1:Concello ;
     ns1:nombre "Narón" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368896> .
 
 <http://example.org/resource/concello/Ourense> a ns1:Concello ;
     ns1:nombre "Ourense" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q99151> .
 
 <http://example.org/resource/concello/Pontevedra> a ns1:Concello ;
     ns1:nombre "Pontevedra" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12411> .
 
 <http://example.org/resource/concello/Santiago%20de%20Compostela> a ns1:Concello ;
     ns1:nombre "Santiago de Compostela" ;
-    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q14314> .
 
 <http://example.org/resource/provincia/Ourense> a ns1:Provincia ;
-    ns1:nombre "Ourense" .
+    ns1:nombre "Ourense" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95038> .
 
 <http://example.org/resource/provincia/Lugo%20Province> a ns1:Provincia ;
-    ns1:nombre "Lugo Province" .
+    ns1:nombre "Lugo Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95027> .
 
 <http://example.org/resource/provincia/Pontevedra%20Province> a ns1:Provincia ;
-    ns1:nombre "Pontevedra Province" .
+    ns1:nombre "Pontevedra Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95086> .
 
 <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> a ns1:Provincia ;
-    ns1:nombre "A Coruña Province" .
+    ns1:nombre "A Coruña Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q82119> .
 
