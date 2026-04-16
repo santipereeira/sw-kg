@@ -1,4 +1,0 @@
-__pycache__/
-*.pyc
-kg/enrich_wikidata_links.py
-kg/rebuild_kg.py

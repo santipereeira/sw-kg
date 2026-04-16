@@ -172,13 +172,6 @@ Las decisiones de modelado mas importantes fueron:
 - tipar `AFORAMENTO` y `CÓDIGO POSTAL` como enteros y `LATITUD` y `LONGUITUD` como decimales
 - enlazar ayuntamientos y provincias mediante URIs propias construidas desde el CSV
 
-Despues de la materializacion base, el KG se enriquece con enlaces normalizados a Wikidata a partir de las columnas reconciliadas del CSV limpio:
-
-- `owl:sameAs` para `Concello` y `Provincia`
-- `rdfs:seeAlso` para `Espazo` cuando el enlace externo no es ambiguo
-
-Este paso transforma las URLs `https://www.wikidata.org/wiki/Q...` del CSV en IRIs de entidad `http://www.wikidata.org/entity/Q...`, que son las que se pueden explotar correctamente en consultas federadas.
-
 ### Comandos de trabajo
 
 Un flujo compatible con los ficheros entregados es:
@@ -190,18 +183,13 @@ python3 -m morph_kgc mappings/config.ini
 
 ### Resultado del KG
 
-El Knowledge Graph conservado en `kg/output.ttl` contiene `893` triples y materializa:
+El Knowledge Graph conservado en `kg/output.ttl` contiene `840` triples y materializa:
 
 - `44` recursos `ta:Espazo`
 - `44` recursos `ta:Enderezo`
 - `44` recursos `ta:DatoContacto`
 - `40` recursos `ta:Concello`
 - `4` recursos `ta:Provincia`
-
-Ademas, el KG enriquecido incluye:
-
-- `44` enlaces `owl:sameAs` hacia entidades de Wikidata
-- `9` enlaces `rdfs:seeAlso` hacia entidades de Wikidata
 
 El CSV limpio tiene `46` filas, pero el KG solo contiene `44` espacios porque hay nombres duplicados que generan colisiones de URI al usar `ESPAZO` como identificador:
 
@@ -212,7 +200,7 @@ En ambos casos, filas de municipios distintos acaban fusionadas en un mismo recu
 
 ### Observacion sobre la salida
 
-El fichero `mappings/config.ini` queda alineado con la entrega final y materializa directamente en `kg/output.ttl` con formato Turtle. El KG conservado en la carpeta ya incluye enlaces a Wikidata listos para su explotacion en la tarea 6.
+El fichero `mappings/config.ini` apunta a una salida en N-Triples, mientras que el grafo que se conserva en la carpeta esta serializado en Turtle como `kg/output.ttl`.
 
 ## Tarea 5 - Validacion del Knowledge Graph
 
@@ -292,7 +280,6 @@ Interpretacion:
 - predominan violaciones de `sh:maxCount`
 - los recursos mas conflictivos son `Auditorio Rocio Jurado` y `Teatro Principal`
 - aparecen multiples valores donde el modelo esperado es unico: `aforamiento`, `calle`, `CP`, `latitud`, `longitud`, `telefono`, `email`, `web` y `pertenece`
-- los enlaces a Wikidata anadidos en `Concello`, `Provincia` y parte de `Espazo` no introducen errores nuevos en esta validacion, porque el conflicto principal sigue estando en la fusion de recursos por URI
 
 #### Validacion con shapes del modelo
 
@@ -305,7 +292,6 @@ Interpretacion:
 - se mantienen las colisiones de URI detectadas con las shapes inferidas desde datos
 - se anaden muchas violaciones de datatype en `ta:telefono`
 - la ontologia define `ta:telefono` con rango `xsd:integer`, pero el KG contiene literales como `"981 716 001"` o `"986 304 108"`
-- los enlaces externos anadidos para preparar la explotacion con Wikidata no cambian el numero de violaciones, porque las shapes del modelo no cierran el grafo sobre propiedades adicionales
 
 ## Problemas detectados y decisiones de diseno
 
@@ -326,10 +312,6 @@ La ontologia modela `ta:telefono` como `xsd:integer`, mientras que el CSV limpio
 
 Municipios y provincias quedaron completamente enlazados, pero la reconciliacion de espacios fue parcial (`12/46`). Esto no impide construir el KG, pero limita la interlinking externa del recurso principal.
 
-### 4. Integracion de enlaces externos en el flujo
-
-El CSV limpio ya contenia URLs a Wikidata, pero el mapping base no las materializaba en el KG. Para dejar el grafo preparado para explotacion federada, se incorporo un paso reproducible de enriquecimiento posterior a la materializacion.
-
 ## Conclusiones
 
 El proyecto cubre el flujo completo de LOT4KG para este caso de uso:
@@ -338,7 +320,6 @@ El proyecto cubre el flujo completo de LOT4KG para este caso de uso:
 - limpieza y enriquecimiento del dataset con OpenRefine
 - modelado de una ontologia propia
 - definicion de mappings YARRRML/RML y materializacion del KG
-- enriquecimiento reproducible del KG con enlaces a Wikidata
 - validacion SHACL desde datos y desde modelo
 
 La validacion final fue especialmente util para detectar dos problemas reales del proyecto:
@@ -347,5 +328,3 @@ La validacion final fue especialmente util para detectar dos problemas reales de
 - la incoherencia entre el datatype definido para `ta:telefono` y los valores que llegan desde los datos
 
 Estos resultados muestran la diferencia entre describir como son los datos y prescribir como deberian ser segun el modelo, que era precisamente uno de los objetivos de la tarea 5.
-
-Con el estado actual, el proyecto queda ademas preparado para la tarea 6, ya que el KG local contiene enlaces explotables a Wikidata en un formato util para consultas SPARQL federadas.
