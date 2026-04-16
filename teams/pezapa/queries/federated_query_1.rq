@@ -1,0 +1,19 @@
+# Consulta a Wikidata para enriquecer municipios enlazados desde el KG local.
+# Recupera poblacion, coordenadas y sitio web oficial a partir de los IRIs pasados en VALUES.
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?item ?itemLabel ?population ?coord ?officialWebsite
+WHERE {
+  VALUES ?item { __VALUES__ }
+
+  OPTIONAL { ?item wdt:P1082 ?population }
+  OPTIONAL { ?item wdt:P625 ?coord }
+  OPTIONAL { ?item wdt:P856 ?officialWebsite }
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "es,en" .
+  }
+}
+ORDER BY ?itemLabel

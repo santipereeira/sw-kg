@@ -1,0 +1,5 @@
+province,provinceName,wd,numSpaces,population,area,wikidataLabel,capitalLabel,spacesPerMillion
+http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province,A Coruña Province,http://www.wikidata.org/entity/Q82119,22,1128320.0,7950.0,provincia de La Coruña,La Coruña,19.498014747589334
+http://example.org/resource/provincia/Pontevedra%20Province,Pontevedra Province,http://www.wikidata.org/entity/Q95086,13,945599.0,4495.0,provincia de Pontevedra,Ciudad de Pontevedra,13.747899479589128
+http://example.org/resource/provincia/Lugo%20Province,Lugo Province,http://www.wikidata.org/entity/Q95027,6,324842.0,9856.0,provincia de Lugo,Lugo,18.47051797489241
+http://example.org/resource/provincia/Ourense,Ourense,http://www.wikidata.org/entity/Q95038,5,304592.0,7273.2,provincia de Orense,Orense,16.415401586384412

@@ -1,0 +1,18 @@
+# Genera un ranking local de los espacios con mayor aforo.
+# Sirve para identificar los equipamientos mas grandes sin salir del KG propio.
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+
+SELECT ?space ?spaceName ?municipalityName ?provinceName ?capacity
+WHERE {
+  ?space a ta:Espazo ;
+         ta:label ?spaceName ;
+         ta:aforamiento ?capacity ;
+         ta:estaen/ta:pertenece ?municipality .
+
+  ?municipality ta:nombre ?municipalityName ;
+                ta:ubicadoen ?province .
+
+  ?province ta:nombre ?provinceName .
+}
+ORDER BY DESC(?capacity) ?spaceName
+LIMIT 10
