@@ -6,28 +6,19 @@
 https://example.org/partidos/
 ```
 
-Prefijo recomendado: `ns:`
+Prefijo: `ns:`
 
-La ontología está disponible en: [`ontology/ontology.ttl`](ontology/ontology.ttl)
-
----
+La ontología está en: [`ontology/ontology.ttl`](ontology/ontology.ttl)
 
 ## Alcance
 
-La ontología cubre el dominio de las **competiciones deportivas municipales de deportes colectivos** del Ayuntamiento de Madrid, específicamente la temporada 2014–2015.
+La ontología cubre el dominio de las **competiciones deportivas municipales de deportes** del Ayuntamiento de Madrid, específicamente la temporada 2014–2015.
 
 **Incluye:**
-- La jerarquía organizativa: Deporte → Competición → Grupo → Jornada → Partido
-- Las entidades participantes: Equipo (local y visitante)
-- La infraestructura: Campo deportivo y su Distrito
-
-**No incluye:**
-- Estadísticas individuales de jugadores
-- Historial de participaciones entre temporadas
-- Resultados de partidos de otras temporadas
-- Información sobre árbitros o técnicos
-
----
+- Estructura organizativa (Competiciones, Grupos, Jornadas)
+- Eventos deportivos (Partidos, resultados, estados).
+- Entidades participantes (Equipos, Deportes).
+- Infraestructura y localización (Campos deportivos, Distritos municipales).
 
 ## Preguntas de competencia
 
@@ -79,19 +70,11 @@ El diagrama fue generado con **Chowlk** y exportado como imagen:
 | `ns:ocurreEn` | Partido → Campo |
 | `ns:localizadoEn` | Campo → Distrito |
 
----
-
 ## Modelado con Chowlk
 
-El modelado se realizó visualmente con [Chowlk](https://chowlk.linkeddata.es/), siguiendo las convenciones:
-- **CamelCase** para los nombres de clases
-- **camelCase** para los nombres de propiedades
-- Dominio y rango explícitos en todas las propiedades de objeto
-- Tipos XSD especificados en todas las propiedades de datos (`xsd:string`, `xsd:integer`, `xsd:float`, `xsd:date`, `xsd:dateTime`, `xsd:time`, `xsd:boolean`, `xsd:anyURI`)
+El modelado se realizó visualmente con [Chowlk](https://chowlk.linkeddata.es/).
 
 El flujo fue: diseño en Chowlk → exportación a Turtle → revisión manual del TTL para completar metadatos (`dcterms:title`, `dcterms:description`, `dcterms:creator`, `dcterms:license`, `owl:versionInfo`).
-
----
 
 ## Publicación con OnToology
 
@@ -132,6 +115,4 @@ enable = True
 
 La documentación de la ontología está publicada a través de **GitHub Pages** del repositorio del fork:
 
-[https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/doc/index-en.html](https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/doc/index-en.html)
-
-*(Si el enlace no está activo, los archivos de documentación se pueden consultar localmente en `ontoology/documentation/`)*
+[Índicel](https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/doc/index-en.html)
