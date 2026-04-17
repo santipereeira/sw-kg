@@ -16,40 +16,40 @@ mappings:
   competicion:
     sources:
       - ['data/ontologia-deportes.csv~csv']
-    s: ns:competicion/$(SISTEMA_COMPETICION)_$(Nombre_temporada)_$(Nombre_deporte)
+    s: ns:competicion/$(Nombre_fase)_$(Nombre_temporada)_$(Nombre_deporte)
     po:
       - [a, ns:Competicion]
       - [ns:sistemaCompeticion, $(SISTEMA_COMPETICION), xsd:string]
       - [ns:temporada, $(Nombre_temporada), xsd:string]
       - [ns:tipoDe, ns:deporte/$(Nombre_deporte)~iri]
-      - [ns:tieneGrupo, ns:grupo/$(Codigo_grupo)~iri]
+      - [ns:tieneGrupo, ns:grupo/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)~iri]
 
   grupo:
     sources:
       - ['data/ontologia-deportes.csv~csv']
-    s: ns:grupo/$(Codigo_grupo)
+    s: ns:grupo/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)
     po:
       - [a, ns:Grupo]
       - [ns:nombreGrupo, $(Nombre_grupo), xsd:string]
       - [ns:sexo, $(Sexo_grupo), xsd:string]
       - [ns:categoria, $(Nombre_categoria), xsd:string]
       - [ns:fase, $(Nombre_fase), xsd:string]
-      - [ns:tieneJornada, ns:jornada/$(Codigo_grupo)_$(Jornada)~iri]
+      - [ns:tieneJornada, ns:jornada/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)~iri]
 
   jornada:
     sources:
       - ['data/ontologia-deportes.csv~csv']
-    s: ns:jornada/$(Codigo_grupo)_$(Jornada)
+    s: ns:jornada/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)
     po:
       - [a, ns:Jornada]
       - [ns:codigoJornada, $(Jornada), xsd:integer]
       - [ns:fecha, $(Fecha_Hora), xsd:dateTime]
-      - [ns:tienePartido, ns:partido/$(Codigo_grupo)_$(Jornada)_$(Partido)~iri]
+      - [ns:tienePartido, ns:partido/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)_$(Partido)~iri]
 
   partido:
     sources:
       - ['data/ontologia-deportes.csv~csv']
-    s: ns:partido/$(Codigo_grupo)_$(Jornada)_$(Partido)
+    s: ns:partido/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)_$(Partido)
     po:
       - [a, ns:Partido]
       - [ns:resultado1, $(Resultado1), xsd:integer]

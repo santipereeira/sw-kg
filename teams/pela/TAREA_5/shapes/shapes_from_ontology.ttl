@@ -18,7 +18,7 @@ ns:DeporteShape a sh:NodeShape ;
     ] ;
     sh:property [
         sh:path ns:sameAsDeporte ;
-        sh:datatype xsd:anyURI ;
+        sh:nodeKind sh:IRI ;
     ] .
 
 ns:CompeticionShape a sh:NodeShape ;
@@ -170,5 +170,5 @@ ns:DistritoShape a sh:NodeShape ;
     ] ;
     sh:property [
         sh:path ns:sameAsDistrito ;
-        sh:datatype xsd:anyURI ;
+        sh:nodeKind sh:IRI ;
     ] .

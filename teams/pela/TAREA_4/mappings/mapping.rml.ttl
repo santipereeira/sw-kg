@@ -73,7 +73,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "https://example.org/partidos/competicion/{SISTEMA_COMPETICION}_{Nombre_temporada}_{Nombre_deporte}";
+		rr:template "https://example.org/partidos/competicion/{Nombre_fase}_{Nombre_temporada}_{Nombre_deporte}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -125,7 +125,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "https://example.org/partidos/grupo/{Codigo_grupo}";
+			rr:template "https://example.org/partidos/grupo/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}";
 			rr:termType rr:IRI
 		];
 	].
@@ -141,7 +141,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "https://example.org/partidos/grupo/{Codigo_grupo}";
+		rr:template "https://example.org/partidos/grupo/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -204,7 +204,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "https://example.org/partidos/jornada/{Codigo_grupo}_{Jornada}";
+			rr:template "https://example.org/partidos/jornada/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}";
 			rr:termType rr:IRI
 		];
 	].
@@ -220,7 +220,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "https://example.org/partidos/jornada/{Codigo_grupo}_{Jornada}";
+		rr:template "https://example.org/partidos/jornada/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
@@ -261,7 +261,7 @@
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "https://example.org/partidos/partido/{Codigo_grupo}_{Jornada}_{Partido}";
+			rr:template "https://example.org/partidos/partido/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}_{Partido}";
 			rr:termType rr:IRI
 		];
 	].
@@ -277,7 +277,7 @@
 	];
 	rr:subjectMap [
 		a rr:SubjectMap;
-		rr:template "https://example.org/partidos/partido/{Codigo_grupo}_{Jornada}_{Partido}";
+		rr:template "https://example.org/partidos/partido/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}_{Partido}";
 	];
 	rr:predicateObjectMap [
 		rr:predicateMap [
