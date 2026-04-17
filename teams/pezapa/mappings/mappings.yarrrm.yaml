@@ -2,6 +2,8 @@ prefixes:
   ta: "http://example.org/def/teatrosyauditorios#"
   ex: "http://example.org/resource/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
 
 mappings:
 
@@ -67,6 +69,14 @@ mappings:
     po:
       - [a, ta:Concello]
       - [ta:nombre, $(CONCELLO)]
+      - p: owl:sameAs
+        o:
+          function: grel:string_replace
+          parameters:
+            - [grel:valueParameter, $(URL_CONCELLO)]
+            - [grel:p_string_find, '"https://www.wikidata.org/wiki/"']
+            - [grel:p_string_replace, '"http://www.wikidata.org/entity/"']
+          type: iri
       - p: ta:ubicadoen
         o:
           value: ex:provincia/$(PROVINCIA)
@@ -79,3 +89,11 @@ mappings:
     po:
       - [a, ta:Provincia]
       - [ta:nombre, $(PROVINCIA)]
+      - p: owl:sameAs
+        o:
+          function: grel:string_replace
+          parameters:
+            - [grel:valueParameter, $(URL_PROVINCIA)]
+            - [grel:p_string_find, '"https://www.wikidata.org/wiki/"']
+            - [grel:p_string_replace, '"http://www.wikidata.org/entity/"']
+          type: iri

@@ -1,0 +1,884 @@
+<http://example.org/resource/concello/Santiago%20de%20Compostela> <http://example.org/def/teatrosyauditorios#nombre> "Santiago de Compostela" .
+<http://example.org/resource/concello/Tui> <http://example.org/def/teatrosyauditorios#nombre> "Tui" .
+<http://example.org/resource/concello/Ames> <http://example.org/def/teatrosyauditorios#nombre> "Ames" .
+<http://example.org/resource/concello/Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#nombre> "Narón" .
+<http://example.org/resource/concello/O%20Carballi%C3%B1o> <http://example.org/def/teatrosyauditorios#nombre> "O Carballiño" .
+<http://example.org/resource/concello/Gondomar> <http://example.org/def/teatrosyauditorios#nombre> "Gondomar" .
+<http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> <http://example.org/def/teatrosyauditorios#nombre> "Vilagarcía de Arousa" .
+<http://example.org/resource/concello/Cee> <http://example.org/def/teatrosyauditorios#nombre> "Cee" .
+<http://example.org/resource/concello/Burela> <http://example.org/def/teatrosyauditorios#nombre> "Burela" .
+<http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> <http://example.org/def/teatrosyauditorios#nombre> "As Pontes de García Rodríguez" .
+<http://example.org/resource/concello/Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#nombre> "Lalín" .
+<http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> <http://example.org/def/teatrosyauditorios#nombre> "A Rúa de Valdeorras" .
+<http://example.org/resource/concello/A%20Coru%C3%B1a> <http://example.org/def/teatrosyauditorios#nombre> "A Coruña" .
+<http://example.org/resource/concello/Pontevedra> <http://example.org/def/teatrosyauditorios#nombre> "Pontevedra" .
+<http://example.org/resource/concello/Betanzos> <http://example.org/def/teatrosyauditorios#nombre> "Betanzos" .
+<http://example.org/resource/concello/Cedeira> <http://example.org/def/teatrosyauditorios#nombre> "Cedeira" .
+<http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> <http://example.org/def/teatrosyauditorios#nombre> "O Barco de Valdeorras" .
+<http://example.org/resource/concello/Sada> <http://example.org/def/teatrosyauditorios#nombre> "Sada" .
+<http://example.org/resource/concello/Cangas> <http://example.org/def/teatrosyauditorios#nombre> "Cangas" .
+<http://example.org/resource/concello/Ortigueira> <http://example.org/def/teatrosyauditorios#nombre> "Ortigueira" .
+<http://example.org/resource/concello/Vimianzo> <http://example.org/def/teatrosyauditorios#nombre> "Vimianzo" .
+<http://example.org/resource/concello/Lugo> <http://example.org/def/teatrosyauditorios#nombre> "Lugo" .
+<http://example.org/resource/concello/Ponteareas> <http://example.org/def/teatrosyauditorios#nombre> "Ponteareas" .
+<http://example.org/resource/concello/Tomi%C3%B1o> <http://example.org/def/teatrosyauditorios#nombre> "Tomiño" .
+<http://example.org/resource/concello/Noia> <http://example.org/def/teatrosyauditorios#nombre> "Noia" .
+<http://example.org/resource/concello/Oleiros> <http://example.org/def/teatrosyauditorios#nombre> "Oleiros" .
+<http://example.org/resource/concello/Muros> <http://example.org/def/teatrosyauditorios#nombre> "Muros" .
+<http://example.org/resource/concello/Carballo> <http://example.org/def/teatrosyauditorios#nombre> "Carballo" .
+<http://example.org/resource/concello/Ourense> <http://example.org/def/teatrosyauditorios#nombre> "Ourense" .
+<http://example.org/resource/concello/Viveiro> <http://example.org/def/teatrosyauditorios#nombre> "Viveiro" .
+<http://example.org/resource/concello/A%20Estrada> <http://example.org/def/teatrosyauditorios#nombre> "A Estrada" .
+<http://example.org/resource/concello/Foz> <http://example.org/def/teatrosyauditorios#nombre> "Foz" .
+<http://example.org/resource/concello/Boiro> <http://example.org/def/teatrosyauditorios#nombre> "Boiro" .
+<http://example.org/resource/concello/Redondela> <http://example.org/def/teatrosyauditorios#nombre> "Redondela" .
+<http://example.org/resource/concello/Vigo> <http://example.org/def/teatrosyauditorios#nombre> "Vigo" .
+<http://example.org/resource/concello/Cambados> <http://example.org/def/teatrosyauditorios#nombre> "Cambados" .
+<http://example.org/resource/concello/Ribadeo> <http://example.org/def/teatrosyauditorios#nombre> "Ribadeo" .
+<http://example.org/resource/concello/Arteixo> <http://example.org/def/teatrosyauditorios#nombre> "Arteixo" .
+<http://example.org/resource/concello/Monforte%20de%20Lemos> <http://example.org/def/teatrosyauditorios#nombre> "Monforte de Lemos" .
+<http://example.org/resource/concello/Ferrol> <http://example.org/def/teatrosyauditorios#nombre> "Ferrol" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#telefono> "981 391 144" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#telefono> "982 580 683" .
+<http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#telefono> "986 573 601" .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#telefono> "986 833 061" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#telefono> "982 297 217" .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#telefono> "981 535 940" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#telefono> "981 619 115" .
+<http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#telefono> "981 828 104" .
+<http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#telefono> "981 704 300" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#telefono> "981 440 344" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#telefono> "649 876 614" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#telefono> "981 884 991" .
+<http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#telefono> "981 770 100" .
+<http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#telefono> "986 363 913" .
+<http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#telefono> "986 603 625" .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#telefono> "986 304 108" .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#telefono> "981 716 001" .
+<http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#telefono> "988 391 290" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#telefono> "986 520 008" .
+<http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#telefono> "981 134 450" .
+<http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#telefono> "981 610 000" .
+<http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#telefono> "988 320 053" .
+<http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#telefono> "986 833 061" .
+<http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#telefono> "981 762 294" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#telefono> "986 810 239" .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#telefono> "981 391 144" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#telefono> "988 530 007" .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#telefono> "881 867 223" .
+<http://example.org/resource/contacto/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#telefono> "982 140 027" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#telefono> "981 848 425" .
+<http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#telefono> "981 641 803" .
+<http://example.org/resource/contacto/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#telefono> "981 944 244" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#telefono> "982 131 565" .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#telefono> "988 317 960" .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#telefono> "986 512 600" .
+<http://example.org/resource/contacto/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#telefono> "988 310 116" .
+<http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#telefono> "986 400 300" .
+<http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#telefono> "982 560 162" .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#telefono> "986 784 004" .
+<http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#telefono> "986 661 674" .
+<http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#telefono> "981 745 100" .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#telefono> "981 542 347" .
+<http://example.org/resource/contacto/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#telefono> "982 402 501" .
+<http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#telefono> "981 184 293" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#telefono> "986 622 001" .
+<http://example.org/resource/contacto/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#telefono> "639 043 936" .
+<http://example.org/resource/concello/Boiro> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Ourense> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Ourense> .
+<http://example.org/resource/concello/Burela> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/Redondela> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Pontevedra> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Betanzos> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Arteixo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Cedeira> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Santiago%20de%20Compostela> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/A%20Estrada> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Viveiro> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/Ferrol> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Noia> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Cambados> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Gondomar> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Vigo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Monforte%20de%20Lemos> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/Ponteareas> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Cee> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/A%20Coru%C3%B1a> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Ames> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Cangas> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Vimianzo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Foz> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/O%20Carballi%C3%B1o> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Ourense> .
+<http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Ribadeo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Ourense> .
+<http://example.org/resource/concello/Oleiros> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Ortigueira> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Tui> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Tomi%C3%B1o> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Muros> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Lugo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Lugo%20Province> .
+<http://example.org/resource/concello/Carballo> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Ourense> .
+<http://example.org/resource/concello/Sada> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> .
+<http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> <http://example.org/def/teatrosyauditorios#ubicadoen> <http://example.org/resource/provincia/Pontevedra%20Province> .
+<http://example.org/resource/concello/Santiago%20de%20Compostela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/A%20Estrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Gondomar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Tui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Viveiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Cambados> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Foz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Redondela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Muros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Boiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ames> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Lal%C3%ADn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Sada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Carballo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/A%20Coru%C3%B1a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ponteareas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Vimianzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/O%20Carballi%C3%B1o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Tomi%C3%B1o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Burela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Cangas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Cedeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ribadeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Noia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ourense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Vigo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Monforte%20de%20Lemos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Arteixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Cee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Oleiros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ferrol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Betanzos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Pontevedra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Lugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/concello/Ortigueira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Concello> .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#web> "http://www.pazodacultura.org" .
+<http://example.org/resource/contacto/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#web> "http://www.monfortedelemos.es" .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#web> "http://www.teatroprincipalourense.com" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#web> "http://ribadeo.gal" .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#web> "http://www.vilagarcia.es" .
+<http://example.org/resource/contacto/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#web> "http://www.concellodefoz.es" .
+<http://example.org/resource/contacto/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#web> "https://www.ferrol.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#web> "https://tomino.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#web> "https://cambados.es" .
+<http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#web> "http://www.culturatui.info" .
+<http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#web> "https://www.coruna.gal/cultura" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#web> "http://www.burela.org" .
+<http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#web> "http://www.oleiros.org" .
+<http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#web> "https://betanzos.es" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#web> "http://concellodelugo.gal" .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#web> "https://lalin.gal" .
+<http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#web> "https://www.coruna.gal/cultura" .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#web> "https://cangas.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#web> "https://aspontes.org" .
+<http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#web> "https://cee.gal" .
+<http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#web> "http://www.muros.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#web> "https://hoxe.vigo.org" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#web> "http://www.carballino.gal" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#web> "https://www.sada.gal" .
+<http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#web> "http://ourensecultura.gal" .
+<http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#web> "https://concellodegondomar.gal" .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#web> "https://www.compostelacultura.gal" .
+<http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#web> "http://www.carballo.org" .
+<http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#web> "https://www.viveiro.es" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#web> "https://www.concellodeames.gal" .
+<http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#web> "http://www.noia.es" .
+<http://example.org/resource/contacto/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#web> "http://concellodeortigueira.gal" .
+<http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#web> "http://www.pazodacultura.org" .
+<http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#web> "https://www.arteixo.org" .
+<http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#web> "https://www.concellodobarco.org" .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#web> "https://www.padroadodecultura.es" .
+<http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#web> "https://ponteareas.gal" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#web> "http://www.boiro.gal" .
+<http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#web> "http://redondela.gal" .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#web> "https://www.concellodeames.gal" .
+<http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#web> "http://www.aestrada.gal" .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#web> "http://centrodramatico.xunta.gal" .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#web> "https://www.vimianzo.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#web> "https://www.padroadodecultura.es" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#web> "http://cedeira.gal" .
+<http://example.org/resource/contacto/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#web> "http://arua.es" .
+<http://example.org/resource/contacto/Centro%20Cultural%20Avenida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Jofre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Edificio%20Multiusos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Sala%20Bah%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/contacto/Teatro%20da%20Beneficencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#DatoContacto> .
+<http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1607428> .
+<http://example.org/resource/concello/Pontevedra> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q12411> .
+<http://example.org/resource/concello/Redondela> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q833032> .
+<http://example.org/resource/concello/Ortigueira> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1375842> .
+<http://example.org/resource/concello/Cambados> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q695477> .
+<http://example.org/resource/concello/Sada> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1616081> .
+<http://example.org/resource/concello/Tui> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q824122> .
+<http://example.org/resource/concello/Ribadeo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q824076> .
+<http://example.org/resource/concello/Monforte%20de%20Lemos> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q818341> .
+<http://example.org/resource/concello/Viveiro> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q641221> .
+<http://example.org/resource/concello/Cedeira> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1113395> .
+<http://example.org/resource/concello/Lugo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q11125> .
+<http://example.org/resource/concello/Noia> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q818601> .
+<http://example.org/resource/concello/Vigo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q8745> .
+<http://example.org/resource/concello/Nar%C3%B3n> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368896> .
+<http://example.org/resource/concello/A%20Estrada> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1621191> .
+<http://example.org/resource/concello/Ponteareas> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q617119> .
+<http://example.org/resource/concello/Muros> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q578957> .
+<http://example.org/resource/concello/Lal%C3%ADn> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1374736> .
+<http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1607619> .
+<http://example.org/resource/concello/Ferrol> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q485329> .
+<http://example.org/resource/concello/A%20Coru%C3%B1a> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q8757> .
+<http://example.org/resource/concello/Burela> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1619456> .
+<http://example.org/resource/concello/Gondomar> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1607596> .
+<http://example.org/resource/concello/Ames> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1353997> .
+<http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1442761> .
+<http://example.org/resource/concello/Boiro> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q735282> .
+<http://example.org/resource/concello/Cangas> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1628188> .
+<http://example.org/resource/concello/Tomi%C3%B1o> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1628263> .
+<http://example.org/resource/concello/Vimianzo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1616162> .
+<http://example.org/resource/concello/Betanzos> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q671341> .
+<http://example.org/resource/concello/O%20Carballi%C3%B1o> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1607558> .
+<http://example.org/resource/concello/Oleiros> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q688611> .
+<http://example.org/resource/concello/Cee> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q988707> .
+<http://example.org/resource/concello/Foz> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q917878> .
+<http://example.org/resource/concello/Ourense> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q99151> .
+<http://example.org/resource/concello/Carballo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q166137> .
+<http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1442637> .
+<http://example.org/resource/concello/Santiago%20de%20Compostela> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q14314> .
+<http://example.org/resource/concello/Arteixo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q996161> .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#email> "auditorio@cangas.gal" .
+<http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#email> "cultura@oleiros.org " .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#email> "oficina.teatro@depourense.es " .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#email> "pazotorrado@gmail.com" .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#email> "nieves.lema@vimianzo.gal" .
+<http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#email> "forum@coruna.es " .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#email> "coordinacion@pazodacultura.org " .
+<http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#email> "cultura@concellotui.org" .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#email> "cultura@boiro.org " .
+<http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#email> "trc@coruna.es " .
+<http://example.org/resource/contacto/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodefoz.es " .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#email> "cultura@lalin.gal " .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodeames.gal" .
+<http://example.org/resource/contacto/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#email> "produccion.jofre@ferrol.es " .
+<http://example.org/resource/contacto/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#email> "direccion@audiotoriodegalicia.org " .
+<http://example.org/resource/contacto/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#email> "alcaldia@arua.gal" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#email> " ofi.areacultural@vigo.org" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#email> "cultura@ribadeo.org " .
+<http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#email> "daniel.loza@betanzos.gal" .
+<http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#email> "concha.allut@gmail.com" .
+<http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#email> "infocarballo@carballo.org " .
+<http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#email> "departamentocultura@ponteareas.es" .
+<http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#email> "vmcastineira@gmail.com" .
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#email> "cultura@vilagarcia.es " .
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodeames.gal" .
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#email> "p.cultura@naron.es " .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#email> "casadacultura@burela.org " .
+<http://example.org/resource/contacto/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#email> "mlopez@concellodeortigueira.com\n\n" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#email> "cris.martinez@tomino.gal" .
+<http://example.org/resource/contacto/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodemonforte.com " .
+<http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#email> "cultura@arteixo.org " .
+<http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodobarco.org " .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#email> "oixcultura@carballino.org " .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#email> "cultura@aspontes.org " .
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#email> "centro.dramatico.galego@xunta.gal" .
+<http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#email> "cultura@muros.es " .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#email> "enrique.vazquez@cedeira.es" .
+<http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodegondomar.com " .
+<http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#email> "aestradacultura@gmail.com" .
+<http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#email> "cultura@redondela.gal " .
+<http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#email> "coordinacion@pazodacultura.org " .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#email> "cultura@concellodelugo.org" .
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#email> "p.cultura@naron.es " .
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#email> "casacultura@concellodesada.com " .
+<http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#email> "rbg.cultura@viveiro.es " .
+<http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#email> "auditorio@ourense.es " .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Pontevedra> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Boiro> .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/A%20Coru%C3%B1a> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Lugo> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Muros> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Tui> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ourense> .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Betanzos> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Cambados> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Cedeira> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ortigueira> .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/A%20Coru%C3%B1a> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ribadeo> .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ponteareas> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ames> .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Monforte%20de%20Lemos> .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Redondela> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Arteixo> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Lal%C3%ADn> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Nar%C3%B3n> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Santiago%20de%20Compostela> .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/A%20Estrada> .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Carballo> .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ferrol> .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ourense> .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Pontevedra> .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Oleiros> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Tomi%C3%B1o> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Sada> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Noia> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Vigo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Burela> .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Cee> .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Foz> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Ames> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Santiago%20de%20Compostela> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Vimianzo> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Nar%C3%B3n> .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Gondomar> .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Viveiro> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/Cangas> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#pertenece> <http://example.org/resource/concello/O%20Carballi%C3%B1o> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#CP> "36500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#CP> "27780"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#CP> "36800"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#CP> "15250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#CP> "36740"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#CP> "15705"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#CP> "36940"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#CP> "15930"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#CP> "36380"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#CP> "15003"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#CP> "32005"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#CP> "15006"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#CP> "15220"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#CP> "15610"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#CP> "15200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#CP> "15173"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#CP> "15570"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#CP> "36680"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#CP> "15705"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#CP> "15895"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#CP> "27700"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#CP> "15142"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#CP> "36002"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#CP> "15270"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#CP> "36360"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#CP> "36700"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#CP> "32250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#CP> "15570"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#CP> "15330"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#CP> "27400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#CP> "27001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#CP> "27850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#CP> "32005"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#CP> "15129"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#CP> "32500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#CP> "15350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#CP> "36005"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#CP> "15402"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#CP> "32200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#CP> "36202"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#CP> "36600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#CP> "36860"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#CP> "15320"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#CP> "15300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#CP> "15100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#CP> "27880"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Jofre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Edificio%20Multiusos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Espazo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#longitud> "-8.0519730000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#longitud> "-7.8536910000000004"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#longitud> "-7.8604450000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#longitud> "-8.5435199999999991"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#longitud> "-7.0384679999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#longitud> "-8.1925410000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#longitud> "-8.0803279999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#longitud> "-6.9856769999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#longitud> "-7.5118390000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#longitud> "-8.7268910000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#longitud> "-8.6464870000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#longitud> "-7.8547750000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#longitud> "-8.7855354000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#longitud> "-8.5069826000000006"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#longitud> "-8.2107919999999996"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#longitud> "-8.1046169999999993"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#longitud> "-9.0589899999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#longitud> "-8.5438179999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#longitud> "-7.1162599999999996"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#longitud> "-9.1901340000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#longitud> "-8.398987"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#longitud> "-7.8637220000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#longitud> "-7.2594750000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#longitud> "-8.7619030000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#longitud> "-8.6377439999999996"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#longitud> "-8.8843350000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#longitud> "-8.7669139999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#longitud> "-8.4893590000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#longitud> "-8.5062960000000007"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#longitud> "-8.6100010000000005"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#longitud> "-8.2337600000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#longitud> "-7.3581760000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#longitud> "-8.1955360000000006"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#longitud> "-8.6470680000000009"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#longitud> "-8.8893874000000004"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#longitud> "-8.8131219999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#longitud> "-8.6571739999999995"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#longitud> "-8.2520209999999992"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#longitud> "-9.0341880000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#longitud> "-8.3983030000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#longitud> "-8.3362479999999994"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#longitud> "-8.6952610000000004"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#longitud> "-8.5808649999999993"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#longitud> "-8.7715019999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#longitud> "-7.5948479999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#longitud> "-7.5618790000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#latitud> "43.302655999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#latitud> "43.022886"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#latitud> "42.282848999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#latitud> "42.174299099999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#latitud> "42.337164999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#latitud> "42.267704199999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#latitud> "42.432473000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#latitud> "42.859270000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#latitud> "43.370503999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#latitud> "43.662306999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#latitud> "42.235928999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#latitud> "43.355718000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#latitud> "43.660603000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#latitud> "43.661636000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#latitud> "42.528061000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#latitud> "42.394285000000004"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#latitud> "42.878413000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#latitud> "43.534739999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#latitud> "42.782785500000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#latitud> "43.211587999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#latitud> "43.355733999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#latitud> "42.337932000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#latitud> "43.496673999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#latitud> "41.948506000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#latitud> "42.664782000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#latitud> "42.955649000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#latitud> "42.415461000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#latitud> "42.049515999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#latitud> "42.645308"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#latitud> "42.514954000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#latitud> "43.571517999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#latitud> "42.844782000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#latitud> "43.684542999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#latitud> "43.111859000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#latitud> "42.435496999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#latitud> "43.382950000000001"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#latitud> "42.111111999999999"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#latitud> "43.447347999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#latitud> "43.279001999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#latitud> "42.773901000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#latitud> "42.688070000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#latitud> "42.598173000000003"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#latitud> "43.482546999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#latitud> "43.500059999999998"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#latitud> "42.878804000000002"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#latitud> "42.433442999999997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> .
+<http://example.org/resource/espazo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Jofre> .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> .
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> .
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20da%20Beneficencia> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> .
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> .
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> .
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> .
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> .
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Centro%20Cultural%20Avenida> .
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Principal> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> .
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> .
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> .
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> .
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> .
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> .
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> .
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> .
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Sala%20Bah%C3%ADa> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> .
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> .
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Enderezo> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> .
+<http://example.org/resource/espazo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Edificio%20Multiusos> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#tiene> <http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#calle> "A Braña" .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#calle> "Praza do Mercado" .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#calle> "Rúa de Paio Gómez Chariño" .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#calle> "Rúa da Estación" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#calle> "Parque da Milagrosa" .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#calle> "Rúa Curro" .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#calle> "Rúa Colón" .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#calle> "Paseo da Xunqueira" .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#calle> "Praza de Chavián" .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#calle> "Rúa Nova" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#calle> "Praza do Rei" .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#calle> "Rúa Domingo Antonio de Andrade" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#calle> "Rúa Convento" .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#calle> "Rúa Progreso" .
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#calle> "Rúa Camilo Díaz, Edif. Obelisco " .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#calle> "Rúa Pardo Bazán" .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#calle> "Constanza de Castro" .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#calle> "Rúa Holanda" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#calle> "Avda. de Galicia" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#calle> "Rúa San Francisco" .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#calle> "Rúa da Paz" .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#calle> "Travesia do Porto" .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#calle> "Estrada de Miraflores" .
+<http://example.org/resource/enderezo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#calle> "Avda. Emilia Casas Baamonde" .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#calle> "Paseo do Porto" .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#calle> "Avda. A Mariña" .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#calle> "Avda. da Constitución" .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#calle> "Río Monelos" .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#calle> "Rúa Cervantes" .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#calle> "Riego del Agua" .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#calle> "Praza de Galicia, Edificio Liceo" .
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#calle> "Rúa Serafín Pazo" .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#calle> "Alexandre Bóveda" .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#calle> "Rúa Nova" .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#calle> "Rúa da Canle" .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#calle> "Rúa Manuel Alonso" .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#calle> "Avda. de Lugo" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#calle> "Praza de Galicia" .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#calle> "Praza Isabel II" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#calle> "Avda. Pío Troncoso" .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#calle> "Praza de Galicia" .
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#calle> "Rúa Doutor Fernández de la Vega" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#calle> "Rúa Buenos Aires" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#calle> "Praza Maior" .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#calle> "Rúa do Pan" .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#calle> "Paseo fluvial" .
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> .
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> .
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> .
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> .
+<http://example.org/resource/espazo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Edificio%20Multiusos> .
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> .
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> .
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> .
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> .
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> .
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> .
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> .
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> .
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> .
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> .
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> .
+<http://example.org/resource/espazo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Jofre> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Principal> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> .
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> .
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> .
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> .
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#estaen> <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> .
+<http://example.org/resource/provincia/Pontevedra%20Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Provincia> .
+<http://example.org/resource/provincia/Ourense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Provincia> .
+<http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Provincia> .
+<http://example.org/resource/provincia/Lugo%20Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/def/teatrosyauditorios#Provincia> .
+<http://example.org/resource/provincia/Ourense> <http://example.org/def/teatrosyauditorios#nombre> "Ourense" .
+<http://example.org/resource/provincia/Pontevedra%20Province> <http://example.org/def/teatrosyauditorios#nombre> "Pontevedra Province" .
+<http://example.org/resource/provincia/Lugo%20Province> <http://example.org/def/teatrosyauditorios#nombre> "Lugo Province" .
+<http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> <http://example.org/def/teatrosyauditorios#nombre> "A Coruña Province" .
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#numero> "2" .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#numero> "21" .
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#numero> "34" .
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#numero> "6" .
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#numero> "19" .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#numero> "30" .
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#numero> "27" .
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#numero> "90" .
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#numero> "  " .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#numero> "2" .
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#numero> "1" .
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#numero> "37" .
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#numero> "1" .
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#numero> "2" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#numero> "1" .
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#numero> "6" .
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#numero> "4" .
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#numero> "40" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#numero> "14" .
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#numero> "6" .
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#numero> "3" .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#numero> "1" .
+<http://example.org/resource/enderezo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#numero> "9" .
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#numero> " " .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#aforamiento> "690"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#aforamiento> "273"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#aforamiento> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#aforamiento> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#aforamiento> "556"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#aforamiento> "434"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#aforamiento> "554"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#aforamiento> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#aforamiento> "275"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#aforamiento> "278"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#aforamiento> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#aforamiento> "283"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#aforamiento> "393"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#aforamiento> "662"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#aforamiento> "289"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#aforamiento> "330"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#aforamiento> "342"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#aforamiento> "388"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#aforamiento> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#aforamiento> "402"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#aforamiento> "146"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#aforamiento> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#aforamiento> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#aforamiento> "752"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#aforamiento> "426"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#aforamiento> "250"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#aforamiento> "478"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#aforamiento> "754"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#aforamiento> "220"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#aforamiento> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#aforamiento> "850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#aforamiento> "384"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#aforamiento> "824"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#aforamiento> "399"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#aforamiento> "320"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#aforamiento> "322"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#aforamiento> "925"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#aforamiento> "265"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#aforamiento> "220"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#aforamiento> "160"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#aforamiento> "394"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#aforamiento> "900"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#aforamiento> "240"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#aforamiento> "175"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#aforamiento> "300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#aforamiento> "420"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/provincia/Ourense> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q95038> .
+<http://example.org/resource/provincia/Pontevedra%20Province> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q95086> .
+<http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q82119> .
+<http://example.org/resource/provincia/Lugo%20Province> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q95027> .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal de Narón" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal Manuel María" .
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> <http://example.org/def/teatrosyauditorios#label> "Teatro Municipal de Tui" .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> <http://example.org/def/teatrosyauditorios#label> "Casa da Cultura de Bertamiráns" .
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> <http://example.org/def/teatrosyauditorios#label> "Auditorio Pazo de Congresos" .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> <http://example.org/def/teatrosyauditorios#label> "Pazo da Cultura de Pontevedra" .
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> <http://example.org/def/teatrosyauditorios#label> "Pazo da Cultura de Narón" .
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> <http://example.org/def/teatrosyauditorios#label> "Biblioteca Municipal de A Coruña - Fórum Metropolitano" .
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> <http://example.org/def/teatrosyauditorios#label> "Auditorio da Casa da Cultura" .
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> <http://example.org/def/teatrosyauditorios#label> "Sala Bahía" .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> <http://example.org/def/teatrosyauditorios#label> "Casa da Cultura Ramón Martínez López" .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#label> "Casa da Cultura  " .
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> <http://example.org/def/teatrosyauditorios#label> "Auditorio Lois Tobío" .
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> <http://example.org/def/teatrosyauditorios#label> "Auditorio Gabriel Garcia Márquez" .
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> <http://example.org/def/teatrosyauditorios#label> "Teatro Nicomedes Pastor Díaz" .
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> <http://example.org/def/teatrosyauditorios#label> "Cultural Center of Carballo" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal de Cedeira" .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> <http://example.org/def/teatrosyauditorios#label> "Salón Teatro " .
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> <http://example.org/def/teatrosyauditorios#label> "Casa da Cultura Pintor Lloréns" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal da Xuventude" .
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> <http://example.org/def/teatrosyauditorios#label> "Auditorio Rocío Jurado" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal de Goián" .
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> <http://example.org/def/teatrosyauditorios#label> "Multiusos da Xunqueira" .
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> <http://example.org/def/teatrosyauditorios#label> "Aula Municipal de Cultura de Betanzos" .
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> <http://example.org/def/teatrosyauditorios#label> "Teatro Municipal Lauro Olmo" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal Hernán Naval" .
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> <http://example.org/def/teatrosyauditorios#label> "Teatro da Beneficencia" .
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> <http://example.org/def/teatrosyauditorios#label> "Pontevedra Principal Theatre" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal de Vigo" .
+<http://example.org/resource/espazo/Edificio%20Multiusos> <http://example.org/def/teatrosyauditorios#label> "Edificio Multiusos" .
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> <http://example.org/def/teatrosyauditorios#label> "Teatro Principal da Estrada" .
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> <http://example.org/def/teatrosyauditorios#label> "Centro Cultural Avenida" .
+<http://example.org/resource/espazo/Teatro%20Jofre> <http://example.org/def/teatrosyauditorios#label> "Teatro Jofre" .
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> <http://example.org/def/teatrosyauditorios#label> "Salón Teatro de Lalín" .
+<http://example.org/resource/espazo/Teatro%20Principal> <http://example.org/def/teatrosyauditorios#label> "Teatro Principal" .
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> <http://example.org/def/teatrosyauditorios#label> "Auditorio Reveriano Soutullo" .
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> <http://example.org/def/teatrosyauditorios#label> "Teatro Coliseo Noela" .
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> <http://example.org/def/teatrosyauditorios#label> "Teatro Rosalía de Castro" .
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> <http://example.org/def/teatrosyauditorios#label> "Auditorio do Centro Cívico Cultural de Arteixo" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal Cine Alovi" .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> <http://example.org/def/teatrosyauditorios#label> "Auditorio Casa da Cultura do Milladoiro" .
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> <http://example.org/def/teatrosyauditorios#label> "Centro Cultural e Xuvenil de Muros" .
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> <http://example.org/def/teatrosyauditorios#label> "Auditorio Municipal Gustavo Freire" .
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> <http://example.org/def/teatrosyauditorios#label> "Auditorio Casa da Cultura  " .
