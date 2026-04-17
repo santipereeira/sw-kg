@@ -132,6 +132,6 @@ enable = True
 
 La documentación de la ontología está publicada a través de **GitHub Pages** del repositorio del fork:
 
-> 📄 [https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/](https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/)
+[https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/doc/index-en.html](https://santipereeira.github.io/sw-kg/teams/pela/TAREA_3/ontoology/documentation/doc/index-en.html)
 
 *(Si el enlace no está activo, los archivos de documentación se pueden consultar localmente en `ontoology/documentation/`)*
