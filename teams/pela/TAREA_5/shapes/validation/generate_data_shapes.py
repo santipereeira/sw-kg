@@ -16,21 +16,21 @@ target_classes = [
 ]
 
 shaper = Shaper(target_classes=target_classes,
-                graph_file_input="kg/output.nt",
+                graph_file_input="TAREA_4/kg/output.nt",
                 input_format=NT,
                 namespaces_dict={"ns": "https://example.org/partidos/",
                                  "xsd": "http://www.w3.org/2001/XMLSchema#"},
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
-shaper.shex_graph(output_file="shapes/shapes_from_data.ttl", output_format=SHACL_TURTLE)
+shaper.shex_graph(output_file="TAREA_5/shapes/shapes_from_data.ttl", output_format=SHACL_TURTLE)
 
-# --- Post-procesamiento para flexibilizar la validación del rdf:type ---
+# Post-procesamiento para flexibilizar la validación del rdf:type
 import rdflib
 from rdflib.namespace import RDF
 SH = rdflib.Namespace("http://www.w3.org/ns/shacl#")
 
 g = rdflib.Graph()
-g.parse("shapes/shapes_from_data.ttl", format="turtle")
+g.parse("TAREA_5/shapes/shapes_from_data.ttl", format="turtle")
 
 # Buscamos todas las restricciones sobre la ruta rdf:type
 for prop in g.subjects(SH.path, RDF.type):
@@ -45,6 +45,6 @@ for prop in g.subjects(SH.path, RDF.type):
     # 2. Eliminar sh:maxCount 1 para permitir tipos auxiliares (como rdfs:Resource)
     g.remove((prop, SH.maxCount, None))
 
-g.serialize(destination="shapes/shapes_from_data.ttl", format="turtle")
+g.serialize(destination="TAREA_5/shapes/shapes_from_data.ttl", format="turtle")
 
 print("Shapes from data extracted and post-processed successfully.")

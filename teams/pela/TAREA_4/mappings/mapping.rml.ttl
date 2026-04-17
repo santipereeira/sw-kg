@@ -21,7 +21,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -67,7 +67,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -135,7 +135,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -214,7 +214,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -271,7 +271,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -383,7 +383,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -429,7 +429,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -475,7 +475,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];
@@ -554,7 +554,7 @@
 
 	rml:logicalSource [
 		a rml:LogicalSource;
-		rml:source "data/ontologia-deportes.csv";
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
 		rml:referenceFormulation ql:CSV
 
 	];

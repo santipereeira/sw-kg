@@ -6,7 +6,7 @@ prefixes:
 mappings:
   deporte:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:deporte/$(Nombre_deporte)
     po:
       - [a, ns:Deporte]
@@ -15,7 +15,7 @@ mappings:
 
   competicion:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:competicion/$(Nombre_fase)_$(Nombre_temporada)_$(Nombre_deporte)
     po:
       - [a, ns:Competicion]
@@ -26,7 +26,7 @@ mappings:
 
   grupo:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:grupo/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)
     po:
       - [a, ns:Grupo]
@@ -38,7 +38,7 @@ mappings:
 
   jornada:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:jornada/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)
     po:
       - [a, ns:Jornada]
@@ -48,7 +48,7 @@ mappings:
 
   partido:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:partido/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)_$(Partido)
     po:
       - [a, ns:Partido]
@@ -63,7 +63,7 @@ mappings:
 
   equipo_local:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:equipo/$(Codigo_equipo1)
     po:
       - [a, ns:Equipo]
@@ -72,7 +72,7 @@ mappings:
 
   equipo_visitante:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:equipo/$(Codigo_equipo2)
     po:
       - [a, ns:Equipo]
@@ -81,7 +81,7 @@ mappings:
 
   campo:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:campo/$(Codigo_campo)
     po:
       - [a, ns:Campo]
@@ -93,7 +93,7 @@ mappings:
 
   distrito:
     sources:
-      - ['data/ontologia-deportes.csv~csv']
+      - ['TAREA_4/data/ontologia-deportes.csv~csv']
     s: ns:distrito/$(Distrito)
     po:
       - [a, ns:Distrito]

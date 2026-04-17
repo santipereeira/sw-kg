@@ -35,13 +35,13 @@ El archivo original contiene **43 596 filas** y más de 20 columnas con datos pa
 
 ## Cómo se ha modelado la transformación
 
-1. **Limpieza (TAREA 2):** OpenRefine transforma el CSV original eliminando columnas irrelevantes, normalizando fechas y horas, tipando los campos numéricos, unificando los valores de estado y realizando reconciliación de entidades (deportes y distritos) contra Wikidata. El resultado es `data/ontologia-deportes.csv` con ~43 596 filas depuradas.
+1. **Limpieza (TAREA 2):** OpenRefine transforma el CSV original eliminando columnas irrelevantes, normalizando fechas y horas, tipando los campos numéricos, unificando los valores de estado y realizando reconciliación de entidades (deportes y distritos) contra Wikidata. El resultado es `TAREA_2/data/ontologia-deportes.csv` (también copiado en `TAREA_4/data/`) con ~43 596 filas depuradas.
 
-2. **Ontología (TAREA 3):** Se diseña con Chowlk una ontología con 8 clases (`Deporte`, `Competicion`, `Grupo`, `Jornada`, `Partido`, `Equipo`, `Campo`, `Distrito`) y sus propiedades de objeto y de datos. Se exporta a `ontology/ontology.ttl` y se publica con OnToology (documentación HTML, diagramas, informe OOPS!).
+2. **Ontología (TAREA 3):** Se diseña con Chowlk una ontología con 8 clases (`Deporte`, `Competicion`, `Grupo`, `Jornada`, `Partido`, `Equipo`, `Campo`, `Distrito`) y sus propiedades de objeto y de datos. Se exporta a `TAREA_3/ontology/ontology.ttl` y se publica con OnToology (documentación HTML, diagramas, informe OOPS!).
 
-3. **Mapping y KGC (TAREA 4):** Los mappings se definen en YARRRML (`mapping.yarrrml.yaml`), se traducen a RML con Yatter y se llevan a cabo con Morph-KGC, produciendo el grafo RDF `kg/output.nt` (~529 597 tripletas).
+3. **Mapping y KGC (TAREA 4):** Los mappings se definen en YARRRML (`TAREA_4/mappings/mapping.yarrrml.yaml`), se traducen a RML con Yatter y se llevan a cabo con Morph-KGC, produciendo el grafo RDF `TAREA_4/kg/output.nt` (~529 597 tripletas).
 
-4. **Validación (TAREA 5):** Se generan shapes SHACL desde los datos (SheXer → `shapes_from_data.ttl`) y desde la ontología (`shapes_from_ontology.ttl`). Se valida con pySHACL: la validación basada en datos muestra alta estabilidad estructural; la basada en ontología detecta problemas de tipado literal (timestamps mal formados en el dataset de origen).
+4. **Validación (TAREA 5):** Se generan shapes SHACL desde los datos (SheXer → `TAREA_5/shapes/shapes_from_data.ttl`) y desde la ontología (`TAREA_5/shapes/shapes_from_ontology.ttl`). Se valida con pySHACL: la validación basada en datos muestra alta estabilidad estructural; la basada en ontología detecta problemas de tipado literal (timestamps mal formados en el dataset de origen).
 
 ---
 
@@ -52,18 +52,13 @@ El archivo original contiene **43 596 filas** y más de 20 columnas con datos pa
 pip install yatter morph-kgc pyshacl shexer rdflib
 
 # Traducción de YARRRML a RML
-cd TAREA_4
-yatter -i mappings/mapping.yarrrml.yaml -o mappings/mapping.rml.ttl
+python3 TAREA_4/mappings/yarrml_a_rml.py
 
 # Generación del Knowledge Graph
-python3 -m morph_kgc mappings/config.ini
-
-# Renombrar si la salida incluye cabeceras NT
-mv kg/output.nt kg/output.ttl   # opcional
+python3 -m morph_kgc TAREA_4/mappings/config.ini
 
 # Validación SHACL
-cd ../TAREA_5
-python3 shapes/validation/validate_data_and_ontology_shapes.py
+python3 TAREA_5/shapes/validation/validate_data_and_ontology_shapes.py
 ```
 
 ---

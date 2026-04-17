@@ -8,19 +8,19 @@ El proceso de validación del Knowledge Graph (KG) generado en las tareas anteri
 - **Competiciones**, **Grupos**, **Jornadas** y **Partidos**.
 - **Resultados**, equipos (local/visitante) y ubicaciones geográficas (**Campos** y **Distritos**).
 
-El grafo consta de **518.641 triplas** en formato N-Triples (`kg/output.nt`).
+El grafo consta de **518.641 triplas** en formato N-Triples (`TAREA_4/kg/output.nt`).
 
 ## Metodología de Validación
 
 Se ha optado por validar el KG desde dos perspectivas distintas:
 
 ### 1. Validación basada en Datos
-- **Fuente:** Grafo RDF `kg/output.nt`.  
+- **Fuente:** Grafo RDF `TAREA_4/kg/output.nt`.  
 Utilizamos `shexer` para la inferencia de patrones estructurales.
 - **Resultado:** `shapes_from_data.ttl`. Esta validación analiza si el grafo es consistente con la topología inferida.
 
 ~~~bash
-python3 shapes/validation/generate_data_shapes.py
+python3 TAREA_5/shapes/validation/generate_data_shapes.py
 ~~~
 
 
@@ -33,7 +33,7 @@ Definimos manualmente las shapes basadas en los requisitos de la ontología.
 `validate.py` utiliza `pySHACL` para validar el grafo contra ambos ficheros de shapes y genera informes detallados (`report_data_shapes.ttl` y `report_model_shapes.ttl`).
 
 ```bash
-python3 shapes/validation/validate.py
+python3 TAREA_5/shapes/validation/validate.py
 ```
 
 ## Interpretación de Resultados

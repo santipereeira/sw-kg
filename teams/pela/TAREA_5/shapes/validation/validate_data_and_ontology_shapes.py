@@ -56,5 +56,5 @@ def run_validation(data_graph_path, shacl_graph_path, report_output_path):
     gc.collect()
     
 if __name__ == "__main__":
-    run_validation("kg/output.nt", "shapes/shapes_from_data.ttl", "shapes/validation/report_data_shapes.ttl")
-    run_validation("kg/output.nt", "shapes/shapes_from_ontology.ttl", "shapes/validation/report_model_shapes.ttl")
+    run_validation("TAREA_4/kg/output.nt", "TAREA_5/shapes/shapes_from_data.ttl", "TAREA_5/shapes/validation/report_data_shapes.ttl")
+    run_validation("TAREA_4/kg/output.nt", "TAREA_5/shapes/shapes_from_ontology.ttl", "TAREA_5/shapes/validation/report_model_shapes.ttl")

@@ -8,7 +8,7 @@ https://example.org/partidos/
 
 Prefijo: `ns:`
 
-La ontología está en: [`ontology/ontology.ttl`](ontology/ontology.ttl)
+La ontología está en: [`TAREA_3/ontology/ontology.ttl`](TAREA_3/ontology/ontology.ttl)
 
 ## Alcance
 
@@ -41,8 +41,8 @@ La ontología permite responder, entre otras, a las siguientes preguntas:
 
 El diagrama fue generado con **Chowlk** y exportado como imagen:
 
-- [`ontology/ontology.png`](ontology/ontology.png) — Diagrama PNG
-- [`ontology/ontology.svg`](ontology/ontology.svg) — Diagrama SVG (vectorial)
+- [`TAREA_3/ontology/ontology.png`](TAREA_3/ontology/ontology.png) — Diagrama PNG
+- [`TAREA_3/ontology/ontology.svg`](TAREA_3/ontology/ontology.svg) — Diagrama SVG (vectorial)
 
 ### Clases principales
 
@@ -78,7 +78,7 @@ El flujo fue: diseño en Chowlk → exportación a Turtle → revisión manual d
 
 ## Publicación con OnToology
 
-La ontología fue registrada en [OnToology](https://ontoology.linkeddata.es/) conectándola al repositorio GitHub del grupo. OnToology monitorizó el fichero `ontology/ontology.ttl` y generó automáticamente:
+La ontología fue registrada en [OnToology](https://ontoology.linkeddata.es/) conectándola al repositorio GitHub del grupo. OnToology monitorizó el fichero `TAREA_3/ontology/ontology.ttl` y generó automáticamente:
 
 - **Documentación HTML** (Widoco) con descripción de clases y propiedades
 - **Diagramas** de clases y taxonomía (AR2DTool)
@@ -86,7 +86,7 @@ La ontología fue registrada en [OnToology](https://ontoology.linkeddata.es/) co
 - **Contexto JSON-LD** (owl2jsonld)
 - **Evaluación Themis**
 
-Los artefactos generados se encuentran en la carpeta [`ontoology/`](ontoology/), que corresponde al Pull Request abierto por OnToology sobre el repositorio.
+Los artefactos generados se encuentran en la carpeta [`TAREA_3/ontoology/`](TAREA_3/ontoology/), que corresponde al Pull Request abierto por OnToology sobre el repositorio.
 
 ### Configuración OnToology utilizada
 

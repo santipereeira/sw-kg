@@ -24,25 +24,25 @@ El proceso de generación mediante scripts:
 ### 1. Traducción de YARRRML a RML
 Utilizamos `yatter` para convertir las reglas humanas a lenguaje RML ejecutable:
 ```bash
-python3 mappings/yarrml_a_rml.py
+python3 TAREA_4/mappings/yarrml_a_rml.py
 ```
 
 ### 2. Generación del Knowledge Graph (Materialización)
 Utilizamos `Morph-KGC` configurado mediante config.ini:
 ```bash
-python3 -m morph_kgc mappings/config.ini
+python3 -m morph_kgc TAREA_4/mappings/config.ini
 ```
 ~~~ini
 [CONFIGURATION]
 na_values=NA,N/A,null
-output_file=kg/output.nt
+output_file=TAREA_4/kg/output.nt
 output_format=N-TRIPLES
 
 [DataSource]
-mappings=mappings/mapping.rml.ttl 
+mappings=TAREA_4/mappings/mapping.rml.ttl 
 ~~~
 
-El resultado se genera en formato N-Triples en `kg/output.nt`.
+El resultado se genera en formato N-Triples en `TAREA_4/kg/output.nt`.
 
 ## Decisiones de Diseño y Observaciones
 

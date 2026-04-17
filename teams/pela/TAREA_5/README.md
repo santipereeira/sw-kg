@@ -2,7 +2,7 @@
 
 ## Knowledge Graph validado
 
-El grafo validado es **`kg/output.nt`**, generado por Morph-KGC en la Tarea 4 a partir del mapping `mappings/mapping.rml.ttl` y el dataset `data/ontologia-deportes.csv`.
+El grafo validado es **`TAREA_4/kg/output.nt`**, generado por Morph-KGC en la Tarea 4 a partir del mapping `TAREA_4/mappings/mapping.rml.ttl` y el dataset `TAREA_2/data/ontologia-deportes.csv`.
 
 Contiene **529 597 tripletas N-Triples** que representan instancias de las 8 clases de la ontología (`Deporte`, `Competicion`, `Grupo`, `Jornada`, `Partido`, `Equipo`, `Campo`, `Distrito`) y sus relaciones.
 
@@ -13,7 +13,7 @@ Contiene **529 597 tripletas N-Triples** que representan instancias de las 8 cla
 Se ha optado por el **Enfoque 3 (comparación dual)**, que permite contrastar dos perspectivas complementarias:
 
 1. **Validación basada en datos:** shapes inferidas automáticamente desde el propio grafo RDF materializado mediante **SheXer**.
-2. **Validación basada en modelo:** shapes definidas de forma prescriptiva a partir de la **ontología** (`ontology/ontology.ttl`).
+2. **Validación basada en modelo:** shapes definidas de forma prescriptiva a partir de la **ontología** (`TAREA_3/ontology/ontology.ttl`).
 
 Este enfoque es especialmente valioso porque el mismo grafo se valida frente a dos criterios distintos: lo que *describe* los datos y lo que el modelo *prescribe* que deberían ser.
 
@@ -23,8 +23,8 @@ Este enfoque es especialmente valioso porque el mismo grafo se valida frente a d
 
 | Herramienta | Rol | Fichero generado |
 |---|---|---|
-| **SheXer** | Inferencia de shapes SHACL desde el grafo RDF | `shapes/shapes_from_data.ttl` |
-| **pySHACL** | Ejecución de la validación SHACL | `shapes/validation/report_data_shapes.ttl`, `shapes/validation/report_model_shapes.ttl` |
+| **SheXer** | Inferencia de shapes SHACL desde el grafo RDF | `TAREA_5/shapes/shapes_from_data.ttl` |
+| **pySHACL** | Ejecución de la validación SHACL | `TAREA_5/shapes/validation/report_data_shapes.ttl`, `TAREA_5/shapes/validation/report_model_shapes.ttl` |
 
 La generación de shapes desde la ontología se realizó manualmente / semi-automáticamente, definiendo `NodeShapes` con las propiedades, tipos y cardinalidades que prescribe la ontología para cada clase.
 
@@ -38,13 +38,13 @@ La generación de shapes desde la ontología se realizó manualmente / semi-auto
 - Qué tipos de valores (`xsd:string`, `xsd:integer`, `xsd:dateTime`…) se observan
 - Cardinalidades frecuentes
 
-El resultado (`shapes/shapes_from_data.ttl`) captura fielmente la estructura que Morph-KGC generó a partir del mapping, por lo que tiende a ser muy permisivo con lo que realmente existe en el grafo.
+El resultado (`TAREA_5/shapes/shapes_from_data.ttl`) captura fielmente la estructura que Morph-KGC generó a partir del mapping, por lo que tiende a ser muy permisivo con lo que realmente existe en el grafo.
 
 ---
 
 ## Generación de shapes desde la ontología
 
-Las shapes del fichero `shapes/shapes_from_ontology.ttl` se derivaron a partir de las restricciones **normativas** definidas en `ontology/ontology.ttl`:
+Las shapes del fichero `TAREA_5/shapes/shapes_from_ontology.ttl` se derivaron a partir de las restricciones **normativas** definidas en `TAREA_3/ontology/ontology.ttl`:
 
 - `sh:targetClass` → clase objetivo de cada shape
 - `sh:property` → restricciones sobre cada propiedad definida en la ontología
@@ -58,28 +58,28 @@ Estas shapes prescriben cómo *debería* ser el grafo según el modelo de domini
 
 ## Script de validación
 
-El script [`shapes/validation/validate_data_and_ontology_shapes.py`](shapes/validation/validate_data_and_ontology_shapes.py) ejecuta ambas validaciones en secuencia:
+El script [`TAREA_5/shapes/validation/validate_data_and_ontology_shapes.py`](TAREA_5/shapes/validation/validate_data_and_ontology_shapes.py) ejecuta ambas validaciones en secuencia:
 
 ```python
 # Inferencia automática del formato por extensión (.nt → N-Triples, .ttl → Turtle)
-run_validation("kg/output.nt", "shapes/shapes_from_data.ttl",
-               "shapes/validation/report_data_shapes.ttl")
-run_validation("kg/output.nt", "shapes/shapes_from_ontology.ttl",
-               "shapes/validation/report_model_shapes.ttl")
+run_validation("TAREA_4/kg/output.nt", "TAREA_5/shapes/shapes_from_data.ttl",
+               "TAREA_5/shapes/validation/report_data_shapes.ttl")
+run_validation("TAREA_4/kg/output.nt", "TAREA_5/shapes/shapes_from_ontology.ttl",
+               "TAREA_5/shapes/validation/report_model_shapes.ttl")
 ```
 
 Cada llamada a `run_validation()`:
-1. Carga el grafo RDF (`kg/output.nt`) y el fichero de shapes correspondiente
+1. Carga el grafo RDF (`TAREA_4/kg/output.nt`) y el fichero de shapes correspondiente
 2. Ejecuta `pyshacl.validate()` con inferencia `rdfs`
-3. Serializa el informe de validación en Turtle al directorio `shapes/validation/`
+3. Serializa el informe de validación en Turtle al directorio `TAREA_5/shapes/validation/`
 4. Imprime por pantalla si el grafo conforma o no
 
 ### Comando de ejecución
 
 ```bash
-cd TAREA_5
+# Ejecutar desde la raíz del repositorio
 pip install pyshacl rdflib
-python3 shapes/validation/validate_data_and_ontology_shapes.py
+python3 TAREA_5/shapes/validation/validate_data_and_ontology_shapes.py
 ```
 
 ---
@@ -87,15 +87,15 @@ python3 shapes/validation/validate_data_and_ontology_shapes.py
 ## Resultados de validación
 
 ```
-Validating kg/output.nt against shapes/shapes_from_data.ttl...
-Results for shapes/shapes_from_data.ttl:
+Validating TAREA_4/kg/output.nt against TAREA_5/shapes/shapes_from_data.ttl...
+Results for TAREA_5/shapes/shapes_from_data.ttl:
 Conforms: False
-Report written to: shapes/validation/report_data_shapes.ttl
+Report written to: TAREA_5/shapes/validation/report_data_shapes.ttl
 ============================================================
-Validating kg/output.nt against shapes/shapes_from_ontology.ttl...
-Results for shapes/shapes_from_ontology.ttl:
+Validating TAREA_4/kg/output.nt against TAREA_5/shapes/shapes_from_ontology.ttl...
+Results for TAREA_5/shapes/shapes_from_ontology.ttl:
 Conforms: False
-Report written to: shapes/validation/report_model_shapes.ttl
+Report written to: TAREA_5/shapes/validation/report_model_shapes.ttl
 ============================================================
 ```
 
@@ -140,4 +140,4 @@ El Enfoque 3 resulta **idóneo** para este proyecto porque permite distinguir cl
 - **`abort_on_first=True`** en pySHACL: se activó esta opción para grafos grandes (~530k tripletas), lo que acelera la validación pero limita el número de violaciones reportadas. En producción se desactivaría para obtener un informe completo.
 - **Liberación explícita de memoria (`gc.collect()`)**: imprescindible al validar grafos de este tamaño para evitar errores de memoria durante la serialización del informe.
 - **Inferencia `rdfs`**: se activó la inferencia RDFS en pySHACL para que el validador pueda razonar sobre subclases y subpropiedades definidas en la ontología.
-- Los informes de validación completos (grafos RDF) están disponibles en `shapes/validation/report_data_shapes.ttl` y `shapes/validation/report_model_shapes.ttl`.
+- Los informes de validación completos (grafos RDF) están disponibles en `TAREA_5/shapes/validation/report_data_shapes.ttl` y `TAREA_5/shapes/validation/report_model_shapes.ttl`.
