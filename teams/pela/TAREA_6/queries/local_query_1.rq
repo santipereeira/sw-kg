@@ -1,0 +1,11 @@
+PREFIX ns: <https://example.org/partidos/>
+
+# Ranking de distritos por número de campos deportivos
+SELECT ?nombreDistrito (COUNT(?campo) AS ?numCampos)
+WHERE {
+  ?campo a ns:Campo .
+  ?campo ns:localizadoEn ?distrito .
+  ?distrito ns:nombreDistrito ?nombreDistrito .
+}
+GROUP BY ?nombreDistrito
+ORDER BY DESC(?numCampos)
