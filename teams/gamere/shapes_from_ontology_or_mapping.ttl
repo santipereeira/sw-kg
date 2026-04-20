@@ -1,0 +1,145 @@
+@prefix gamere: <http://example.org/def/gamere#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/concellos_0/shape> a sh:NodeShape ;
+    rdfs:label "Concello" ;
+    sh:name "Concello" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass gamere:Concello ;
+    sh:property [ rdfs:label "pertenece a" ;
+            sh:class gamere:Provincia ;
+            sh:name "pertenece a" ;
+            sh:nodeKind sh:IRI ;
+            sh:path gamere:perteneceA ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "same as" ;
+            sh:name "same as" ;
+            sh:nodeKind sh:IRI ;
+            sh:path owl:sameAs ;
+            sh:maxCount 1 ],
+        [ rdfs:label "name concello" ;
+            sh:datatype xsd:string ;
+            sh:name "name concello" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:nameConcello ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "codigo concello" ;
+            sh:datatype xsd:integer ;
+            sh:name "codigo concello" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:codigoConcello ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ] .
+
+<http://example.com/playas_0/shape> a sh:NodeShape ;
+    rdfs:label "Praia" ;
+    sh:name "Praia" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass gamere:Praia ;
+    sh:property [ rdfs:label "tipo arena" ;
+            sh:datatype xsd:string ;
+            sh:name "tipo arena" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:tipoArena ;
+            sh:maxCount 1 ],
+        [ 
+            rdfs:label "url" ;
+            sh:name "url" ;
+            sh:nodeKind sh:IRI ;      # <--- Cambio 1: Ahora acepta enlaces <http://...>
+            sh:path gamere:url ;
+            sh:maxCount 1 
+        ],
+        [ rdfs:label "esta en" ;
+            sh:class gamere:Ubicacion ;
+            sh:name "esta en" ;
+            sh:nodeKind sh:IRI ;
+            sh:path gamere:estaEn ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "lonxitude" ;
+            sh:datatype xsd:integer ;
+            sh:name "lonxitude" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:lonxitude ;
+            sh:maxCount 1 ],
+        [ rdfs:label "same as" ;
+            sh:name "same as" ;
+            sh:nodeKind sh:IRI ;
+            sh:path owl:sameAs ;
+            sh:maxCount 1 ],
+        [ rdfs:label "entorno" ;
+            sh:datatype xsd:string ;
+            sh:name "entorno" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:entorno ;
+            sh:maxCount 1 ],
+        [ rdfs:label "situada en" ;
+            sh:class gamere:Concello ;
+            sh:name "situada en" ;
+            sh:nodeKind sh:IRI ;
+            sh:path gamere:situadaEn ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "nome praia" ;
+            sh:datatype xsd:string ;
+            sh:name "nome praia" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:nomePraia ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ] .
+
+<http://example.com/provincias_0/shape> a sh:NodeShape ;
+    rdfs:label "Provincia" ;
+    sh:name "Provincia" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass gamere:Provincia ;
+    sh:property [ rdfs:label "codigo provincia" ;
+            sh:datatype xsd:integer ;
+            sh:name "codigo provincia" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:codigoProvincia ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "name provincia" ;
+            sh:datatype xsd:string ;
+            sh:name "name provincia" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:nameProvincia ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "same as" ;
+            sh:name "same as" ;
+            sh:nodeKind sh:IRI ;
+            sh:path owl:sameAs ;
+            sh:maxCount 1 ] .
+
+<http://example.com/ubicaciones_0/shape> a sh:NodeShape ;
+    rdfs:label "Ubicacion" ;
+    sh:name "Ubicacion" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass gamere:Ubicacion ;
+    sh:property [ rdfs:label "coordenadas x" ;
+            sh:datatype xsd:float ;
+            sh:name "coordenadas x" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:coordenadasX ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "coordenadas y" ;
+            sh:datatype xsd:float ;
+            sh:name "coordenadas y" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:coordenadasY ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ],
+        [ rdfs:label "descripcion" ;
+            sh:datatype xsd:string ;
+            sh:name "descripcion" ;
+            sh:nodeKind sh:Literal ;
+            sh:path gamere:descripcion ;
+            sh:maxCount 2 ] .
