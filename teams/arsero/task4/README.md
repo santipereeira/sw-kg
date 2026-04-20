@@ -89,16 +89,51 @@ kg/output.nt
 
 ---
 
-## 4. Resultado
+## 4. Resultado del Knowledge Graph
 
-Se ha generado un Knowledge Graph con:
+El fichero completo del Knowledge Graph generado con Morph-KGC (`kg/output.nt`) no se
+incluye en el repositorio porque su tamaño es elevado para una entrega en GitHub.
 
-* **298.653 triples RDF**
+En su lugar, se incluye una muestra reducida del resultado en:
 
-El grafo se ha generado en formato N-Triples en el fichero `kg/output.nt`.
-El número de triples se ha obtenido con:
-
+```bash
+kg/output_sample.nt
 ```
+
+Esta muestra contiene 1000 triples RDF en formato N-Triples y permite revisar la
+estructura general del grafo generado, incluyendo URIs, tipos RDF, propiedades de datos y
+relaciones entre recursos.
+
+El Knowledge Graph completo puede regenerarse localmente desde la carpeta `task4`
+utilizando los siguientes archivos:
+
+* `data/*.csv`
+* `mappings/mapping.yarrrml.yaml`
+* `mappings/mapping.rml.ttl`
+* `mappings/config.ini`
+
+Si se modifica el fichero YARRRML, primero debe regenerarse el mapping RML con Yatter:
+
+```bash
+python -m yatter -i mappings/mapping.yarrrml.yaml -o mappings/mapping.rml.ttl
+```
+
+Después, se ejecuta Morph-KGC desde la carpeta `task4`:
+
+```bash
+python -m morph_kgc mappings/config.ini
+```
+
+El resultado completo se genera en:
+
+```bash
+kg/output.nt
+```
+
+En la versión completa generada durante la práctica, el Knowledge Graph contiene
+**298.653 triples RDF**, calculados con:
+
+```bash
 wc -l kg/output.nt
 ```
 
