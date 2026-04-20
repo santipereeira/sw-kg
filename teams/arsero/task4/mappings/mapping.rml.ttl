@@ -458,6 +458,17 @@
 	rr:predicateObjectMap [
 		rr:predicateMap [
 			a rr:PredicateMap;
+			rr:constant ta:programado;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "programado";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
 			rr:constant ta:resultadoLocal;
 		];
 		rr:objectMap [

@@ -73,10 +73,12 @@ Este paso genera un fichero RDF que describe las reglas de transformación.
 
 ### 3.3 Generación del Knowledge Graph con Morph-KGC
 
-Se ha utilizado Morph-KGC para materializar el grafo RDF a partir de los mappings:
+Se ha utilizado Morph-KGC para materializar el grafo RDF a partir de los mappings.
+El fichero de configuración se encuentra en `mappings/config.ini`, por lo que el
+comando debe ejecutarse desde la carpeta `task4`:
 
 ```
-python -m morph_kgc config.ini
+python -m morph_kgc mappings/config.ini
 ```
 
 El resultado es un fichero RDF con todas las instancias y relaciones:
@@ -91,7 +93,14 @@ kg/output.nt
 
 Se ha generado un Knowledge Graph con:
 
-* **64.947 triples RDF**
+* **298.653 triples RDF**
+
+El grafo se ha generado en formato N-Triples en el fichero `kg/output.nt`.
+El número de triples se ha obtenido con:
+
+```
+wc -l kg/output.nt
+```
 
 El grafo contiene instancias de todas las entidades definidas y relaciones entre ellas.
 
@@ -120,22 +129,33 @@ Se ha verificado manualmente el Knowledge Graph comprobando:
 
 Durante el desarrollo de la práctica se han identificado varios problemas:
 
-* **Encoding de los CSV**: algunos ficheros no estaban en UTF-8
-  → Se han convertido para evitar errores de lectura.
-
-* **Separador de columnas**: los CSV utilizaban `;` en lugar de `,`
-  → Se han normalizado a comas.
-
 * **Inconsistencias en nombres de columnas**
-  → Se han ajustado los mappings para coincidir exactamente con los CSV.
+  - Se han ajustado los mappings para coincidir exactamente con los CSV.
 
 * **Regeneración del mapping RML**
-  → Fue necesario regenerar el `.ttl` tras cambios en el YARRRML.
+  - Fue necesario regenerar el `.ttl` tras cambios en el YARRRML.
+
+* **Duplicados en CSV auxiliares**
+  - Se eliminaron filas duplicadas exactas en `competicion.csv`, `distritoMunicipal.csv`,
+  `equipo.csv`, `fase.csv`, `grupo.csv` y `temporada.csv`.
+
+* **Filas mal parseadas en `campo.csv`**
+  - Se corrigieron registros en los que comas internas del nombre del campo habían
+  desplazado valores hacia las columnas `coordX`, `coordY` o `nombreDistrito`.
+
+* **Campos sin identificador válido**
+  - Se eliminaron de `campo.csv` las filas con `codigoCampo` igual a `0` para evitar
+  la generación del recurso artificial `Campo/0`.
+  - Algunos partidos mantienen `codigoCampo` igual a `0` en `partidos.csv`. Estos casos
+  se interpretan como partidos con campo desconocido, por lo que no generan una relación
+  válida `ta:seJuegaEn` hacia un recurso de tipo `Campo`.
 
 ---
 
 ## 7. Conclusión
 
-Se ha construido correctamente un Knowledge Graph a partir de datos tabulares en CSV siguiendo la metodología LOT4KG.
+Se ha construido un Knowledge Graph a partir de datos tabulares en CSV siguiendo la metodología LOT4KG.
 
-El resultado es un grafo coherente, bien estructurado y reutilizable, que representa adecuadamente la información del dataset.
+El resultado representa las principales entidades del dataset y sus relaciones. Tras la
+deduplicación de los CSV auxiliares, la corrección de `campo.csv` y la regeneración del
+mapping RML, se ha generado una versión más consistente del Knowledge Graph.

@@ -1,0 +1,12 @@
+localResource,localName,wikidata,wikidataLabel,population,area,coords
+http://example.org/resource/Distrito/Barajas,Barajas,http://www.wikidata.org/entity/Q807230,Barajas,50539,41.922811382191,Point(-3.58489 40.470196)
+http://example.org/resource/Distrito/Centro,Centro,http://www.wikidata.org/entity/Q1763376,Centro,139687,5.2282,Point(-3.7075 40.415277777)
+http://example.org/resource/Distrito/Chamartan,Chamartan,http://www.wikidata.org/entity/Q1766348,Chamartín,144796,9.17548212465925,Point(-3.6775 40.453333333)
+http://example.org/resource/Distrito/Chambera,Chambera,http://www.wikidata.org/entity/Q1763370,Chamberí,138204,4.67918508335805,Point(-3.697186111 40.432791666)
+http://example.org/resource/Distrito/Hortaleza,Hortaleza,http://www.wikidata.org/entity/Q1928529,Hortaleza,198391,27.4197624962822,Point(-3.640482 40.469457)
+http://example.org/resource/Distrito/Latina,Latina,http://www.wikidata.org/entity/Q794954,Latina,241672,25.4272030154025,Point(-3.741294444 40.402461111)
+http://example.org/resource/Distrito/Retiro,Retiro,http://www.wikidata.org/entity/Q2002296,Retiro,117918,5.46,Point(-3.676729 40.408072)
+http://example.org/resource/Distrito/Salamanca,Salamanca,http://www.wikidata.org/entity/Q1773521,Salamanca (Madrid),145702,5.3924041500993,Point(-3.677778 40.43)
+http://example.org/resource/Distrito/Tetuan,Tetuan,http://www.wikidata.org/entity/Q1773540,Tetuán,160002,5.37472525006254,Point(-3.7 40.460556)
+http://example.org/resource/Distrito/Usera,Usera,http://www.wikidata.org/entity/Q953368,Usera,142746,7.77771673918264,Point(-3.706855555 40.381336111)
+http://example.org/resource/Distrito/Villaverde,Villaverde,http://www.wikidata.org/entity/Q919536,Villaverde,159038,20.1875858768973,Point(-3.709355555 40.345925)

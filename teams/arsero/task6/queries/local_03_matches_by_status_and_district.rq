@@ -1,0 +1,12 @@
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?nombreDistrito ?estado (COUNT(DISTINCT ?partido) AS ?totalPartidos)
+WHERE {
+  ?partido a ta:Partido ;
+           ta:estado ?estado ;
+           ta:seJuegaEn ?campo .
+  ?campo ta:estaEn ?distrito .
+  ?distrito ta:nombreDistrito ?nombreDistrito .
+}
+GROUP BY ?nombreDistrito ?estado
+ORDER BY ?nombreDistrito ?estado

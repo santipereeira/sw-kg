@@ -99,7 +99,7 @@ mappings:
       - [ta:jornada, $(jornada), xsd:integer]
       - [ta:fecha, $(fecha), xsd:date]
       - [ta:hora, $(hora), xsd:time]
-      - [ta:programado, $(estado)]
+      - [ta:programado, $(programado), xsd:integer]
       - [ta:resultadoLocal, $(resultadoLocal), xsd:integer]
       - [ta:resultadoVisitante, $(resultadoVisitante), xsd:integer]
       - [ta:estado, $(estado)]
