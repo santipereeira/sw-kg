@@ -1,0 +1,57 @@
+prefixes:
+  gamere: "http://example.org/def/gamere#"
+  res: "http://example.org/resource/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+
+mappings:
+  playas:
+    sources:
+      - ['data/PraiasBandeiraAzul-2025-csv.csv~csv']
+    s: res:praia/$(CODIGO_CONCELLO)_$(PRAIA)
+    po:
+      - [a, gamere:Praia]
+      - [gamere:nomePraia, $(PRAIA)]
+      - [gamere:lonxitude, $(LONXITUDE), xsd:integer]
+      - [gamere:entorno, $(TIPO)]
+      - [gamere:tipoArena, $(TIPO_DE_AREA)]
+      - [gamere:url, $(MAIS_INFORMACION_EN_TURGALICIA), xsd:anyURI]
+      - p: owl:sameAs
+        o: https://www.wikidata.org/entity/$(wikidata_praia)
+      - p: gamere:situadaEn
+        o: res:concello/$(CODIGO_CONCELLO)
+      - p: gamere:estaEn
+        o: res:ubicacion/$(Coordenada_X)_$(Coordenada_Y)
+
+  concellos:
+    sources:
+      - ['data/PraiasBandeiraAzul-2025-csv.csv~csv']
+    s: res:concello/$(CODIGO_CONCELLO)
+    po:
+      - [a, gamere:Concello]
+      - [gamere:nameConcello, $(CONCELLO)]
+      - [gamere:codigoConcello, $(CODIGO_CONCELLO), xsd:integer]
+      - p: owl:sameAs
+        o: https://www.wikidata.org/entity/$(wikidata_concello)
+      - p: gamere:perteneceA
+        o: res:provincia/$(CODIGO_PROVINCIA)
+
+  provincias:
+    sources:
+      - ['data/PraiasBandeiraAzul-2025-csv.csv~csv']
+    s: res:provincia/$(CODIGO_PROVINCIA)
+    po:
+      - [a, gamere:Provincia]
+      - [gamere:nameProvincia, $(PROVINCIA)]
+      - [gamere:codigoProvincia, $(CODIGO_PROVINCIA), xsd:integer]
+      - p: owl:sameAs
+        o: https://www.wikidata.org/entity/$(wikidata_provincia)
+
+  ubicaciones:
+    sources:
+      - ['data/PraiasBandeiraAzul-2025-csv.csv~csv']
+    s: res:ubicacion/$(Coordenada_X)_$(Coordenada_Y)
+    po:
+      - [a, gamere:Ubicacion]
+      - [gamere:coordenadasX, $(Coordenada_X), xsd:float]
+      - [gamere:coordenadasY, $(Coordenada_Y), xsd:float]
