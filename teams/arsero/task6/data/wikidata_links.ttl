@@ -1,0 +1,34 @@
+@prefix ex: <http://example.org/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# District links obtained from the OpenRefine reconciliation history.
+<http://example.org/resource/Distrito/Latina> owl:sameAs <http://www.wikidata.org/entity/Q794954> .
+<http://example.org/resource/Distrito/Villaverde> owl:sameAs <http://www.wikidata.org/entity/Q919536> .
+<http://example.org/resource/Distrito/Salamanca> owl:sameAs <http://www.wikidata.org/entity/Q1773521> .
+<http://example.org/resource/Distrito/Centro> owl:sameAs <http://www.wikidata.org/entity/Q1763376> .
+<http://example.org/resource/Distrito/Retiro> owl:sameAs <http://www.wikidata.org/entity/Q2002296> .
+<http://example.org/resource/Distrito/Chamartan> owl:sameAs <http://www.wikidata.org/entity/Q1766348> .
+<http://example.org/resource/Distrito/Hortaleza> owl:sameAs <http://www.wikidata.org/entity/Q1928529> .
+<http://example.org/resource/Distrito/Barajas> owl:sameAs <http://www.wikidata.org/entity/Q807230> .
+<http://example.org/resource/Distrito/Tetuan> owl:sameAs <http://www.wikidata.org/entity/Q1773540> .
+<http://example.org/resource/Distrito/Chambera> owl:sameAs <http://www.wikidata.org/entity/Q1763370> .
+<http://example.org/resource/Distrito/Usera> owl:sameAs <http://www.wikidata.org/entity/Q953368> .
+
+# Sports facility links obtained from the OpenRefine reconciliation history.
+<http://example.org/resource/Campo/85> owl:sameAs <http://www.wikidata.org/entity/Q63191263> .
+<http://example.org/resource/Campo/95> owl:sameAs <http://www.wikidata.org/entity/Q63191213> .
+<http://example.org/resource/Campo/103> owl:sameAs <http://www.wikidata.org/entity/Q63191252> .
+<http://example.org/resource/Campo/367> owl:sameAs <http://www.wikidata.org/entity/Q63191260> .
+<http://example.org/resource/Campo/374> owl:sameAs <http://www.wikidata.org/entity/Q6078000> .
+<http://example.org/resource/Campo/385> owl:sameAs <http://www.wikidata.org/entity/Q6078000> .
+<http://example.org/resource/Campo/584> owl:sameAs <http://www.wikidata.org/entity/Q63191223> .
+<http://example.org/resource/Campo/682> owl:sameAs <http://www.wikidata.org/entity/Q63191274> .
+<http://example.org/resource/Campo/845> owl:sameAs <http://www.wikidata.org/entity/Q28793905> .
+<http://example.org/resource/Campo/871> owl:sameAs <http://www.wikidata.org/entity/Q135957017> .
+<http://example.org/resource/Campo/991> owl:sameAs <http://www.wikidata.org/entity/Q85751287> .
+<http://example.org/resource/Campo/996> owl:sameAs <http://www.wikidata.org/entity/Q85751287> .
+<http://example.org/resource/Campo/1475> owl:sameAs <http://www.wikidata.org/entity/Q63191274> .
+<http://example.org/resource/Campo/1927> owl:sameAs <http://www.wikidata.org/entity/Q63191248> .
+<http://example.org/resource/Campo/70033> owl:sameAs <http://www.wikidata.org/entity/Q63191262> .
+<http://example.org/resource/Campo/70034> owl:sameAs <http://www.wikidata.org/entity/Q63191262> .
+<http://example.org/resource/Campo/100227> owl:sameAs <http://www.wikidata.org/entity/Q63191274> .

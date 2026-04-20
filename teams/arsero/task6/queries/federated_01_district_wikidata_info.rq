@@ -1,0 +1,24 @@
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?nombreDistrito ?wikidata ?wikidataLabel ?population ?area ?coords
+WHERE {
+  ?distrito a ta:DistritoMunicipal ;
+            ta:nombreDistrito ?nombreDistrito ;
+            owl:sameAs ?wikidata .
+
+  SERVICE <https://query.wikidata.org/sparql> {
+    OPTIONAL { ?wikidata wdt:P1082 ?population . }
+    OPTIONAL { ?wikidata wdt:P2046 ?area . }
+    OPTIONAL { ?wikidata wdt:P625 ?coords . }
+    SERVICE wikibase:label {
+      bd:serviceParam wikibase:language "es,en" .
+      ?wikidata rdfs:label ?wikidataLabel .
+    }
+  }
+}
+ORDER BY ?nombreDistrito

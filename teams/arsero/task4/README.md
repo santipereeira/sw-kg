@@ -73,10 +73,12 @@ Este paso genera un fichero RDF que describe las reglas de transformación.
 
 ### 3.3 Generación del Knowledge Graph con Morph-KGC
 
-Se ha utilizado Morph-KGC para materializar el grafo RDF a partir de los mappings:
+Se ha utilizado Morph-KGC para materializar el grafo RDF a partir de los mappings.
+El fichero de configuración se encuentra en `mappings/config.ini`, por lo que el
+comando debe ejecutarse desde la carpeta `task4`:
 
 ```
-python -m morph_kgc config.ini
+python -m morph_kgc mappings/config.ini
 ```
 
 El resultado es un fichero RDF con todas las instancias y relaciones:
@@ -87,11 +89,53 @@ kg/output.nt
 
 ---
 
-## 4. Resultado
+## 4. Resultado del Knowledge Graph
 
-Se ha generado un Knowledge Graph con:
+El fichero completo del Knowledge Graph generado con Morph-KGC (`kg/output.nt`) no se
+incluye en el repositorio porque su tamaño es elevado para una entrega en GitHub.
 
-* **64.947 triples RDF**
+En su lugar, se incluye una muestra reducida del resultado en:
+
+```bash
+kg/output_sample.nt
+```
+
+Esta muestra contiene 1000 triples RDF en formato N-Triples y permite revisar la
+estructura general del grafo generado, incluyendo URIs, tipos RDF, propiedades de datos y
+relaciones entre recursos.
+
+El Knowledge Graph completo puede regenerarse localmente desde la carpeta `task4`
+utilizando los siguientes archivos:
+
+* `data/*.csv`
+* `mappings/mapping.yarrrml.yaml`
+* `mappings/mapping.rml.ttl`
+* `mappings/config.ini`
+
+Si se modifica el fichero YARRRML, primero debe regenerarse el mapping RML con Yatter:
+
+```bash
+python -m yatter -i mappings/mapping.yarrrml.yaml -o mappings/mapping.rml.ttl
+```
+
+Después, se ejecuta Morph-KGC desde la carpeta `task4`:
+
+```bash
+python -m morph_kgc mappings/config.ini
+```
+
+El resultado completo se genera en:
+
+```bash
+kg/output.nt
+```
+
+En la versión completa generada durante la práctica, el Knowledge Graph contiene
+**298.653 triples RDF**, calculados con:
+
+```bash
+wc -l kg/output.nt
+```
 
 El grafo contiene instancias de todas las entidades definidas y relaciones entre ellas.
 
@@ -120,22 +164,33 @@ Se ha verificado manualmente el Knowledge Graph comprobando:
 
 Durante el desarrollo de la práctica se han identificado varios problemas:
 
-* **Encoding de los CSV**: algunos ficheros no estaban en UTF-8
-  → Se han convertido para evitar errores de lectura.
-
-* **Separador de columnas**: los CSV utilizaban `;` en lugar de `,`
-  → Se han normalizado a comas.
-
 * **Inconsistencias en nombres de columnas**
-  → Se han ajustado los mappings para coincidir exactamente con los CSV.
+  - Se han ajustado los mappings para coincidir exactamente con los CSV.
 
 * **Regeneración del mapping RML**
-  → Fue necesario regenerar el `.ttl` tras cambios en el YARRRML.
+  - Fue necesario regenerar el `.ttl` tras cambios en el YARRRML.
+
+* **Duplicados en CSV auxiliares**
+  - Se eliminaron filas duplicadas exactas en `competicion.csv`, `distritoMunicipal.csv`,
+  `equipo.csv`, `fase.csv`, `grupo.csv` y `temporada.csv`.
+
+* **Filas mal parseadas en `campo.csv`**
+  - Se corrigieron registros en los que comas internas del nombre del campo habían
+  desplazado valores hacia las columnas `coordX`, `coordY` o `nombreDistrito`.
+
+* **Campos sin identificador válido**
+  - Se eliminaron de `campo.csv` las filas con `codigoCampo` igual a `0` para evitar
+  la generación del recurso artificial `Campo/0`.
+  - Algunos partidos mantienen `codigoCampo` igual a `0` en `partidos.csv`. Estos casos
+  se interpretan como partidos con campo desconocido, por lo que no generan una relación
+  válida `ta:seJuegaEn` hacia un recurso de tipo `Campo`.
 
 ---
 
 ## 7. Conclusión
 
-Se ha construido correctamente un Knowledge Graph a partir de datos tabulares en CSV siguiendo la metodología LOT4KG.
+Se ha construido un Knowledge Graph a partir de datos tabulares en CSV siguiendo la metodología LOT4KG.
 
-El resultado es un grafo coherente, bien estructurado y reutilizable, que representa adecuadamente la información del dataset.
+El resultado representa las principales entidades del dataset y sus relaciones. Tras la
+deduplicación de los CSV auxiliares, la corrección de `campo.csv` y la regeneración del
+mapping RML, se ha generado una versión más consistente del Knowledge Graph.
