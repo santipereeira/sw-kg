@@ -1,0 +1,20 @@
+PREFIX ns: <https://example.org/partidos/>
+
+# Listado de equipos y el deporte que practican (inferido a través de los partidos)
+SELECT DISTINCT ?nombreEquipo ?nombreDeporte
+WHERE {
+  ?partido a ns:Partido .
+  ?partido ns:tieneEquipoLocal ?equipo .
+  ?equipo ns:nombreEquipo ?nombreEquipo .
+  
+  # Relacionamos el partido con el deporte a través de la competición
+  # Nota: En el mapping, el partido no tiene enlace directo a la competición, 
+  # pero la jornada tiene partidos y la competición tiene grupos que tienen jornadas.
+  ?jornada ns:tienePartido ?partido .
+  ?grupo ns:tieneJornada ?jornada .
+  ?competicion ns:tieneGrupo ?grupo .
+  ?competicion ns:tipoDe ?deporte .
+  ?deporte ns:nombreDeporte ?nombreDeporte .
+}
+ORDER BY ?nombreDeporte ?nombreEquipo
+LIMIT 100

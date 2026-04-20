@@ -1,0 +1,598 @@
+@prefix ns: <https://example.org/partidos/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix comp: <http://semweb.mmlab.be/ns/rml-compression#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.
+@base <http://example.com/ns#>.
+
+
+<deporte_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/deporte/{Nombre_deporte}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Deporte;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreDeporte;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nombre_deporte";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:sameAsDeporte;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://www.wikidata.org/entity/{Deporte_ID}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<competicion_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/competicion/{Nombre_fase}_{Nombre_temporada}_{Nombre_deporte}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Competicion;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:sistemaCompeticion;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "SISTEMA_COMPETICION";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:temporada;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nombre_temporada";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tipoDe;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/deporte/{Nombre_deporte}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneGrupo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/grupo/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<grupo_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/grupo/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Grupo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreGrupo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nombre_grupo";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:sexo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Sexo_grupo";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:categoria;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nombre_categoria";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:fase;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Nombre_fase";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneJornada;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/jornada/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<jornada_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/jornada/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Jornada;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:codigoJornada;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Jornada";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:fecha;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Fecha_Hora";
+			rr:datatype xsd:dateTime
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tienePartido;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/partido/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}_{Partido}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<partido_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/partido/{Nombre_fase}_{Nombre_deporte}_{Codigo_grupo}_{Jornada}_{Partido}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Partido;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:resultado1;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Resultado1";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:resultado2;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Resultado2";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:hora;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Fecha_Hora";
+			rr:datatype xsd:dateTime
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:estado;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Estado";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:programado;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Programado";
+			rr:datatype xsd:boolean
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneEquipoLocal;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/equipo/{Codigo_equipo1}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:tieneEquipoVisitante;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/equipo/{Codigo_equipo2}";
+			rr:termType rr:IRI
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:ocurreEn;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/campo/{Codigo_campo}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<equipo_local_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/equipo/{Codigo_equipo1}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Equipo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:codigoEquipo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codigo_equipo1";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreEquipo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Equipo_local";
+			rr:datatype xsd:string
+		];
+	].
+
+
+<equipo_visitante_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/equipo/{Codigo_equipo2}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Equipo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:codigoEquipo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codigo_equipo2";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreEquipo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Equipo_visitante";
+			rr:datatype xsd:string
+		];
+	].
+
+
+<campo_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/campo/{Codigo_campo}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Campo;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:codigoCampo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Codigo_campo";
+			rr:datatype xsd:integer
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreCampo;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Campo";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:coorX;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "COORD_X_CAMPO";
+			rr:datatype xsd:float
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:coorY;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "COORD_Y_CAMPO";
+			rr:datatype xsd:float
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:localizadoEn;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "https://example.org/partidos/distrito/{Distrito}";
+			rr:termType rr:IRI
+		];
+	].
+
+
+<distrito_0> a rr:TriplesMap;
+
+	rml:logicalSource [
+		a rml:LogicalSource;
+		rml:source "TAREA_4/data/ontologia-deportes.csv";
+		rml:referenceFormulation ql:CSV
+
+	];
+	rr:subjectMap [
+		a rr:SubjectMap;
+		rr:template "https://example.org/partidos/distrito/{Distrito}";
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant rdf:type;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:constant ns:Distrito;
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:nombreDistrito;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rml:reference "Distrito";
+			rr:datatype xsd:string
+		];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [
+			a rr:PredicateMap;
+			rr:constant ns:sameAsDistrito;
+		];
+		rr:objectMap [
+			a rr:ObjectMap;
+			rr:template "http://www.wikidata.org/entity/{Distrito_ID}";
+			rr:termType rr:IRI
+		];
+	].
+
+

@@ -1,8 +1,0 @@
-https://example.org/partidos/Distrito type Class
-https://example.org/partidos/Deporte type Class
-https://example.org/partidos/Grupo type Class
-https://example.org/partidos/Competicion type Class
-https://example.org/partidos/Equipo type Class
-https://example.org/partidos/Campo type Class
-https://example.org/partidos/Jornada type Class
-https://example.org/partidos/Partido type Class

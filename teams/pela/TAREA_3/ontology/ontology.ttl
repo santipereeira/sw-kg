@@ -1,0 +1,286 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod:     <https://w3id.org/mod#> .
+@prefix ns:      <https://example.org/partidos/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# ─────────────────────────────────────────────
+#  ONTOLOGÍA
+# ─────────────────────────────────────────────
+
+<https://example.org/partidos/> a owl:Ontology ;
+    dcterms:title       "Ontología Deportes" ;
+    dcterms:description "Ontología para la gestión de competiciones deportivas, incluyendo partidos, equipos, campos, grupos y jornadas." ;
+    dcterms:creator     "Santiago Pereira Olmeda, Mateo Fraguas Abal, Gonzalo Landeira Rodríguez" ;
+    dcterms:license     <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo     "1.0.0" ;
+    mod:createdWith     <https://chowlk.linkeddata.es/> .
+
+
+# ─────────────────────────────────────────────
+#  CLASES
+# ─────────────────────────────────────────────
+
+ns:Deporte a owl:Class ;
+    rdfs:label   "Deporte" ;
+    rdfs:comment "Representa un deporte (p. ej. fútbol, baloncesto)." .
+
+ns:Competicion a owl:Class ;
+    rdfs:label   "Competicion" ;
+    rdfs:comment "Competición deportiva organizada dentro de un deporte y temporada." .
+
+ns:Grupo a owl:Class ;
+    rdfs:label   "Grupo" ;
+    rdfs:comment "Grupo o categoría dentro de una competición." .
+
+ns:Jornada a owl:Class ;
+    rdfs:label   "Jornada" ;
+    rdfs:comment "Jornada de una competición, identificada por código y fecha." .
+
+ns:Partido a owl:Class ;
+    rdfs:label   "Partido" ;
+    rdfs:comment "Encuentro deportivo entre dos equipos en un campo y fecha determinados." .
+
+ns:Equipo a owl:Class ;
+    rdfs:label   "Equipo" ;
+    rdfs:comment "Equipo participante en la competición." .
+
+ns:Campo a owl:Class ;
+    rdfs:label   "Campo" ;
+    rdfs:comment "Instalación deportiva donde se celebran los partidos." .
+
+ns:Distrito a owl:Class ;
+    rdfs:label   "Distrito" ;
+    rdfs:comment "Distrito o zona geográfica donde está ubicado un campo." .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE OBJETO
+# ─────────────────────────────────────────────
+
+ns:tipoDe a owl:ObjectProperty ;
+    rdfs:label   "tipo de" ;
+    rdfs:comment "Relaciona una competición con el deporte al que pertenece." ;
+    rdfs:domain  ns:Competicion ;
+    rdfs:range   ns:Deporte .
+
+ns:tieneGrupo a owl:ObjectProperty ;
+    rdfs:label   "tiene grupo" ;
+    rdfs:comment "Relaciona una competición con sus grupos." ;
+    rdfs:domain  ns:Competicion ;
+    rdfs:range   ns:Grupo .
+
+ns:tieneJornada a owl:ObjectProperty ;
+    rdfs:label   "tiene jornada" ;
+    rdfs:comment "Relaciona un grupo con sus jornadas." ;
+    rdfs:domain  ns:Grupo ;
+    rdfs:range   ns:Jornada .
+
+ns:tienePartido a owl:ObjectProperty ;
+    rdfs:label   "tiene partido" ;
+    rdfs:comment "Relaciona una jornada con los partidos que la componen." ;
+    rdfs:domain  ns:Jornada ;
+    rdfs:range   ns:Partido .
+
+ns:tieneEquipoLocal a owl:ObjectProperty ;
+    rdfs:label   "tiene equipo local" ;
+    rdfs:comment "Equipo que juega como local en el partido." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   ns:Equipo .
+
+ns:tieneEquipoVisitante a owl:ObjectProperty ;
+    rdfs:label   "tiene equipo visitante" ;
+    rdfs:comment "Equipo que juega como visitante en el partido." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   ns:Equipo .
+
+ns:ocurreEn a owl:ObjectProperty ;
+    rdfs:label   "ocurre en" ;
+    rdfs:comment "Campo donde se celebra el partido." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   ns:Campo .
+
+ns:localizadoEn a owl:ObjectProperty ;
+    rdfs:label   "localizado en" ;
+    rdfs:comment "Distrito donde está ubicado el campo." ;
+    rdfs:domain  ns:Campo ;
+    rdfs:range   ns:Distrito .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Deporte
+# ─────────────────────────────────────────────
+
+ns:nombreDeporte a owl:DatatypeProperty ;
+    rdfs:label   "nombre deporte" ;
+    rdfs:comment "Nombre del deporte." ;
+    rdfs:domain  ns:Deporte ;
+    rdfs:range   xsd:string .
+
+ns:sameAsDeporte a owl:DatatypeProperty ;
+    rdfs:label   "same as deporte" ;
+    rdfs:comment "URI externa equivalente para el deporte (enlace a recurso LOD)." ;
+    rdfs:domain  ns:Deporte ;
+    rdfs:range   xsd:anyURI .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Competicion
+# ─────────────────────────────────────────────
+
+ns:sistemaCompeticion a owl:DatatypeProperty ;
+    rdfs:label   "sistema competicion" ;
+    rdfs:comment "Sistema de competición (liga, copa, liguilla, etc.)." ;
+    rdfs:domain  ns:Competicion ;
+    rdfs:range   xsd:string .
+
+ns:temporada a owl:DatatypeProperty ;
+    rdfs:label   "temporada" ;
+    rdfs:comment "Temporada en formato texto (p. ej. 2014/2015)." ;
+    rdfs:domain  ns:Competicion ;
+    rdfs:range   xsd:string .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Grupo
+# ─────────────────────────────────────────────
+
+ns:nombreGrupo a owl:DatatypeProperty ;
+    rdfs:label   "nombre grupo" ;
+    rdfs:comment "Nombre del grupo dentro de la competición." ;
+    rdfs:domain  ns:Grupo ;
+    rdfs:range   xsd:string .
+
+ns:sexo a owl:DatatypeProperty ;
+    rdfs:label   "sexo" ;
+    rdfs:comment "Categoría de sexo del grupo (masculino, femenino, mixto)." ;
+    rdfs:domain  ns:Grupo ;
+    rdfs:range   xsd:string .
+
+ns:categoria a owl:DatatypeProperty ;
+    rdfs:label   "categoria" ;
+    rdfs:comment "Categoría de edad o nivel del grupo." ;
+    rdfs:domain  ns:Grupo ;
+    rdfs:range   xsd:string .
+
+ns:fase a owl:DatatypeProperty ;
+    rdfs:label   "fase" ;
+    rdfs:comment "Fase de la competición a la que pertenece el grupo." ;
+    rdfs:domain  ns:Grupo ;
+    rdfs:range   xsd:string .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Jornada
+# ─────────────────────────────────────────────
+
+ns:codigoJornada a owl:DatatypeProperty ;
+    rdfs:label   "codigo jornada" ;
+    rdfs:comment "Código numérico identificador de la jornada." ;
+    rdfs:domain  ns:Jornada ;
+    rdfs:range   xsd:integer .
+
+ns:fecha a owl:DatatypeProperty ;
+    rdfs:label   "fecha" ;
+    rdfs:comment "Fecha de celebración de la jornada." ;
+    rdfs:domain  ns:Jornada ;
+    rdfs:range   xsd:date .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Partido
+# ─────────────────────────────────────────────
+
+ns:resultado1 a owl:DatatypeProperty ;
+    rdfs:label   "resultado1" ;
+    rdfs:comment "Goles o puntos del equipo local." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   xsd:integer .
+
+ns:resultado2 a owl:DatatypeProperty ;
+    rdfs:label   "resultado2" ;
+    rdfs:comment "Goles o puntos del equipo visitante." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   xsd:integer .
+
+ns:hora a owl:DatatypeProperty ;
+    rdfs:label   "hora" ;
+    rdfs:comment "Hora de inicio del partido." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   xsd:time .
+
+ns:estado a owl:DatatypeProperty ;
+    rdfs:label   "estado" ;
+    rdfs:comment "Estado del partido (programado, jugado, suspendido, etc.)." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   xsd:string .
+
+ns:programado a owl:DatatypeProperty ;
+    rdfs:label   "programado" ;
+    rdfs:comment "Indica si el partido está programado (true) o no (false)." ;
+    rdfs:domain  ns:Partido ;
+    rdfs:range   xsd:boolean .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Equipo
+# ─────────────────────────────────────────────
+
+ns:codigoEquipo a owl:DatatypeProperty ;
+    rdfs:label   "codigo equipo" ;
+    rdfs:comment "Código numérico identificador del equipo." ;
+    rdfs:domain  ns:Equipo ;
+    rdfs:range   xsd:integer .
+
+ns:nombreEquipo a owl:DatatypeProperty ;
+    rdfs:label   "nombre equipo" ;
+    rdfs:comment "Nombre del equipo." ;
+    rdfs:domain  ns:Equipo ;
+    rdfs:range   xsd:string .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Campo
+# ─────────────────────────────────────────────
+
+ns:codigoCampo a owl:DatatypeProperty ;
+    rdfs:label   "codigo campo" ;
+    rdfs:comment "Código numérico identificador del campo." ;
+    rdfs:domain  ns:Campo ;
+    rdfs:range   xsd:integer .
+
+ns:nombreCampo a owl:DatatypeProperty ;
+    rdfs:label   "nombre campo" ;
+    rdfs:comment "Nombre de la instalación deportiva." ;
+    rdfs:domain  ns:Campo ;
+    rdfs:range   xsd:string .
+
+ns:coorX a owl:DatatypeProperty ;
+    rdfs:label   "coordenada X" ;
+    rdfs:comment "Coordenada X (longitud) de la ubicación del campo." ;
+    rdfs:domain  ns:Campo ;
+    rdfs:range   xsd:float .
+
+ns:coorY a owl:DatatypeProperty ;
+    rdfs:label   "coordenada Y" ;
+    rdfs:comment "Coordenada Y (latitud) de la ubicación del campo." ;
+    rdfs:domain  ns:Campo ;
+    rdfs:range   xsd:float .
+
+
+# ─────────────────────────────────────────────
+#  PROPIEDADES DE DATOS — ns:Distrito
+# ─────────────────────────────────────────────
+
+ns:nombreDistrito a owl:DatatypeProperty ;
+    rdfs:label   "nombre distrito" ;
+    rdfs:comment "Nombre del distrito." ;
+    rdfs:domain  ns:Distrito ;
+    rdfs:range   xsd:string .
+
+ns:sameAsDistrito a owl:DatatypeProperty ;
+    rdfs:label   "same as distrito" ;
+    rdfs:comment "URI externa equivalente para el distrito (enlace a recurso LOD)." ;
+    rdfs:domain  ns:Distrito ;
+    rdfs:range   xsd:anyURI .
