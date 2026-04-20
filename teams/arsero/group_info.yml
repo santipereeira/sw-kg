@@ -7,6 +7,6 @@ members:
     github: "https://github.com/roquedearcos"
 
 dataset:
-  name: "Censo de vehículos registrados en el municipio de Cabra, tipo y características"
-  url: "https://datos.gob.es/es/catalogo/l01140137-censo-de-vehiculos-registrados"
-  description: "Conjunto de datos que recoge información agregada sobre el parque de vehículos en el municipio de Cabra, incluyendo el tipo de vehículo, marca, combustible, potencia, cilindrada, número de plazas, año de matriculación y cantidad de vehículos registrados."
+  name: "Juegos deportivos municipales (Madrid): calendario y resultados de competiciones"
+  url: "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual/information"
+  description: "Conjunto de datos de los Juegos Deportivos Municipales de Madrid con información de competiciones y partidos: temporada, competición, fase y grupo, jornada, equipos local y visitante, resultados, campo de juego, fecha y hora, distrito, observaciones, sistema de competición, coordenadas del campo y colores de camiseta."
