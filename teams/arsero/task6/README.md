@@ -2,10 +2,7 @@
 
 ## Descripción
 
-Esta tarea explota el Knowledge Graph de los Juegos Deportivos Municipales de Madrid
-generado en la Tarea 4. El objetivo es demostrar que el grafo puede consultarse con
-SPARQL, enriquecerse con Wikidata y producir resultados útiles para análisis y
-visualización.
+Esta tarea explota el Knowledge Graph de los Juegos Deportivos Municipales de Madrid generado en la Tarea 4. El objetivo es demostrar que el grafo puede consultarse con SPARQL, enriquecerse con Wikidata y producir resultados útiles para análisis y visualización.
 
 Grafo base:
 
@@ -13,15 +10,13 @@ Grafo base:
 ../task4/kg/output.nt
 ```
 
-El grafo contiene 298.653 triples RDF. Para esta tarea se carga también un pequeño grafo
-de enlaces a Wikidata:
+El grafo contiene 298.653 triples RDF. Para esta tarea se carga también un pequeño grafo de enlaces a Wikidata:
 
 ```bash
 data/wikidata_links.ttl
 ```
 
-Estos enlaces proceden del historial de reconciliación de OpenRefine y conectan recursos
-locales de distritos y campos deportivos con entidades Wikidata mediante `owl:sameAs`.
+Estos enlaces proceden del historial de reconciliación de OpenRefine y conectan recursos locales de distritos y campos deportivos con entidades Wikidata mediante `owl:sameAs`.
 
 ---
 
@@ -46,6 +41,9 @@ task6/
     maps/
   llm/
     prompt_examples.md
+    generated_queries.rq
+    evaluate_llm_queries.py
+    llm_evaluation.md
 ```
 
 ---
@@ -60,15 +58,13 @@ Las consultas locales se ejecutan con RDFLib sobre el KG local y el grafo de enl
 * `local_04_fields_with_coordinates.rq`: extrae campos con coordenadas válidas.
 * `local_05_wikidata_links.rq`: lista los recursos locales conectados con Wikidata.
 
-Estas consultas usan patrones SPARQL vistos en clase: `SELECT`, `WHERE`, `FILTER`,
-`COUNT`, `GROUP BY`, `ORDER BY` y `LIMIT`.
+Estas consultas usan patrones SPARQL vistos en clase: `SELECT`, `WHERE`, `FILTER`,`COUNT`, `GROUP BY`, `ORDER BY` y `LIMIT`.
 
 ---
 
 ## Consultas a Wikidata
 
-La explotación incluye consultas a Wikidata a partir de enlaces presentes en el grafo
-cargado en esta tarea. Los enlaces se representan con `owl:sameAs`, por ejemplo:
+La explotación incluye consultas a Wikidata a partir de enlaces presentes en el grafo cargado en esta tarea. Los enlaces se representan con `owl:sameAs`, por ejemplo:
 
 ```turtle
 <http://example.org/resource/Distrito/Latina>
@@ -77,14 +73,10 @@ cargado en esta tarea. Los enlaces se representan con `owl:sameAs`, por ejemplo:
 
 Se entregan dos consultas federadas:
 
-* `federated_01_district_wikidata_info.rq`: recupera etiqueta, población, área y
-  coordenadas de los distritos enlazados.
-* `federated_02_field_wikidata_info.rq`: recupera etiqueta, coordenadas y dirección
-  cuando están disponibles para campos deportivos enlazados.
+* `federated_01_district_wikidata_info.rq`: recupera etiqueta, población, área y coordenadas de los distritos enlazados.
+* `federated_02_field_wikidata_info.rq`: recupera etiqueta, coordenadas y dirección cuando están disponibles para campos deportivos enlazados.
 
-En el script se ejecuta la federación en dos pasos: primero se consultan los enlaces en el
-KG local y después se consulta Wikidata con `SPARQLWrapper`. Esto evita depender de que
-RDFLib ejecute `SERVICE` remoto, pero mantiene la misma lógica de explotación federada.
+En el script se ejecuta la federación en dos pasos: primero se consultan los enlaces en el KG local y después se consulta Wikidata con `SPARQLWrapper`. Esto evita depender de que RDFLib ejecute `SERVICE` remoto, pero mantiene la misma lógica de explotación federada.
 
 ---
 
@@ -139,18 +131,14 @@ results/maps/fields_map.html
 
 Ejemplos de resultados:
 
-* El ranking de partidos por distrito sitúa a Salamanca, Latina y Chamartín entre los
-  distritos con mayor número de partidos registrados.
-* La consulta de campos con coordenadas produce 314 registros, utilizados para construir
-  el mapa HTML.
-* La consulta federada de distritos enriquece el KG con etiquetas, población, área y
-  coordenadas procedentes de Wikidata.
-* La consulta federada de campos añade etiquetas externas y, cuando Wikidata lo ofrece,
-  direcciones o coordenadas.
+* El ranking de partidos por distrito sitúa a Salamanca, Latina y Chamartín entre los distritos con mayor número de partidos registrados.
+* La consulta de campos con coordenadas produce 314 registros, utilizados para construir el mapa HTML.
+* La consulta federada de distritos enriquece el KG con etiquetas, población, área y coordenadas procedentes de Wikidata.
+* La consulta federada de campos añade etiquetas externas y, cuando Wikidata lo ofrece, direcciones o coordenadas.
 
 ---
 
-## Valor De La Explotación
+## Valor de usar SPARQL
 
 El uso de SPARQL permite responder preguntas analíticas sobre el KG local:
 
@@ -159,37 +147,53 @@ El uso de SPARQL permite responder preguntas analíticas sobre el KG local:
 * cómo se distribuyen los estados de los partidos por distrito;
 * qué campos tienen coordenadas reutilizables para visualización.
 
-La integración con Wikidata aporta contexto externo que no estaba materializado en el KG
-local, como población, área, etiquetas normalizadas, coordenadas externas y direcciones.
-Así, el KG local sirve como punto de partida y Wikidata actúa como fuente de
-enriquecimiento.
+La integración con Wikidata aporta contexto externo que no estaba materializado en el KG local, como población, área, etiquetas normalizadas, coordenadas externas y direcciones.
+Así, el KG local sirve como punto de partida y Wikidata actúa como fuente de enriquecimiento.
 
 ---
 
-## Uso Opcional De LLMs
+## Uso opcional de LLMs
 
-La carpeta `llm/` incluye ejemplos de prompts y consultas revisadas manualmente. Siguiendo
-las indicaciones de las diapositivas de LLMs para Knowledge Engineering, las consultas
-propuestas por un LLM se consideran una ayuda inicial, pero deben revisarse porque los LLMs
-pueden fallar en detalles técnicos como joins, datatypes o vocabularios.
+La carpeta `llm/` incluye una ampliación opcional basada en LLMs para generar borradores de consultas SPARQL desde preguntas en lenguaje natural.
+
+El proceso seguido fue:
+
+1. plantear preguntas sobre el KG en lenguaje natural;
+2. usar un LLM como asistente para proponer consultas SPARQL;
+3. revisar manualmente las consultas según la ontología, los mappings y el KG generado;
+4. ejecutar las consultas revisadas con RDFLib;
+5. guardar los resultados en CSV.
+
+Archivos de la ampliación:
+
+```bash
+llm/prompt_examples.md
+llm/generated_queries.rq
+llm/evaluate_llm_queries.py
+llm/llm_evaluation.md
+```
+
+Para ejecutar las consultas revisadas:
+
+```bash
+cd teams/arsero/task6
+python llm/evaluate_llm_queries.py
+```
+
+Esta ampliación muestra que el LLM es útil para generar borradores, pero que las consultas deben validarse manualmente porque puede inventar nombres de propiedades, omitir joins o producir agregaciones engañosas.
 
 ---
 
 ## Limitaciones
 
-* No todos los distritos y campos tienen enlace a Wikidata; solo se enlazaron recursos
-  con reconciliación disponible y razonablemente fiable.
-* Algunos nombres locales están normalizados sin tildes por la limpieza previa
-  (`Chamartan`, `Chambera`, `Tetuan`).
-* Algunos partidos tienen campo desconocido en origen (`codigoCampo=0`) y no generan
-  relación `ta:seJuegaEn`.
+* No todos los distritos y campos tienen enlace a Wikidata; solo se enlazaron recursos con reconciliación disponible y razonablemente fiable.
+* Algunos nombres locales están normalizados sin tildes por la limpieza previa (`Chamartan`, `Chambera`, `Tetuan`).
+* Algunos partidos tienen campo desconocido en origen (`codigoCampo=0`) y no generan relación `ta:seJuegaEn`.
 * Wikidata no siempre contiene todas las propiedades externas para cada campo deportivo.
 
 ---
 
 ## Conclusión
 
-La tarea cumple los requisitos mínimos: usa SPARQL, consulta el KG local, explota enlaces a
-Wikidata y genera una pequeña explotación reproducible con resultados tabulares y una
-visualización HTML. La práctica muestra que el Knowledge Graph puede funcionar como base
-para análisis local y enriquecimiento externo.
+La tarea usa SPARQL, consulta el KG local, explota enlaces a
+Wikidata y genera una pequeña explotación reproducible con resultados tabulares y una visualización HTML. Esto muestra que el Knowledge Graph puede funcionar como base para análisis local y enriquecimiento externo.

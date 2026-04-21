@@ -1,19 +1,18 @@
-# Optional LLM-Assisted SPARQL Examples
+# Ejemplos de SPARQL asistido por LLM
 
-The exploitation was implemented with manually reviewed SPARQL queries. Following the
-course slides on LLMs for Knowledge Engineering, LLM-generated queries should be treated
-as suggestions and validated by symbolic tools or human review because LLMs may make
-mistakes in joins, datatypes and vocabulary details.
+La explotación principal se implementó con consultas SPARQL revisadas manualmente. Como ampliación opcional, utilizamos un LLM como asistente para proponer consultas SPARQL a partir de preguntas en lenguaje natural.
 
-## Example 1
+Las propuestas generadas no se usaron directamente sin revisión. Antes de ejecutarlas, se contrastaron con la ontología, los mappings y el KG materializado, ya que los LLMs pueden cometer errores en los joins, los tipos de datos o los nombres exactos del vocabulario.
 
-Natural-language question:
+## Ejemplo 1
+
+Pregunta en lenguaje natural:
 
 ```text
-Which districts have the highest number of municipal sports matches?
+¿Qué distritos tienen el mayor número de partidos deportivos municipales?
 ```
 
-Reviewed SPARQL query:
+Consulta SPARQL revisada:
 
 ```sparql
 PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
@@ -29,16 +28,41 @@ GROUP BY ?nombreDistrito
 ORDER BY DESC(?totalPartidos)
 ```
 
-## Example 2
+## Ejemplo 2
 
-Natural-language question:
+Pregunta en lenguaje natural:
 
 ```text
-Which sports fields have a Wikidata link and what external information can be retrieved?
+¿Qué campos deportivos tienen enlace a Wikidata y qué información externa se puede recuperar?
 ```
 
-Reviewed approach:
+Enfoque revisado:
 
-1. Query the local KG for resources connected with `owl:sameAs`.
-2. Query Wikidata using the linked Q identifiers.
-3. Join the local names with Wikidata labels and coordinates in Python.
+1. Consultar el KG local para obtener recursos conectados mediante `owl:sameAs`.
+2. Consultar Wikidata usando los identificadores Q enlazados.
+3. Unir en Python los nombres locales con las etiquetas y coordenadas obtenidas de Wikidata.
+
+## Ejemplo 3
+
+Pregunta en lenguaje natural:
+
+```text
+¿Qué partidos no tienen un campo deportivo conocido?
+```
+
+Consulta SPARQL revisada:
+
+```sparql
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?partido ?fecha ?hora ?estado
+WHERE {
+  ?partido a ta:Partido ;
+           ta:fecha ?fecha ;
+           ta:hora ?hora ;
+           ta:estado ?estado .
+  FILTER NOT EXISTS { ?partido ta:seJuegaEn ?campo . }
+}
+ORDER BY ?fecha ?hora
+LIMIT 20
+```
