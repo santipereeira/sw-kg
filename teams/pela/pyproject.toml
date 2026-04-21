@@ -1,0 +1,20 @@
+[project]
+name = "pela"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "folium>=0.20.0",
+    "ollama>=0.6.1",
+    "pandas>=3.0.2",
+    "pyproj>=3.7.2",
+    "pyshacl>=0.31.0",
+    "rdflib>=7.6.0",
+    "requests>=2.33.1",
+    "ruamel-yaml>=0.18.17",
+    "shexer>=2.7.2.2",
+    "streamlit>=1.56.0",
+    "streamlit-folium>=0.27.1",
+    "yatter>=2.0.4",
+]
