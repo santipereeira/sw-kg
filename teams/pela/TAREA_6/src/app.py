@@ -11,22 +11,74 @@ import ollama
 # Importamos la lógica existente para LLM
 from llm_query_gen import generate_sparql, KG_SCHEMA
 
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+TAREA_6_DIR = os.path.abspath(os.path.join(SRC_DIR, '..'))
+REPO_DIR = os.path.abspath(os.path.join(TAREA_6_DIR, '..'))
+DATA_DIR = os.path.join(TAREA_6_DIR, 'data', 'processed')
+KG_PATH = os.path.join(REPO_DIR, 'TAREA_4', 'kg', 'output.nt')
+
 st.set_page_config(page_title="Sports KG Explorer", layout="wide")
 
 st.markdown("""
     <style>
+    .stApp {
+        background-color: #f9f7f0;
+        color: #1f2933;
+    }
     .main { background-color: #f9f7f0; }
-    .stMetric { background-color: #fdf5e6; padding: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-    h1, h2, h3 { color: #2c3e50; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    .stButton>button { width: 100%; border-radius: 5px; height: 3em; background-color: #3498db; color: white; }
+    .stMetric {
+        background-color: #fdf5e6;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .stMetric label, .stMetric [data-testid="stMetricValue"] {
+        color: #1f2933;
+    }
+    h1, h2, h3 {
+        color: #2c3e50;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .stButton>button {
+        width: 100%;
+        border-radius: 5px;
+        height: 3em;
+        background-color: #3498db;
+        color: white;
+    }
+    div[data-testid="stAlert"] {
+        color: #1f2933;
+        border-radius: 10px;
+    }
+    div[data-testid="stAlert"] p {
+        color: inherit;
+    }
+    div[data-testid="stAlert"][kind="success"] {
+        background-color: #dff3e4;
+    }
+    div[data-testid="stAlert"][kind="info"] {
+        background-color: #e8f1fb;
+    }
+    div[data-testid="stAlert"][kind="warning"] {
+        background-color: #fff4db;
+    }
+    div[data-testid="stAlert"][kind="error"] {
+        background-color: #fde7e9;
+    }
+    div[data-baseweb="textarea"] textarea,
+    div[data-baseweb="input"] input,
+    div[data-testid="stCodeBlock"] pre,
+    div[data-testid="stDataFrame"] {
+        color: #1f2933;
+    }
     </style>
     """, unsafe_allow_html=True)
 
 @st.cache_data
 def load_processed_data():
     # Los ficheros procesados se leen una sola vez y se cachean para evitar recargas innecesarias.
-    fields_path = 'data/processed/fields.csv'
-    matches_path = 'data/processed/matches.csv'
+    fields_path = os.path.join(DATA_DIR, 'fields.csv')
+    matches_path = os.path.join(DATA_DIR, 'matches.csv')
     if os.path.exists(fields_path) and os.path.exists(matches_path):
         df_fields = pd.read_csv(fields_path)
         df_matches = pd.read_csv(matches_path)
@@ -60,9 +112,8 @@ def load_processed_data():
 def load_kg_for_queries():
     # El grafo RDF también se cachea para reutilizarlo entre ejecuciones de Streamlit.
     g = Graph()
-    kg_path = os.path.join('kg', 'output.nt')
-    if os.path.exists(kg_path):
-        g.parse(kg_path, format='nt')
+    if os.path.exists(KG_PATH):
+        g.parse(KG_PATH, format='nt')
         return g
     return None
 

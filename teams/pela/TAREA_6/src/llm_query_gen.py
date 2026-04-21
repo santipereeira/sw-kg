@@ -30,19 +30,52 @@ Rutas de Relación (Path):
    ?competicion ns:tieneGrupo ?grupo . ?grupo ns:tieneJornada ?jornada . ?jornada ns:tienePartido ?partido .
 """
 
-def generate_sparql(question, model="llama3"):
+def generate_sparql(question, model="qwen2.5:1.5b"):
     # Construimos un prompt con el esquema del grafo y las reglas de generación.
     prompt = f"""
-Eres un experto en SPARQL. Genera una consulta para este Knowledge Graph:
+Eres un experto en SPARQL. Genera una consulta válida para este Knowledge Graph local.
 
 {KG_SCHEMA}
 
+Prefijos válidos:
+PREFIX ns: <https://example.org/partidos/>
+
+Solo debes usar el prefijo 'ns:' y los predicados definidos para este KG.
+No uses ningún otro prefijo externo como wd:, wdt:, schema:, rdf:, owl:, nor cualquier otro.
+
+Propiedades disponibles:
+- ?partido ns:ocurreEn ?campo .
+- ?campo ns:localizadoEn ?distrito .
+- ?distrito ns:nombreDistrito "Retiro" .
+- ?partido ns:tieneEquipoLocal ?equipo .
+- ?partido ns:tieneEquipoVisitante ?equipo .
+- ?partido ns:tipoDe ?deporte .
+- ?deporte ns:nombreDeporte "futsal" .
+
 Reglas:
-1. Responde SOLO con el código SPARQL.
-2. Usa el prefijo 'ns:' para todo lo que no sea rdfs o xsd.
-3. Para nombres de distritos o equipos, usa comparaciones de texto exactas si es posible.
-4. Si buscas equipos, selecciona ?nombreEquipo (ns:nombreEquipo).
-5. Asume que el usuario quiere resultados específicos, no genéricos. 
+1. Responde SOLO con la consulta SPARQL válida.
+2. Incluye siempre el PREFIX ns: al principio.
+3. No incluyas explicaciones ni texto adicional.
+4. No inventes predicados ni prefijos fuera del esquema proporcionado.
+5. Para contar, usa SELECT (COUNT(?variable) AS ?count) WHERE { ... }
+6. No uses FILTER para comparar propiedades; usa tripletas directas como ?variable ns:propiedad "valor" .
+
+Ejemplo válido:
+PREFIX ns: <https://example.org/partidos/>
+SELECT ?equipo WHERE {{
+  ?partido ns:tieneEquipoLocal ?equipo .
+  ?partido ns:ocurreEn ?campo .
+  ?campo ns:nombreDistrito "Retiro" .
+}}
+
+Ejemplo con COUNT:
+PREFIX ns: <https://example.org/partidos/>
+SELECT (COUNT(?partido) AS ?total)
+WHERE {{
+  ?partido ns:ocurreEn ?campo .
+  ?campo ns:localizadoEn ?distrito .
+  ?distrito ns:nombreDistrito "Chamartín" .
+}}
 
 Pregunta: {question}
 """

@@ -2,7 +2,7 @@ import os
 from rdflib import Graph
 import pandas as pd
 
-def run_query(graph, query_path):
+def run_query(graph, query_path, results_dir):
     # Ejecuta una consulta SPARQL leída desde disco y devuelve el resultado como DataFrame.
     print(f"Executing {query_path}...")
     with open(query_path, 'r') as f:
@@ -17,7 +17,8 @@ def run_query(graph, query_path):
     
     df = pd.DataFrame(data)
     output_name = os.path.basename(query_path).replace('.rq', '.csv')
-    output_path = os.path.join('results', 'query_results', output_name)
+    output_path = os.path.join(results_dir, output_name)
+    os.makedirs(results_dir, exist_ok=True)
     df.to_csv(output_path, index=False)
     print(f"Results saved to {output_path}")
     return df
@@ -25,7 +26,13 @@ def run_query(graph, query_path):
 def main():
     # Cargamos el grafo local y lanzamos todas las consultas definidas en la lista.
     g = Graph()
-    kg_path = os.path.join('kg', 'output.nt')
+    src_dir = os.path.dirname(os.path.abspath(__file__))
+    tarea_6_dir = os.path.abspath(os.path.join(src_dir, '..'))
+    repo_dir = os.path.abspath(os.path.join(tarea_6_dir, '..'))
+    kg_path = os.path.join(repo_dir, 'TAREA_4', 'kg', 'output.nt')
+    queries_dir = os.path.join(tarea_6_dir, 'queries')
+    results_dir = os.path.join(tarea_6_dir, 'results', 'query_results')
+
     
     if not os.path.exists(kg_path):
         # Si no existe el grafo, no tiene sentido continuar.
@@ -39,15 +46,15 @@ def main():
 
     # Relación de consultas locales y federadas a ejecutar.
     queries = [
-        'queries/local_query_1.rq',
-        'queries/local_query_2.rq',
-        'queries/federated_query_1.rq',
-        'queries/federated_query_2.rq'
+        os.path.join(queries_dir, 'local_query_1.rq'),
+        os.path.join(queries_dir, 'local_query_2.rq'),
+        os.path.join(queries_dir, 'federated_query_1.rq'),
+        os.path.join(queries_dir, 'federated_query_2.rq')
     ]
 
     for q in queries:
         try:
-            run_query(g, q)
+            run_query(g, q, results_dir)
         except Exception as e:
             # Si una consulta falla, seguimos con las siguientes.
             print(f"Error executing {q}: {e}")

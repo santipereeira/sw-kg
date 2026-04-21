@@ -4,6 +4,12 @@ from rdflib import Graph
 import requests
 import time
 
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+TAREA_6_DIR = os.path.abspath(os.path.join(SRC_DIR, '..'))
+REPO_DIR = os.path.abspath(os.path.join(TAREA_6_DIR, '..'))
+DATA_DIR = os.path.join(TAREA_6_DIR, 'data', 'processed')
+KG_PATH = os.path.join(REPO_DIR, 'TAREA_4', 'kg', 'output.nt')
+
 def get_wikidata_info(wd_uris, query_template):
     url = 'https://query.wikidata.org/sparql'
     results_map = {}
@@ -37,9 +43,8 @@ def get_wikidata_info(wd_uris, query_template):
 
 def preprocess():
     g = Graph()
-    kg_path = 'kg/output.nt'
-    print(f"Loading {kg_path}...")
-    g.parse(kg_path, format='nt')
+    print(f"Loading {KG_PATH}...")
+    g.parse(KG_PATH, format='nt')
     print("Extracting local data...")
 
     # Query 1: Fields
@@ -89,9 +94,9 @@ def preprocess():
             df_matches.at[i, 'deporte_descripcion'] = wd_sport_info[row['wdDeporte']].get('descripcion')
             df_matches.at[i, 'deporte_imagen'] = wd_sport_info[row['wdDeporte']].get('imagen')
 
-    os.makedirs('data/processed', exist_ok=True)
-    df_fields.to_csv('data/processed/fields.csv', index=False)
-    df_matches.to_csv('data/processed/matches.csv', index=False)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    df_fields.to_csv(os.path.join(DATA_DIR, 'fields.csv'), index=False)
+    df_matches.to_csv(os.path.join(DATA_DIR, 'matches.csv'), index=False)
     print("Done.")
 
 if __name__ == "__main__":
