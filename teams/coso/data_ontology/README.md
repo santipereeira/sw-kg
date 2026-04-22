@@ -1,0 +1,1 @@
+Dieñamos nuestro diagrama en Draw.io y lo pasamos a xml, que posteriormente le pasamos a Chowlk y nos devolvio el ttl de nuestra ontología.

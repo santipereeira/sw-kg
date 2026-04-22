@@ -1,0 +1,6 @@
+pandas
+rdflib
+SPARQLWrapper
+matplotlib
+folium
+jupyter

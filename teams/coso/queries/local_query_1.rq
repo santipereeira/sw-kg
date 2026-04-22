@@ -1,0 +1,8 @@
+PREFIX dep: <http://example.org/def/dep#>
+
+SELECT ?equipo ?deporteRes
+WHERE {
+  ?equipo a dep:Equipo ;
+          dep:xoga ?deporteRes .
+}
+LIMIT 10000

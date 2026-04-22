@@ -1,0 +1,13 @@
+PREFIX dep: <http://example.org/def/dep#>
+
+SELECT DISTINCT ?provincia ?nomeEquipo
+WHERE {
+  ?equipo a dep:Equipo ;
+          dep:nome ?nomeEquipo ;
+          dep:resideEn ?enderezo .
+
+  ?enderezo ?propConcello ?concello .
+  ?concello a dep:Concello ;
+            dep:estaEn ?provincia .
+}
+LIMIT 100

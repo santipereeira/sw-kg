@@ -1,0 +1,18 @@
+PREFIX dep: <http://example.org/def/dep#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?provincia ?wikidata ?imagen ?web
+WHERE {
+  ?provRes a dep:Provincia ;
+           dep:nome ?provincia ;
+           owl:sameAs ?sameAsLiteral .
+
+  BIND(IRI(STR(?sameAsLiteral)) AS ?wikidata)
+
+  SERVICE <https://query.wikidata.org/sparql> {
+    OPTIONAL { ?wikidata wdt:P18 ?imagen . }
+    OPTIONAL { ?wikidata wdt:P856 ?web . }
+  }
+}
+ORDER BY ?provincia

@@ -1,0 +1,169 @@
+@prefix dep: <http://example.org/def/dep#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/equipos_0/shape> a sh:NodeShape ;
+    rdfs:label "Equipo" ;
+    sh:name "Equipo" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/equipo/.*" ;
+    sh:property [ rdfs:label "xoga" ;
+            sh:class dep:Deporte ;
+            sh:name "xoga" ;
+            sh:node <http://example.com/deporte_0/shape> ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:xoga ],
+        [ rdfs:label "reside en" ;
+            sh:class dep:Enderezo ;
+            sh:name "reside en" ;
+            sh:node <http://example.com/enderezo_0/shape> ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:resideEn ],
+        [ rdfs:label "data alta" ;
+            sh:datatype xsd:date ;
+            sh:name "data alta" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:dataAlta ],
+        [ rdfs:label "nome" ;
+            sh:datatype xsd:String ;
+            sh:name "nome" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:nome ],
+        [ rdfs:label "paxina web" ;
+            sh:datatype xsd:String ;
+            sh:name "paxina web" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:paxinaWeb ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path dep:telefono1 ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path dep:telefono2 ],
+        [ rdfs:label "tipo entidade" ;
+            sh:datatype xsd:String ;
+            sh:name "tipo entidade" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:tipoEntidade ],
+        [ rdfs:label "numero" ;
+            sh:datatype xsd:str ;
+            sh:maxInclusive 2147483647 ;
+            sh:minInclusive -2147483648 ;
+            sh:name "numero" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:numero ;
+            sh:pattern "[\\-+]?[0-9]+" ],
+        [ rdfs:label "nif" ;
+            sh:datatype xsd:String ;
+            sh:name "nif" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:nif ],
+        <https://astrea.linkeddata.es/shapes#a65ad44498f4c393f87cec3a95a76d15> ;
+    sh:targetClass dep:Equipo .
+
+<http://example.com/especialidade_0/shape> a sh:NodeShape ;
+    rdfs:label "Especialidade" ;
+    sh:name "Especialidade" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/especialidade/.*" ;
+    sh:property [ rdfs:label "nome especialidade" ;
+            sh:datatype xsd:String ;
+            sh:name "nome especialidade" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:nomeEspecialidade ],
+        [ sh:node <http://example.com/deporte_0/shape> ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:relacionadaCon ] ;
+    sh:targetClass dep:Especialidade .
+
+<http://example.com/concellos_0/shape> a sh:NodeShape ;
+    rdfs:label "Concello" ;
+    sh:name "Concello" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/concello/.*" ;
+    sh:property [ sh:nodeKind sh:Literal ;
+            sh:path dep:codigoConcello ],
+        [ rdfs:label "esta en" ;
+            sh:class dep:Provincia ;
+            sh:name "esta en" ;
+            sh:node <http://example.com/provincias_0/shape> ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:estaEn ],
+        [ rdfs:label "paxina web" ;
+            sh:name "paxina web" ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:paxinaWeb ],
+        <https://astrea.linkeddata.es/shapes#4534900f8ca4adcbb4c58c6c758b29a6> ;
+    sh:targetClass dep:Concello .
+
+<http://example.com/enderezo_0/shape> a sh:NodeShape ;
+    rdfs:label "Enderezo" ;
+    sh:name "Enderezo" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/enderezo/.*" ;
+    sh:property [ sh:datatype xsd:int ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:codigoPostal ],
+        [ rdfs:label "nome rua" ;
+            sh:datatype xsd:str ;
+            sh:name "nome rua" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:nomeRua ],
+        [ rdfs:label "esta en" ;
+            sh:class dep:Provincia ;
+            sh:name "esta en" ;
+            sh:node <http://example.com/concellos_0/shape> ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:estaEn ] ;
+    sh:targetClass dep:Enderezo .
+
+<http://example.com/provincias_0/shape> a sh:NodeShape ;
+    rdfs:label "Provincia" ;
+    sh:name "Provincia" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/provincia/.*" ;
+    sh:property [ rdfs:label "paxina web" ;
+            sh:name "paxina web" ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:paxinaWeb ],
+        [ rdfs:label "cod provincia" ;
+            sh:datatype xsd:int ;
+            sh:maxInclusive 2147483647 ;
+            sh:minInclusive -2147483648 ;
+            sh:name "cod provincia" ;
+            sh:nodeKind sh:Literal ;
+            sh:path dep:codProvincia ;
+            sh:pattern "[\\-+]?[0-9]+" ],
+        <https://astrea.linkeddata.es/shapes#4534900f8ca4adcbb4c58c6c758b29a6> ;
+    sh:targetClass dep:Provincia .
+
+<https://astrea.linkeddata.es/shapes#a65ad44498f4c393f87cec3a95a76d15> a sh:PropertyShape ;
+    rdfs:label "telefono" ;
+    sh:datatype xsd:int ;
+    sh:maxInclusive 2147483647 ;
+    sh:minInclusive -2147483648 ;
+    sh:name "telefono" ;
+    sh:nodeKind sh:Literal ;
+    sh:path dep:telefono ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<http://example.com/deporte_0/shape> a sh:NodeShape ;
+    rdfs:label "Deporte" ;
+    sh:name "Deporte" ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/deporte/.*" ;
+    sh:property [ rdfs:label "paxina web" ;
+            sh:name "paxina web" ;
+            sh:nodeKind sh:IRI ;
+            sh:path dep:paxinaWeb ],
+        <https://astrea.linkeddata.es/shapes#4534900f8ca4adcbb4c58c6c758b29a6> ;
+    sh:targetClass dep:Deporte .
+
+<https://astrea.linkeddata.es/shapes#4534900f8ca4adcbb4c58c6c758b29a6> a sh:PropertyShape ;
+    rdfs:label "same as" ;
+    sh:datatype xsd:anyURI ;
+    sh:name "same as" ;
+    sh:nodeKind sh:Literal ;
+    sh:path owl:sameAs ;
+    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
