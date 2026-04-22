@@ -1,0 +1,21 @@
+# Recupera estadisticas por municipio enlazado con Wikidata.
+# Devuelve numero de espacios y capacidad media por municipio para luego enriquecerlos externamente.
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?municipality ?municipalityName ?provinceName ?wd
+       (COUNT(?space) AS ?numSpaces)
+       (AVG(?capacity) AS ?avgCapacity)
+WHERE {
+  ?space a ta:Espazo ;
+         ta:aforamiento ?capacity ;
+         ta:estaen/ta:pertenece ?municipality .
+
+  ?municipality ta:nombre ?municipalityName ;
+                ta:ubicadoen ?province ;
+                owl:sameAs ?wd .
+
+  ?province ta:nombre ?provinceName .
+}
+GROUP BY ?municipality ?municipalityName ?provinceName ?wd
+ORDER BY DESC(?numSpaces) DESC(?avgCapacity) ?municipalityName

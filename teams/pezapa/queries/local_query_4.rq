@@ -1,0 +1,15 @@
+# Obtiene las provincias del KG junto con su enlace owl:sameAs a Wikidata.
+# Se usa como punto de partida para consultar poblacion, area y capital de cada provincia.
+PREFIX ta: <http://example.org/def/teatrosyauditorios#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?province ?provinceName ?wd (COUNT(?space) AS ?numSpaces)
+WHERE {
+  ?space a ta:Espazo ;
+         ta:estaen/ta:pertenece/ta:ubicadoen ?province .
+
+  ?province ta:nombre ?provinceName ;
+            owl:sameAs ?wd .
+}
+GROUP BY ?province ?provinceName ?wd
+ORDER BY DESC(?numSpaces) ?provinceName
