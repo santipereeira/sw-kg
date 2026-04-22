@@ -3,17 +3,12 @@ from rdflib import Graph
 import pandas as pd
 
 def run_query(graph, query_path, results_dir):
-    # Ejecuta una consulta SPARQL leída desde disco y devuelve el resultado como DataFrame.
-    print(f"Executing {query_path}...")
     with open(query_path, 'r') as f:
         query = f.read()
     
     results = graph.query(query)
     
-    # Convertimos las filas devueltas por RDFlib en una estructura compatible con pandas.
-    data = []
-    for row in results:
-        data.append({str(var): str(val) for var, val in row.asdict().items()})
+    data = [{str(var): str(val) for var, val in row.asdict().items()} for row in results]
     
     df = pd.DataFrame(data)
     output_name = os.path.basename(query_path).replace('.rq', '.csv')

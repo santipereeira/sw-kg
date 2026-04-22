@@ -41,7 +41,7 @@ Prefijos válidos:
 PREFIX ns: <https://example.org/partidos/>
 
 Solo debes usar el prefijo 'ns:' y los predicados definidos para este KG.
-No uses ningún otro prefijo externo como wd:, wdt:, schema:, rdf:, owl:, nor cualquier otro.
+No uses ningún otro prefijo externo como wd:, wdt:, schema:, rdf:, owl:, o cualquier otro.
 
 Propiedades disponibles:
 - ?partido ns:ocurreEn ?campo .
@@ -60,6 +60,7 @@ Reglas:
 5. Para contar, usa SELECT (COUNT(?variable) AS ?count) WHERE { ... }
 6. No uses FILTER para comparar propiedades; usa tripletas directas como ?variable ns:propiedad "valor" .
 7. NO uses sintaxis SQL como 'NOT IN (SELECT ...)'. Para exclusiones en SPARQL usa siempre 'FILTER NOT EXISTS { ... }' o 'MINUS { ... }'.
+8. Usa distinct en tus consultas cuando sea necesario (siempre que no sea un count).
 
 Ejemplo válido:
 PREFIX ns: <https://example.org/partidos/>
