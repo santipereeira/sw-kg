@@ -11,35 +11,48 @@ DATA_DIR = os.path.join(TAREA_6_DIR, 'data', 'processed')
 KG_PATH = os.path.join(REPO_DIR, 'TAREA_4', 'kg', 'output.nt')
 
 def get_wikidata_info(wd_uris, query_template):
-    url = 'https://query.wikidata.org/sparql'
+    #
+    endpoint_url = 'https://query.wikidata.org/sparql'
     results_map = {}
-    uris_list = list(set([u for u in wd_uris if u]))
-    if not uris_list: return results_map
-    
+
+    uris = list({u for u in wd_uris if u})
+    if not uris:
+        return results_map
+
+    headers = {'User-Agent': 'SportsKGExplorer/1.0 (mateo@example.org)', 'Accept': 'application/sparql-results+json'}
+
+    # Consultas por lotes para no enviar un VALUES demasiado grande.
     batch_size = 10
-    headers = {'User-Agent': 'SportsKGExplorer/1.0 (mateo@example.org)'}
-    
-    # Realizamos consultas por lotes para evitar sobrecargar el servidor de Wikidata.
-    for i in range(0, len(uris_list), batch_size):
-        batch = uris_list[i:i+batch_size]
-        values = " ".join([f"<{uri}>" for uri in batch])
+    for i in range(0, len(uris), batch_size):
+        values = " ".join(f"<{uri}>" for uri in uris[i:i + batch_size])
         query = query_template.replace("{{VALUES}}", values)
-        
+
         for attempt in range(3):
             try:
-                r = requests.get(url, params={'format': 'json', 'query': query}, headers=headers, timeout=20)
-                if r.status_code == 200:
-                    data = r.json()
-                    for result in data['results']['bindings']:
-                        item_uri = result['item']['value']
-                        results_map[item_uri] = {k: v['value'] for k, v in result.items() if k != 'item'}
+                response = requests.get(
+                    endpoint_url,
+                    params={'query': query, 'format': 'json'},
+                    headers=headers,
+                    timeout=20,
+                )
+                if response.status_code == 200:
+                    bindings = response.json().get('results', {}).get('bindings', [])
+                    for result in bindings:
+                        item_uri = result.get('item', {}).get('value')
+                        if item_uri:
+                            results_map[item_uri] = {
+                                k: v.get('value')
+                                for k, v in result.items()
+                                if k != 'item'
+                            }
                     break
-                else:
-                    print(f"Wikidata error {r.status_code}, retrying...")
-                    time.sleep(2)
+
+                print(f"Wikidata error {response.status_code}, retrying...")
             except Exception as e:
                 print(f"Attempt {attempt} failed: {e}")
-                time.sleep(2)
+
+            time.sleep(2)
+
     return results_map
 
 def preprocess():

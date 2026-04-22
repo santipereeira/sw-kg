@@ -4,9 +4,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-### ─────────────────────────────────────────────
-###  SHACL SHAPES FROM ONTOLOGY
-### ─────────────────────────────────────────────
+#################################################
+###  SHACL SHAPES DE LA ONTOLOGY
+#################################################
 
 ns:DeporteShape a sh:NodeShape ;
     sh:targetClass ns:Deporte ;
@@ -76,7 +76,7 @@ ns:JornadaShape a sh:NodeShape ;
     ] ;
     sh:property [
         sh:path ns:fecha ;
-        sh:datatype xsd:dateTime ;  # The ontology says xsd:date, but morph-kgc exported dateTime if the source was DateTime!
+        sh:datatype xsd:dateTime ;  # En la ontología lo definimos como xsd:date, pero morph-kgc exportó dateTime
     ] ;
     sh:property [
         sh:path ns:tienePartido ;

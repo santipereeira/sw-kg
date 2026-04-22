@@ -20,58 +20,67 @@ KG_PATH = os.path.join(REPO_DIR, 'TAREA_4', 'kg', 'output.nt')
 
 st.set_page_config(page_title="Sports KG Explorer", layout="wide")
 
-# Estilos de la app, generado con IA :))))
+# Estilos de la app, premium feel
 st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    html, body, [data-testid="stAppViewContainer"] {
+        font-family: 'Outfit', sans-serif;
+        background-color: #f0f2f6;
+    }
+    
     .stApp {
-        background-color: #f9f7f0;
-        color: #1f2933;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     }
-    .main { background-color: #f9f7f0; }
-    .stMetric {
-        background-color: #fdf5e6;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    /* Glassmorphism containers */
+    div[data-testid="stVerticalBlock"] > div:has(div.stMetric) {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
     }
-    .stMetric label, .stMetric [data-testid="stMetricValue"] {
-        color: #1f2933;
-    }
+
     h1, h2, h3 {
-        color: #2c3e50;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #1e3a8a;
+        font-weight: 600;
     }
+
     .stButton>button {
-        width: 100%;
-        border-radius: 5px;
-        height: 3em;
-        background-color: #3498db;
+        border-radius: 12px;
+        background: linear-gradient(45deg, #3b82f6, #2563eb);
         color: white;
+        border: none;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        letter-spacing: 0.5px;
     }
+
+    .stButton>button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-right: 1px solid #e2e8f0;
+    }
+
+    /* Custom alerts */
     div[data-testid="stAlert"] {
-        color: #1f2933;
-        border-radius: 10px;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
-    div[data-testid="stAlert"] p {
-        color: inherit;
-    }
-    div[data-testid="stAlert"][kind="success"] {
-        background-color: #dff3e4;
-    }
-    div[data-testid="stAlert"][kind="info"] {
-        background-color: #e8f1fb;
-    }
-    div[data-testid="stAlert"][kind="warning"] {
-        background-color: #fff4db;
-    }
-    div[data-testid="stAlert"][kind="error"] {
-        background-color: #fde7e9;
-    }
-    div[data-baseweb="textarea"] textarea,
-    div[data-baseweb="input"] input,
-    div[data-testid="stCodeBlock"] pre,
+    
+    /* Dataframe styling */
     div[data-testid="stDataFrame"] {
-        color: #1f2933;
+        border-radius: 10px;
+        overflow: hidden;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -130,11 +139,23 @@ def load_processed_data():
 @st.cache_resource
 def load_kg_for_queries():
     # El grafo RDF también se cachea para reutilizarlo entre ejecuciones.
-    g = Graph()
     if os.path.exists(KG_PATH):
-        g.parse(KG_PATH, format='nt')
-        return g
+        g = Graph()
+        try:
+            g.parse(KG_PATH, format='nt')
+            return g
+        except Exception as e:
+            st.error(f"Error al parsear el grafo: {e}")
+            return None
     return None
+
+def check_ollama_server():
+    """Verifica si el servidor de Ollama está accesible."""
+    try:
+        ollama.list()
+        return True
+    except Exception:
+        return False
 
 def main():
     st.title("Explorador de Knowledge Graph: Competiciones deportivas municipales de deportes colectivos")
@@ -147,7 +168,7 @@ def main():
         return
 
     st.sidebar.title("Navegación")
-    menu = st.sidebar.radio("Ir a:", ["Mapa de campos", "Consultas Sparql"])
+    menu = st.sidebar.radio("Ir a:", ["Mapa de campos", "Consultas Inteligentes (LLM)"])
 
     if menu == "Mapa de campos":
         st.header("Localización de Campos Deportivos")
@@ -242,19 +263,25 @@ def main():
         st.subheader("Distribución de campos por Distrito")
         st.bar_chart(df_display['distrito'].value_counts(), color="#3498db")
 
-    elif menu == "Consultas Inteligentes":
-        # Generador de Consultas SPARQL
+    elif menu == "Consultas Inteligentes (LLM)":
         st.header("Generador de Consultas SPARQL")
+        
+        # Verificación de Ollama
+        ollama_ok = check_ollama_server()
+        if not ollama_ok:
+            st.warning("⚠️ El servidor de Ollama no parece estar corriendo. Asegúrate de ejecutar `ollama serve` para usar las funciones de IA.")
+
         q_col1, q_col2 = st.columns([1, 2])
         with q_col1:
             # modelo para correr en ollama, necesita estar descargado previamente 
-            model = st.selectbox("Modelo local (Ollama)", [
-                "phi3:mini", 
-                "qwen2.5:3b", 
-                "qwen2.5:1.5b",
-                "llama3:8b", 
-                "mistral"
-            ])
+            try:
+                available_models = [m['name'] for m in ollama.list()['models']]
+                if not available_models:
+                    available_models = ["phi3:mini", "qwen2.5:3b", "llama3:8b"]
+            except:
+                available_models = ["phi3:mini", "qwen2.5:3b", "llama3:8b"]
+
+            model = st.selectbox("Modelo local (Ollama)", available_models if ollama_ok else ["Ollama no disponible"])
             st.subheader("Biblioteca de Consultas")
 
             libreria = {
@@ -313,13 +340,22 @@ def main():
                         st.info("IA generada")
                         try:
                             # La IA propone la consulta y luego la validamos contra el mismo grafo.
-                            gen_query = generate_sparql(question, model=model)
-                            st.code(gen_query, language="sparql")
-                            g = load_kg_for_queries()
-                            res_gen = g.query(gen_query)
-                            data_gen = [{str(var): str(val) for var, val in row.asdict().items()} for row in res_gen]
-                            st.success(f"Resultados IA: {len(data_gen)}")
-                            st.dataframe(pd.DataFrame(data_gen), height=200)
+                            if not ollama_ok:
+                                st.error("Ollama no está disponible.")
+                            else:
+                                gen_query = generate_sparql(question, model=model)
+                                st.code(gen_query, language="sparql")
+                                g = load_kg_for_queries()
+                                if g:
+                                    res_gen = g.query(gen_query)
+                                    data_gen = [{str(var): str(val) for var, val in row.asdict().items()} for row in res_gen]
+                                    st.success(f"Resultados IA: {len(data_gen)}")
+                                    if data_gen:
+                                        st.dataframe(pd.DataFrame(data_gen), height=200)
+                                    else:
+                                        st.info("La consulta no devolvió resultados.")
+                                else:
+                                    st.error("No se pudo cargar el Knowledge Graph.")
                         except Exception as e: st.error(f"Error IA: {e}")
                     
                     # Ejecución Manual (la que esté en la caja de la izquierda)

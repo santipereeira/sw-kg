@@ -12,7 +12,7 @@ El grafo consta de **518.641 triplas** en formato N-Triples (`TAREA_4/kg/output.
 
 ## Metodología de Validación
 
-Se ha optado por validar el KG desde dos perspectivas distintas:
+Validamos el KG desde dos perspectivas distintas:
 
 ### 1. Validación basada en Datos
 - **Fuente:** Grafo RDF `TAREA_4/kg/output.nt`.  

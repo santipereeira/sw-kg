@@ -82,19 +82,22 @@ WHERE {{
 Pregunta: {question}
 """
     print(f"Pregunta: '{question}' con modelo '{model}'...")
-    response = ollama.generate(model=model, prompt=prompt)
-    query = response['response'].strip()
-    
-    # Limpieza robusta: si el modelo devuelve un bloque Markdown, extraemos solo la consulta.
-    if "```" in query:
-        # Buscamos el bloque que contenga una consulta SPARQL válida.
-        parts = query.split("```")
-        for part in parts:
-            if "SELECT" in part.upper() or "ASK" in part.upper():
-                query = part.replace("sparql", "").strip()
-                break
-    
-    return query
+    try:
+        response = ollama.generate(model=model, prompt=prompt)
+        query = response['response'].strip()
+        
+        # Limpieza robusta: si el modelo devuelve un bloque Markdown, extraemos solo la consulta.
+        if "```" in query:
+            # Buscamos el bloque que contenga una consulta SPARQL válida.
+            parts = query.split("```")
+            for part in parts:
+                if "SELECT" in part.upper() or "ASK" in part.upper():
+                    query = part.replace("sparql", "").strip()
+                    break
+        
+        return query
+    except Exception as e:
+        raise Exception(f"Error al conectar con Ollama o generar la consulta: {str(e)}")
 
 if __name__ == "__main__":
     # Ejemplo local para probar la generación de consultas desde consola.

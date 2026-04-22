@@ -12,7 +12,6 @@ Se ha utilizado el dataset `ontologia-deportes.csv`, que contiene información d
 ### Estructura del Mapping:
 - **Sujetos:** Para los partidos se utiliza una combinación de Fase, Deporte, Grupo, Jornada y Partido para evitar colisiones: `ns:partido/$(Nombre_fase)_$(Nombre_deporte)_$(Codigo_grupo)_$(Jornada)_$(Partido)`.
 - **Predicados y Objetos:**
-    - Asignación de clases (`rdf:type`) según la ontología.
     - Mapeo de literales con datatypes específicos (`xsd:string`, `xsd:integer`, `xsd:dateTime`, `xsd:float`).
     - Enlaces a Wikidata mediante `ns:sameAsDeporte` y `ns:sameAsDistrito`.
 - **Relaciones (Joins):** Conexiones semánticas entre entidades (ej: un Partido `ns:ocurreEn` un Campo).
