@@ -59,6 +59,7 @@ Reglas:
 4. No inventes predicados ni prefijos fuera del esquema proporcionado.
 5. Para contar, usa SELECT (COUNT(?variable) AS ?count) WHERE { ... }
 6. No uses FILTER para comparar propiedades; usa tripletas directas como ?variable ns:propiedad "valor" .
+7. NO uses sintaxis SQL como 'NOT IN (SELECT ...)'. Para exclusiones en SPARQL usa siempre 'FILTER NOT EXISTS { ... }' o 'MINUS { ... }'.
 
 Ejemplo válido:
 PREFIX ns: <https://example.org/partidos/>
