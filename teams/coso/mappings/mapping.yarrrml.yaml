@@ -1,0 +1,77 @@
+prefixes:
+  dep: "http://example.org/def/dep#"
+  res: "http://example.org/resource/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+
+mappings:
+  equipos:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:equipo/$(nome)
+    po:
+      - [a, dep:Equipo]
+      - [dep:nome, $(nome)]
+      - [dep:tipoEntidade, $(tipo_entidade)]
+      - [dep:telefono1, $(telefono1)]
+      - [dep:telefono2, $(telefono2)]
+      - [dep:nif, $(nif)]
+      - [dep:dataAlta, $(data_alta), xsd:date]
+      - [dep:paxinaWeb, $(web)]
+      - [dep:numero, $(numero), xsd:str]
+      - p: dep:xoga
+        o:
+            - mapping: deporte 
+      - p: dep:resideEn
+        o:
+            - mapping: enderezo 
+
+  concellos:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:concello/$(codigo_concello)
+    po:
+      - [a, dep:Concello]
+      - [dep:codigoConcello, $(codigo_concello)]
+      - [dep:paxinaWeb, $(wikidata_concellos) ~iri]
+      - p: dep:estaEn
+        o:
+            - mapping: provincias
+
+  provincias:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:provincia/$(codigo_provincia)
+    po:
+      - [a, dep:Provincia]
+      - [dep:codProvincia, $(codigo_provincia), xsd:int]
+      - [dep:paxinaWeb, $(wikidata_provincias) ~iri]
+
+  deporte:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:deporte/$(deporte)
+    po:
+      - [a, dep:Deporte]
+      - [dep:paxinaWeb, $(web_modalidades) ~iri]
+  enderezo:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:enderezo/$(codigo_postal)
+    po:
+      - [a, dep:Enderezo]
+      - [dep:nomeRua, $(direcion)]
+      - [dep:codigoPostal, $(codigo_postal), xsd:int]
+      - p: dep:estaEn
+        o:
+            - mapping: concellos   
+  especialidade:
+    sources:
+      - ['clean_entidades_deportivas.csv~csv']
+    s: res:especialidade/$(nome_especialidade)
+    po:
+      - [a, dep:Especialidade]
+      - [dep:nomeEspecialidade, $(nome_especialidade)]
+      - p: dep:relacionadaCon
+        o:
+            - mapping: deporte

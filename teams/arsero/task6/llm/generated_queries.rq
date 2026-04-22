@@ -1,0 +1,66 @@
+# Propuestas SPARQL asistidas por LLM
+
+# Estas consultas se generaron como borrador a partir de preguntas en lenguaje
+# natural y después se revisaron manualmente contra la ontología, los mappings
+# y el KG generado.
+
+### Consulta 1: distritos con más partidos
+
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?nombreDistrito (COUNT(DISTINCT ?partido) AS ?totalPartidos)
+WHERE {
+  ?partido a ta:Partido ;
+           ta:seJuegaEn ?campo .
+  ?campo ta:estaEn ?distrito .
+  ?distrito ta:nombreDistrito ?nombreDistrito .
+}
+GROUP BY ?nombreDistrito
+ORDER BY DESC(?totalPartidos)
+LIMIT 10
+
+### Consulta 2: partidos sin campo deportivo conocido
+
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?partido ?fecha ?hora ?estado
+WHERE {
+  ?partido a ta:Partido ;
+           ta:fecha ?fecha ;
+           ta:hora ?hora ;
+           ta:estado ?estado .
+  FILTER NOT EXISTS { ?partido ta:seJuegaEn ?campo . }
+}
+ORDER BY ?fecha ?hora
+LIMIT 20
+
+### Consulta 3: campos deportivos enlazados con Wikidata
+
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?nombreCampo ?nombreDistrito ?wikidata
+WHERE {
+  ?campo a ta:Campo ;
+         ta:nombreCampo ?nombreCampo ;
+         ta:estaEn ?distrito ;
+         owl:sameAs ?wikidata .
+  ?distrito ta:nombreDistrito ?nombreDistrito .
+}
+ORDER BY ?nombreDistrito ?nombreCampo
+
+### Consulta 4: uso de campos deportivos por distrito
+
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?nombreDistrito ?nombreCampo (COUNT(DISTINCT ?partido) AS ?totalPartidos)
+WHERE {
+  ?partido a ta:Partido ;
+           ta:seJuegaEn ?campo .
+  ?campo ta:nombreCampo ?nombreCampo ;
+         ta:estaEn ?distrito .
+  ?distrito ta:nombreDistrito ?nombreDistrito .
+}
+GROUP BY ?nombreDistrito ?nombreCampo
+ORDER BY DESC(?totalPartidos)
+LIMIT 20

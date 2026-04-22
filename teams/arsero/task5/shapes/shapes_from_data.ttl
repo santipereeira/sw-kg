@@ -1,0 +1,221 @@
+@prefix : <http://weso.es/shapes/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Partido a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#resultadoVisitante> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#programado> ],
+        [ a sh:PropertyShape ;
+            sh:node :Campo ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#seJuegaEn> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#estado> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Grupo ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#perteneceAGrupo> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#jornada> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Equipo ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#tieneEquipoLocal> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Competicion ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#perteneceACompeticion> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Fase ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#perteneceAFase> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Equipo ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#tieneEquipoVisitante> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:date ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#fecha> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Partido> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#numeroPartido> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#resultadoLocal> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:time ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#hora> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Partido> .
+
+:Campo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :DistritoMunicipal ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#estaEn> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Campo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreCampo> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#coordX> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#coordY> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Campo> .
+
+:Competicion a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreDeporte> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Temporada ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#tieneTemporada> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreCategoria> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreCompeticion> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#sistemaCompeticion> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Competicion> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#codigoCompeticion> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Competicion> .
+
+:DistritoMunicipal a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#DistritoMunicipal> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreDistrito> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#DistritoMunicipal> .
+
+:Fase a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#codigoFase> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreFase> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Fase> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Fase> .
+
+:Grupo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreGrupo> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#codigoGrupo> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Grupo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#sexoGrupo> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Grupo> .
+
+:Temporada a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Temporada> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreTemporada> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Temporada> .
+
+:Equipo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/juegosdeportivosmunicipalesmadrid#Equipo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#codigoEquipo> ],
+        [ a sh:PropertyShape ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/juegosdeportivosmunicipalesmadrid#nombreEquipo> ] ;
+    sh:targetClass <http://example.org/def/juegosdeportivosmunicipalesmadrid#Equipo> .
+

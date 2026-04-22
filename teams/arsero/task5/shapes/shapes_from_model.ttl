@@ -1,0 +1,196 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ta:PartidoShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Partido ;
+    sh:property [
+        sh:path ta:numeroPartido ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:jornada ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:fecha ;
+        sh:datatype xsd:date ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:hora ;
+        sh:datatype xsd:time ;
+    ] ;
+    sh:property [
+        sh:path ta:programado ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:resultadoLocal ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path ta:resultadoVisitante ;
+        sh:datatype xsd:integer ;
+    ] ;
+    sh:property [
+        sh:path ta:estado ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:tieneEquipoLocal ;
+        sh:class ta:Equipo ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:tieneEquipoVisitante ;
+        sh:class ta:Equipo ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:perteneceACompeticion ;
+        sh:class ta:Competicion ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:perteneceAFase ;
+        sh:class ta:Fase ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:perteneceAGrupo ;
+        sh:class ta:Grupo ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:seJuegaEn ;
+        sh:class ta:Campo ;
+    ] .
+
+ta:CampoShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Campo ;
+    sh:property [
+        sh:path ta:nombreCampo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:coordX ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:coordY ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:estaEn ;
+        sh:class ta:DistritoMunicipal ;
+        sh:minCount 1 ;
+    ] .
+
+ta:EquipoShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Equipo ;
+    sh:property [
+        sh:path ta:codigoEquipo ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreEquipo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ta:CompeticionShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Competicion ;
+    sh:property [
+        sh:path ta:codigoCompeticion ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreCompeticion ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreDeporte ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreCategoria ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:sistemaCompeticion ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:tieneTemporada ;
+        sh:class ta:Temporada ;
+        sh:minCount 1 ;
+    ] .
+
+ta:FaseShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Fase ;
+    sh:property [
+        sh:path ta:codigoFase ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreFase ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ta:GrupoShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Grupo ;
+    sh:property [
+        sh:path ta:codigoGrupo ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:nombreGrupo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path ta:sexoGrupo ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ta:DistritoMunicipalShape
+    a sh:NodeShape ;
+    sh:targetClass ta:DistritoMunicipal ;
+    sh:property [
+        sh:path ta:nombreDistrito ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+ta:TemporadaShape
+    a sh:NodeShape ;
+    sh:targetClass ta:Temporada ;
+    sh:property [
+        sh:path ta:nombreTemporada ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .

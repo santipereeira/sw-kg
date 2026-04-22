@@ -1,0 +1,17 @@
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?resource ?type ?name ?wikidata
+WHERE {
+  ?resource owl:sameAs ?wikidata .
+  OPTIONAL {
+    ?resource a ?type .
+  }
+  OPTIONAL {
+    ?resource ta:nombreDistrito ?name .
+  }
+  OPTIONAL {
+    ?resource ta:nombreCampo ?name .
+  }
+}
+ORDER BY ?type ?name

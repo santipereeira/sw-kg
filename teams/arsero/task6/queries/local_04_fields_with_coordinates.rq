@@ -1,0 +1,13 @@
+PREFIX ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#>
+
+SELECT ?campo ?nombreCampo ?nombreDistrito ?coordX ?coordY
+WHERE {
+  ?campo a ta:Campo ;
+         ta:nombreCampo ?nombreCampo ;
+         ta:coordX ?coordX ;
+         ta:coordY ?coordY ;
+         ta:estaEn ?distrito .
+  ?distrito ta:nombreDistrito ?nombreDistrito .
+  FILTER (?coordX != 0 && ?coordY != 0)
+}
+ORDER BY ?nombreDistrito ?nombreCampo

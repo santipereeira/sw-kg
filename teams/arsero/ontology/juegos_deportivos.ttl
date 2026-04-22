@@ -1,0 +1,234 @@
+@prefix other: <http://example.org/other#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ta: <http://example.org/def/juegosdeportivosmunicipalesmadrid#> .
+@prefix mod: <https://w3id.org/mod#> .
+
+
+#################################
+#  Ontology
+#################################
+
+<http://example.org/def/juegosdeportivosmunicipalesmadrid#> a owl:Ontology ;
+    dcterms:title "Ontology of Municipal Sports Games of Madrid"@en ;
+    dcterms:description "Ontology to model competitions, matches, teams, venues, districts, phases, groups and seasons of the Municipal Sports Games of Madrid."@en ;
+    dcterms:created "2026-03-21"^^xsd:date ;
+    dcterms:creator "Diana Rozados Gaiteiro", "Raúl Seara Suárez", "Roque de Arcos Lago" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespaceUri <http://example.org/def/juegosdeportivosmunicipalesmadrid#> ;
+    vann:preferredNamespacePrefix "ta" ;
+    owl:versionInfo "0.0.1" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################
+#    Object Properties
+#################################
+
+ta:tieneEquipoVisitante rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Equipo ;
+		rdfs:label "tiene equipo visitante" .
+
+ta:perteneceAGrupo rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Grupo ;
+		rdfs:label "pertenece a grupo" .
+
+ta:perteneceACompeticion rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Competicion ;
+		rdfs:label "pertenece a competicion" .
+
+ta:seJuegaEn rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Campo ;
+		rdfs:label "se juega en" .
+
+ta:tieneTemporada rdf:type owl:ObjectProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range ta:Temporada ;
+        rdfs:label "tiene temporada" .
+
+ta:estaEn rdf:type owl:ObjectProperty ;
+        rdfs:domain ta:Campo ;
+        rdfs:range ta:DistritoMunicipal ;
+        rdfs:label "esta en" .
+
+ta:tieneEquipoLocal rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Equipo ;
+		rdfs:label "tiene equipo local" .
+
+ta:perteneceAFase rdf:type owl:ObjectProperty ;
+		rdfs:domain ta:Partido ;
+		rdfs:range ta:Fase ;
+		rdfs:label "pertenece a fase" .
+
+#################################
+#    Data Properties
+#################################
+
+ta:numeroPartido rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:integer ;
+        rdfs:label "numero partido" .
+
+ta:jornada rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:integer ;
+        rdfs:label "jornada" .
+
+ta:fecha rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:date ;
+        rdfs:label "fecha" .
+
+ta:hora rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:time ;
+        rdfs:label "hora" .
+
+ta:resultadoLocal rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:integer ;
+        rdfs:label "resultado local" .
+
+ta:resultadoVisitante rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:integer ;
+        rdfs:label "resultado visitante" .
+
+ta:programado rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:integer ;
+        rdfs:label "programado" .
+
+ta:estado rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Partido ;
+        rdfs:range xsd:string ;
+        rdfs:label "estado" .
+
+ta:codigoEquipo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Equipo ;
+        rdfs:range xsd:integer ;
+        rdfs:label "codigo equipo" .
+
+ta:nombreEquipo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Equipo ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre equipo" .
+
+ta:nombreCampo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Campo ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre campo" .
+
+ta:codigoCampo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Campo ;
+        rdfs:range xsd:integer ;
+        rdfs:label "codigo campo" .
+
+ta:coordX rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Campo ;
+        rdfs:range xsd:decimal ;
+        rdfs:label "coord x" .
+
+ta:coordY rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Campo ;
+        rdfs:range xsd:decimal ;
+        rdfs:label "coord y" .
+
+ta:codigoCompeticion rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range xsd:integer ;
+        rdfs:label "codigo competicion" .
+
+ta:nombreCompeticion rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre competicion" .
+
+ta:nombreDeporte rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre deporte" .
+
+ta:nombreCategoria rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre categoria" .
+
+ta:sistemaCompeticion rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Competicion ;
+        rdfs:range xsd:string ;
+        rdfs:label "sistema competicion" .
+
+ta:nombreTemporada rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Temporada ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre temporada" .
+
+ta:nombreDistrito rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:DistritoMunicipal ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre distrito" .
+
+ta:codigoGrupo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Grupo ;
+        rdfs:range xsd:integer ;
+        rdfs:label "codigo grupo" .
+
+ta:nombreGrupo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Grupo ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre grupo" .
+
+ta:sexoGrupo rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Grupo ;
+        rdfs:range xsd:string ;
+        rdfs:label "sexo grupo" .
+
+ta:codigoFase rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Fase ;
+        rdfs:range xsd:integer ;
+        rdfs:label "codigo fase" .
+
+ta:nombreFase rdf:type owl:DatatypeProperty ;
+        rdfs:domain ta:Fase ;
+        rdfs:range xsd:string ;
+        rdfs:label "nombre fase" .
+
+#################################
+#    Classes
+#################################
+
+ta:Partido rdf:type owl:Class ;
+	rdfs:label "Partido" .
+
+ta:Equipo rdf:type owl:Class ;
+	rdfs:label "Equipo" .
+
+ta:Campo rdf:type owl:Class ;
+	rdfs:label "Campo" .
+
+ta:Competicion rdf:type owl:Class ;
+	rdfs:label "Competicion" .
+
+ta:Temporada rdf:type owl:Class ;
+	rdfs:label "Temporada" .
+
+ta:DistritoMunicipal rdf:type owl:Class ;
+	rdfs:label "Distrito Municipal" .
+
+ta:Grupo rdf:type owl:Class ;
+	rdfs:label "Grupo" .
+
+ta:Fase rdf:type owl:Class ;
+	rdfs:label "Fase" .
+

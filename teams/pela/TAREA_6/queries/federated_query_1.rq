@@ -1,0 +1,16 @@
+PREFIX ns: <https://example.org/partidos/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+# Consulta federada: Población de los distritos según Wikidata
+SELECT ?nombreDistrito ?poblacion
+WHERE {
+  ?distrito a ns:Distrito .
+  ?distrito ns:nombreDistrito ?nombreDistrito .
+  ?distrito ns:sameAsDistrito ?wdDistrito .
+  
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wdDistrito wdt:P1082 ?poblacion .
+  }
+}
+ORDER BY DESC(?poblacion)

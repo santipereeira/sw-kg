@@ -1,0 +1,135 @@
+@prefix ps: <http://example.org/shapes/pezapa/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ta: <http://example.org/def/teatrosyauditorios#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ps:EspazoShape
+    a sh:NodeShape ;
+    rdfs:comment "Shape derived from the ontology and the RML mapping for ta:Espazo." ;
+    sh:class ta:Espazo ;
+    sh:targetClass ta:Espazo ;
+    sh:property [
+        sh:path ta:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:aforamiento ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:estaen ;
+        sh:class ta:Enderezo ;
+        sh:node ps:EnderezoShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:tiene ;
+        sh:class ta:DatoContacto ;
+        sh:node ps:DatoContactoShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+ps:EnderezoShape
+    a sh:NodeShape ;
+    rdfs:comment "Shape derived from the ontology and the RML mapping for ta:Enderezo." ;
+    sh:class ta:Enderezo ;
+    sh:targetClass ta:Enderezo ;
+    sh:property [
+        sh:path ta:calle ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:numero ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:CP ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:latitud ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:longitud ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:pertenece ;
+        sh:class ta:Concello ;
+        sh:node ps:ConcelloShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+ps:DatoContactoShape
+    a sh:NodeShape ;
+    rdfs:comment "Shape derived from the ontology and the RML mapping for ta:DatoContacto." ;
+    sh:class ta:DatoContacto ;
+    sh:targetClass ta:DatoContacto ;
+    sh:property [
+        sh:path ta:telefono ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:email ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:web ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+ps:ConcelloShape
+    a sh:NodeShape ;
+    rdfs:comment "Shape derived from the ontology and the RML mapping for ta:Concello." ;
+    sh:class ta:Concello ;
+    sh:targetClass ta:Concello ;
+    sh:property [
+        sh:path ta:nombre ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ta:ubicadoen ;
+        sh:class ta:Provincia ;
+        sh:node ps:ProvinciaShape ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+ps:ProvinciaShape
+    a sh:NodeShape ;
+    rdfs:comment "Shape derived from the ontology and the RML mapping for ta:Provincia." ;
+    sh:class ta:Provincia ;
+    sh:targetClass ta:Provincia ;
+    sh:property [
+        sh:path ta:nombre ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .

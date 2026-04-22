@@ -1,0 +1,1066 @@
+@prefix ns1: <http://example.org/def/teatrosyauditorios#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20%20> a ns1:Espazo ;
+    ns1:aforamiento 420 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> ;
+    ns1:label "Auditorio Casa da Cultura  " ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> .
+
+<http://example.org/resource/espazo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> a ns1:Espazo ;
+    ns1:aforamiento 146 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> ;
+    ns1:label "Auditorio Casa da Cultura do Milladoiro" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> .
+
+<http://example.org/resource/espazo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> a ns1:Espazo ;
+    ns1:aforamiento 400 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> ;
+    ns1:label "Auditorio Gabriel Garcia Márquez" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> .
+
+<http://example.org/resource/espazo/Auditorio%20Lois%20Tob%C3%ADo> a ns1:Espazo ;
+    ns1:aforamiento 250 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> ;
+    ns1:label "Auditorio Lois Tobío" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Cine%20Alovi> a ns1:Espazo ;
+    ns1:aforamiento 402 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> ;
+    ns1:label "Auditorio Municipal Cine Alovi" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Gustavo%20Freire> a ns1:Espazo ;
+    ns1:aforamiento 850 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> ;
+    ns1:label "Auditorio Municipal Gustavo Freire" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> a ns1:Espazo ;
+    ns1:aforamiento 330 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> ;
+    ns1:label "Auditorio Municipal Hernán Naval" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> a ns1:Espazo ;
+    ns1:aforamiento 426 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> ;
+    ns1:label "Auditorio Municipal Manuel María" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20da%20Xuventude> a ns1:Espazo ;
+    ns1:aforamiento 250 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> ;
+    ns1:label "Auditorio Municipal da Xuventude" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Cedeira> a ns1:Espazo ;
+    ns1:aforamiento 240 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> ;
+    ns1:label "Auditorio Municipal de Cedeira" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Goi%C3%A1n> a ns1:Espazo ;
+    ns1:aforamiento 322 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> ;
+    ns1:label "Auditorio Municipal de Goián" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Nar%C3%B3n> a ns1:Espazo ;
+    ns1:aforamiento 384 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> ;
+    ns1:label "Auditorio Municipal de Narón" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> .
+
+<http://example.org/resource/espazo/Auditorio%20Municipal%20de%20Vigo> a ns1:Espazo ;
+    ns1:aforamiento 283 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> ;
+    ns1:label "Auditorio Municipal de Vigo" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> .
+
+<http://example.org/resource/espazo/Auditorio%20Pazo%20de%20Congresos> a ns1:Espazo ;
+    ns1:aforamiento 925 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> ;
+    ns1:label "Auditorio Pazo de Congresos" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> .
+
+<http://example.org/resource/espazo/Auditorio%20Reveriano%20Soutullo> a ns1:Espazo ;
+    ns1:aforamiento 400 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> ;
+    ns1:label "Auditorio Reveriano Soutullo" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> .
+
+<http://example.org/resource/espazo/Auditorio%20Roc%C3%ADo%20Jurado> a ns1:Espazo ;
+    ns1:aforamiento 690,
+        754 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> ;
+    ns1:label "Auditorio Rocío Jurado" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> .
+
+<http://example.org/resource/espazo/Auditorio%20da%20Casa%20da%20Cultura> a ns1:Espazo ;
+    ns1:aforamiento 175 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> ;
+    ns1:label "Auditorio da Casa da Cultura" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> .
+
+<http://example.org/resource/espazo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> a ns1:Espazo ;
+    ns1:aforamiento 300 ;
+    ns1:estaen <http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> ;
+    ns1:label "Auditorio do Centro Cívico Cultural de Arteixo" ;
+    ns1:tiene <http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> .
+
+<http://example.org/resource/espazo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> a ns1:Espazo ;
+    ns1:aforamiento 220 ;
+    ns1:estaen <http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> ;
+    ns1:label "Aula Municipal de Cultura de Betanzos" ;
+    ns1:tiene <http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> .
+
+<http://example.org/resource/espazo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> a ns1:Espazo ;
+    ns1:aforamiento 300 ;
+    ns1:estaen <http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> ;
+    ns1:label "Biblioteca Municipal de A Coruña - Fórum Metropolitano" ;
+    ns1:tiene <http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> .
+
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20%20> a ns1:Espazo ;
+    ns1:aforamiento 824 ;
+    ns1:estaen <http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> ;
+    ns1:label "Casa da Cultura  " ;
+    ns1:tiene <http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> .
+
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> a ns1:Espazo ;
+    ns1:aforamiento 300 ;
+    ns1:estaen <http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> ;
+    ns1:label "Casa da Cultura Pintor Lloréns" ;
+    ns1:tiene <http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> .
+
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> a ns1:Espazo ;
+    ns1:aforamiento 289 ;
+    ns1:estaen <http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> ;
+    ns1:label "Casa da Cultura Ramón Martínez López" ;
+    ns1:tiene <http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> .
+
+<http://example.org/resource/espazo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> a ns1:Espazo ;
+    ns1:aforamiento 220 ;
+    ns1:estaen <http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> ;
+    ns1:label "Casa da Cultura de Bertamiráns" ;
+    ns1:tiene <http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> .
+
+<http://example.org/resource/espazo/Centro%20Cultural%20Avenida> a ns1:Espazo ;
+    ns1:aforamiento 265 ;
+    ns1:estaen <http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> ;
+    ns1:label "Centro Cultural Avenida" ;
+    ns1:tiene <http://example.org/resource/contacto/Centro%20Cultural%20Avenida> .
+
+<http://example.org/resource/espazo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> a ns1:Espazo ;
+    ns1:aforamiento 160 ;
+    ns1:estaen <http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> ;
+    ns1:label "Centro Cultural e Xuvenil de Muros" ;
+    ns1:tiene <http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> .
+
+<http://example.org/resource/espazo/Cultural%20Center%20of%20Carballo> a ns1:Espazo ;
+    ns1:aforamiento 350 ;
+    ns1:estaen <http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> ;
+    ns1:label "Cultural Center of Carballo" ;
+    ns1:tiene <http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> .
+
+<http://example.org/resource/espazo/Edificio%20Multiusos> a ns1:Espazo ;
+    ns1:aforamiento 478 ;
+    ns1:estaen <http://example.org/resource/enderezo/Edificio%20Multiusos> ;
+    ns1:label "Edificio Multiusos" ;
+    ns1:tiene <http://example.org/resource/contacto/Edificio%20Multiusos> .
+
+<http://example.org/resource/espazo/Multiusos%20da%20Xunqueira> a ns1:Espazo ;
+    ns1:aforamiento 278 ;
+    ns1:estaen <http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> ;
+    ns1:label "Multiusos da Xunqueira" ;
+    ns1:tiene <http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> .
+
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> a ns1:Espazo ;
+    ns1:aforamiento 900 ;
+    ns1:estaen <http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> ;
+    ns1:label "Pazo da Cultura de Narón" ;
+    ns1:tiene <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> .
+
+<http://example.org/resource/espazo/Pazo%20da%20Cultura%20de%20Pontevedra> a ns1:Espazo ;
+    ns1:aforamiento 752 ;
+    ns1:estaen <http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> ;
+    ns1:label "Pazo da Cultura de Pontevedra" ;
+    ns1:tiene <http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> .
+
+<http://example.org/resource/espazo/Pontevedra%20Principal%20Theatre> a ns1:Espazo ;
+    ns1:aforamiento 434 ;
+    ns1:estaen <http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> ;
+    ns1:label "Pontevedra Principal Theatre" ;
+    ns1:tiene <http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> .
+
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20> a ns1:Espazo ;
+    ns1:aforamiento 273 ;
+    ns1:estaen <http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> ;
+    ns1:label "Salón Teatro " ;
+    ns1:tiene <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> .
+
+<http://example.org/resource/espazo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> a ns1:Espazo ;
+    ns1:aforamiento 320 ;
+    ns1:estaen <http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> ;
+    ns1:label "Salón Teatro de Lalín" ;
+    ns1:tiene <http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> .
+
+<http://example.org/resource/espazo/Sala%20Bah%C3%ADa> a ns1:Espazo ;
+    ns1:aforamiento 250 ;
+    ns1:estaen <http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> ;
+    ns1:label "Sala Bahía" ;
+    ns1:tiene <http://example.org/resource/contacto/Sala%20Bah%C3%ADa> .
+
+<http://example.org/resource/espazo/Teatro%20Coliseo%20Noela> a ns1:Espazo ;
+    ns1:aforamiento 342 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> ;
+    ns1:label "Teatro Coliseo Noela" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> .
+
+<http://example.org/resource/espazo/Teatro%20Jofre> a ns1:Espazo ;
+    ns1:aforamiento 556 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Jofre> ;
+    ns1:label "Teatro Jofre" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Jofre> .
+
+<http://example.org/resource/espazo/Teatro%20Municipal%20Lauro%20Olmo> a ns1:Espazo ;
+    ns1:aforamiento 275 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> ;
+    ns1:label "Teatro Municipal Lauro Olmo" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> .
+
+<http://example.org/resource/espazo/Teatro%20Municipal%20de%20Tui> a ns1:Espazo ;
+    ns1:aforamiento 554 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> ;
+    ns1:label "Teatro Municipal de Tui" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> .
+
+<http://example.org/resource/espazo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> a ns1:Espazo ;
+    ns1:aforamiento 393 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> ;
+    ns1:label "Teatro Nicomedes Pastor Díaz" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> .
+
+<http://example.org/resource/espazo/Teatro%20Principal> a ns1:Espazo ;
+    ns1:aforamiento 394,
+        399 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Principal> ;
+    ns1:label "Teatro Principal" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Principal> .
+
+<http://example.org/resource/espazo/Teatro%20Principal%20da%20Estrada> a ns1:Espazo ;
+    ns1:aforamiento 388 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> ;
+    ns1:label "Teatro Principal da Estrada" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> .
+
+<http://example.org/resource/espazo/Teatro%20Rosal%C3%ADa%20de%20Castro> a ns1:Espazo ;
+    ns1:aforamiento 662 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> ;
+    ns1:label "Teatro Rosalía de Castro" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> .
+
+<http://example.org/resource/espazo/Teatro%20da%20Beneficencia> a ns1:Espazo ;
+    ns1:aforamiento 250 ;
+    ns1:estaen <http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> ;
+    ns1:label "Teatro da Beneficencia" ;
+    ns1:tiene <http://example.org/resource/contacto/Teatro%20da%20Beneficencia> .
+
+<http://example.org/resource/concello/A%20Estrada> a ns1:Concello ;
+    ns1:nombre "A Estrada" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1621191> .
+
+<http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> a ns1:Concello ;
+    ns1:nombre "A Rúa de Valdeorras" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607619> .
+
+<http://example.org/resource/concello/Arteixo> a ns1:Concello ;
+    ns1:nombre "Arteixo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q996161> .
+
+<http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> a ns1:Concello ;
+    ns1:nombre "As Pontes de García Rodríguez" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442761> .
+
+<http://example.org/resource/concello/Betanzos> a ns1:Concello ;
+    ns1:nombre "Betanzos" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q671341> .
+
+<http://example.org/resource/concello/Boiro> a ns1:Concello ;
+    ns1:nombre "Boiro" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q735282> .
+
+<http://example.org/resource/concello/Burela> a ns1:Concello ;
+    ns1:nombre "Burela" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1619456> .
+
+<http://example.org/resource/concello/Cambados> a ns1:Concello ;
+    ns1:nombre "Cambados" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q695477> .
+
+<http://example.org/resource/concello/Cangas> a ns1:Concello ;
+    ns1:nombre "Cangas" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628188> .
+
+<http://example.org/resource/concello/Carballo> a ns1:Concello ;
+    ns1:nombre "Carballo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q166137> .
+
+<http://example.org/resource/concello/Cedeira> a ns1:Concello ;
+    ns1:nombre "Cedeira" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1113395> .
+
+<http://example.org/resource/concello/Cee> a ns1:Concello ;
+    ns1:nombre "Cee" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q988707> .
+
+<http://example.org/resource/concello/Ferrol> a ns1:Concello ;
+    ns1:nombre "Ferrol" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q485329> .
+
+<http://example.org/resource/concello/Foz> a ns1:Concello ;
+    ns1:nombre "Foz" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q917878> .
+
+<http://example.org/resource/concello/Gondomar> a ns1:Concello ;
+    ns1:nombre "Gondomar" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607596> .
+
+<http://example.org/resource/concello/Lal%C3%ADn> a ns1:Concello ;
+    ns1:nombre "Lalín" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1374736> .
+
+<http://example.org/resource/concello/Lugo> a ns1:Concello ;
+    ns1:nombre "Lugo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q11125> .
+
+<http://example.org/resource/concello/Monforte%20de%20Lemos> a ns1:Concello ;
+    ns1:nombre "Monforte de Lemos" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818341> .
+
+<http://example.org/resource/concello/Muros> a ns1:Concello ;
+    ns1:nombre "Muros" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q578957> .
+
+<http://example.org/resource/concello/Noia> a ns1:Concello ;
+    ns1:nombre "Noia" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q818601> .
+
+<http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> a ns1:Concello ;
+    ns1:nombre "O Barco de Valdeorras" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607428> .
+
+<http://example.org/resource/concello/O%20Carballi%C3%B1o> a ns1:Concello ;
+    ns1:nombre "O Carballiño" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1607558> .
+
+<http://example.org/resource/concello/Oleiros> a ns1:Concello ;
+    ns1:nombre "Oleiros" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q688611> .
+
+<http://example.org/resource/concello/Ortigueira> a ns1:Concello ;
+    ns1:nombre "Ortigueira" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1375842> .
+
+<http://example.org/resource/concello/Ponteareas> a ns1:Concello ;
+    ns1:nombre "Ponteareas" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q617119> .
+
+<http://example.org/resource/concello/Redondela> a ns1:Concello ;
+    ns1:nombre "Redondela" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q833032> .
+
+<http://example.org/resource/concello/Ribadeo> a ns1:Concello ;
+    ns1:nombre "Ribadeo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824076> .
+
+<http://example.org/resource/concello/Sada> a ns1:Concello ;
+    ns1:nombre "Sada" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616081> .
+
+<http://example.org/resource/concello/Tomi%C3%B1o> a ns1:Concello ;
+    ns1:nombre "Tomiño" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1628263> .
+
+<http://example.org/resource/concello/Tui> a ns1:Concello ;
+    ns1:nombre "Tui" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q824122> .
+
+<http://example.org/resource/concello/Vigo> a ns1:Concello ;
+    ns1:nombre "Vigo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8745> .
+
+<http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> a ns1:Concello ;
+    ns1:nombre "Vilagarcía de Arousa" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1442637> .
+
+<http://example.org/resource/concello/Vimianzo> a ns1:Concello ;
+    ns1:nombre "Vimianzo" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1616162> .
+
+<http://example.org/resource/concello/Viveiro> a ns1:Concello ;
+    ns1:nombre "Viveiro" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Lugo%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q641221> .
+
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20%20> a ns1:DatoContacto ;
+    ns1:email "nieves.lema@vimianzo.gal" ;
+    ns1:telefono "981 716 001" ;
+    ns1:web "https://www.vimianzo.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodeames.gal" ;
+    ns1:telefono "981 535 940" ;
+    ns1:web "https://www.concellodeames.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> a ns1:DatoContacto ;
+    ns1:email "cultura@oleiros.org " ;
+    ns1:telefono "981 610 000" ;
+    ns1:web "http://www.oleiros.org" .
+
+<http://example.org/resource/contacto/Auditorio%20Lois%20Tob%C3%ADo> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodegondomar.com " ;
+    ns1:telefono "986 363 913" ;
+    ns1:web "https://concellodegondomar.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Cine%20Alovi> a ns1:DatoContacto ;
+    ns1:email "cultura@aspontes.org " ;
+    ns1:telefono "981 440 344" ;
+    ns1:web "https://aspontes.org" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Gustavo%20Freire> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodelugo.org" ;
+    ns1:telefono "982 297 217" ;
+    ns1:web "http://concellodelugo.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> a ns1:DatoContacto ;
+    ns1:email "cultura@ribadeo.org " ;
+    ns1:telefono "982 131 565" ;
+    ns1:web "http://ribadeo.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> a ns1:DatoContacto ;
+    ns1:email "oixcultura@carballino.org " ;
+    ns1:telefono "988 530 007" ;
+    ns1:web "http://www.carballino.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20da%20Xuventude> a ns1:DatoContacto ;
+    ns1:email "pazotorrado@gmail.com" ;
+    ns1:telefono "986 520 008" ;
+    ns1:web "https://cambados.es" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Cedeira> a ns1:DatoContacto ;
+    ns1:email "enrique.vazquez@cedeira.es" ;
+    ns1:telefono "649 876 614" ;
+    ns1:web "http://cedeira.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Goi%C3%A1n> a ns1:DatoContacto ;
+    ns1:email "cris.martinez@tomino.gal" ;
+    ns1:telefono "986 622 001" ;
+    ns1:web "https://tomino.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Nar%C3%B3n> a ns1:DatoContacto ;
+    ns1:email "p.cultura@naron.es " ;
+    ns1:telefono "981 391 144" ;
+    ns1:web "https://www.padroadodecultura.es" .
+
+<http://example.org/resource/contacto/Auditorio%20Municipal%20de%20Vigo> a ns1:DatoContacto ;
+    ns1:email " ofi.areacultural@vigo.org" ;
+    ns1:telefono "986 810 239" ;
+    ns1:web "https://hoxe.vigo.org" .
+
+<http://example.org/resource/contacto/Auditorio%20Pazo%20de%20Congresos> a ns1:DatoContacto ;
+    ns1:email "auditorio@ourense.es " ;
+    ns1:telefono "988 391 290" ;
+    ns1:web "http://ourensecultura.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Reveriano%20Soutullo> a ns1:DatoContacto ;
+    ns1:email "departamentocultura@ponteareas.es" ;
+    ns1:telefono "986 661 674" ;
+    ns1:web "https://ponteareas.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20Roc%C3%ADo%20Jurado> a ns1:DatoContacto ;
+    ns1:email "auditorio@cangas.gal",
+        "cultura@vilagarcia.es " ;
+    ns1:telefono "986 304 108",
+        "986 512 600" ;
+    ns1:web "http://www.vilagarcia.es",
+        "https://cangas.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20da%20Casa%20da%20Cultura> a ns1:DatoContacto ;
+    ns1:email "vmcastineira@gmail.com" ;
+    ns1:telefono "981 745 100" ;
+    ns1:web "https://cee.gal" .
+
+<http://example.org/resource/contacto/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> a ns1:DatoContacto ;
+    ns1:email "cultura@arteixo.org " ;
+    ns1:telefono "981 641 803" ;
+    ns1:web "https://www.arteixo.org" .
+
+<http://example.org/resource/contacto/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> a ns1:DatoContacto ;
+    ns1:email "daniel.loza@betanzos.gal" ;
+    ns1:telefono "981 770 100" ;
+    ns1:web "https://betanzos.es" .
+
+<http://example.org/resource/contacto/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> a ns1:DatoContacto ;
+    ns1:email "forum@coruna.es " ;
+    ns1:telefono "981 184 293" ;
+    ns1:web "https://www.coruna.gal/cultura" .
+
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20%20> a ns1:DatoContacto ;
+    ns1:email "casadacultura@burela.org " ;
+    ns1:telefono "982 580 683" ;
+    ns1:web "http://www.burela.org" .
+
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> a ns1:DatoContacto ;
+    ns1:email "casacultura@concellodesada.com " ;
+    ns1:telefono "981 619 115" ;
+    ns1:web "https://www.sada.gal" .
+
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> a ns1:DatoContacto ;
+    ns1:email "cultura@boiro.org " ;
+    ns1:telefono "981 848 425" ;
+    ns1:web "http://www.boiro.gal" .
+
+<http://example.org/resource/contacto/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodeames.gal" ;
+    ns1:telefono "981 884 991" ;
+    ns1:web "https://www.concellodeames.gal" .
+
+<http://example.org/resource/contacto/Centro%20Cultural%20Avenida> a ns1:DatoContacto ;
+    ns1:email "alcaldia@arua.gal" ;
+    ns1:telefono "988 310 116" ;
+    ns1:web "http://arua.es" .
+
+<http://example.org/resource/contacto/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> a ns1:DatoContacto ;
+    ns1:email "cultura@muros.es " ;
+    ns1:telefono "981 762 294" ;
+    ns1:web "http://www.muros.gal" .
+
+<http://example.org/resource/contacto/Cultural%20Center%20of%20Carballo> a ns1:DatoContacto ;
+    ns1:email "infocarballo@carballo.org " ;
+    ns1:telefono "981 704 300" ;
+    ns1:web "http://www.carballo.org" .
+
+<http://example.org/resource/contacto/Edificio%20Multiusos> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodemonforte.com " ;
+    ns1:telefono "982 402 501" ;
+    ns1:web "http://www.monfortedelemos.es" .
+
+<http://example.org/resource/contacto/Multiusos%20da%20Xunqueira> a ns1:DatoContacto ;
+    ns1:email "cultura@redondela.gal " ;
+    ns1:telefono "986 400 300" ;
+    ns1:web "http://redondela.gal" .
+
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> a ns1:DatoContacto ;
+    ns1:email "p.cultura@naron.es " ;
+    ns1:telefono "981 391 144" ;
+    ns1:web "https://www.padroadodecultura.es" .
+
+<http://example.org/resource/contacto/Pazo%20da%20Cultura%20de%20Pontevedra> a ns1:DatoContacto ;
+    ns1:email "coordinacion@pazodacultura.org " ;
+    ns1:telefono "986 833 061" ;
+    ns1:web "http://www.pazodacultura.org" .
+
+<http://example.org/resource/contacto/Pontevedra%20Principal%20Theatre> a ns1:DatoContacto ;
+    ns1:email "coordinacion@pazodacultura.org " ;
+    ns1:telefono "986 833 061" ;
+    ns1:web "http://www.pazodacultura.org" .
+
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20> a ns1:DatoContacto ;
+    ns1:email "centro.dramatico.galego@xunta.gal" ;
+    ns1:telefono "881 867 223" ;
+    ns1:web "http://centrodramatico.xunta.gal" .
+
+<http://example.org/resource/contacto/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> a ns1:DatoContacto ;
+    ns1:email "cultura@lalin.gal " ;
+    ns1:telefono "986 784 004" ;
+    ns1:web "https://lalin.gal" .
+
+<http://example.org/resource/contacto/Sala%20Bah%C3%ADa> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodefoz.es " ;
+    ns1:telefono "982 140 027" ;
+    ns1:web "http://www.concellodefoz.es" .
+
+<http://example.org/resource/contacto/Teatro%20Coliseo%20Noela> a ns1:DatoContacto ;
+    ns1:email "concha.allut@gmail.com" ;
+    ns1:telefono "981 828 104" ;
+    ns1:web "http://www.noia.es" .
+
+<http://example.org/resource/contacto/Teatro%20Jofre> a ns1:DatoContacto ;
+    ns1:email "produccion.jofre@ferrol.es " ;
+    ns1:telefono "981 944 244" ;
+    ns1:web "https://www.ferrol.gal" .
+
+<http://example.org/resource/contacto/Teatro%20Municipal%20Lauro%20Olmo> a ns1:DatoContacto ;
+    ns1:email "cultura@concellodobarco.org " ;
+    ns1:telefono "988 320 053" ;
+    ns1:web "https://www.concellodobarco.org" .
+
+<http://example.org/resource/contacto/Teatro%20Municipal%20de%20Tui> a ns1:DatoContacto ;
+    ns1:email "cultura@concellotui.org" ;
+    ns1:telefono "986 603 625" ;
+    ns1:web "http://www.culturatui.info" .
+
+<http://example.org/resource/contacto/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> a ns1:DatoContacto ;
+    ns1:email "rbg.cultura@viveiro.es " ;
+    ns1:telefono "982 560 162" ;
+    ns1:web "https://www.viveiro.es" .
+
+<http://example.org/resource/contacto/Teatro%20Principal> a ns1:DatoContacto ;
+    ns1:email "direccion@audiotoriodegalicia.org ",
+        "oficina.teatro@depourense.es " ;
+    ns1:telefono "981 542 347",
+        "988 317 960" ;
+    ns1:web "http://www.teatroprincipalourense.com",
+        "https://www.compostelacultura.gal" .
+
+<http://example.org/resource/contacto/Teatro%20Principal%20da%20Estrada> a ns1:DatoContacto ;
+    ns1:email "aestradacultura@gmail.com" ;
+    ns1:telefono "986 573 601" ;
+    ns1:web "http://www.aestrada.gal" .
+
+<http://example.org/resource/contacto/Teatro%20Rosal%C3%ADa%20de%20Castro> a ns1:DatoContacto ;
+    ns1:email "trc@coruna.es " ;
+    ns1:telefono "981 134 450" ;
+    ns1:web "https://www.coruna.gal/cultura" .
+
+<http://example.org/resource/contacto/Teatro%20da%20Beneficencia> a ns1:DatoContacto ;
+    ns1:email """mlopez@concellodeortigueira.com
+
+""" ;
+    ns1:telefono "639 043 936" ;
+    ns1:web "http://concellodeortigueira.gal" .
+
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20%20> a ns1:Enderezo ;
+    ns1:CP 15129 ;
+    ns1:calle "A Braña" ;
+    ns1:latitud 43.111859000000003 ;
+    ns1:longitud -9.0341880000000003 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Vimianzo> .
+
+<http://example.org/resource/enderezo/Auditorio%20Casa%20da%20Cultura%20do%20Milladoiro> a ns1:Enderezo ;
+    ns1:CP 15895 ;
+    ns1:calle "Travesia do Porto" ;
+    ns1:latitud 42.844782000000002 ;
+    ns1:longitud -8.5808649999999993 ;
+    ns1:pertenece <http://example.org/resource/concello/Ames> .
+
+<http://example.org/resource/enderezo/Auditorio%20Gabriel%20Garcia%20M%C3%A1rquez> a ns1:Enderezo ;
+    ns1:CP 15173 ;
+    ns1:calle "Rúa Camilo Díaz, Edif. Obelisco " ;
+    ns1:latitud 43.382950000000001 ;
+    ns1:longitud -8.3362479999999994 ;
+    ns1:pertenece <http://example.org/resource/concello/Oleiros> .
+
+<http://example.org/resource/enderezo/Auditorio%20Lois%20Tob%C3%ADo> a ns1:Enderezo ;
+    ns1:CP 36380 ;
+    ns1:calle "Rúa Manuel Alonso" ;
+    ns1:latitud 42.111111999999999 ;
+    ns1:longitud -8.7619030000000002 ;
+    ns1:numero "6" ;
+    ns1:pertenece <http://example.org/resource/concello/Gondomar> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Cine%20Alovi> a ns1:Enderezo ;
+    ns1:CP 15320 ;
+    ns1:calle "Avda. de Galicia" ;
+    ns1:latitud 43.447347999999998 ;
+    ns1:longitud -7.8536910000000004 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/As%20Pontes%20de%20Garc%C3%ADa%20Rodr%C3%ADguez> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Gustavo%20Freire> a ns1:Enderezo ;
+    ns1:CP 27001 ;
+    ns1:calle "Parque da Milagrosa" ;
+    ns1:latitud 43.022886 ;
+    ns1:longitud -7.5618790000000002 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Lugo> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Hern%C3%A1n%20Naval> a ns1:Enderezo ;
+    ns1:CP 27700 ;
+    ns1:calle "Rúa Buenos Aires" ;
+    ns1:latitud 43.534739999999999 ;
+    ns1:longitud -7.0384679999999999 ;
+    ns1:numero "14" ;
+    ns1:pertenece <http://example.org/resource/concello/Ribadeo> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20Manuel%20Mar%C3%ADa> a ns1:Enderezo ;
+    ns1:CP 32500 ;
+    ns1:calle "Praza Maior" ;
+    ns1:latitud 42.433442999999997 ;
+    ns1:longitud -8.0803279999999997 ;
+    ns1:numero "1" ;
+    ns1:pertenece <http://example.org/resource/concello/O%20Carballi%C3%B1o> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20da%20Xuventude> a ns1:Enderezo ;
+    ns1:CP 36360 ;
+    ns1:calle "Rúa San Francisco" ;
+    ns1:latitud 42.514954000000003 ;
+    ns1:longitud -8.8131219999999999 ;
+    ns1:numero "3" ;
+    ns1:pertenece <http://example.org/resource/concello/Cambados> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Cedeira> a ns1:Enderezo ;
+    ns1:CP 15350 ;
+    ns1:calle "Rúa Convento" ;
+    ns1:latitud 43.661636000000001 ;
+    ns1:longitud -8.0519730000000003 ;
+    ns1:pertenece <http://example.org/resource/concello/Cedeira> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Goi%C3%A1n> a ns1:Enderezo ;
+    ns1:CP 36740 ;
+    ns1:calle "Avda. Pío Troncoso" ;
+    ns1:latitud 41.948506000000002 ;
+    ns1:longitud -8.7715019999999999 ;
+    ns1:pertenece <http://example.org/resource/concello/Tomi%C3%B1o> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Nar%C3%B3n> a ns1:Enderezo ;
+    ns1:CP 15570 ;
+    ns1:calle "Praza de Galicia" ;
+    ns1:latitud 43.500059999999998 ;
+    ns1:longitud -8.1925410000000003 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Nar%C3%B3n> .
+
+<http://example.org/resource/enderezo/Auditorio%20Municipal%20de%20Vigo> a ns1:Enderezo ;
+    ns1:CP 36202 ;
+    ns1:calle "Praza do Rei" ;
+    ns1:latitud 42.235928999999999 ;
+    ns1:longitud -8.7268910000000002 ;
+    ns1:numero "1" ;
+    ns1:pertenece <http://example.org/resource/concello/Vigo> .
+
+<http://example.org/resource/enderezo/Auditorio%20Pazo%20de%20Congresos> a ns1:Enderezo ;
+    ns1:CP 32005 ;
+    ns1:calle "Rúa da Canle" ;
+    ns1:latitud 42.337932000000002 ;
+    ns1:longitud -7.8604450000000003 ;
+    ns1:numero "2" ;
+    ns1:pertenece <http://example.org/resource/concello/Ourense> .
+
+<http://example.org/resource/enderezo/Auditorio%20Reveriano%20Soutullo> a ns1:Enderezo ;
+    ns1:CP 36860 ;
+    ns1:calle "Rúa Doutor Fernández de la Vega" ;
+    ns1:latitud 42.174299099999999 ;
+    ns1:longitud -8.5069826000000006 ;
+    ns1:pertenece <http://example.org/resource/concello/Ponteareas> .
+
+<http://example.org/resource/enderezo/Auditorio%20Roc%C3%ADo%20Jurado> a ns1:Enderezo ;
+    ns1:CP 36600,
+        36940 ;
+    ns1:calle "Avda. A Mariña",
+        "Avda. de Lugo" ;
+    ns1:latitud 42.267704199999997,
+        42.598173000000003 ;
+    ns1:longitud -8.7855354000000005,
+        -8.7669139999999999 ;
+    ns1:numero "27" ;
+    ns1:pertenece <http://example.org/resource/concello/Cangas>,
+        <http://example.org/resource/concello/Vilagarc%C3%ADa%20de%20Arousa> .
+
+<http://example.org/resource/enderezo/Auditorio%20da%20Casa%20da%20Cultura> a ns1:Enderezo ;
+    ns1:CP 15270 ;
+    ns1:calle "Rúa Domingo Antonio de Andrade" ;
+    ns1:latitud 42.955649000000001 ;
+    ns1:longitud -9.1901340000000005 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Cee> .
+
+<http://example.org/resource/enderezo/Auditorio%20do%20Centro%20C%C3%ADvico%20Cultural%20de%20Arteixo> a ns1:Enderezo ;
+    ns1:CP 15142 ;
+    ns1:calle "Paseo fluvial" ;
+    ns1:latitud 43.302655999999999 ;
+    ns1:longitud -8.5062960000000007 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Arteixo> .
+
+<http://example.org/resource/enderezo/Aula%20Municipal%20de%20Cultura%20de%20Betanzos> a ns1:Enderezo ;
+    ns1:CP 15300 ;
+    ns1:calle "Praza de Galicia, Edificio Liceo" ;
+    ns1:latitud 43.279001999999998 ;
+    ns1:longitud -8.2107919999999996 ;
+    ns1:numero "1" ;
+    ns1:pertenece <http://example.org/resource/concello/Betanzos> .
+
+<http://example.org/resource/enderezo/Biblioteca%20Municipal%20de%20A%20Coru%C3%B1a%20-%20F%C3%B3rum%20Metropolitano> a ns1:Enderezo ;
+    ns1:CP 15006 ;
+    ns1:calle "Río Monelos" ;
+    ns1:latitud 43.355733999999998 ;
+    ns1:longitud -8.398987 ;
+    ns1:numero "1" ;
+    ns1:pertenece <http://example.org/resource/concello/A%20Coru%C3%B1a> .
+
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20%20> a ns1:Enderezo ;
+    ns1:CP 27880 ;
+    ns1:calle "Rúa Pardo Bazán" ;
+    ns1:latitud 43.660603000000002 ;
+    ns1:longitud -7.3581760000000003 ;
+    ns1:numero "6" ;
+    ns1:pertenece <http://example.org/resource/concello/Burela> .
+
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Pintor%20Llor%C3%A9ns> a ns1:Enderezo ;
+    ns1:CP 15610 ;
+    ns1:calle "Paseo do Porto" ;
+    ns1:latitud 43.355718000000003 ;
+    ns1:longitud -8.2520209999999992 ;
+    ns1:pertenece <http://example.org/resource/concello/Sada> .
+
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20Ram%C3%B3n%20Mart%C3%ADnez%20L%C3%B3pez> a ns1:Enderezo ;
+    ns1:CP 15930 ;
+    ns1:calle "Avda. da Constitución" ;
+    ns1:latitud 42.645308 ;
+    ns1:longitud -8.8843350000000001 ;
+    ns1:numero "30" ;
+    ns1:pertenece <http://example.org/resource/concello/Boiro> .
+
+<http://example.org/resource/enderezo/Casa%20da%20Cultura%20de%20Bertamir%C3%A1ns> a ns1:Enderezo ;
+    ns1:CP 15220 ;
+    ns1:calle "Praza de Chavián" ;
+    ns1:latitud 42.859270000000002 ;
+    ns1:longitud -8.6571739999999995 ;
+    ns1:pertenece <http://example.org/resource/concello/Ames> .
+
+<http://example.org/resource/enderezo/Centro%20Cultural%20Avenida> a ns1:Enderezo ;
+    ns1:CP 32250 ;
+    ns1:calle "Rúa Progreso" ;
+    ns1:latitud 42.394285000000004 ;
+    ns1:longitud -7.1162599999999996 ;
+    ns1:numero "90" ;
+    ns1:pertenece <http://example.org/resource/concello/A%20R%C3%BAa%20de%20Valdeorras> .
+
+<http://example.org/resource/enderezo/Centro%20Cultural%20e%20Xuvenil%20de%20Muros> a ns1:Enderezo ;
+    ns1:CP 15250 ;
+    ns1:calle "Estrada de Miraflores" ;
+    ns1:latitud 42.773901000000002 ;
+    ns1:longitud -9.0589899999999997 ;
+    ns1:numero "  " ;
+    ns1:pertenece <http://example.org/resource/concello/Muros> .
+
+<http://example.org/resource/enderezo/Cultural%20Center%20of%20Carballo> a ns1:Enderezo ;
+    ns1:CP 15100 ;
+    ns1:calle "Rúa do Pan" ;
+    ns1:latitud 43.211587999999999 ;
+    ns1:longitud -8.6952610000000004 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Carballo> .
+
+<http://example.org/resource/enderezo/Edificio%20Multiusos> a ns1:Enderezo ;
+    ns1:CP 27400 ;
+    ns1:calle "Avda. Emilia Casas Baamonde" ;
+    ns1:latitud 42.528061000000001 ;
+    ns1:longitud -7.5118390000000002 ;
+    ns1:pertenece <http://example.org/resource/concello/Monforte%20de%20Lemos> .
+
+<http://example.org/resource/enderezo/Multiusos%20da%20Xunqueira> a ns1:Enderezo ;
+    ns1:CP 36800 ;
+    ns1:calle "Paseo da Xunqueira" ;
+    ns1:latitud 42.282848999999999 ;
+    ns1:longitud -8.6100010000000005 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Redondela> .
+
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Nar%C3%B3n> a ns1:Enderezo ;
+    ns1:CP 15570 ;
+    ns1:calle "Rúa Holanda" ;
+    ns1:latitud 43.496673999999999 ;
+    ns1:longitud -8.1955360000000006 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Nar%C3%B3n> .
+
+<http://example.org/resource/enderezo/Pazo%20da%20Cultura%20de%20Pontevedra> a ns1:Enderezo ;
+    ns1:CP 36005 ;
+    ns1:calle "Alexandre Bóveda" ;
+    ns1:latitud 42.435496999999998 ;
+    ns1:longitud -8.6377439999999996 ;
+    ns1:pertenece <http://example.org/resource/concello/Pontevedra> .
+
+<http://example.org/resource/enderezo/Pontevedra%20Principal%20Theatre> a ns1:Enderezo ;
+    ns1:CP 36002 ;
+    ns1:calle "Rúa de Paio Gómez Chariño" ;
+    ns1:latitud 42.432473000000002 ;
+    ns1:longitud -8.6464870000000005 ;
+    ns1:numero "6" ;
+    ns1:pertenece <http://example.org/resource/concello/Pontevedra> .
+
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20> a ns1:Enderezo ;
+    ns1:CP 15705 ;
+    ns1:calle "Rúa Nova" ;
+    ns1:latitud 42.878413000000002 ;
+    ns1:longitud -8.5438179999999999 ;
+    ns1:numero "34" ;
+    ns1:pertenece <http://example.org/resource/concello/Santiago%20de%20Compostela> .
+
+<http://example.org/resource/enderezo/Sal%C3%B3n%20Teatro%20de%20Lal%C3%ADn> a ns1:Enderezo ;
+    ns1:CP 36500 ;
+    ns1:calle "Praza do Mercado" ;
+    ns1:latitud 42.664782000000002 ;
+    ns1:longitud -8.1046169999999993 ;
+    ns1:pertenece <http://example.org/resource/concello/Lal%C3%ADn> .
+
+<http://example.org/resource/enderezo/Sala%20Bah%C3%ADa> a ns1:Enderezo ;
+    ns1:CP 27780 ;
+    ns1:calle "Rúa Cervantes" ;
+    ns1:latitud 43.571517999999998 ;
+    ns1:longitud -7.2594750000000001 ;
+    ns1:numero "40" ;
+    ns1:pertenece <http://example.org/resource/concello/Foz> .
+
+<http://example.org/resource/enderezo/Teatro%20Coliseo%20Noela> a ns1:Enderezo ;
+    ns1:CP 15200 ;
+    ns1:calle "Rúa Curro" ;
+    ns1:latitud 42.782785500000003 ;
+    ns1:longitud -8.8893874000000004 ;
+    ns1:numero "4" ;
+    ns1:pertenece <http://example.org/resource/concello/Noia> .
+
+<http://example.org/resource/enderezo/Teatro%20Jofre> a ns1:Enderezo ;
+    ns1:CP 15402 ;
+    ns1:calle "Praza de Galicia" ;
+    ns1:latitud 43.482546999999997 ;
+    ns1:longitud -8.2337600000000002 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Ferrol> .
+
+<http://example.org/resource/enderezo/Teatro%20Municipal%20Lauro%20Olmo> a ns1:Enderezo ;
+    ns1:CP 32200 ;
+    ns1:calle "Rúa da Estación" ;
+    ns1:latitud 42.415461000000001 ;
+    ns1:longitud -6.9856769999999999 ;
+    ns1:numero "2" ;
+    ns1:pertenece <http://example.org/resource/concello/O%20Barco%20de%20Valdeorras> .
+
+<http://example.org/resource/enderezo/Teatro%20Municipal%20de%20Tui> a ns1:Enderezo ;
+    ns1:CP 36700 ;
+    ns1:calle "Rúa Colón" ;
+    ns1:latitud 42.049515999999997 ;
+    ns1:longitud -8.6470680000000009 ;
+    ns1:numero "2" ;
+    ns1:pertenece <http://example.org/resource/concello/Tui> .
+
+<http://example.org/resource/enderezo/Teatro%20Nicomedes%20Pastor%20D%C3%ADaz> a ns1:Enderezo ;
+    ns1:CP 27850 ;
+    ns1:calle "Constanza de Castro" ;
+    ns1:latitud 43.662306999999998 ;
+    ns1:longitud -7.5948479999999998 ;
+    ns1:numero "19" ;
+    ns1:pertenece <http://example.org/resource/concello/Viveiro> .
+
+<http://example.org/resource/enderezo/Teatro%20Principal> a ns1:Enderezo ;
+    ns1:CP 15705,
+        32005 ;
+    ns1:calle "Rúa Nova",
+        "Rúa da Paz" ;
+    ns1:latitud 42.337164999999999,
+        42.878804000000002 ;
+    ns1:longitud -8.5435199999999991,
+        -7.8637220000000001 ;
+    ns1:numero "21",
+        "9" ;
+    ns1:pertenece <http://example.org/resource/concello/Ourense>,
+        <http://example.org/resource/concello/Santiago%20de%20Compostela> .
+
+<http://example.org/resource/enderezo/Teatro%20Principal%20da%20Estrada> a ns1:Enderezo ;
+    ns1:CP 36680 ;
+    ns1:calle "Rúa Serafín Pazo" ;
+    ns1:latitud 42.688070000000003 ;
+    ns1:longitud -8.4893590000000003 ;
+    ns1:pertenece <http://example.org/resource/concello/A%20Estrada> .
+
+<http://example.org/resource/enderezo/Teatro%20Rosal%C3%ADa%20de%20Castro> a ns1:Enderezo ;
+    ns1:CP 15003 ;
+    ns1:calle "Riego del Agua" ;
+    ns1:latitud 43.370503999999997 ;
+    ns1:longitud -8.3983030000000003 ;
+    ns1:numero "37" ;
+    ns1:pertenece <http://example.org/resource/concello/A%20Coru%C3%B1a> .
+
+<http://example.org/resource/enderezo/Teatro%20da%20Beneficencia> a ns1:Enderezo ;
+    ns1:CP 15330 ;
+    ns1:calle "Praza Isabel II" ;
+    ns1:latitud 43.684542999999998 ;
+    ns1:longitud -7.8547750000000001 ;
+    ns1:numero " " ;
+    ns1:pertenece <http://example.org/resource/concello/Ortigueira> .
+
+<http://example.org/resource/concello/A%20Coru%C3%B1a> a ns1:Concello ;
+    ns1:nombre "A Coruña" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q8757> .
+
+<http://example.org/resource/concello/Ames> a ns1:Concello ;
+    ns1:nombre "Ames" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1353997> .
+
+<http://example.org/resource/concello/Nar%C3%B3n> a ns1:Concello ;
+    ns1:nombre "Narón" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1368896> .
+
+<http://example.org/resource/concello/Ourense> a ns1:Concello ;
+    ns1:nombre "Ourense" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Ourense> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q99151> .
+
+<http://example.org/resource/concello/Pontevedra> a ns1:Concello ;
+    ns1:nombre "Pontevedra" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/Pontevedra%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q12411> .
+
+<http://example.org/resource/concello/Santiago%20de%20Compostela> a ns1:Concello ;
+    ns1:nombre "Santiago de Compostela" ;
+    ns1:ubicadoen <http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q14314> .
+
+<http://example.org/resource/provincia/Ourense> a ns1:Provincia ;
+    ns1:nombre "Ourense" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95038> .
+
+<http://example.org/resource/provincia/Lugo%20Province> a ns1:Provincia ;
+    ns1:nombre "Lugo Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95027> .
+
+<http://example.org/resource/provincia/Pontevedra%20Province> a ns1:Provincia ;
+    ns1:nombre "Pontevedra Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95086> .
+
+<http://example.org/resource/provincia/A%20Coru%C3%B1a%20Province> a ns1:Provincia ;
+    ns1:nombre "A Coruña Province" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q82119> .
+
