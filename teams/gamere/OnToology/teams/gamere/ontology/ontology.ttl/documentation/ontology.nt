@@ -1,0 +1,179 @@
+<http://example.org/def/gamere#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://example.org/def/gamere#> <http://purl.org/dc/elements/1.1/title> "Ontología de las Playas con bandera azul 2025 de Galicia" .
+<http://example.org/def/gamere#> <http://purl.org/dc/terms/description> "Ontología diseñada para describir las playas con bandera azul 2025 de Galicia, incluyendo su ubicación, concellos y provincias" .
+<http://example.org/def/gamere#> <http://purl.org/dc/terms/title> "Ontología de las Playas con bandera azul 2025 de Galicia" .
+<http://example.org/def/gamere#> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología de las Playas con bandera azul 2025 de Galicia" .
+<http://example.org/def/gamere#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://example.org/def/gamere#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/gamere#estaEn
+<http://example.org/def/gamere#estaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/gamere#estaEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#estaEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/def/gamere#Ubicacion> .
+<http://example.org/def/gamere#estaEn> <http://www.w3.org/2000/01/rdf-schema#label> "esta en" .
+# 
+# http://example.org/def/gamere#perteneceA
+<http://example.org/def/gamere#perteneceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/gamere#perteneceA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Concello> .
+<http://example.org/def/gamere#perteneceA> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/def/gamere#Provincia> .
+<http://example.org/def/gamere#perteneceA> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a" .
+# 
+# http://example.org/def/gamere#situadaEn
+<http://example.org/def/gamere#situadaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/def/gamere#situadaEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#situadaEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/def/gamere#Concello> .
+<http://example.org/def/gamere#situadaEn> <http://www.w3.org/2000/01/rdf-schema#label> "situada en" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/gamere#codigoConcello
+<http://example.org/def/gamere#codigoConcello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#codigoConcello> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Concello> .
+<http://example.org/def/gamere#codigoConcello> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/def/gamere#codigoConcello> <http://www.w3.org/2000/01/rdf-schema#label> "codigo concello" .
+# 
+# http://example.org/def/gamere#codigoProvincia
+<http://example.org/def/gamere#codigoProvincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#codigoProvincia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Provincia> .
+<http://example.org/def/gamere#codigoProvincia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/def/gamere#codigoProvincia> <http://www.w3.org/2000/01/rdf-schema#label> "codigo provincia" .
+# 
+# http://example.org/def/gamere#coordenadasX
+<http://example.org/def/gamere#coordenadasX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#coordenadasX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Ubicacion> .
+<http://example.org/def/gamere#coordenadasX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/def/gamere#coordenadasX> <http://www.w3.org/2000/01/rdf-schema#label> "coordenadas x" .
+# 
+# http://example.org/def/gamere#coordenadasY
+<http://example.org/def/gamere#coordenadasY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#coordenadasY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Ubicacion> .
+<http://example.org/def/gamere#coordenadasY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/def/gamere#coordenadasY> <http://www.w3.org/2000/01/rdf-schema#label> "coordenadas y" .
+# 
+# http://example.org/def/gamere#descripcion
+<http://example.org/def/gamere#descripcion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#descripcion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Ubicacion> .
+<http://example.org/def/gamere#descripcion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#descripcion> <http://www.w3.org/2000/01/rdf-schema#label> "descripcion" .
+# 
+# http://example.org/def/gamere#entorno
+<http://example.org/def/gamere#entorno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#entorno> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#entorno> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#entorno> <http://www.w3.org/2000/01/rdf-schema#label> "entorno" .
+# 
+# http://example.org/def/gamere#lonxitude
+<http://example.org/def/gamere#lonxitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#lonxitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#lonxitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/def/gamere#lonxitude> <http://www.w3.org/2000/01/rdf-schema#label> "lonxitude" .
+# 
+# http://example.org/def/gamere#nameConcello
+<http://example.org/def/gamere#nameConcello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#nameConcello> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Concello> .
+<http://example.org/def/gamere#nameConcello> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#nameConcello> <http://www.w3.org/2000/01/rdf-schema#label> "name concello" .
+# 
+# http://example.org/def/gamere#nameProvincia
+<http://example.org/def/gamere#nameProvincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#nameProvincia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Provincia> .
+<http://example.org/def/gamere#nameProvincia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#nameProvincia> <http://www.w3.org/2000/01/rdf-schema#label> "name provincia" .
+# 
+# http://example.org/def/gamere#nomePraia
+<http://example.org/def/gamere#nomePraia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#nomePraia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#nomePraia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#nomePraia> <http://www.w3.org/2000/01/rdf-schema#label> "nome praia" .
+# 
+# http://example.org/def/gamere#tipoArena
+<http://example.org/def/gamere#tipoArena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#tipoArena> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#tipoArena> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/def/gamere#tipoArena> <http://www.w3.org/2000/01/rdf-schema#label> "tipo arena" .
+# 
+# http://example.org/def/gamere#url
+<http://example.org/def/gamere#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/def/gamere#url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/def/gamere#Praia> .
+<http://example.org/def/gamere#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://example.org/def/gamere#url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/def/gamere#Provincia> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/def/gamere#Praia> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://example.org/def/gamere#Concello> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#label> "same as" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/def/gamere#Concello
+<http://example.org/def/gamere#Concello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/gamere#Concello> <http://www.w3.org/2000/01/rdf-schema#label> "Concello" .
+# 
+# http://example.org/def/gamere#Praia
+<http://example.org/def/gamere#Praia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/gamere#Praia> <http://www.w3.org/2000/01/rdf-schema#label> "Praia" .
+# 
+# http://example.org/def/gamere#Provincia
+<http://example.org/def/gamere#Provincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/gamere#Provincia> <http://www.w3.org/2000/01/rdf-schema#label> "Provincia" .
+# 
+# http://example.org/def/gamere#Ubicacion
+<http://example.org/def/gamere#Ubicacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/def/gamere#Ubicacion> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicacion" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

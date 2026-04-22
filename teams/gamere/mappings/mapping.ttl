@@ -1,0 +1,202 @@
+@base <http://example.org/mapping/> .
+
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix : <http://example.org/def/gamere#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+#################################################
+# PRAIA
+#################################################
+
+<#PraiaMapping>
+a rr:TriplesMap ;
+
+rml:logicalSource [
+ rml:source "data/PraiasBandeiraAzul-2025-csv.csv" ;
+ rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+ rr:template "http://example.org/resource/praia/{CODIGO_CONCELLO}_{PRAIA}" ;
+ rr:class :Praia
+];
+
+rr:predicateObjectMap [
+ rr:predicate :nomePraia ;
+ rr:objectMap [ rml:reference "PRAIA" ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate owl:sameAs ;
+ rr:objectMap [
+  rr:template "https://www.wikidata.org/entity/{wikidata_praia}";
+  rr:termType rr:IRI
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :lonxitude ;
+ rr:objectMap [
+  rml:reference "LONXITUDE" ;
+  rr:datatype xsd:integer
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :tipoArena ;
+ rr:objectMap [ rml:reference "TIPO_DE_AREA" ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :entorno ;
+ rr:objectMap [ rml:reference "TIPO" ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :url ;
+ rr:objectMap [
+  rml:reference "MAIS_INFORMACION_EN_TURGALICIA" ;
+  rr:termType rr:IRI;
+  rr:datatype xsd:anyURI
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :situadaEn ;
+ rr:objectMap [
+  rr:template "http://example.org/resource/concello/{CODIGO_CONCELLO}"
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :estaEn ;
+ rr:objectMap [
+  rr:template "http://example.org/resource/ubicacion/{Coordenada_X}_{Coordenada_Y}"
+ ]
+].
+
+#################################################
+# UBICACION
+#################################################
+
+<#UbicacionMapping>
+a rr:TriplesMap ;
+
+rml:logicalSource [
+ rml:source "data/PraiasBandeiraAzul-2025-csv.csv" ;
+ rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+ rr:template "http://example.org/resource/ubicacion/{Coordenada_X}_{Coordenada_Y}" ;
+ rr:class :Ubicacion
+];
+
+rr:predicateObjectMap [
+ rr:predicate :coordenadasX ;
+ rr:objectMap [
+  rml:reference "Coordenada_X" ;
+  rr:datatype xsd:float
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :coordenadasY ;
+ rr:objectMap [
+  rml:reference "Coordenada_Y" ;
+  rr:datatype xsd:float
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :descripcion ;
+ rr:objectMap [ rml:reference "LUGAR_E_PARROQUIA" ]
+].
+
+#################################################
+# CONCELLO
+#################################################
+
+<#ConcelloMapping>
+a rr:TriplesMap ;
+
+rml:logicalSource [
+rml:source "data/PraiasBandeiraAzul-2025-csv.csv" ;
+ rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+ rr:template "http://example.org/resource/concello/{CODIGO_CONCELLO}" ;
+ rr:class :Concello
+];
+
+rr:predicateObjectMap [
+ rr:predicate :nameConcello ;
+ rr:objectMap [ rml:reference "CONCELLO" ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate owl:sameAs ;
+ rr:objectMap [
+ rr:template "https://www.wikidata.org/entity/{wikidata_concello}";
+ rr:termType rr:IRI
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :codigoConcello ;
+ rr:objectMap [
+  rml:reference "CODIGO_CONCELLO" ;
+  rr:datatype xsd:integer
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :perteneceA ;
+ rr:objectMap [
+  rr:template "http://example.org/resource/provincia/{CODIGO_PROVINCIA}"
+ ]
+].
+
+#################################################
+# PROVINCIA
+#################################################
+
+<#ProvinciaMapping>
+a rr:TriplesMap ;
+
+rml:logicalSource [
+ rml:source "data/PraiasBandeiraAzul-2025-csv.csv" ;
+ rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+ rr:template "http://example.org/resource/provincia/{CODIGO_PROVINCIA}" ;
+ rr:class :Provincia
+];
+
+rr:predicateObjectMap [
+ rr:predicate :nameProvincia ;
+ rr:objectMap [ rml:reference "PROVINCIA" ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate owl:sameAs ;
+ rr:objectMap [
+  rr:template "https://www.wikidata.org/entity/{wikidata_provincia}" ;
+  rr:termType rr:IRI
+ ]
+];
+
+rr:predicateObjectMap [
+ rr:predicate :codigoProvincia ;
+ rr:objectMap [
+  rml:reference "CODIGO_PROVINCIA" ;
+  rr:datatype xsd:integer
+ ]
+].
+

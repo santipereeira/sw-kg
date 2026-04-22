@@ -1,0 +1,61 @@
+{
+  "@context" : {
+    "estaEn" : {
+      "@id" : "http://example.org/def/gamere#estaEn"
+    },
+    "tipoArena" : {
+      "@id" : "http://example.org/def/gamere#tipoArena"
+    },
+    "nameProvincia" : {
+      "@id" : "http://example.org/def/gamere#nameProvincia"
+    },
+    "coordenadasY" : {
+      "@id" : "http://example.org/def/gamere#coordenadasY"
+    },
+    "url" : {
+      "@id" : "http://example.org/def/gamere#url"
+    },
+    "coordenadasX" : {
+      "@id" : "http://example.org/def/gamere#coordenadasX"
+    },
+    "lonxitude" : {
+      "@id" : "http://example.org/def/gamere#lonxitude"
+    },
+    "nameConcello" : {
+      "@id" : "http://example.org/def/gamere#nameConcello"
+    },
+    "nomePraia" : {
+      "@id" : "http://example.org/def/gamere#nomePraia"
+    },
+    "Provincia" : {
+      "@id" : "http://example.org/def/gamere#Provincia"
+    },
+    "Ubicacion" : {
+      "@id" : "http://example.org/def/gamere#Ubicacion"
+    },
+    "descripcion" : {
+      "@id" : "http://example.org/def/gamere#descripcion"
+    },
+    "perteneceA" : {
+      "@id" : "http://example.org/def/gamere#perteneceA"
+    },
+    "situadaEn" : {
+      "@id" : "http://example.org/def/gamere#situadaEn"
+    },
+    "codigoConcello" : {
+      "@id" : "http://example.org/def/gamere#codigoConcello"
+    },
+    "Praia" : {
+      "@id" : "http://example.org/def/gamere#Praia"
+    },
+    "codigoProvincia" : {
+      "@id" : "http://example.org/def/gamere#codigoProvincia"
+    },
+    "Concello" : {
+      "@id" : "http://example.org/def/gamere#Concello"
+    },
+    "entorno" : {
+      "@id" : "http://example.org/def/gamere#entorno"
+    }
+  }
+}

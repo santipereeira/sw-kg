@@ -1,0 +1,160 @@
+prefixes:
+  ta: "http://example.org/def/juegosdeportivosmunicipalesmadrid#"
+  ex: "http://example.org/resource/"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+
+  CAMPO:
+    sources:
+      - ['data/campo.csv~csv']
+    s: ex:Campo/$(codigoCampo)
+    po:
+      - [a, ta:Campo]
+      - [ta:nombreCampo, $(nombreCampo)]
+      - [ta:coordX, $(coordX), xsd:decimal]
+      - [ta:coordY, $(coordY), xsd:decimal]
+
+      - p: ta:estaEn
+        o:
+          - mapping: DISTRITO
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(nombreDistrito)]
+                - [str2, $(nombreDistrito)]
+
+  DISTRITO:
+    sources:
+      - ['data/distritoMunicipal.csv~csv']
+    s: ex:Distrito/$(nombreDistrito)
+    po:
+      - [a, ta:DistritoMunicipal]
+      - [ta:nombreDistrito, $(nombreDistrito)]
+
+  EQUIPO:
+    sources:
+      - ['data/equipo.csv~csv']
+    s: ex:Equipo/$(codigoEquipo)
+    po:
+      - [a, ta:Equipo]
+      - [ta:codigoEquipo, $(codigoEquipo), xsd:integer]
+      - [ta:nombreEquipo, $(nombreEquipo)]
+
+  FASE:
+    sources:
+      - ['data/fase.csv~csv']
+    s: ex:Fase/$(codigoFase)
+    po:
+      - [a, ta:Fase]
+      - [ta:codigoFase, $(codigoFase), xsd:integer]
+      - [ta:nombreFase, $(nombreFase)]
+
+  GRUPO:
+    sources:
+      - ['data/grupo.csv~csv']
+    s: ex:Grupo/$(codigoGrupo)
+    po:
+      - [a, ta:Grupo]
+      - [ta:codigoGrupo, $(codigoGrupo), xsd:integer]
+      - [ta:nombreGrupo, $(nombreGrupo)]
+      - [ta:sexoGrupo, $(sexoGrupo)]
+
+  TEMPORADA:
+    sources:
+      - ['data/temporada.csv~csv']
+    s: ex:Temporada/$(nombreTemporada)
+    po:
+      - [a, ta:Temporada]
+      - [ta:nombreTemporada, $(nombreTemporada)]
+
+  COMPETICION:
+    sources:
+      - ['data/competicion.csv~csv']
+    s: ex:Competicion/$(codigoCompeticion)
+    po:
+      - [a, ta:Competicion]
+      - [ta:codigoCompeticion, $(codigoCompeticion), xsd:integer]
+      - [ta:nombreCompeticion, $(nombreCompeticion)]
+      - [ta:nombreDeporte, $(nombreDeporte)]
+      - [ta:nombreCategoria, $(nombreCategoria)]
+      - [ta:sistemaCompeticion, $(sistemaCompeticion)]
+
+      - p: ta:tieneTemporada
+        o:
+          - mapping: TEMPORADA
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(nombreTemporada)]
+                - [str2, $(nombreTemporada)]
+
+  PARTIDO:
+    sources:
+      - ['data/partidos.csv~csv']
+    s: ex:Partido/$(numeroPartido)-$(codigoCompeticion)-$(fecha)-$(hora)
+    po:
+      - [a, ta:Partido]
+      - [ta:numeroPartido, $(numeroPartido), xsd:integer]
+      - [ta:jornada, $(jornada), xsd:integer]
+      - [ta:fecha, $(fecha), xsd:date]
+      - [ta:hora, $(hora), xsd:time]
+      - [ta:programado, $(programado), xsd:integer]
+      - [ta:resultadoLocal, $(resultadoLocal), xsd:integer]
+      - [ta:resultadoVisitante, $(resultadoVisitante), xsd:integer]
+      - [ta:estado, $(estado)]
+
+      # RELACIONES
+      - p: ta:tieneEquipoLocal
+        o:
+          - mapping: EQUIPO
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoEquipoLocal)]
+                - [str2, $(codigoEquipo)]
+
+      - p: ta:tieneEquipoVisitante
+        o:
+          - mapping: EQUIPO
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoEquipoVisitante)]
+                - [str2, $(codigoEquipo)]
+
+      - p: ta:perteneceAGrupo
+        o:
+          - mapping: GRUPO
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoGrupo)]
+                - [str2, $(codigoGrupo)]
+
+      - p: ta:perteneceAFase
+        o:
+          - mapping: FASE
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoFase)]
+                - [str2, $(codigoFase)]
+
+      - p: ta:seJuegaEn
+        o:
+          - mapping: CAMPO
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoCampo)]
+                - [str2, $(codigoCampo)]
+
+      - p: ta:perteneceACompeticion
+        o:
+          - mapping: COMPETICION
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(codigoCompeticion)]
+                - [str2, $(codigoCompeticion)]
