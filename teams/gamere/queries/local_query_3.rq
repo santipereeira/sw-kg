@@ -1,0 +1,22 @@
+# local_query_3.rq
+# PDIs en Portugal (norte, limítrofe con Galicia)
+# Demuestra la jerarquía completa PDI → Concello → Provincia → País
+
+PREFIX gamere: <http://example.org/def/gamere#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?nombre ?tipo ?concello ?provincia WHERE {
+    ?pdi rdf:type ?clase .
+    ?clase rdfs:subClassOf* gamere:PuntoDeInteres .
+    ?clase rdfs:label ?tipo .
+    OPTIONAL { ?pdi gamere:nome ?nombre }
+    OPTIONAL { ?pdi gamere:nomePraia ?nombre }
+    ?pdi gamere:situadaEn ?conc .
+    ?conc gamere:nameConcello ?concello .
+    ?conc gamere:perteneceA ?prov .
+    ?prov gamere:nameProvincia ?provincia .
+    ?prov gamere:perteneceA ?pais .
+    ?pais gamere:namePais "Portugal" .
+}
+ORDER BY ?tipo ?concello ?nombre

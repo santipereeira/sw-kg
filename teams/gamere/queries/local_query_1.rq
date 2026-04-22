@@ -1,0 +1,18 @@
+# local_query_1.rq
+# Distribución de PDIs por provincia y tipo
+# Demuestra la jerarquía PDI → Concello → Provincia del KG
+
+PREFIX gamere: <http://example.org/def/gamere#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?provincia ?etiqueta (COUNT(?pdi) AS ?total) WHERE {
+    ?pdi rdf:type ?clase .
+    ?clase rdfs:subClassOf* gamere:PuntoDeInteres .
+    ?clase rdfs:label ?etiqueta .
+    ?pdi gamere:situadaEn ?conc .
+    ?conc gamere:perteneceA ?prov .
+    ?prov gamere:nameProvincia ?provincia .
+}
+GROUP BY ?provincia ?etiqueta
+ORDER BY ?provincia DESC(?total)
