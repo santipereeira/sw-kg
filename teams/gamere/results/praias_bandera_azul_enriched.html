@@ -1,0 +1,3665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a54ceff8f82ce1015cfea7f9054ae259 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a54ceff8f82ce1015cfea7f9054ae259" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a54ceff8f82ce1015cfea7f9054ae259 = L.map(
+                "map_a54ceff8f82ce1015cfea7f9054ae259",
+                {
+                    center: [42.88, -8.54],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_62cca10e974513196b4347c59b537eb1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "CartoDB",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_62cca10e974513196b4347c59b537eb1.addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+            var circle_marker_edeb8d8366f82fcf2b14c0a264c92fb8 = L.circleMarker(
+                [43.383666, -8.40575],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_2918cb60988dbe1a565dd85a2e56fca9 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0a5412afe480941ae42c497ea09efe58 = $(`<div id="html_0a5412afe480941ae42c497ea09efe58" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of As Lapas</b><br><small>A Coruña · A Coruña</small><br>📏 70 m<br><a href="http://www.wikidata.org/entity/Q18576114" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/As%20Lapas.jpg" width="200"/></div></div>`)[0];
+                popup_2918cb60988dbe1a565dd85a2e56fca9.setContent(html_0a5412afe480941ae42c497ea09efe58);
+            
+        
+
+        circle_marker_edeb8d8366f82fcf2b14c0a264c92fb8.bindPopup(popup_2918cb60988dbe1a565dd85a2e56fca9)
+        ;
+
+        
+    
+    
+            circle_marker_edeb8d8366f82fcf2b14c0a264c92fb8.bindTooltip(
+                `<div>
+                     🏖️ Beach Of As Lapas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f38b3905923d3fed33f0e71722408638 = L.circleMarker(
+                [43.381833, -8.397055],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_bce050bcdb334c14f233c954e14b3e37 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_3b287f08c7c3763e52707b7287e2b8d9 = $(`<div id="html_3b287f08c7c3763e52707b7287e2b8d9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Santo Amaro</b><br><small>A Coruña · A Coruña</small><br>📏 105 m<br><a href="http://www.wikidata.org/entity/Q20546375" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/La%20Coru%C3%B1a%20-%20Playa%20de%20San%20Amaro%20-BT-%2001.jpg" width="200"/></div></div>`)[0];
+                popup_bce050bcdb334c14f233c954e14b3e37.setContent(html_3b287f08c7c3763e52707b7287e2b8d9);
+            
+        
+
+        circle_marker_f38b3905923d3fed33f0e71722408638.bindPopup(popup_bce050bcdb334c14f233c954e14b3e37)
+        ;
+
+        
+    
+    
+            circle_marker_f38b3905923d3fed33f0e71722408638.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Santo Amaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e0ef73aca9a3e444071a34bac624787 = L.circleMarker(
+                [43.34675, -8.383083],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_22823f0cda96b19e800a4237ce4941fd = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_fce7f27336f1e76249f82efda8a11310 = $(`<div id="html_fce7f27336f1e76249f82efda8a11310" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa De Oza</b><br><small>A Coruña · A Coruña</small><br>📏 110 m<br><a href="http://www.wikidata.org/entity/Q12398085" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/PraiadeOzaACoru%C3%B1a1.jpg" width="200"/></div></div>`)[0];
+                popup_22823f0cda96b19e800a4237ce4941fd.setContent(html_fce7f27336f1e76249f82efda8a11310);
+            
+        
+
+        circle_marker_6e0ef73aca9a3e444071a34bac624787.bindPopup(popup_22823f0cda96b19e800a4237ce4941fd)
+        ;
+
+        
+    
+    
+            circle_marker_6e0ef73aca9a3e444071a34bac624787.bindTooltip(
+                `<div>
+                     🏖️ Playa De Oza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c29d9fbab5a149b676db5385b515c2ba = L.circleMarker(
+                [43.371055, -8.404972],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_93eef5e65af60784a9311abea7f4ec97 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_e6f601f145c453464608fca99a85c9af = $(`<div id="html_e6f601f145c453464608fca99a85c9af" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa Del Matadero</b><br><small>A Coruña · A Coruña</small><br>📏 80 m<br><a href="http://www.wikidata.org/entity/Q18576276" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Coru%C3%B1a%2C%20praia%20do%20Matadoiro%2001-02.JPG" width="200"/></div></div>`)[0];
+                popup_93eef5e65af60784a9311abea7f4ec97.setContent(html_e6f601f145c453464608fca99a85c9af);
+            
+        
+
+        circle_marker_c29d9fbab5a149b676db5385b515c2ba.bindPopup(popup_93eef5e65af60784a9311abea7f4ec97)
+        ;
+
+        
+    
+    
+            circle_marker_c29d9fbab5a149b676db5385b515c2ba.bindTooltip(
+                `<div>
+                     🏖️ Playa Del Matadero
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a36aafec260c47891cb983df7f8bd563 = L.circleMarker(
+                [43.368472, -8.411639],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_bd8c71f1c118c59b3c6cd64b0bfaa767 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_29af969381dcb7efc7bd86047fea83aa = $(`<div id="html_29af969381dcb7efc7bd86047fea83aa" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Praia De Riazor</b><br><small>A Coruña · A Coruña</small><br>📏 570 m<br><a href="http://www.wikidata.org/entity/Q3399382" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Riazor.A%20Coru%C3%B1a%20Galicia.jpg" width="200"/></div></div>`)[0];
+                popup_bd8c71f1c118c59b3c6cd64b0bfaa767.setContent(html_29af969381dcb7efc7bd86047fea83aa);
+            
+        
+
+        circle_marker_a36aafec260c47891cb983df7f8bd563.bindPopup(popup_bd8c71f1c118c59b3c6cd64b0bfaa767)
+        ;
+
+        
+    
+    
+            circle_marker_a36aafec260c47891cb983df7f8bd563.bindTooltip(
+                `<div>
+                     🏖️ Praia De Riazor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9c3420b5ab646d1df61edd9a8a7c66a = L.circleMarker(
+                [43.315639, -8.610333],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_47a76cdeddac4c5352e7dfda35857bfe = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_355cae4c5bf0936b07f383888d15c46d = $(`<div id="html_355cae4c5bf0936b07f383888d15c46d" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Salseira De Caracoleiro</b><br><small>A Laracha · A Coruña</small><br>📏 850 m<br><a href="http://www.wikidata.org/entity/Q28121860" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Salseira%20de%20Caracoleiro.jpg" width="200"/></div></div>`)[0];
+                popup_47a76cdeddac4c5352e7dfda35857bfe.setContent(html_355cae4c5bf0936b07f383888d15c46d);
+            
+        
+
+        circle_marker_b9c3420b5ab646d1df61edd9a8a7c66a.bindPopup(popup_47a76cdeddac4c5352e7dfda35857bfe)
+        ;
+
+        
+    
+    
+            circle_marker_b9c3420b5ab646d1df61edd9a8a7c66a.bindTooltip(
+                `<div>
+                     🏖️ Salseira De Caracoleiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc58a5b9dd228547c5c2599ef578399c = L.circleMarker(
+                [42.587299056497315, -8.929797373709878],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_bb786445ca50402c0a7ca55a3f110226 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_4b99adfd54e3827c740e67d808fb11fe = $(`<div id="html_4b99adfd54e3827c740e67d808fb11fe" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Lombiña</b><br><small>A Pobra Do Caramiñal · A Coruña</small><br>📏 600 m<br><a href="http://www.wikidata.org/entity/Q28121679" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Lombi%C3%B1a.jpg" width="200"/></div></div>`)[0];
+                popup_bb786445ca50402c0a7ca55a3f110226.setContent(html_4b99adfd54e3827c740e67d808fb11fe);
+            
+        
+
+        circle_marker_fc58a5b9dd228547c5c2599ef578399c.bindPopup(popup_bb786445ca50402c0a7ca55a3f110226)
+        ;
+
+        
+    
+    
+            circle_marker_fc58a5b9dd228547c5c2599ef578399c.bindTooltip(
+                `<div>
+                     🏖️ Lombiña
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0af69a2b4e01461f5550a6307a8c7c08 = L.circleMarker(
+                [43.320555, -8.525277],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_796ba38787bcf5de37a7aee342ed53df = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_5ef4ee3b5e9ab997420625cfaf741e05 = $(`<div id="html_5ef4ee3b5e9ab997420625cfaf741e05" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ A Salsa</b><br><small>Arteixo · A Coruña</small><br>📏 145 m<br><a href="http://www.wikidata.org/entity/Q28121438" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/La%20Salsa.jpg" width="200"/></div></div>`)[0];
+                popup_796ba38787bcf5de37a7aee342ed53df.setContent(html_5ef4ee3b5e9ab997420625cfaf741e05);
+            
+        
+
+        circle_marker_0af69a2b4e01461f5550a6307a8c7c08.bindPopup(popup_796ba38787bcf5de37a7aee342ed53df)
+        ;
+
+        
+    
+    
+            circle_marker_0af69a2b4e01461f5550a6307a8c7c08.bindTooltip(
+                `<div>
+                     🏖️ A Salsa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad1f7c37294ec4f186ba3efcefdb420e = L.circleMarker(
+                [43.311556, -8.552],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b18db87b489b85f5dc86261b57f5ed4d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_19b13df9a667e5b746bd3c872d4af5f3 = $(`<div id="html_19b13df9a667e5b746bd3c872d4af5f3" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Barrañán</b><br><small>Arteixo · A Coruña</small><br>📏 1100 m<br><a href="http://www.wikidata.org/entity/Q25509129" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Barra%C3%B1%C3%A1n.JPG" width="200"/></div></div>`)[0];
+                popup_b18db87b489b85f5dc86261b57f5ed4d.setContent(html_19b13df9a667e5b746bd3c872d4af5f3);
+            
+        
+
+        circle_marker_ad1f7c37294ec4f186ba3efcefdb420e.bindPopup(popup_b18db87b489b85f5dc86261b57f5ed4d)
+        ;
+
+        
+    
+    
+            circle_marker_ad1f7c37294ec4f186ba3efcefdb420e.bindTooltip(
+                `<div>
+                     🏖️ Barrañán
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02341bc48678efd625113c3ceb818bd1 = L.circleMarker(
+                [43.312667, -8.544277],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_4d5861b78b686e8d79c29117e82ed0b7 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_425508ec62dda1014f092d1d80eed8b5 = $(`<div id="html_425508ec62dda1014f092d1d80eed8b5" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Combouzas</b><br><small>Arteixo · A Coruña</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q25509130" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20das%20Combouzas.JPG" width="200"/></div></div>`)[0];
+                popup_4d5861b78b686e8d79c29117e82ed0b7.setContent(html_425508ec62dda1014f092d1d80eed8b5);
+            
+        
+
+        circle_marker_02341bc48678efd625113c3ceb818bd1.bindPopup(popup_4d5861b78b686e8d79c29117e82ed0b7)
+        ;
+
+        
+    
+    
+            circle_marker_02341bc48678efd625113c3ceb818bd1.bindTooltip(
+                `<div>
+                     🏖️ Combouzas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce682d317f8682c7df49b369b69dcca5 = L.circleMarker(
+                [43.315444, -8.533555],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_2378794a3ef21cff7b2ecf1c86d0491b = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_4220fc258e8583360e14d326dc18a52c = $(`<div id="html_4220fc258e8583360e14d326dc18a52c" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa Valcovo</b><br><small>Arteixo · A Coruña</small><br>📏 255 m<br><a href="http://www.wikidata.org/entity/Q24024572" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_2378794a3ef21cff7b2ecf1c86d0491b.setContent(html_4220fc258e8583360e14d326dc18a52c);
+            
+        
+
+        circle_marker_ce682d317f8682c7df49b369b69dcca5.bindPopup(popup_2378794a3ef21cff7b2ecf1c86d0491b)
+        ;
+
+        
+    
+    
+            circle_marker_ce682d317f8682c7df49b369b69dcca5.bindTooltip(
+                `<div>
+                     🏖️ Playa Valcovo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_384c316f03583e404fd0ac56eef87caf = L.circleMarker(
+                [43.327694, -8.508833],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_5d575c51236ebe2e305d9610dcd477ba = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_3d3cacdd8568ff432f1a55c2c82f15d1 = $(`<div id="html_3d3cacdd8568ff432f1a55c2c82f15d1" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Sabón</b><br><small>Arteixo · A Coruña</small><br>📏 800 m<br><a href="http://www.wikidata.org/entity/Q24003520" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Sab%C3%B3n%2017V2016.jpg" width="200"/></div></div>`)[0];
+                popup_5d575c51236ebe2e305d9610dcd477ba.setContent(html_3d3cacdd8568ff432f1a55c2c82f15d1);
+            
+        
+
+        circle_marker_384c316f03583e404fd0ac56eef87caf.bindPopup(popup_5d575c51236ebe2e305d9610dcd477ba)
+        ;
+
+        
+    
+    
+            circle_marker_384c316f03583e404fd0ac56eef87caf.bindTooltip(
+                `<div>
+                     🏖️ Sabón
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d16ed2e40b43f3a53133012e278355e = L.circleMarker(
+                [43.35271, -8.48791],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_ed819b29e7eba66e9c3700740e4bafc8 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_52e5b2cd987d39cee40f7cdc26d7b9c6 = $(`<div id="html_52e5b2cd987d39cee40f7cdc26d7b9c6" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Suevos</b><br><small>Arteixo · A Coruña</small><br>📏 145 m<br><a href="http://www.wikidata.org/entity/Q28121617" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_ed819b29e7eba66e9c3700740e4bafc8.setContent(html_52e5b2cd987d39cee40f7cdc26d7b9c6);
+            
+        
+
+        circle_marker_5d16ed2e40b43f3a53133012e278355e.bindPopup(popup_ed819b29e7eba66e9c3700740e4bafc8)
+        ;
+
+        
+    
+    
+            circle_marker_5d16ed2e40b43f3a53133012e278355e.bindTooltip(
+                `<div>
+                     🏖️ Suevos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ba99845a152b961bc35ca6a64891711 = L.circleMarker(
+                [43.454911751447035, -7.870142559382717],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_efceab38f67e5be2db3d76b78f485242 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_b9c85b36446e169043a11c2835801040 = $(`<div id="html_b9c85b36446e169043a11c2835801040" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ As Pontes Lake</b><br><small>As Pontes De García Rodríguez · A Coruña</small><br><a href="http://www.wikidata.org/entity/Q4802948" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/NorthWest%20Triman%20-%20Iron%20Man%20-%20As%20Pontes%20de%20Garcia%20Rodriguez%20-%2001.jpg" width="200"/></div></div>`)[0];
+                popup_efceab38f67e5be2db3d76b78f485242.setContent(html_b9c85b36446e169043a11c2835801040);
+            
+        
+
+        circle_marker_7ba99845a152b961bc35ca6a64891711.bindPopup(popup_efceab38f67e5be2db3d76b78f485242)
+        ;
+
+        
+    
+    
+            circle_marker_7ba99845a152b961bc35ca6a64891711.bindTooltip(
+                `<div>
+                     🏖️ As Pontes Lake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29d5e5699169afeabc1d8c6ee00e9f53 = L.circleMarker(
+                [43.342715, -8.2424927],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fcf394688c9001417313f9938bac3dd6 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_9d7bf7183d09680de7b27000f9d3a9bb = $(`<div id="html_9d7bf7183d09680de7b27000f9d3a9bb" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Gandarío</b><br><small>Bergondo · A Coruña</small><br>📏 690 m<br><a href="http://www.wikidata.org/entity/Q24003799" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20Gandario.jpg" width="200"/></div></div>`)[0];
+                popup_fcf394688c9001417313f9938bac3dd6.setContent(html_9d7bf7183d09680de7b27000f9d3a9bb);
+            
+        
+
+        circle_marker_29d5e5699169afeabc1d8c6ee00e9f53.bindPopup(popup_fcf394688c9001417313f9938bac3dd6)
+        ;
+
+        
+    
+    
+            circle_marker_29d5e5699169afeabc1d8c6ee00e9f53.bindTooltip(
+                `<div>
+                     🏖️ Gandarío
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_053046a78f264c28b1192af61d03dccd = L.circleMarker(
+                [43.184723, -9.105],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_5b91387718cf0b694c656900d2cca233 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_fbda5dfe4a7909ff24081c3abac6ed52 = $(`<div id="html_fbda5dfe4a7909ff24081c3abac6ed52" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Arou</b><br><small>Camariñas · A Coruña</small><br>📏 130 m<br><a href="http://www.wikidata.org/entity/Q28121645" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Arou.jpg" width="200"/></div></div>`)[0];
+                popup_5b91387718cf0b694c656900d2cca233.setContent(html_fbda5dfe4a7909ff24081c3abac6ed52);
+            
+        
+
+        circle_marker_053046a78f264c28b1192af61d03dccd.bindPopup(popup_5b91387718cf0b694c656900d2cca233)
+        ;
+
+        
+    
+    
+            circle_marker_053046a78f264c28b1192af61d03dccd.bindTooltip(
+                `<div>
+                     🏖️ Arou
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5df74cabffca12e776fd8cd5d2ecaf07 = L.circleMarker(
+                [43.298027, -8.680305],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_dff632f4e52728adacd8d059609cd74d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_64e077b638be738e87eb208a0b06783f = $(`<div id="html_64e077b638be738e87eb208a0b06783f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Baldaio Beach</b><br><small>Carballo · A Coruña</small><br>📏 4000 m<br><a href="http://www.wikidata.org/entity/Q24003099" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Baldaio.jpg" width="200"/></div></div>`)[0];
+                popup_dff632f4e52728adacd8d059609cd74d.setContent(html_64e077b638be738e87eb208a0b06783f);
+            
+        
+
+        circle_marker_5df74cabffca12e776fd8cd5d2ecaf07.bindPopup(popup_dff632f4e52728adacd8d059609cd74d)
+        ;
+
+        
+    
+    
+            circle_marker_5df74cabffca12e776fd8cd5d2ecaf07.bindTooltip(
+                `<div>
+                     🏖️ Baldaio Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0341b80d70180385696a0061299b3775 = L.circleMarker(
+                [43.301889, -8.658278],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_e1a9a9244d99f42e66a0a7ce26348d53 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_536049b2fdca63a3550cc73317599a9b = $(`<div id="html_536049b2fdca63a3550cc73317599a9b" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Pedra Do Sal</b><br><small>Carballo · A Coruña</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q28121663" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_e1a9a9244d99f42e66a0a7ce26348d53.setContent(html_536049b2fdca63a3550cc73317599a9b);
+            
+        
+
+        circle_marker_0341b80d70180385696a0061299b3775.bindPopup(popup_e1a9a9244d99f42e66a0a7ce26348d53)
+        ;
+
+        
+    
+    
+            circle_marker_0341b80d70180385696a0061299b3775.bindTooltip(
+                `<div>
+                     🏖️ Pedra Do Sal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b64863af3ab9af582e7c1fc6042faffc = L.circleMarker(
+                [43.289696, -8.708778],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_81d68495c33e0cb7f7e689e808ca7620 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_e3f68b9ea1bc5b09eb4a121925f5ad80 = $(`<div id="html_e3f68b9ea1bc5b09eb4a121925f5ad80" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Razo</b><br><small>Carballo · A Coruña</small><br>📏 1300 m<br><a href="http://www.wikidata.org/entity/Q28121665" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Razo.jpg" width="200"/></div></div>`)[0];
+                popup_81d68495c33e0cb7f7e689e808ca7620.setContent(html_e3f68b9ea1bc5b09eb4a121925f5ad80);
+            
+        
+
+        circle_marker_b64863af3ab9af582e7c1fc6042faffc.bindPopup(popup_81d68495c33e0cb7f7e689e808ca7620)
+        ;
+
+        
+    
+    
+            circle_marker_b64863af3ab9af582e7c1fc6042faffc.bindTooltip(
+                `<div>
+                     🏖️ Razo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a681536be9893c56f8f5976c1be6590 = L.circleMarker(
+                [42.908278, -9.129083],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_87b7ca1c3c559bf12a8aa61be6cf702c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_2625d8af640668d17b61a3fee76aeaf5 = $(`<div id="html_2625d8af640668d17b61a3fee76aeaf5" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Ézaro</b><br><small>Dumbría · A Coruña</small><br>📏 800 m<br><a href="http://www.wikidata.org/entity/Q28121828" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Ezaro.jpg" width="200"/></div></div>`)[0];
+                popup_87b7ca1c3c559bf12a8aa61be6cf702c.setContent(html_2625d8af640668d17b61a3fee76aeaf5);
+            
+        
+
+        circle_marker_4a681536be9893c56f8f5976c1be6590.bindPopup(popup_87b7ca1c3c559bf12a8aa61be6cf702c)
+        ;
+
+        
+    
+    
+            circle_marker_4a681536be9893c56f8f5976c1be6590.bindTooltip(
+                `<div>
+                     🏖️ Ézaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abfa00c31ebeda2a8c4a6c92bdff467e = L.circleMarker(
+                [43.47703822412904, -8.202436910976175],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_5ccbecf438b4cab15f73b9329f915563 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_38d0d4faed7a29a551f31d5eefa536cf = $(`<div id="html_38d0d4faed7a29a551f31d5eefa536cf" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Caranza</b><br><small>Ferrol · A Coruña</small><br>📏 600 m<br><a href="http://www.wikidata.org/entity/Q28121455" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Caranza%2C%20Ferrol%20-%20panoramio%20%281%29.jpg" width="200"/></div></div>`)[0];
+                popup_5ccbecf438b4cab15f73b9329f915563.setContent(html_38d0d4faed7a29a551f31d5eefa536cf);
+            
+        
+
+        circle_marker_abfa00c31ebeda2a8c4a6c92bdff467e.bindPopup(popup_5ccbecf438b4cab15f73b9329f915563)
+        ;
+
+        
+    
+    
+            circle_marker_abfa00c31ebeda2a8c4a6c92bdff467e.bindTooltip(
+                `<div>
+                     🏖️ Caranza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fa321b7f9a90af8cb9e6481808c21e4 = L.circleMarker(
+                [43.495916, -8.319194],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_13dd16fc61c48db2f08fe3bf9ee8d70e = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_05329e802310d4843b44392786a6f636 = $(`<div id="html_05329e802310d4843b44392786a6f636" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Doniños</b><br><small>Ferrol · A Coruña</small><br>📏 1900 m<br><a href="http://www.wikidata.org/entity/Q28121846" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_13dd16fc61c48db2f08fe3bf9ee8d70e.setContent(html_05329e802310d4843b44392786a6f636);
+            
+        
+
+        circle_marker_3fa321b7f9a90af8cb9e6481808c21e4.bindPopup(popup_13dd16fc61c48db2f08fe3bf9ee8d70e)
+        ;
+
+        
+    
+    
+            circle_marker_3fa321b7f9a90af8cb9e6481808c21e4.bindTooltip(
+                `<div>
+                     🏖️ Doniños
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cef7fb06cbd4470cae685051747c2b59 = L.circleMarker(
+                [43.53425, -8.295527],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_9f2fe5ea25c053593caf2d188b769d69 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_4401cf1d191484c5a36142e2cf7fccea = $(`<div id="html_4401cf1d191484c5a36142e2cf7fccea" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Esmelle</b><br><small>Ferrol · A Coruña</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q28121842" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Esmelle%20Ferrol%20A%20Coru%C3%B1a%20Spain.jpg" width="200"/></div></div>`)[0];
+                popup_9f2fe5ea25c053593caf2d188b769d69.setContent(html_4401cf1d191484c5a36142e2cf7fccea);
+            
+        
+
+        circle_marker_cef7fb06cbd4470cae685051747c2b59.bindPopup(popup_9f2fe5ea25c053593caf2d188b769d69)
+        ;
+
+        
+    
+    
+            circle_marker_cef7fb06cbd4470cae685051747c2b59.bindTooltip(
+                `<div>
+                     🏖️ Esmelle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86cf78f37e7e5e88201771ea958e58e4 = L.circleMarker(
+                [43.5385, -8.296833],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_897f1e3e980a451a93cd447655ed3ce2 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_394abbc5b1175fd5d640cddb75b7a7c8 = $(`<div id="html_394abbc5b1175fd5d640cddb75b7a7c8" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Fragata</b><br><small>Ferrol · A Coruña</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q28121841" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_897f1e3e980a451a93cd447655ed3ce2.setContent(html_394abbc5b1175fd5d640cddb75b7a7c8);
+            
+        
+
+        circle_marker_86cf78f37e7e5e88201771ea958e58e4.bindPopup(popup_897f1e3e980a451a93cd447655ed3ce2)
+        ;
+
+        
+    
+    
+            circle_marker_86cf78f37e7e5e88201771ea958e58e4.bindTooltip(
+                `<div>
+                     🏖️ Fragata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46f432d1c4147f06a67fb79bc437c096 = L.circleMarker(
+                [43.526222, -8.301806],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fae2179d688cc57e4cad652a57c5c598 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_a5c287a199e4315d4a96ab1f141e81b6 = $(`<div id="html_a5c287a199e4315d4a96ab1f141e81b6" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ San Xurxo</b><br><small>Ferrol · A Coruña</small><br>📏 1800 m<br><a href="http://www.wikidata.org/entity/Q28121843" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Raia%20de%20San%20Xurxo%2C%20Ferrol%20-%20Panor%C3%A1mica.jpg" width="200"/></div></div>`)[0];
+                popup_fae2179d688cc57e4cad652a57c5c598.setContent(html_a5c287a199e4315d4a96ab1f141e81b6);
+            
+        
+
+        circle_marker_46f432d1c4147f06a67fb79bc437c096.bindPopup(popup_fae2179d688cc57e4cad652a57c5c598)
+        ;
+
+        
+    
+    
+            circle_marker_46f432d1c4147f06a67fb79bc437c096.bindTooltip(
+                `<div>
+                     🏖️ San Xurxo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a03d97efede263e315d47c7f8be8000d = L.circleMarker(
+                [43.217206, -9.0029587],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7f3a6ea8ea159a8caaa7c4ab57eab6a1 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_f883155c2a2b96bfbdd844743cc99d16 = $(`<div id="html_f883155c2a2b96bfbdd844743cc99d16" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Laxe</b><br><small>Laxe · A Coruña</small><br>📏 1400 m<br><a href="http://www.wikidata.org/entity/Q28121874" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Laxe.jpg" width="200"/></div></div>`)[0];
+                popup_7f3a6ea8ea159a8caaa7c4ab57eab6a1.setContent(html_f883155c2a2b96bfbdd844743cc99d16);
+            
+        
+
+        circle_marker_a03d97efede263e315d47c7f8be8000d.bindPopup(popup_7f3a6ea8ea159a8caaa7c4ab57eab6a1)
+        ;
+
+        
+    
+    
+            circle_marker_a03d97efede263e315d47c7f8be8000d.bindTooltip(
+                `<div>
+                     🏖️ Laxe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4243ce510c24943fab691077144db286 = L.circleMarker(
+                [43.32331266438123, -8.815276501138147],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_02baf19f6cb79ddaca1b758fbaed98fd = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_cd2cd554e03e45476331839811ad0bb4 = $(`<div id="html_cd2cd554e03e45476331839811ad0bb4" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Maior De Malpica</b><br><small>Malpica De Bergantiños · A Coruña</small><br>📏 378 m<br><a href="http://www.wikidata.org/entity/Q28121685" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Area%20Maior-Malpica%20de%20Berganti%C3%B1os.jpg" width="200"/></div></div>`)[0];
+                popup_02baf19f6cb79ddaca1b758fbaed98fd.setContent(html_cd2cd554e03e45476331839811ad0bb4);
+            
+        
+
+        circle_marker_4243ce510c24943fab691077144db286.bindPopup(popup_02baf19f6cb79ddaca1b758fbaed98fd)
+        ;
+
+        
+    
+    
+            circle_marker_4243ce510c24943fab691077144db286.bindTooltip(
+                `<div>
+                     🏖️ Maior De Malpica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf85f598f8bdbf5b1d6c85b69d7186c1 = L.circleMarker(
+                [43.35928, -8.209444],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_4e764404f6d2c7477167ed709aa19530 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0751c4c80df9ef3e42f6f03e9f2119fb = $(`<div id="html_0751c4c80df9ef3e42f6f03e9f2119fb" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Fariones Playa</b><br><small>Miño · A Coruña</small><br>📏 1190 m<br><a href="http://www.wikidata.org/entity/Q24023700" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Lanzarote2012%20102.jpg" width="200"/></div></div>`)[0];
+                popup_4e764404f6d2c7477167ed709aa19530.setContent(html_0751c4c80df9ef3e42f6f03e9f2119fb);
+            
+        
+
+        circle_marker_bf85f598f8bdbf5b1d6c85b69d7186c1.bindPopup(popup_4e764404f6d2c7477167ed709aa19530)
+        ;
+
+        
+    
+    
+            circle_marker_bf85f598f8bdbf5b1d6c85b69d7186c1.bindTooltip(
+                `<div>
+                     🏖️ Fariones Playa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6163f68294a0869ded04f784e5aca4af = L.circleMarker(
+                [43.3495099999242, -8.210029371615443],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_2db40155fa319a9b12eb8eeb9fe8de44 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_ed32c3b31047b764731e505d577b89e5 = $(`<div id="html_ed32c3b31047b764731e505d577b89e5" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Pequeña De Miño</b><br><small>Miño · A Coruña</small><br>📏 420 m<br><a href="http://www.wikidata.org/entity/Q28121898" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Sumi%C3%B1o%2C%20Mi%C3%B1o.jpg" width="200"/></div></div>`)[0];
+                popup_2db40155fa319a9b12eb8eeb9fe8de44.setContent(html_ed32c3b31047b764731e505d577b89e5);
+            
+        
+
+        circle_marker_6163f68294a0869ded04f784e5aca4af.bindPopup(popup_2db40155fa319a9b12eb8eeb9fe8de44)
+        ;
+
+        
+    
+    
+            circle_marker_6163f68294a0869ded04f784e5aca4af.bindTooltip(
+                `<div>
+                     🏖️ Pequeña De Miño
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_609d7a31df9401793e4bd63e11a72d17 = L.circleMarker(
+                [43.376026, -8.214917],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_1a77e0a1024e4a99b9619fed2fa82d04 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_38054c5a456f654bdb28878b39edefb9 = $(`<div id="html_38054c5a456f654bdb28878b39edefb9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Perbes</b><br><small>Miño · A Coruña</small><br>📏 540 m<br><a href="http://www.wikidata.org/entity/Q28121893" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Perbes.JPG" width="200"/></div></div>`)[0];
+                popup_1a77e0a1024e4a99b9619fed2fa82d04.setContent(html_38054c5a456f654bdb28878b39edefb9);
+            
+        
+
+        circle_marker_609d7a31df9401793e4bd63e11a72d17.bindPopup(popup_1a77e0a1024e4a99b9619fed2fa82d04)
+        ;
+
+        
+    
+    
+            circle_marker_609d7a31df9401793e4bd63e11a72d17.bindTooltip(
+                `<div>
+                     🏖️ Perbes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e158cf53ec466e5e16daf0e734cdeb9b = L.circleMarker(
+                [42.759113863184346, -9.073862845516617],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_efbe8f30650542f3e32e480a27970581 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_c8926dbade9de5af6dc2deb93c81314d = $(`<div id="html_c8926dbade9de5af6dc2deb93c81314d" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ San Francisco</b><br><small>Muros · A Coruña</small><br>📏 1000 m<br><a href="http://www.wikidata.org/entity/Q28121907" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/San%20Francisco%20%283%29.jpg" width="200"/></div></div>`)[0];
+                popup_efbe8f30650542f3e32e480a27970581.setContent(html_c8926dbade9de5af6dc2deb93c81314d);
+            
+        
+
+        circle_marker_e158cf53ec466e5e16daf0e734cdeb9b.bindPopup(popup_efbe8f30650542f3e32e480a27970581)
+        ;
+
+        
+    
+    
+            circle_marker_e158cf53ec466e5e16daf0e734cdeb9b.bindTooltip(
+                `<div>
+                     🏖️ San Francisco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52126f1396156be898cfc860c94df753 = L.circleMarker(
+                [43.353389, -8.346555],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_3bfea91437b20d71f3e40cad29e5fac0 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_76635ce425a06f5050953af22920bb28 = $(`<div id="html_76635ce425a06f5050953af22920bb28" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ A Aguieira</b><br><small>Oleiros · A Coruña</small><br><a href="http://www.wikidata.org/entity/Q20545069" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_3bfea91437b20d71f3e40cad29e5fac0.setContent(html_76635ce425a06f5050953af22920bb28);
+            
+        
+
+        circle_marker_52126f1396156be898cfc860c94df753.bindPopup(popup_3bfea91437b20d71f3e40cad29e5fac0)
+        ;
+
+        
+    
+    
+            circle_marker_52126f1396156be898cfc860c94df753.bindTooltip(
+                `<div>
+                     🏖️ A Aguieira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a13a7fb178d4ba876658db594eaf654a = L.circleMarker(
+                [43.340722, -8.362361],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_dc7651522b2aaf58677bd9c61f37e20d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_3d45ba81b87d29309aefac79e5a457d0 = $(`<div id="html_3d45ba81b87d29309aefac79e5a457d0" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Bastiagueiro</b><br><small>Oleiros · A Coruña</small><br>📏 500 m<br><a href="http://www.wikidata.org/entity/Q12398074" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Bastiagueiro.jpg" width="200"/></div></div>`)[0];
+                popup_dc7651522b2aaf58677bd9c61f37e20d.setContent(html_3d45ba81b87d29309aefac79e5a457d0);
+            
+        
+
+        circle_marker_a13a7fb178d4ba876658db594eaf654a.bindPopup(popup_dc7651522b2aaf58677bd9c61f37e20d)
+        ;
+
+        
+    
+    
+            circle_marker_a13a7fb178d4ba876658db594eaf654a.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Bastiagueiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be59df5b666ddb42c5bfbfe53c9e81e3 = L.circleMarker(
+                [43.339777, -8.380083],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_4f65a5ad245f1dd5e9f7fe44a67b80cd = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8d1a446a71b84ca5ab6a5624da509f0a = $(`<div id="html_8d1a446a71b84ca5ab6a5624da509f0a" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Santa Cristina</b><br><small>Oleiros · A Coruña</small><br>📏 1520 m<br><a href="http://www.wikidata.org/entity/Q12398093" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Beach%20of%20Santa%20Cristina.jpg" width="200"/></div></div>`)[0];
+                popup_4f65a5ad245f1dd5e9f7fe44a67b80cd.setContent(html_8d1a446a71b84ca5ab6a5624da509f0a);
+            
+        
+
+        circle_marker_be59df5b666ddb42c5bfbfe53c9e81e3.bindPopup(popup_4f65a5ad245f1dd5e9f7fe44a67b80cd)
+        ;
+
+        
+    
+    
+            circle_marker_be59df5b666ddb42c5bfbfe53c9e81e3.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Santa Cristina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_847b75d51f4adf1d071583050fab8530 = L.circleMarker(
+                [43.379055, -8.33775],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_29139e2b638d393a9f9778209163bf32 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_70e12a86cad3b3afb97c3ed41613a26e = $(`<div id="html_70e12a86cad3b3afb97c3ed41613a26e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Mera</b><br><small>Oleiros · A Coruña</small><br>📏 520 m<br><a href="http://www.wikidata.org/entity/Q12398083" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Mera%20-%20panoramio.jpg" width="200"/></div></div>`)[0];
+                popup_29139e2b638d393a9f9778209163bf32.setContent(html_70e12a86cad3b3afb97c3ed41613a26e);
+            
+        
+
+        circle_marker_847b75d51f4adf1d071583050fab8530.bindPopup(popup_29139e2b638d393a9f9778209163bf32)
+        ;
+
+        
+    
+    
+            circle_marker_847b75d51f4adf1d071583050fab8530.bindTooltip(
+                `<div>
+                     🏖️ Mera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e4bb9f3bc047d44530ffaa1b3efddb9 = L.circleMarker(
+                [43.382777, -8.3425],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b075230c61fc9edef92118b941c3a926 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0807b4c015691c1350aea2d868d9a501 = $(`<div id="html_0807b4c015691c1350aea2d868d9a501" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Q28121966</b><br><small>Oleiros · A Coruña</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28121966" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Q28121966.jpg" width="200"/></div></div>`)[0];
+                popup_b075230c61fc9edef92118b941c3a926.setContent(html_0807b4c015691c1350aea2d868d9a501);
+            
+        
+
+        circle_marker_0e4bb9f3bc047d44530ffaa1b3efddb9.bindPopup(popup_b075230c61fc9edef92118b941c3a926)
+        ;
+
+        
+    
+    
+            circle_marker_0e4bb9f3bc047d44530ffaa1b3efddb9.bindTooltip(
+                `<div>
+                     🏖️ Q28121966
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b581ef40dd8223222c4e1b2ad71d88b5 = L.circleMarker(
+                [43.241665, -8.945277],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_954d3d42ca24dcb9a1358899deec3881 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_920fcbfb96922d2cd7715cc829ed7a9e = $(`<div id="html_920fcbfb96922d2cd7715cc829ed7a9e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Balarés</b><br><small>Ponteceso · A Coruña</small><br>📏 350 m<br><a href="http://www.wikidata.org/entity/Q28122018" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_954d3d42ca24dcb9a1358899deec3881.setContent(html_920fcbfb96922d2cd7715cc829ed7a9e);
+            
+        
+
+        circle_marker_b581ef40dd8223222c4e1b2ad71d88b5.bindPopup(popup_954d3d42ca24dcb9a1358899deec3881)
+        ;
+
+        
+    
+    
+            circle_marker_b581ef40dd8223222c4e1b2ad71d88b5.bindTooltip(
+                `<div>
+                     🏖️ Balarés
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f16da051191db6ba3a82054afc9c4a7 = L.circleMarker(
+                [43.26389, -8.95],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_23a6924756811876b4947d2e4ff7ea0a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_7b697d2c6d5163fd01b0e31fd07c0cf9 = $(`<div id="html_7b697d2c6d5163fd01b0e31fd07c0cf9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Ermida</b><br><small>Ponteceso · A Coruña</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28122017" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_23a6924756811876b4947d2e4ff7ea0a.setContent(html_7b697d2c6d5163fd01b0e31fd07c0cf9);
+            
+        
+
+        circle_marker_2f16da051191db6ba3a82054afc9c4a7.bindPopup(popup_23a6924756811876b4947d2e4ff7ea0a)
+        ;
+
+        
+    
+    
+            circle_marker_2f16da051191db6ba3a82054afc9c4a7.bindTooltip(
+                `<div>
+                     🏖️ Ermida
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef09859417c0a9dd35412b23909072da = L.circleMarker(
+                [43.294167, -8.902778],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_f1c8cee61227781938dd8a6a78100008 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0b189132c6c5a7ce7dcbfb99c99c53aa = $(`<div id="html_0b189132c6c5a7ce7dcbfb99c99c53aa" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Osmo</b><br><small>Ponteceso · A Coruña</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q28122016" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_f1c8cee61227781938dd8a6a78100008.setContent(html_0b189132c6c5a7ce7dcbfb99c99c53aa);
+            
+        
+
+        circle_marker_ef09859417c0a9dd35412b23909072da.bindPopup(popup_f1c8cee61227781938dd8a6a78100008)
+        ;
+
+        
+    
+    
+            circle_marker_ef09859417c0a9dd35412b23909072da.bindTooltip(
+                `<div>
+                     🏖️ Osmo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0b9a92a98e2d389be5746e0dc369394 = L.circleMarker(
+                [43.56172, -7.20108],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_d0307c8caaad16a46ec02bf873339341 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_49d52be63de7b2e22a83c1dd638016f2 = $(`<div id="html_49d52be63de7b2e22a83c1dd638016f2" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Fontela</b><br><small>Barreiros · Lugo</small><br>📏 1000 m<br><a href="http://www.wikidata.org/entity/Q28122189" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_d0307c8caaad16a46ec02bf873339341.setContent(html_49d52be63de7b2e22a83c1dd638016f2);
+            
+        
+
+        circle_marker_d0b9a92a98e2d389be5746e0dc369394.bindPopup(popup_d0307c8caaad16a46ec02bf873339341)
+        ;
+
+        
+    
+    
+            circle_marker_d0b9a92a98e2d389be5746e0dc369394.bindTooltip(
+                `<div>
+                     🏖️ Fontela
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fe7312b43eaa2e0b33b3f52e41f99dc = L.circleMarker(
+                [43.564465, -7.2200447],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_bc352269bf05d11705f514b8ced8a2da = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_71f5c3fd9d3a8cf99a2194638530f03d = $(`<div id="html_71f5c3fd9d3a8cf99a2194638530f03d" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ San Pedro</b><br><small>Barreiros · Lugo</small><br>📏 1900 m<br><a href="http://www.wikidata.org/entity/Q28122190" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_bc352269bf05d11705f514b8ced8a2da.setContent(html_71f5c3fd9d3a8cf99a2194638530f03d);
+            
+        
+
+        circle_marker_9fe7312b43eaa2e0b33b3f52e41f99dc.bindPopup(popup_bc352269bf05d11705f514b8ced8a2da)
+        ;
+
+        
+    
+    
+            circle_marker_9fe7312b43eaa2e0b33b3f52e41f99dc.bindTooltip(
+                `<div>
+                     🏖️ San Pedro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_093bfe8e99c7b5d2c69cd8295626d3fc = L.circleMarker(
+                [43.67486, -7.372333],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_ec1f76551c6a6e0c45f2d3e54d81d3a5 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_6d5f1a4c153b5f7118e57e1bb7953972 = $(`<div id="html_6d5f1a4c153b5f7118e57e1bb7953972" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Marosa</b><br><small>Burela · Lugo</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28122225" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20da%20Marosa%20-%20panoramio.jpg" width="200"/></div></div>`)[0];
+                popup_ec1f76551c6a6e0c45f2d3e54d81d3a5.setContent(html_6d5f1a4c153b5f7118e57e1bb7953972);
+            
+        
+
+        circle_marker_093bfe8e99c7b5d2c69cd8295626d3fc.bindPopup(popup_ec1f76551c6a6e0c45f2d3e54d81d3a5)
+        ;
+
+        
+    
+    
+            circle_marker_093bfe8e99c7b5d2c69cd8295626d3fc.bindTooltip(
+                `<div>
+                     🏖️ Marosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f283fab9fc5e7bfeb3301c003b8b19d = L.circleMarker(
+                [43.664399, -7.3592247],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_d9cc5278284c912fe0fd95e85770d2ef = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_43af0a49fc149de026314f309d05d420 = $(`<div id="html_43af0a49fc149de026314f309d05d420" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Portelo</b><br><small>Burela · Lugo</small><br>📏 30 m<br><a href="http://www.wikidata.org/entity/Q28119618" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_d9cc5278284c912fe0fd95e85770d2ef.setContent(html_43af0a49fc149de026314f309d05d420);
+            
+        
+
+        circle_marker_6f283fab9fc5e7bfeb3301c003b8b19d.bindPopup(popup_d9cc5278284c912fe0fd95e85770d2ef)
+        ;
+
+        
+    
+    
+            circle_marker_6f283fab9fc5e7bfeb3301c003b8b19d.bindTooltip(
+                `<div>
+                     🏖️ Portelo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9046929dbe08e8823850f2badecf28f9 = L.circleMarker(
+                [43.698333, -7.438889],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_29016fb621ded3f8e0114647d9e64960 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_589a5c4ce011db310bb7033ebdb6faab = $(`<div id="html_589a5c4ce011db310bb7033ebdb6faab" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ O Torno</b><br><small>Cervo · Lugo</small><br>📏 650 m<br><a href="http://www.wikidata.org/entity/Q28122231" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_29016fb621ded3f8e0114647d9e64960.setContent(html_589a5c4ce011db310bb7033ebdb6faab);
+            
+        
+
+        circle_marker_9046929dbe08e8823850f2badecf28f9.bindPopup(popup_29016fb621ded3f8e0114647d9e64960)
+        ;
+
+        
+    
+    
+            circle_marker_9046929dbe08e8823850f2badecf28f9.bindTooltip(
+                `<div>
+                     🏖️ O Torno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a09146836802448ed0e5ff2cbc8a89e5 = L.circleMarker(
+                [43.572025, -7.248555],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7a4bd246b5d511cea44dada3d7c1da6a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_d4b800e458d3ebc24f4d02aa097af7fe = $(`<div id="html_d4b800e458d3ebc24f4d02aa097af7fe" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ A Rapadoira</b><br><small>Foz · Lugo</small><br>📏 290 m<br><a href="http://www.wikidata.org/entity/Q28122198" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/A%20Rapadoira.jpg" width="200"/></div></div>`)[0];
+                popup_7a4bd246b5d511cea44dada3d7c1da6a.setContent(html_d4b800e458d3ebc24f4d02aa097af7fe);
+            
+        
+
+        circle_marker_a09146836802448ed0e5ff2cbc8a89e5.bindPopup(popup_7a4bd246b5d511cea44dada3d7c1da6a)
+        ;
+
+        
+    
+    
+            circle_marker_a09146836802448ed0e5ff2cbc8a89e5.bindTooltip(
+                `<div>
+                     🏖️ A Rapadoira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1990fee2741fe96e4aed6232eca99d7e = L.circleMarker(
+                [43.620277, -7.318333],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_8e665540f9a79a6496a63d0fc202ae28 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_33a564abcff7d5724ffffae5a6b6aeb1 = $(`<div id="html_33a564abcff7d5724ffffae5a6b6aeb1" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Area Da Fame</b><br><small>Foz · Lugo</small><br>📏 265 m<br><a href="http://www.wikidata.org/entity/Q28122206" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Area%20da%20Fame.jpg" width="200"/></div></div>`)[0];
+                popup_8e665540f9a79a6496a63d0fc202ae28.setContent(html_33a564abcff7d5724ffffae5a6b6aeb1);
+            
+        
+
+        circle_marker_1990fee2741fe96e4aed6232eca99d7e.bindPopup(popup_8e665540f9a79a6496a63d0fc202ae28)
+        ;
+
+        
+    
+    
+            circle_marker_1990fee2741fe96e4aed6232eca99d7e.bindTooltip(
+                `<div>
+                     🏖️ Area Da Fame
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e73ac266c5bdc8975c848baa71689a9 = L.circleMarker(
+                [43.64, -7.344166],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_570ce5e1c2819803de072ac95140936c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_81c1c8de8c58d9b43ad856afc9612155 = $(`<div id="html_81c1c8de8c58d9b43ad856afc9612155" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Areoura</b><br><small>Foz · Lugo</small><br>📏 130 m<br><a href="http://www.wikidata.org/entity/Q28122216" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_570ce5e1c2819803de072ac95140936c.setContent(html_81c1c8de8c58d9b43ad856afc9612155);
+            
+        
+
+        circle_marker_9e73ac266c5bdc8975c848baa71689a9.bindPopup(popup_570ce5e1c2819803de072ac95140936c)
+        ;
+
+        
+    
+    
+            circle_marker_9e73ac266c5bdc8975c848baa71689a9.bindTooltip(
+                `<div>
+                     🏖️ Areoura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_927997306853a7f759478fffe1f85a5d = L.circleMarker(
+                [43.580277, -7.262778],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_76e67b6b9e92d70a774575a364777049 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_97f9fc6f68dac361840f3b4982ac0ad7 = $(`<div id="html_97f9fc6f68dac361840f3b4982ac0ad7" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Llas</b><br><small>Foz · Lugo</small><br>📏 770 m<br><a href="http://www.wikidata.org/entity/Q9060688" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_76e67b6b9e92d70a774575a364777049.setContent(html_97f9fc6f68dac361840f3b4982ac0ad7);
+            
+        
+
+        circle_marker_927997306853a7f759478fffe1f85a5d.bindPopup(popup_76e67b6b9e92d70a774575a364777049)
+        ;
+
+        
+    
+    
+            circle_marker_927997306853a7f759478fffe1f85a5d.bindTooltip(
+                `<div>
+                     🏖️ Llas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bccaa2723ab2bea197db1bfe86dae0e = L.circleMarker(
+                [43.5875, -7.27861],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_0f96481df7114d968ec7b80b42ac7671 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_61e481345d89d632aac1f5a7d8990ef2 = $(`<div id="html_61e481345d89d632aac1f5a7d8990ef2" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Peizás</b><br><small>Foz · Lugo</small><br>📏 295 m<br><a href="http://www.wikidata.org/entity/Q28122200" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_0f96481df7114d968ec7b80b42ac7671.setContent(html_61e481345d89d632aac1f5a7d8990ef2);
+            
+        
+
+        circle_marker_3bccaa2723ab2bea197db1bfe86dae0e.bindPopup(popup_0f96481df7114d968ec7b80b42ac7671)
+        ;
+
+        
+    
+    
+            circle_marker_3bccaa2723ab2bea197db1bfe86dae0e.bindTooltip(
+                `<div>
+                     🏖️ Peizás
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d930e39415feb09a79f8223e094c6c1 = L.circleMarker(
+                [43.701822, -7.612778],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_c2d6a1953af83839ec41bf690413990d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_33cb02cf4ee0726d6293f23741a43cce = $(`<div id="html_33cb02cf4ee0726d6293f23741a43cce" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Abrela</b><br><small>O Vicedo · Lugo</small><br>📏 900 m<br><a href="http://www.wikidata.org/entity/Q28122144" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20abrela.jpg" width="200"/></div></div>`)[0];
+                popup_c2d6a1953af83839ec41bf690413990d.setContent(html_33cb02cf4ee0726d6293f23741a43cce);
+            
+        
+
+        circle_marker_2d930e39415feb09a79f8223e094c6c1.bindPopup(popup_c2d6a1953af83839ec41bf690413990d)
+        ;
+
+        
+    
+    
+            circle_marker_2d930e39415feb09a79f8223e094c6c1.bindTooltip(
+                `<div>
+                     🏖️ Abrela
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26e4a161da430a3c1ec4c13bd7abbc23 = L.circleMarker(
+                [43.743777, -7.650277],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_77b85f413e72b5072aa16e2e076a2cc9 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_2ccf4a4baa826589b899165c355ecf66 = $(`<div id="html_2ccf4a4baa826589b899165c355ecf66" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Xilloi</b><br><small>O Vicedo · Lugo</small><br>📏 550 m<br><a href="http://www.wikidata.org/entity/Q28122158" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_77b85f413e72b5072aa16e2e076a2cc9.setContent(html_2ccf4a4baa826589b899165c355ecf66);
+            
+        
+
+        circle_marker_26e4a161da430a3c1ec4c13bd7abbc23.bindPopup(popup_77b85f413e72b5072aa16e2e076a2cc9)
+        ;
+
+        
+    
+    
+            circle_marker_26e4a161da430a3c1ec4c13bd7abbc23.bindTooltip(
+                `<div>
+                     🏖️ Xilloi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86ae35dc76544ef90248bc8cb32b549f = L.circleMarker(
+                [43.554221, -7.155308],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7a7e61dd15663976ec00ad6377406b17 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_1ceea9d0f018deb5647f2a3727b03519 = $(`<div id="html_1ceea9d0f018deb5647f2a3727b03519" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ As Catedrais Beach</b><br><small>Ribadeo · Lugo</small><br>📏 2 m<br><a href="http://www.wikidata.org/entity/Q2561808" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/As%20Catedrais%20-%20Mari%C3%B1a%20luguesa.jpg" width="200"/></div></div>`)[0];
+                popup_7a7e61dd15663976ec00ad6377406b17.setContent(html_1ceea9d0f018deb5647f2a3727b03519);
+            
+        
+
+        circle_marker_86ae35dc76544ef90248bc8cb32b549f.bindPopup(popup_7a7e61dd15663976ec00ad6377406b17)
+        ;
+
+        
+    
+    
+            circle_marker_86ae35dc76544ef90248bc8cb32b549f.bindTooltip(
+                `<div>
+                     🏖️ As Catedrais Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff3fe5444ba1fceb1cbc79b059ec0731 = L.circleMarker(
+                [43.55534, -7.132955],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_4e9fe67b45c22383ebba68d8fe3393ed = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_c0e32059cdb8876c7063bd877cfea3d6 = $(`<div id="html_c0e32059cdb8876c7063bd877cfea3d6" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Os Castros</b><br><small>Ribadeo · Lugo</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q28122005" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_4e9fe67b45c22383ebba68d8fe3393ed.setContent(html_c0e32059cdb8876c7063bd877cfea3d6);
+            
+        
+
+        circle_marker_ff3fe5444ba1fceb1cbc79b059ec0731.bindPopup(popup_4e9fe67b45c22383ebba68d8fe3393ed)
+        ;
+
+        
+    
+    
+            circle_marker_ff3fe5444ba1fceb1cbc79b059ec0731.bindTooltip(
+                `<div>
+                     🏖️ Os Castros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba360f4eeed57775d3ad6be092f05a81 = L.circleMarker(
+                [43.694166, -7.57611],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b19f612706b4a6bc50e95ba96a62aafe = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_803a1d37ca0cd2aa0e9f509dacb4df34 = $(`<div id="html_803a1d37ca0cd2aa0e9f509dacb4df34" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Area</b><br><small>Viveiro · Lugo</small><br>📏 1150 m<br><a href="http://www.wikidata.org/entity/Q6078571" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20Area%20Viveiro.jpg" width="200"/></div></div>`)[0];
+                popup_b19f612706b4a6bc50e95ba96a62aafe.setContent(html_803a1d37ca0cd2aa0e9f509dacb4df34);
+            
+        
+
+        circle_marker_ba360f4eeed57775d3ad6be092f05a81.bindPopup(popup_b19f612706b4a6bc50e95ba96a62aafe)
+        ;
+
+        
+    
+    
+            circle_marker_ba360f4eeed57775d3ad6be092f05a81.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c912373368d897d2c750fe741879571 = L.circleMarker(
+                [43.711944, -7.559139],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_35eb7edea2bf0f34ee01cc7d72b74cb7 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0cdc06edb7c5aea750f1def79db0f9ee = $(`<div id="html_0cdc06edb7c5aea750f1def79db0f9ee" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Esteiro, Xuances</b><br><small>Xove · Lugo</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q28122238" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Esteiro.jpg" width="200"/></div></div>`)[0];
+                popup_35eb7edea2bf0f34ee01cc7d72b74cb7.setContent(html_0cdc06edb7c5aea750f1def79db0f9ee);
+            
+        
+
+        circle_marker_0c912373368d897d2c750fe741879571.bindPopup(popup_35eb7edea2bf0f34ee01cc7d72b74cb7)
+        ;
+
+        
+    
+    
+            circle_marker_0c912373368d897d2c750fe741879571.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Esteiro, Xuances
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62191b232cd4efde7b9be5bdffb2fd54 = L.circleMarker(
+                [41.91025, -8.876166],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_c32131e5605e36dfe57376bee9b3d0d3 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_475f2fce88643854ce2477a6e4238bcd = $(`<div id="html_475f2fce88643854ce2477a6e4238bcd" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Area Grande</b><br><small>A Guarda · Pontevedra</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q28120073" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_c32131e5605e36dfe57376bee9b3d0d3.setContent(html_475f2fce88643854ce2477a6e4238bcd);
+            
+        
+
+        circle_marker_62191b232cd4efde7b9be5bdffb2fd54.bindPopup(popup_c32131e5605e36dfe57376bee9b3d0d3)
+        ;
+
+        
+    
+    
+            circle_marker_62191b232cd4efde7b9be5bdffb2fd54.bindTooltip(
+                `<div>
+                     🏖️ Area Grande
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2da1ed8faa12459bac7b6c093c539856 = L.circleMarker(
+                [41.876444, -8.862944],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fd9177c9b77c74f08197584b37e66c07 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_278e30c74dddfb4133d2bd015906dbfa = $(`<div id="html_278e30c74dddfb4133d2bd015906dbfa" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ O Muíño</b><br><small>A Guarda · Pontevedra</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q28120087" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Camposanco%20-%20panoramio%20%2812%29.jpg" width="200"/></div></div>`)[0];
+                popup_fd9177c9b77c74f08197584b37e66c07.setContent(html_278e30c74dddfb4133d2bd015906dbfa);
+            
+        
+
+        circle_marker_2da1ed8faa12459bac7b6c093c539856.bindPopup(popup_fd9177c9b77c74f08197584b37e66c07)
+        ;
+
+        
+    
+    
+            circle_marker_2da1ed8faa12459bac7b6c093c539856.bindTooltip(
+                `<div>
+                     🏖️ O Muíño
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e0433ef3047ab17c81efc7b775063f3 = L.circleMarker(
+                [42.567972, -8.887111],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_6c20fc05e0e21e293791e6cd407a2fa7 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_7a16b42261df12d00f07cb4ed3761219 = $(`<div id="html_7a16b42261df12d00f07cb4ed3761219" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Area Da Secada</b><br><small>A Illa De Arousa · Pontevedra</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q12398070" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Area%20da%20Secada.jpg" width="200"/></div></div>`)[0];
+                popup_6c20fc05e0e21e293791e6cd407a2fa7.setContent(html_7a16b42261df12d00f07cb4ed3761219);
+            
+        
+
+        circle_marker_3e0433ef3047ab17c81efc7b775063f3.bindPopup(popup_6c20fc05e0e21e293791e6cd407a2fa7)
+        ;
+
+        
+    
+    
+            circle_marker_3e0433ef3047ab17c81efc7b775063f3.bindTooltip(
+                `<div>
+                     🏖️ Area Da Secada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7afd974b056a286063e5b733b1e1f982 = L.circleMarker(
+                [42.544389, -8.867499],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_48fa1aa714056d26decd1dd7602b9891 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_563ceeedd720ed2b0b86692382e90ac3 = $(`<div id="html_563ceeedd720ed2b0b86692382e90ac3" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Camaxe</b><br><small>A Illa De Arousa · Pontevedra</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q28119833" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_48fa1aa714056d26decd1dd7602b9891.setContent(html_563ceeedd720ed2b0b86692382e90ac3);
+            
+        
+
+        circle_marker_7afd974b056a286063e5b733b1e1f982.bindPopup(popup_48fa1aa714056d26decd1dd7602b9891)
+        ;
+
+        
+    
+    
+            circle_marker_7afd974b056a286063e5b733b1e1f982.bindTooltip(
+                `<div>
+                     🏖️ Camaxe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc12be326262d55873f09288125154c7 = L.circleMarker(
+                [42.12393, -8.84854],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_388fd6267d889620ad85cd4b0651b2a2 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_024ceb0569f9cf6132981a41844ff788 = $(`<div id="html_024ceb0569f9cf6132981a41844ff788" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Barbeira</b><br><small>Baiona · Pontevedra</small><br>📏 220 m<br><a href="http://www.wikidata.org/entity/Q20543479" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20Barbeira%20y%20castillo%20de%20Monterreal%20-%20panoramio.jpg" width="200"/></div></div>`)[0];
+                popup_388fd6267d889620ad85cd4b0651b2a2.setContent(html_024ceb0569f9cf6132981a41844ff788);
+            
+        
+
+        circle_marker_fc12be326262d55873f09288125154c7.bindPopup(popup_388fd6267d889620ad85cd4b0651b2a2)
+        ;
+
+        
+    
+    
+            circle_marker_fc12be326262d55873f09288125154c7.bindTooltip(
+                `<div>
+                     🏖️ Barbeira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0d1c6387df027d1b732477f09544c76 = L.circleMarker(
+                [42.12268, -8.85157],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_31a527cba91fc0c1644de3413246f78b = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8954cef7e568e24eee8e5c6d4d35e335 = $(`<div id="html_8954cef7e568e24eee8e5c6d4d35e335" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Concheira</b><br><small>Baiona · Pontevedra</small><br>📏 65 m<br><a href="http://www.wikidata.org/entity/Q20543488" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Baiona%2C%20praia%2C%20A%20Cuncheira.JPG" width="200"/></div></div>`)[0];
+                popup_31a527cba91fc0c1644de3413246f78b.setContent(html_8954cef7e568e24eee8e5c6d4d35e335);
+            
+        
+
+        circle_marker_a0d1c6387df027d1b732477f09544c76.bindPopup(popup_31a527cba91fc0c1644de3413246f78b)
+        ;
+
+        
+    
+    
+            circle_marker_a0d1c6387df027d1b732477f09544c76.bindTooltip(
+                `<div>
+                     🏖️ Concheira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdc87e01e4007b9f08323fe6d8775a10 = L.circleMarker(
+                [42.12574, -8.85184],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_0000970e3a7eb91a732427fe2b5141ca = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_f9351aaf2d8cf767a3d84a8332d6a5f9 = $(`<div id="html_f9351aaf2d8cf767a3d84a8332d6a5f9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Os Frades</b><br><small>Baiona · Pontevedra</small><br>📏 30 m<br><a href="http://www.wikidata.org/entity/Q20543521" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Baiona%2C%20praia%2C%20Os%20Frades.JPG" width="200"/></div></div>`)[0];
+                popup_0000970e3a7eb91a732427fe2b5141ca.setContent(html_f9351aaf2d8cf767a3d84a8332d6a5f9);
+            
+        
+
+        circle_marker_cdc87e01e4007b9f08323fe6d8775a10.bindPopup(popup_0000970e3a7eb91a732427fe2b5141ca)
+        ;
+
+        
+    
+    
+            circle_marker_cdc87e01e4007b9f08323fe6d8775a10.bindTooltip(
+                `<div>
+                     🏖️ Os Frades
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26d87d637f943ee6a0cc81573b6f2ac0 = L.circleMarker(
+                [42.11455, -8.83817],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_aa0095192c8c0dfed6c140ae7531bdd0 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_48ca62c75f4053f56c7c64e380be0a70 = $(`<div id="html_48ca62c75f4053f56c7c64e380be0a70" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa Marta</b><br><small>Baiona · Pontevedra</small><br>📏 210 m<br><a href="http://www.wikidata.org/entity/Q20543497" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Bandeira%20Azul%2C%20Praia%20de%20Santa%20Marta%2C%20Baiona.JPG" width="200"/></div></div>`)[0];
+                popup_aa0095192c8c0dfed6c140ae7531bdd0.setContent(html_48ca62c75f4053f56c7c64e380be0a70);
+            
+        
+
+        circle_marker_26d87d637f943ee6a0cc81573b6f2ac0.bindPopup(popup_aa0095192c8c0dfed6c140ae7531bdd0)
+        ;
+
+        
+    
+    
+            circle_marker_26d87d637f943ee6a0cc81573b6f2ac0.bindTooltip(
+                `<div>
+                     🏖️ Playa Marta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c59212dcf95e2b81fee2b00412eb0d6 = L.circleMarker(
+                [42.12164, -8.84911],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_9cf045dedd4d8202e0b8139c4145daad = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_93689580364132fc3b3802c849666c41 = $(`<div id="html_93689580364132fc3b3802c849666c41" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Praia Da Ribeira</b><br><small>Baiona · Pontevedra</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q24023109" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Baiona%2C%20Praia%20da%20Ribeira.JPG" width="200"/></div></div>`)[0];
+                popup_9cf045dedd4d8202e0b8139c4145daad.setContent(html_93689580364132fc3b3802c849666c41);
+            
+        
+
+        circle_marker_1c59212dcf95e2b81fee2b00412eb0d6.bindPopup(popup_9cf045dedd4d8202e0b8139c4145daad)
+        ;
+
+        
+    
+    
+            circle_marker_1c59212dcf95e2b81fee2b00412eb0d6.bindTooltip(
+                `<div>
+                     🏖️ Praia Da Ribeira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_599250463d743fc95e7270c1ad6b30ea = L.circleMarker(
+                [42.11245394805069, -8.83354753316014],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_865aea16b91f20b0e8dd5d1aeacb27b6 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_6dda10ce12feef44f0457981e83b9534 = $(`<div id="html_6dda10ce12feef44f0457981e83b9534" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Praia Ladeira</b><br><small>Baiona · Pontevedra</small><br>📏 1300 m<br><a href="http://www.wikidata.org/entity/Q20543532" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20Ladeira%203.JPG" width="200"/></div></div>`)[0];
+                popup_865aea16b91f20b0e8dd5d1aeacb27b6.setContent(html_6dda10ce12feef44f0457981e83b9534);
+            
+        
+
+        circle_marker_599250463d743fc95e7270c1ad6b30ea.bindPopup(popup_865aea16b91f20b0e8dd5d1aeacb27b6)
+        ;
+
+        
+    
+    
+            circle_marker_599250463d743fc95e7270c1ad6b30ea.bindTooltip(
+                `<div>
+                     🏖️ Praia Ladeira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2966230935aed8a9fd8d6c70c771492 = L.circleMarker(
+                [42.314361, -8.818888],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b438aeb3378821418a55862ce39b307b = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_bae7294b54953773c8bc34731155c630 = $(`<div id="html_bae7294b54953773c8bc34731155c630" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Area De Bon</b><br><small>Bueu · Pontevedra</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28119957" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_b438aeb3378821418a55862ce39b307b.setContent(html_bae7294b54953773c8bc34731155c630);
+            
+        
+
+        circle_marker_b2966230935aed8a9fd8d6c70c771492.bindPopup(popup_b438aeb3378821418a55862ce39b307b)
+        ;
+
+        
+    
+    
+            circle_marker_b2966230935aed8a9fd8d6c70c771492.bindTooltip(
+                `<div>
+                     🏖️ Area De Bon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6feb4caf014c080b75eaa1a094bc07af = L.circleMarker(
+                [42.324508, -8.825548],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_ba701e7df5f0277d8a5b038eb2d48d63 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_27e19b650b1bd14f778e64aa8676b7e9 = $(`<div id="html_27e19b650b1bd14f778e64aa8676b7e9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Lagos</b><br><small>Bueu · Pontevedra</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28119956" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_ba701e7df5f0277d8a5b038eb2d48d63.setContent(html_27e19b650b1bd14f778e64aa8676b7e9);
+            
+        
+
+        circle_marker_6feb4caf014c080b75eaa1a094bc07af.bindPopup(popup_ba701e7df5f0277d8a5b038eb2d48d63)
+        ;
+
+        
+    
+    
+            circle_marker_6feb4caf014c080b75eaa1a094bc07af.bindTooltip(
+                `<div>
+                     🏖️ Lagos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c32373a53a9700680b9af4b291263da = L.circleMarker(
+                [42.341944, -8.7525],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_92e139df5086ae3b9574c7c43daeb6c5 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_689f6932fc5660c251cd4944af1d12c6 = $(`<div id="html_689f6932fc5660c251cd4944af1d12c6" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Lapamán Beach</b><br><small>Bueu · Pontevedra</small><br>📏 800 m<br><a href="http://www.wikidata.org/entity/Q9060675" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Marin%20Praia%20Lapaman.JPG" width="200"/></div></div>`)[0];
+                popup_92e139df5086ae3b9574c7c43daeb6c5.setContent(html_689f6932fc5660c251cd4944af1d12c6);
+            
+        
+
+        circle_marker_3c32373a53a9700680b9af4b291263da.bindPopup(popup_92e139df5086ae3b9574c7c43daeb6c5)
+        ;
+
+        
+    
+    
+            circle_marker_3c32373a53a9700680b9af4b291263da.bindTooltip(
+                `<div>
+                     🏖️ Lapamán Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_155db37b66225985cc12ee894b80c7ec = L.circleMarker(
+                [42.334527, -8.768388],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_8c2148d2d981c6a1a5e011f17d3aa250 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_3ab79bd8f8c1968fa93356ea4271679b = $(`<div id="html_3ab79bd8f8c1968fa93356ea4271679b" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Portomaior</b><br><small>Bueu · Pontevedra</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q28119828" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_8c2148d2d981c6a1a5e011f17d3aa250.setContent(html_3ab79bd8f8c1968fa93356ea4271679b);
+            
+        
+
+        circle_marker_155db37b66225985cc12ee894b80c7ec.bindPopup(popup_8c2148d2d981c6a1a5e011f17d3aa250)
+        ;
+
+        
+    
+    
+            circle_marker_155db37b66225985cc12ee894b80c7ec.bindTooltip(
+                `<div>
+                     🏖️ Portomaior
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9955ddb28bd758f822d57c466827ead = L.circleMarker(
+                [42.348889, -8.751444],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_d26958b0e13edfe6057b20ed5422a678 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_e90dd88a94812f14c785bef7f93c6d52 = $(`<div id="html_e90dd88a94812f14c785bef7f93c6d52" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ A Coviña</b><br><small>Marín · Pontevedra</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q28116185" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20da%20Covi%C3%B1a.jpg" width="200"/></div></div>`)[0];
+                popup_d26958b0e13edfe6057b20ed5422a678.setContent(html_e90dd88a94812f14c785bef7f93c6d52);
+            
+        
+
+        circle_marker_a9955ddb28bd758f822d57c466827ead.bindPopup(popup_d26958b0e13edfe6057b20ed5422a678)
+        ;
+
+        
+    
+    
+            circle_marker_a9955ddb28bd758f822d57c466827ead.bindTooltip(
+                `<div>
+                     🏖️ A Coviña
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_207c55e6b3a90f379732d8252cc7ef9b = L.circleMarker(
+                [42.37386, -8.731472],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_ceb2259d752dfef4c840f2985e407223 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_99529f161781a607197c55ceac76e97f = $(`<div id="html_99529f161781a607197c55ceac76e97f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Aguete Beach</b><br><small>Marín · Pontevedra</small><br>📏 920 m<br><a href="http://www.wikidata.org/entity/Q28119934" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Marin%20Praia%20Aguete.JPG" width="200"/></div></div>`)[0];
+                popup_ceb2259d752dfef4c840f2985e407223.setContent(html_99529f161781a607197c55ceac76e97f);
+            
+        
+
+        circle_marker_207c55e6b3a90f379732d8252cc7ef9b.bindPopup(popup_ceb2259d752dfef4c840f2985e407223)
+        ;
+
+        
+    
+    
+            circle_marker_207c55e6b3a90f379732d8252cc7ef9b.bindTooltip(
+                `<div>
+                     🏖️ Aguete Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8cd2eaee96a917822d04b4ed200f840f = L.circleMarker(
+                [42.385972, -8.719416],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_e09e6e3ba39e8f8214750250372f90c1 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_9091ebb65a8d8ed6eaf245e5322a44dc = $(`<div id="html_9091ebb65a8d8ed6eaf245e5322a44dc" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Mogor</b><br><small>Marín · Pontevedra</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28119933" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Mogor%2C%20Mar%C3%ADn.jpg" width="200"/></div></div>`)[0];
+                popup_e09e6e3ba39e8f8214750250372f90c1.setContent(html_9091ebb65a8d8ed6eaf245e5322a44dc);
+            
+        
+
+        circle_marker_8cd2eaee96a917822d04b4ed200f840f.bindPopup(popup_e09e6e3ba39e8f8214750250372f90c1)
+        ;
+
+        
+    
+    
+            circle_marker_8cd2eaee96a917822d04b4ed200f840f.bindTooltip(
+                `<div>
+                     🏖️ Mogor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75f839444b7453f79094ba49577ba9c4 = L.circleMarker(
+                [42.390027, -8.71425],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_f99a49ff7e5aa6e8c14483c036837e3a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_704eb40a06257234315266c0dfb67341 = $(`<div id="html_704eb40a06257234315266c0dfb67341" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Portocelo Beach</b><br><small>Marín · Pontevedra</small><br>📏 350 m<br><a href="http://www.wikidata.org/entity/Q28119932" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Portocelo.jpg" width="200"/></div></div>`)[0];
+                popup_f99a49ff7e5aa6e8c14483c036837e3a.setContent(html_704eb40a06257234315266c0dfb67341);
+            
+        
+
+        circle_marker_75f839444b7453f79094ba49577ba9c4.bindPopup(popup_f99a49ff7e5aa6e8c14483c036837e3a)
+        ;
+
+        
+    
+    
+            circle_marker_75f839444b7453f79094ba49577ba9c4.bindTooltip(
+                `<div>
+                     🏖️ Portocelo Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91bda13f515447cdfa32aa219feaaf4f = L.circleMarker(
+                [42.271083, -8.740527],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fc4d7e0ceee80bb01bdc82489e441b05 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_fd3d7bf39060d780b8fb2203efd7446b = $(`<div id="html_fd3d7bf39060d780b8fb2203efd7446b" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ O Con</b><br><small>Moaña · Pontevedra</small><br>📏 350 m<br><a href="http://www.wikidata.org/entity/Q28122317" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_fc4d7e0ceee80bb01bdc82489e441b05.setContent(html_fd3d7bf39060d780b8fb2203efd7446b);
+            
+        
+
+        circle_marker_91bda13f515447cdfa32aa219feaaf4f.bindPopup(popup_fc4d7e0ceee80bb01bdc82489e441b05)
+        ;
+
+        
+    
+    
+            circle_marker_91bda13f515447cdfa32aa219feaaf4f.bindTooltip(
+                `<div>
+                     🏖️ O Con
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72ab1062a9f06184c2a8b67e18cc80d8 = L.circleMarker(
+                [42.422453, -8.6823],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_06e765eed8b6c12d558e52c5c3a2226d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_6fe286c7ab6402fbc627c64985cb07c4 = $(`<div id="html_6fe286c7ab6402fbc627c64985cb07c4" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Cabeceira Beach</b><br><small>Poio · Pontevedra</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q28119930" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Illa%20De%20Tambo%20%283947037%29.jpeg" width="200"/></div></div>`)[0];
+                popup_06e765eed8b6c12d558e52c5c3a2226d.setContent(html_6fe286c7ab6402fbc627c64985cb07c4);
+            
+        
+
+        circle_marker_72ab1062a9f06184c2a8b67e18cc80d8.bindPopup(popup_06e765eed8b6c12d558e52c5c3a2226d)
+        ;
+
+        
+    
+    
+            circle_marker_72ab1062a9f06184c2a8b67e18cc80d8.bindTooltip(
+                `<div>
+                     🏖️ Cabeceira Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15dc4808df69cce5c1024fd9c6cd1857 = L.circleMarker(
+                [42.422453, -8.6823],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_987981204cda869136953168410922b2 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_e20e0c000698032a966861d5fc462165 = $(`<div id="html_e20e0c000698032a966861d5fc462165" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Xiorto</b><br><small>Poio · Pontevedra</small><br>📏 180 m<br><a href="http://www.wikidata.org/entity/Q28119914" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_987981204cda869136953168410922b2.setContent(html_e20e0c000698032a966861d5fc462165);
+            
+        
+
+        circle_marker_15dc4808df69cce5c1024fd9c6cd1857.bindPopup(popup_987981204cda869136953168410922b2)
+        ;
+
+        
+    
+    
+            circle_marker_15dc4808df69cce5c1024fd9c6cd1857.bindTooltip(
+                `<div>
+                     🏖️ Xiorto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77e46844f9163dc62ae5129de25560db = L.circleMarker(
+                [42.39131, -8.491745],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_8e8cde3fe98c4ca3143ca5775f2ab09a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8bbd9636718b7ef66ffe636abc5c74f0 = $(`<div id="html_8bbd9636718b7ef66ffe636abc5c74f0" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Ponte Caldelas</b><br><small>Ponte Caldelas · Pontevedra</small><br><a href="http://www.wikidata.org/entity/Q12397853" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo%20Verdugo%20ao%20seu%20paso%20por%20Pontecaldelas.jpg" width="200"/></div></div>`)[0];
+                popup_8e8cde3fe98c4ca3143ca5775f2ab09a.setContent(html_8bbd9636718b7ef66ffe636abc5c74f0);
+            
+        
+
+        circle_marker_77e46844f9163dc62ae5129de25560db.bindPopup(popup_8e8cde3fe98c4ca3143ca5775f2ab09a)
+        ;
+
+        
+    
+    
+            circle_marker_77e46844f9163dc62ae5129de25560db.bindTooltip(
+                `<div>
+                     🏖️ Ponte Caldelas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c187e777dc40cd784659f15586081240 = L.circleMarker(
+                [42.43871, -8.87178],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b97120e6ae64d526a34898c6eb4810f2 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_267fca13f52b2611be81b7a5bcd1e290 = $(`<div id="html_267fca13f52b2611be81b7a5bcd1e290" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ A Lanzada</b><br><small>Sanxenxo · Pontevedra</small><br><a href="http://www.wikidata.org/entity/Q20548158" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20A%20Lanzada%2001-06.jpg" width="200"/></div></div>`)[0];
+                popup_b97120e6ae64d526a34898c6eb4810f2.setContent(html_267fca13f52b2611be81b7a5bcd1e290);
+            
+        
+
+        circle_marker_c187e777dc40cd784659f15586081240.bindPopup(popup_b97120e6ae64d526a34898c6eb4810f2)
+        ;
+
+        
+    
+    
+            circle_marker_c187e777dc40cd784659f15586081240.bindTooltip(
+                `<div>
+                     🏖️ A Lanzada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b6b37fc1b848055721358b009d69657 = L.circleMarker(
+                [42.394619, -8.7702212],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_151a703f5083024cee6da8c6c8c32750 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_29c2e20d41234c6a493d5f5fba64fc16 = $(`<div id="html_29c2e20d41234c6a493d5f5fba64fc16" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Agra</b><br><small>Sanxenxo · Pontevedra</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q28119911" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Agra%20%281%29.jpg" width="200"/></div></div>`)[0];
+                popup_151a703f5083024cee6da8c6c8c32750.setContent(html_29c2e20d41234c6a493d5f5fba64fc16);
+            
+        
+
+        circle_marker_3b6b37fc1b848055721358b009d69657.bindPopup(popup_151a703f5083024cee6da8c6c8c32750)
+        ;
+
+        
+    
+    
+            circle_marker_3b6b37fc1b848055721358b009d69657.bindTooltip(
+                `<div>
+                     🏖️ Agra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_711f5daa55910c964bf4d67bda950706 = L.circleMarker(
+                [42.394638, -8.778805],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fdc5877e4e7cc6cf48a6592a677835c1 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8b7394783a37d91a60026d31819b456d = $(`<div id="html_8b7394783a37d91a60026d31819b456d" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Areas Beach</b><br><small>Sanxenxo · Pontevedra</small><br>📏 600 m<br><a href="http://www.wikidata.org/entity/Q6078573" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20de%20Areas%20-%20Sanxenxo%20-%20Galiza%20%28Spain%29-4.jpg" width="200"/></div></div>`)[0];
+                popup_fdc5877e4e7cc6cf48a6592a677835c1.setContent(html_8b7394783a37d91a60026d31819b456d);
+            
+        
+
+        circle_marker_711f5daa55910c964bf4d67bda950706.bindPopup(popup_fdc5877e4e7cc6cf48a6592a677835c1)
+        ;
+
+        
+    
+    
+            circle_marker_711f5daa55910c964bf4d67bda950706.bindTooltip(
+                `<div>
+                     🏖️ Areas Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4735a0cfef32d185de6371fafcf5ebab = L.circleMarker(
+                [42.430972, -8.87261],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7f511c48aaae9d3c679494d647392dcd = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8ac8074126a72f91c3656d02ecc4db6e = $(`<div id="html_8ac8074126a72f91c3656d02ecc4db6e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Areas Gordas</b><br><small>Sanxenxo · Pontevedra</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q24023257" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_7f511c48aaae9d3c679494d647392dcd.setContent(html_8ac8074126a72f91c3656d02ecc4db6e);
+            
+        
+
+        circle_marker_4735a0cfef32d185de6371fafcf5ebab.bindPopup(popup_7f511c48aaae9d3c679494d647392dcd)
+        ;
+
+        
+    
+    
+            circle_marker_4735a0cfef32d185de6371fafcf5ebab.bindTooltip(
+                `<div>
+                     🏖️ Areas Gordas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fa68a2dc7b0109f5ce768c487424ad8 = L.circleMarker(
+                [42.404139, -8.858139],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_83769f3bc73d3d8b04658af508a39c2c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_eb869862424656d386851b65e33079e3 = $(`<div id="html_eb869862424656d386851b65e33079e3" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Bascuas</b><br><small>Sanxenxo · Pontevedra</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q6078602" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Sanxenxo%2C%20praia%20Bascuas%2003-03.JPG" width="200"/></div></div>`)[0];
+                popup_83769f3bc73d3d8b04658af508a39c2c.setContent(html_eb869862424656d386851b65e33079e3);
+            
+        
+
+        circle_marker_9fa68a2dc7b0109f5ce768c487424ad8.bindPopup(popup_83769f3bc73d3d8b04658af508a39c2c)
+        ;
+
+        
+    
+    
+            circle_marker_9fa68a2dc7b0109f5ce768c487424ad8.bindTooltip(
+                `<div>
+                     🏖️ Bascuas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ba5ee4d9c7155bb4355eca0f6fc4f6b = L.circleMarker(
+                [42.441258, -8.872075],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_f06c1d559302f9d50a87f931d891008e = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_f54a1e9c55bb292390462da4125cbb10 = $(`<div id="html_f54a1e9c55bb292390462da4125cbb10" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of A Lanzada</b><br><small>Sanxenxo · Pontevedra</small><br>📏 2400 m<br><a href="http://www.wikidata.org/entity/Q3398218" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20A%20Lanzada.jpg" width="200"/></div></div>`)[0];
+                popup_f06c1d559302f9d50a87f931d891008e.setContent(html_f54a1e9c55bb292390462da4125cbb10);
+            
+        
+
+        circle_marker_5ba5ee4d9c7155bb4355eca0f6fc4f6b.bindPopup(popup_f06c1d559302f9d50a87f931d891008e)
+        ;
+
+        
+    
+    
+            circle_marker_5ba5ee4d9c7155bb4355eca0f6fc4f6b.bindTooltip(
+                `<div>
+                     🏖️ Beach Of A Lanzada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0f255c312ffb58aba61a033f23e662e = L.circleMarker(
+                [42.389972, -8.831833],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_edbec57044438da1585c40e022d0de7a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_13fe9910667d5a519461b637b909fa76 = $(`<div id="html_13fe9910667d5a519461b637b909fa76" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Canelas</b><br><small>Sanxenxo · Pontevedra</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28119873" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/O%20Grove%2C%20praia%20de%20Canelas%2C%20O%20Grove%2C%2001-02.JPG" width="200"/></div></div>`)[0];
+                popup_edbec57044438da1585c40e022d0de7a.setContent(html_13fe9910667d5a519461b637b909fa76);
+            
+        
+
+        circle_marker_f0f255c312ffb58aba61a033f23e662e.bindPopup(popup_edbec57044438da1585c40e022d0de7a)
+        ;
+
+        
+    
+    
+            circle_marker_f0f255c312ffb58aba61a033f23e662e.bindTooltip(
+                `<div>
+                     🏖️ Canelas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebd3eaf5493fa73f8c483339e2c88a1f = L.circleMarker(
+                [42.39186, -8.82586],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_b6e8ee3867cde473f9a228f7e2b34727 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_a96b9d85b4a900ffa28e7510c6bf164b = $(`<div id="html_a96b9d85b4a900ffa28e7510c6bf164b" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Caneliñas</b><br><small>Sanxenxo · Pontevedra</small><br>📏 100 m<br><a href="http://www.wikidata.org/entity/Q12398075" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Portonovo%20Caneli%C3%B1as.jpg" width="200"/></div></div>`)[0];
+                popup_b6e8ee3867cde473f9a228f7e2b34727.setContent(html_a96b9d85b4a900ffa28e7510c6bf164b);
+            
+        
+
+        circle_marker_ebd3eaf5493fa73f8c483339e2c88a1f.bindPopup(popup_b6e8ee3867cde473f9a228f7e2b34727)
+        ;
+
+        
+    
+    
+            circle_marker_ebd3eaf5493fa73f8c483339e2c88a1f.bindTooltip(
+                `<div>
+                     🏖️ Caneliñas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94be48a0d4f9307167e62cbeda256e04 = L.circleMarker(
+                [42.427138, -8.873694],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_51e48e7d952ae946be4161c94714387b = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_9bb00872b08000965baf416d06e764e9 = $(`<div id="html_9bb00872b08000965baf416d06e764e9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Foxos</b><br><small>Sanxenxo · Pontevedra</small><br>📏 350 m<br><a href="http://www.wikidata.org/entity/Q28119890" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Sanxenxo%2C%20praia%20Foxos%2006-01b.jpg" width="200"/></div></div>`)[0];
+                popup_51e48e7d952ae946be4161c94714387b.setContent(html_9bb00872b08000965baf416d06e764e9);
+            
+        
+
+        circle_marker_94be48a0d4f9307167e62cbeda256e04.bindPopup(popup_51e48e7d952ae946be4161c94714387b)
+        ;
+
+        
+    
+    
+            circle_marker_94be48a0d4f9307167e62cbeda256e04.bindTooltip(
+                `<div>
+                     🏖️ Foxos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cb1d5bdf921df69403c2cc83f208fdd = L.circleMarker(
+                [42.434313, -8.8722694],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_0dab868d2169402f51120c284cebffe3 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_7cf037f1ba2421ead38c5f60784e2b3f = $(`<div id="html_7cf037f1ba2421ead38c5f60784e2b3f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Lapa</b><br><small>Sanxenxo · Pontevedra</small><br>📏 400 m<br><a href="http://www.wikidata.org/entity/Q28119886" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_0dab868d2169402f51120c284cebffe3.setContent(html_7cf037f1ba2421ead38c5f60784e2b3f);
+            
+        
+
+        circle_marker_9cb1d5bdf921df69403c2cc83f208fdd.bindPopup(popup_0dab868d2169402f51120c284cebffe3)
+        ;
+
+        
+    
+    
+            circle_marker_9cb1d5bdf921df69403c2cc83f208fdd.bindTooltip(
+                `<div>
+                     🏖️ Lapa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d3161e9e7875c328e04c89d8479d8da = L.circleMarker(
+                [42.413694, -8.866583],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_11cce747c910014b3485be3ceaec7763 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_93c0f54ae84594751ddd0af47a904c76 = $(`<div id="html_93c0f54ae84594751ddd0af47a904c76" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Major</b><br><small>Sanxenxo · Pontevedra</small><br>📏 900 m<br><a href="http://www.wikidata.org/entity/Q28119893" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_11cce747c910014b3485be3ceaec7763.setContent(html_93c0f54ae84594751ddd0af47a904c76);
+            
+        
+
+        circle_marker_1d3161e9e7875c328e04c89d8479d8da.bindPopup(popup_11cce747c910014b3485be3ceaec7763)
+        ;
+
+        
+    
+    
+            circle_marker_1d3161e9e7875c328e04c89d8479d8da.bindTooltip(
+                `<div>
+                     🏖️ Major
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_635b5dc3f12582858f14d7d8d9a587f5 = L.circleMarker(
+                [42.398944, -8.848194],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_1aa82c04cb401473732e8e526f3d7a68 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0d3ee2c84a65530d986bdc08300582f1 = $(`<div id="html_0d3ee2c84a65530d986bdc08300582f1" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Montalvo Beach</b><br><small>Sanxenxo · Pontevedra</small><br>📏 900 m<br><a href="http://www.wikidata.org/entity/Q6078910" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20montalvo.jpg" width="200"/></div></div>`)[0];
+                popup_1aa82c04cb401473732e8e526f3d7a68.setContent(html_0d3ee2c84a65530d986bdc08300582f1);
+            
+        
+
+        circle_marker_635b5dc3f12582858f14d7d8d9a587f5.bindPopup(popup_1aa82c04cb401473732e8e526f3d7a68)
+        ;
+
+        
+    
+    
+            circle_marker_635b5dc3f12582858f14d7d8d9a587f5.bindTooltip(
+                `<div>
+                     🏖️ Montalvo Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59f9950185576560da6ded89ab4ec1ad = L.circleMarker(
+                [42.391639, -8.844083],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7d1c0a7467a33f73761fc00f65b8d9aa = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_38b07e36d59bf17496fd2b9ef986c85f = $(`<div id="html_38b07e36d59bf17496fd2b9ef986c85f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Paxariñas</b><br><small>Sanxenxo · Pontevedra</small><br>📏 150 m<br><a href="http://www.wikidata.org/entity/Q12398088" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Sanxenxo%2C%20praia%20Paxari%C3%B1as%2001-03ar.jpg" width="200"/></div></div>`)[0];
+                popup_7d1c0a7467a33f73761fc00f65b8d9aa.setContent(html_38b07e36d59bf17496fd2b9ef986c85f);
+            
+        
+
+        circle_marker_59f9950185576560da6ded89ab4ec1ad.bindPopup(popup_7d1c0a7467a33f73761fc00f65b8d9aa)
+        ;
+
+        
+    
+    
+            circle_marker_59f9950185576560da6ded89ab4ec1ad.bindTooltip(
+                `<div>
+                     🏖️ Paxariñas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e5e4d0c324d2a5a59ef1c281f32301e = L.circleMarker(
+                [42.401472, -8.812917],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_f1ca685032fb638c15a7ddadd017220f = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_893ef231adbd2a15a769351a29d0f8e5 = $(`<div id="html_893ef231adbd2a15a769351a29d0f8e5" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa Del Silgar</b><br><small>Sanxenxo · Pontevedra</small><br>📏 750 m<br><a href="http://www.wikidata.org/entity/Q24019722" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Sanxenxo%20-%20Praia%20de%20Silgar.jpg" width="200"/></div></div>`)[0];
+                popup_f1ca685032fb638c15a7ddadd017220f.setContent(html_893ef231adbd2a15a769351a29d0f8e5);
+            
+        
+
+        circle_marker_7e5e4d0c324d2a5a59ef1c281f32301e.bindPopup(popup_f1ca685032fb638c15a7ddadd017220f)
+        ;
+
+        
+    
+    
+            circle_marker_7e5e4d0c324d2a5a59ef1c281f32301e.bindTooltip(
+                `<div>
+                     🏖️ Playa Del Silgar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7bcb3e4ec29697c6ff2afb025f899dd = L.circleMarker(
+                [42.398722, -8.822555],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_27d92f449c8f57c865647049a1460092 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_c7eb185406f159388187e3b7050755b7 = $(`<div id="html_c7eb185406f159388187e3b7050755b7" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Portonovo</b><br><small>Sanxenxo · Pontevedra</small><br>📏 500 m<br><a href="http://www.wikidata.org/entity/Q6078596" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Portonovo%2001-02.jpg" width="200"/></div></div>`)[0];
+                popup_27d92f449c8f57c865647049a1460092.setContent(html_c7eb185406f159388187e3b7050755b7);
+            
+        
+
+        circle_marker_b7bcb3e4ec29697c6ff2afb025f899dd.bindPopup(popup_27d92f449c8f57c865647049a1460092)
+        ;
+
+        
+    
+    
+            circle_marker_b7bcb3e4ec29697c6ff2afb025f899dd.bindTooltip(
+                `<div>
+                     🏖️ Portonovo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_025d887f573487847d3c4ef96494e059 = L.circleMarker(
+                [42.409472, -8.862528],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_743cb3ca7919d93ce41719ea5ac59faa = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_e9f06e0f3cc8eb08668bf2aec1c4d2b4 = $(`<div id="html_e9f06e0f3cc8eb08668bf2aec1c4d2b4" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Pragueira</b><br><small>Sanxenxo · Pontevedra</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q28119894" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_743cb3ca7919d93ce41719ea5ac59faa.setContent(html_e9f06e0f3cc8eb08668bf2aec1c4d2b4);
+            
+        
+
+        circle_marker_025d887f573487847d3c4ef96494e059.bindPopup(popup_743cb3ca7919d93ce41719ea5ac59faa)
+        ;
+
+        
+    
+    
+            circle_marker_025d887f573487847d3c4ef96494e059.bindTooltip(
+                `<div>
+                     🏖️ Pragueira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eca347a2a6b31b21e7d7faa45e4ce537 = L.circleMarker(
+                [42.400663, -8.803876],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_55a33e6ae5db87fec633f856181688a5 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_8f638dd4b5f87414ea3ab67fc68fc86f = $(`<div id="html_8f638dd4b5f87414ea3ab67fc68fc86f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Q6078544</b><br><small>Sanxenxo · Pontevedra</small><br><a href="http://www.wikidata.org/entity/Q6078544" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Sanxenxo%2C%20Galiza%20%28Spain%29.jpg" width="200"/></div></div>`)[0];
+                popup_55a33e6ae5db87fec633f856181688a5.setContent(html_8f638dd4b5f87414ea3ab67fc68fc86f);
+            
+        
+
+        circle_marker_eca347a2a6b31b21e7d7faa45e4ce537.bindPopup(popup_55a33e6ae5db87fec633f856181688a5)
+        ;
+
+        
+    
+    
+            circle_marker_eca347a2a6b31b21e7d7faa45e4ce537.bindTooltip(
+                `<div>
+                     🏖️ Q6078544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_315b413d19d79d20e42533c1fa54f710 = L.circleMarker(
+                [42.260028, -8.697027],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_9cfa04c355e0d638f4df207e123a986e = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_88b404379de9865d3958b7e573887256 = $(`<div id="html_88b404379de9865d3958b7e573887256" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Areiño</b><br><small>Vigo · Pontevedra</small><br>📏 200 m<br><a href="http://www.wikidata.org/entity/Q24003844" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20punta%20en%20teis%204.jpg" width="200"/></div></div>`)[0];
+                popup_9cfa04c355e0d638f4df207e123a986e.setContent(html_88b404379de9865d3958b7e573887256);
+            
+        
+
+        circle_marker_315b413d19d79d20e42533c1fa54f710.bindPopup(popup_9cfa04c355e0d638f4df207e123a986e)
+        ;
+
+        
+    
+    
+            circle_marker_315b413d19d79d20e42533c1fa54f710.bindTooltip(
+                `<div>
+                     🏖️ Areiño
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce78f75b33e9e22b9b153e4c43884f0d = L.circleMarker(
+                [42.197222, -8.792166],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_6bc19cdd8bd865fa576d237362190846 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_f7103970c8593dbc287b3d0a0377b884 = $(`<div id="html_f7103970c8593dbc287b3d0a0377b884" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Beach Of Vao</b><br><small>Vigo · Pontevedra</small><br>📏 650 m<br><a href="http://www.wikidata.org/entity/Q6448405" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20del%20Vao.jpg" width="200"/></div></div>`)[0];
+                popup_6bc19cdd8bd865fa576d237362190846.setContent(html_f7103970c8593dbc287b3d0a0377b884);
+            
+        
+
+        circle_marker_ce78f75b33e9e22b9b153e4c43884f0d.bindPopup(popup_6bc19cdd8bd865fa576d237362190846)
+        ;
+
+        
+    
+    
+            circle_marker_ce78f75b33e9e22b9b153e4c43884f0d.bindTooltip(
+                `<div>
+                     🏖️ Beach Of Vao
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec05dcd21d2e69fd78472b20633f85e9 = L.circleMarker(
+                [42.22649888193796, -8.754172974181202],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_e34335e8d6e437956475e9ce11d89527 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_872077693f3cba45b23dc7f6006ea3dc = $(`<div id="html_872077693f3cba45b23dc7f6006ea3dc" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Bouzas</b><br><small>Vigo · Pontevedra</small><br>📏 450 m<br><a href="http://www.wikidata.org/entity/Q28119383" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/2014-11-09%20-%20Playa%20De%20Bouzas%20-%20Bouzas%20-%20Vigo%20-%20Spain%20%284%29.JPG" width="200"/></div></div>`)[0];
+                popup_e34335e8d6e437956475e9ce11d89527.setContent(html_872077693f3cba45b23dc7f6006ea3dc);
+            
+        
+
+        circle_marker_ec05dcd21d2e69fd78472b20633f85e9.bindPopup(popup_e34335e8d6e437956475e9ce11d89527)
+        ;
+
+        
+    
+    
+            circle_marker_ec05dcd21d2e69fd78472b20633f85e9.bindTooltip(
+                `<div>
+                     🏖️ Bouzas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bead2780c75659b2b483e183c09dee7 = L.circleMarker(
+                [42.215944, -8.776055],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_ef7a4197697e754d30653c275f65939c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_a71d6f7fdc70cd1498829614c8741da6 = $(`<div id="html_a71d6f7fdc70cd1498829614c8741da6" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ De Argazada</b><br><small>Vigo · Pontevedra</small><br>📏 450 m<br><a href="http://www.wikidata.org/entity/Q28119389" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_ef7a4197697e754d30653c275f65939c.setContent(html_a71d6f7fdc70cd1498829614c8741da6);
+            
+        
+
+        circle_marker_5bead2780c75659b2b483e183c09dee7.bindPopup(popup_ef7a4197697e754d30653c275f65939c)
+        ;
+
+        
+    
+    
+            circle_marker_5bead2780c75659b2b483e183c09dee7.bindTooltip(
+                `<div>
+                     🏖️ De Argazada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db6faa85208a31cc191a6a5a1257996f = L.circleMarker(
+                [42.26317, -8.680972],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_30139cc99b2372605a2de669b85605d3 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_2c9a49b39539b434eb0b27e49a37d830 = $(`<div id="html_2c9a49b39539b434eb0b27e49a37d830" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Mende</b><br><small>Vigo · Pontevedra</small><br>📏 90 m<br><a href="http://www.wikidata.org/entity/Q28119361" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20do%20Mende%202023.jpeg" width="200"/></div></div>`)[0];
+                popup_30139cc99b2372605a2de669b85605d3.setContent(html_2c9a49b39539b434eb0b27e49a37d830);
+            
+        
+
+        circle_marker_db6faa85208a31cc191a6a5a1257996f.bindPopup(popup_30139cc99b2372605a2de669b85605d3)
+        ;
+
+        
+    
+    
+            circle_marker_db6faa85208a31cc191a6a5a1257996f.bindTooltip(
+                `<div>
+                     🏖️ Mende
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2ee2bf184122e086692c827b567c2dc = L.circleMarker(
+                [42.17461, -8.813806],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_dfad778d24f372d5ec106eb23d8c4e4c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_d5f44a47594af03b9cd4bc7f59766f03 = $(`<div id="html_d5f44a47594af03b9cd4bc7f59766f03" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Os Muiños</b><br><small>Vigo · Pontevedra</small><br>📏 120 m<br><a href="http://www.wikidata.org/entity/Q23994789" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Mu%C3%AD%C3%B1os%20de%20Forti%C3%B1%C3%B3n%201.jpg" width="200"/></div></div>`)[0];
+                popup_dfad778d24f372d5ec106eb23d8c4e4c.setContent(html_d5f44a47594af03b9cd4bc7f59766f03);
+            
+        
+
+        circle_marker_f2ee2bf184122e086692c827b567c2dc.bindPopup(popup_dfad778d24f372d5ec106eb23d8c4e4c)
+        ;
+
+        
+    
+    
+            circle_marker_f2ee2bf184122e086692c827b567c2dc.bindTooltip(
+                `<div>
+                     🏖️ Os Muiños
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6ab6d60598d46d1a29254ca88b84fdd = L.circleMarker(
+                [42.222916, -8.902917],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_fccb559c00cdef614d142dd47a22ebb2 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_2c363a520523b90a213d949874d6e70e = $(`<div id="html_2c363a520523b90a213d949874d6e70e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Playa De Rodas</b><br><small>Vigo · Pontevedra</small><br>📏 1200 m<br><a href="http://www.wikidata.org/entity/Q23993081" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/C%C3%ADes%20uharteak%201.JPG" width="200"/></div></div>`)[0];
+                popup_fccb559c00cdef614d142dd47a22ebb2.setContent(html_2c363a520523b90a213d949874d6e70e);
+            
+        
+
+        circle_marker_b6ab6d60598d46d1a29254ca88b84fdd.bindPopup(popup_fccb559c00cdef614d142dd47a22ebb2)
+        ;
+
+        
+    
+    
+            circle_marker_b6ab6d60598d46d1a29254ca88b84fdd.bindTooltip(
+                `<div>
+                     🏖️ Playa De Rodas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_894eb85c14726e35bcd97120cc202061 = L.circleMarker(
+                [42.194139, -8.796805],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_020509a1befc196fd04b2de961947355 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_885000a690277f06e20dc71b77721f1e = $(`<div id="html_885000a690277f06e20dc71b77721f1e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Praia Canido</b><br><small>Vigo · Pontevedra</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q24003868" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Praia%20Canido.jpg" width="200"/></div></div>`)[0];
+                popup_020509a1befc196fd04b2de961947355.setContent(html_885000a690277f06e20dc71b77721f1e);
+            
+        
+
+        circle_marker_894eb85c14726e35bcd97120cc202061.bindPopup(popup_020509a1befc196fd04b2de961947355)
+        ;
+
+        
+    
+    
+            circle_marker_894eb85c14726e35bcd97120cc202061.bindTooltip(
+                `<div>
+                     🏖️ Praia Canido
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab535a17519140dec0a50c98d6b63ca8 = L.circleMarker(
+                [42.223296, -8.7655534],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_8c68cf5f2e750c1c167b1c1b7816f1ed = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_b18f965b50ed2b293624535747fec9ef = $(`<div id="html_b18f965b50ed2b293624535747fec9ef" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Praia De Carril</b><br><small>Vigo · Pontevedra</small><br>📏 600 m<br><a href="http://www.wikidata.org/entity/Q6078653" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Alcabre%2C%20Praia%20do%20Carril%2C%201.JPG" width="200"/></div></div>`)[0];
+                popup_8c68cf5f2e750c1c167b1c1b7816f1ed.setContent(html_b18f965b50ed2b293624535747fec9ef);
+            
+        
+
+        circle_marker_ab535a17519140dec0a50c98d6b63ca8.bindPopup(popup_8c68cf5f2e750c1c167b1c1b7816f1ed)
+        ;
+
+        
+    
+    
+            circle_marker_ab535a17519140dec0a50c98d6b63ca8.bindTooltip(
+                `<div>
+                     🏖️ Praia De Carril
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a04ded94be7585fd2f407640c833078c = L.circleMarker(
+                [42.199555, -8.786416],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_abbddafc30f4ec97179995596d368219 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_a388e4e3a1d4efa5effc6d23a0371c1e = $(`<div id="html_a388e4e3a1d4efa5effc6d23a0371c1e" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Q28120018</b><br><small>Vigo · Pontevedra</small><br>📏 250 m<br><a href="http://www.wikidata.org/entity/Q28120018" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20Fonta%C3%AD%C3%B1a%20en%20Corujo.jpg" width="200"/></div></div>`)[0];
+                popup_abbddafc30f4ec97179995596d368219.setContent(html_a388e4e3a1d4efa5effc6d23a0371c1e);
+            
+        
+
+        circle_marker_a04ded94be7585fd2f407640c833078c.bindPopup(popup_abbddafc30f4ec97179995596d368219)
+        ;
+
+        
+    
+    
+            circle_marker_a04ded94be7585fd2f407640c833078c.bindTooltip(
+                `<div>
+                     🏖️ Q28120018
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9aa4cbbc9830d490e7db1a67be42b00 = L.circleMarker(
+                [42.220083, -8.775749],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_7739641426e3a0c329ac10a767fbd135 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_7fa06f527eb92c4ec17e27c27e960cd9 = $(`<div id="html_7fa06f527eb92c4ec17e27c27e960cd9" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Q65897252</b><br><small>Vigo · Pontevedra</small><br><a href="http://www.wikidata.org/entity/Q65897252" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Spain-Vigo-Playa%20del%20Vao-P1160876%20%2825264767123%29.jpg" width="200"/></div></div>`)[0];
+                popup_7739641426e3a0c329ac10a767fbd135.setContent(html_7fa06f527eb92c4ec17e27c27e960cd9);
+            
+        
+
+        circle_marker_d9aa4cbbc9830d490e7db1a67be42b00.bindPopup(popup_7739641426e3a0c329ac10a767fbd135)
+        ;
+
+        
+    
+    
+            circle_marker_d9aa4cbbc9830d490e7db1a67be42b00.bindTooltip(
+                `<div>
+                     🏖️ Q65897252
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34a74e1a7fecb44ecd9ab09870d3c7ef = L.circleMarker(
+                [42.22312, -8.76715],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_77cfd7a4b2db622e4ea0a594a75a125a = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_c15c471e89e1d6d50a96fb40f4849c85 = $(`<div id="html_c15c471e89e1d6d50a96fb40f4849c85" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Q66547532</b><br><small>Vigo · Pontevedra</small><br><a href="http://www.wikidata.org/entity/Q66547532" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Playa%20de%20Santa%20Baia.jpg" width="200"/></div></div>`)[0];
+                popup_77cfd7a4b2db622e4ea0a594a75a125a.setContent(html_c15c471e89e1d6d50a96fb40f4849c85);
+            
+        
+
+        circle_marker_34a74e1a7fecb44ecd9ab09870d3c7ef.bindPopup(popup_77cfd7a4b2db622e4ea0a594a75a125a)
+        ;
+
+        
+    
+    
+            circle_marker_34a74e1a7fecb44ecd9ab09870d3c7ef.bindTooltip(
+                `<div>
+                     🏖️ Q66547532
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9c6d42c3cde21142462d0dbdc2dbb02 = L.circleMarker(
+                [42.632789, -8.7626038],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_f55c5c69488fb5b94b8936b89e318ccf = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_dfef21c5cf9f6efd3596d7aba3e23bc8 = $(`<div id="html_dfef21c5cf9f6efd3596d7aba3e23bc8" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Bamio</b><br><small>Vilagarcía De Arousa · Pontevedra</small><br>📏 70 m<br><a href="http://www.wikidata.org/entity/Q28122324" target="_blank">🔗 Wikidata</a></div></div>`)[0];
+                popup_f55c5c69488fb5b94b8936b89e318ccf.setContent(html_dfef21c5cf9f6efd3596d7aba3e23bc8);
+            
+        
+
+        circle_marker_d9c6d42c3cde21142462d0dbdc2dbb02.bindPopup(popup_f55c5c69488fb5b94b8936b89e318ccf)
+        ;
+
+        
+    
+    
+            circle_marker_d9c6d42c3cde21142462d0dbdc2dbb02.bindTooltip(
+                `<div>
+                     🏖️ Bamio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6039cb7d20d6a13f7c268b881c206ec6 = L.circleMarker(
+                [42.604798, -8.7695076],
+                {"bubblingMouseEvents": true, "color": "#0077b6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0077b6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_a54ceff8f82ce1015cfea7f9054ae259);
+        
+    
+        var popup_547ae054a921b7331a70e53333b7864f = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0318b964bd7d4d871a5d5c979d88cd9f = $(`<div id="html_0318b964bd7d4d871a5d5c979d88cd9f" style="width: 100.0%; height: 100.0%;"><div style='font-family:sans-serif;max-width:220px'><b>🏖️ Compostela</b><br><small>Vilagarcía De Arousa · Pontevedra</small><br>📏 300 m<br><a href="http://www.wikidata.org/entity/Q9060660" target="_blank">🔗 Wikidata</a><br><img src="http://commons.wikimedia.org/wiki/Special:FilePath/Vilagarcia%20GDFL%20031221%20010.jpg" width="200"/></div></div>`)[0];
+                popup_547ae054a921b7331a70e53333b7864f.setContent(html_0318b964bd7d4d871a5d5c979d88cd9f);
+            
+        
+
+        circle_marker_6039cb7d20d6a13f7c268b881c206ec6.bindPopup(popup_547ae054a921b7331a70e53333b7864f)
+        ;
+
+        
+    
+    
+            circle_marker_6039cb7d20d6a13f7c268b881c206ec6.bindTooltip(
+                `<div>
+                     🏖️ Compostela
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
