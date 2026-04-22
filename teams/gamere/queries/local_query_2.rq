@@ -1,0 +1,28 @@
+# local_query_2.rq
+# Playas con Bandeira Azul que tienen enlace a Wikidata
+# Punto de partida para las consultas federadas
+
+PREFIX gamere: <http://example.org/def/gamere#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+
+SELECT ?nombre ?concello ?provincia ?lat ?lon ?wikidata WHERE {
+    ?praia rdf:type gamere:Praia .
+    ?praia gamere:banderaAzul true .
+    ?praia gamere:nomePraia ?nombre .
+    ?praia owl:sameAs ?wikidata .
+    FILTER(STRSTARTS(STR(?wikidata), "http://www.wikidata.org"))
+    OPTIONAL {
+        ?praia gamere:situadaEn ?conc .
+        ?conc gamere:nameConcello ?concello .
+        ?conc gamere:perteneceA ?prov .
+        ?prov gamere:nameProvincia ?provincia .
+    }
+    OPTIONAL {
+        ?praia gamere:estaEn ?ub .
+        ?ub gamere:coordenadasX ?lat ;
+            gamere:coordenadasY ?lon .
+    }
+}
+ORDER BY ?provincia ?concello ?nombre

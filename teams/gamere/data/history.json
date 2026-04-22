@@ -1,0 +1,1684 @@
+[
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2276925",
+        "name": "municipality of Galicia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PROVINCIA to type Q2276925"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "Pontevedra",
+    "judgment": "matched",
+    "match": {
+      "id": "Q95086",
+      "name": "Pontevedra Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pontevedra Province (Q95086) para las celdas que contienen \"Pontevedra\" en la columna PROVINCIA"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONCELLO",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q2276925",
+        "name": "municipality of Galicia"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column CONCELLO to type Q2276925"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata.reconci.link/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q28060923",
+        "name": "white sand beach"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "description": "Reconcile cells in column PRAIA to type Q28060923"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area Grande de Suevos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121617",
+      "name": "Suevos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Suevos (Q28121617) para las celdas que contienen \"Area Grande de Suevos\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area Grande ou Valcovo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24024572",
+      "name": "Playa Valcovo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa Valcovo (Q24024572) para las celdas que contienen \"Area Grande ou Valcovo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Areal das Combouzas ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25509130",
+      "name": "Combouzas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Combouzas (Q25509130) para las celdas que contienen \"Areal das Combouzas \" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Areal de Barrañán",
+    "judgment": "matched",
+    "match": {
+      "id": "Q25509129",
+      "name": "Barrañán",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barrañán (Q25509129) para las celdas que contienen \"Areal de Barrañán\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Baldaio-Saíñas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24003099",
+      "name": "Baldaio beach",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Baldaio beach (Q24003099) para las celdas que contienen \"Baldaio-Saíñas\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Razo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121665",
+      "name": "Razo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Razo (Q28121665) para las celdas que contienen \"Razo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Pedra do Sal",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121663",
+      "name": "Pedra do Sal",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pedra do Sal (Q28121663) para las celdas que contienen \"Pedra do Sal\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "As Lapas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18576114",
+      "name": "Beach of As Lapas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of As Lapas (Q18576114) para las celdas que contienen \"As Lapas\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Oza",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398085",
+      "name": "Playa de Oza",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa de Oza (Q12398085) para las celdas que contienen \"Oza\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Riazor",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3399382",
+      "name": "Praia de Riazor",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Praia de Riazor (Q3399382) para las celdas que contienen \"Riazor\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Orzán-Matadero",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28120009",
+      "name": "Matadero",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Matadero (Q28120009) para las celdas que contienen \"Orzán-Matadero\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "San Amaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4806535",
+      "name": "Playa San Amaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa San Amaro (Q4806535) para las celdas que contienen \"San Amaro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Orzán-Matadero",
+    "judgment": "matched",
+    "match": {
+      "id": "Q18576276",
+      "name": "Playa del Matadero",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa del Matadero (Q18576276) para las celdas que contienen \"Orzán-Matadero\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "San Amaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20546375",
+      "name": "Beach of Santo Amaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Santo Amaro (Q20546375) para las celdas que contienen \"San Amaro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "O Ézaro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121828",
+      "name": "Ézaro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ézaro (Q28121828) para las celdas que contienen \"O Ézaro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Caranza",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121455",
+      "name": "Caranza",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Caranza (Q28121455) para las celdas que contienen \"Caranza\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "A Fragata",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121841",
+      "name": "Fragata",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Fragata (Q28121841) para las celdas que contienen \"A Fragata\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Doniños",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121846",
+      "name": "Doniños",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Doniños (Q28121846) para las celdas que contienen \"Doniños\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Esmelle",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121842",
+      "name": "Esmelle",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Esmelle (Q28121842) para las celdas que contienen \"Esmelle\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "San Xurxo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121843",
+      "name": "San Xurxo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento San Xurxo (Q28121843) para las celdas que contienen \"San Xurxo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Caión-Salseiras",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121860",
+      "name": "Salseira de Caracoleiro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Salseira de Caracoleiro (Q28121860) para las celdas que contienen \"Caión-Salseiras\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area Maior",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121685",
+      "name": "Maior de Malpica",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Maior de Malpica (Q28121685) para las celdas que contienen \"Area Maior\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Perbes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121893",
+      "name": "Perbes",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Perbes (Q28121893) para las celdas que contienen \"Perbes\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Espiñeiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119741",
+      "name": "Espiñeiro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Espiñeiro (Q28119741) para las celdas que contienen \"Espiñeiro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "San Francisco",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121907",
+      "name": "San Francisco",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento San Francisco (Q28121907) para las celdas que contienen \"San Francisco\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Espiñeiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121966",
+      "name": "Q28121966",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Q28121966 (Q28121966) para las celdas que contienen \"Espiñeiro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "A Ribeira",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28121898",
+      "name": "Pequeña de Miño",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Pequeña de Miño (Q28121898) para las celdas que contienen \"A Ribeira\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Bastiagueiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398074",
+      "name": "Beach of Bastiagueiro",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Bastiagueiro (Q12398074) para las celdas que contienen \"Bastiagueiro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Mera",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398083",
+      "name": "Mera",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Mera (Q12398083) para las celdas que contienen \"Mera\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Balarés",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122018",
+      "name": "Balarés",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Balarés (Q28122018) para las celdas que contienen \"Balarés\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Ermida",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122017",
+      "name": "Ermida",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ermida (Q28122017) para las celdas que contienen \"Ermida\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Santa Cristina",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398093",
+      "name": "Beach of Santa Cristina",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Santa Cristina (Q12398093) para las celdas que contienen \"Santa Cristina\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Osmo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122016",
+      "name": "Osmo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Osmo (Q28122016) para las celdas que contienen \"Osmo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Fontela-Balea",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122189",
+      "name": "Fontela",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Fontela (Q28122189) para las celdas que contienen \"Fontela-Balea\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "O Portelo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119618",
+      "name": "Portelo",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Portelo (Q28119618) para las celdas que contienen \"O Portelo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "As Polas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122206",
+      "name": "Area da Fame",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Area da Fame (Q28122206) para las celdas que contienen \"As Polas\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "A Praia das Catedrais",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2561808",
+      "name": "As Catedrais beach",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento As Catedrais beach (Q2561808) para las celdas que contienen \"A Praia das Catedrais\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Os Castros-Illas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122005",
+      "name": "Os Castros",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Os Castros (Q28122005) para las celdas que contienen \"Os Castros-Illas\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6078571",
+      "name": "Beach of Area",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Area (Q6078571) para las celdas que contienen \"Area\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Esteiro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28122238",
+      "name": "Beach of Esteiro, Xuances",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Esteiro, Xuances (Q28122238) para las celdas que contienen \"Esteiro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area Grande",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28120073",
+      "name": "Area Grande",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Area Grande (Q28120073) para las celdas que contienen \"Area Grande\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Area de Secada",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398070",
+      "name": "Area da Secada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Area da Secada (Q12398070) para las celdas que contienen \"Area de Secada\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Os Frades ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20543521",
+      "name": "Os Frades",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Os Frades (Q20543521) para las celdas que contienen \"Os Frades \" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Barbeira",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20543479",
+      "name": "Barbeira",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Barbeira (Q20543479) para las celdas que contienen \"Barbeira\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Portomaior",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119828",
+      "name": "Portomaior",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Portomaior (Q28119828) para las celdas que contienen \"Portomaior\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Bao (Camaxe)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119833",
+      "name": "Camaxe",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Camaxe (Q28119833) para las celdas que contienen \"Bao (Camaxe)\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Aguete",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119934",
+      "name": "Aguete Beach",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Aguete Beach (Q28119934) para las celdas que contienen \"Aguete\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Santa Marta",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20543497",
+      "name": "Playa Marta",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa Marta (Q20543497) para las celdas que contienen \"Santa Marta\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Portocelo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119932",
+      "name": "Portocelo Beach",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Portocelo Beach (Q28119932) para las celdas que contienen \"Portocelo\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Santo do Mar-A Coviña",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28116185",
+      "name": "A Coviña",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento A Coviña (Q28116185) para las celdas que contienen \"Santo do Mar-A Coviña\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Caneliñas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12398075",
+      "name": "Caneliñas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Caneliñas (Q12398075) para las celdas que contienen \"Caneliñas\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "De Agra",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119911",
+      "name": "Agra",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Agra (Q28119911) para las celdas que contienen \"De Agra\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Canido",
+    "judgment": "matched",
+    "match": {
+      "id": "Q24003868",
+      "name": "Praia Canido",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Praia Canido (Q24003868) para las celdas que contienen \"Canido\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Major",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119893",
+      "name": "Major",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Major (Q28119893) para las celdas que contienen \"Major\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Carril ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6078653",
+      "name": "Praia de Carril",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Praia de Carril (Q6078653) para las celdas que contienen \"Carril \" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Panadeira",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6078544",
+      "name": "Q6078544",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Q6078544 (Q6078544) para las celdas que contienen \"Panadeira\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Argazada",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119389",
+      "name": "De Argazada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento De Argazada (Q28119389) para las celdas que contienen \"Argazada\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "O Vao",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6448405",
+      "name": "Beach of Vao",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Beach of Vao (Q6448405) para las celdas que contienen \"O Vao\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Tombo do Gato",
+    "judgment": "matched",
+    "match": {
+      "id": "Q65897252",
+      "name": "Q65897252",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Q65897252 (Q65897252) para las celdas que contienen \"Tombo do Gato\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Os Muíños - Fortiñón",
+    "judgment": "matched",
+    "match": {
+      "id": "Q23994789",
+      "name": "Os Muiños",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Os Muiños (Q23994789) para las celdas que contienen \"Os Muíños - Fortiñón\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "O Adro",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119383",
+      "name": "Bouzas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Bouzas (Q28119383) para las celdas que contienen \"O Adro\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Rodas (Illas Cíes)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q23993081",
+      "name": "Playa de Rodas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Playa de Rodas (Q23993081) para las celdas que contienen \"Rodas (Illas Cíes)\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Santa Baia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q66547532",
+      "name": "Q66547532",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Q66547532 (Q66547532) para las celdas que contienen \"Santa Baia\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "O Mende",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119361",
+      "name": "Mende",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Mende (Q28119361) para las celdas que contienen \"O Mende\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Fontaíña (A Sirenita)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28120018",
+      "name": "Q28120018",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Q28120018 (Q28120018) para las celdas que contienen \"Fontaíña (A Sirenita)\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Foxos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119890",
+      "name": "Foxos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Foxos (Q28119890) para las celdas que contienen \"Foxos\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Espiñeira",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20548158",
+      "name": "A Lanzada",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento A Lanzada (Q20548158) para las celdas que contienen \"Espiñeira\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Foxos",
+    "judgment": "matched",
+    "match": {
+      "id": "Q28119890",
+      "name": "Foxos",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Foxos (Q28119890) para las celdas que contienen \"Foxos\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Praia fluvial da Calzada",
+    "judgment": "matched",
+    "match": {
+      "id": "Q12397853",
+      "name": "Ponte Caldelas",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Ponte Caldelas (Q12397853) para las celdas que contienen \"Praia fluvial da Calzada\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Lagoa das Pontes",
+    "judgment": "matched",
+    "match": {
+      "id": "Q4802948",
+      "name": "As Pontes Lake",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento As Pontes Lake (Q4802948) para las celdas que contienen \"Lagoa das Pontes\" en la columna PRAIA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PRAIA",
+    "similarValue": "Porto Naval",
+    "judgment": "matched",
+    "match": {
+      "id": "Q20545069",
+      "name": "A Aguieira",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento A Aguieira (Q20545069) para las celdas que contienen \"Porto Naval\" en la columna PRAIA"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONXITUDE",
+    "expression": "grel:value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LONXITUDE usando la expresión grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONXITUDE",
+    "expression": "grel:value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Transforma el texto de las celdas en la columna LONXITUDE usando la expresión grel:value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COORDENADAS",
+    "expression": "grel:value.split(\",\")[1]",
+    "onError": "set-to-blank",
+    "newColumnName": "Coordenada Y",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna Coordenada Y en el índice 10 basada en la columna COORDENADAS usando la expresión grel:value.split(\",\")[1]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "COORDENADAS",
+    "expression": "grel:value.split(\",\")[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "Coordenada X",
+    "columnInsertIndex": 10,
+    "description": "Crear la columna Coordenada X en el índice 10 basada en la columna COORDENADAS usando la expresión grel:value.split(\",\")[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_provincia",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna wikidata_provincia en el índice 1 basada en la columna PROVINCIA usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CONCELLO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_concello",
+    "columnInsertIndex": 4,
+    "description": "Crear la columna wikidata_concello en el índice 4 basada en la columna CONCELLO usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PRAIA",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_praia",
+    "columnInsertIndex": 7,
+    "description": "Crear la columna wikidata_praia en el índice 7 basada en la columna PRAIA usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "Coruña, A",
+    "judgment": "matched",
+    "match": {
+      "id": "Q82119",
+      "name": "A Coruña Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento A Coruña Province (Q82119) para las celdas que contienen \"Coruña, A\" en la columna PROVINCIA"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "W_PROvinciaa",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna W_PROvinciaa en el índice 1 basada en la columna PROVINCIA usando la expresión grel:cell.recon.match.id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wikidata_provincia",
+    "description": "Eliminar columna wikidata_provincia"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "W_PROvinciaa",
+    "newColumnName": "wikidata_provincia",
+    "description": "Renombra la columna W_PROvinciaa a wikidata_provincia"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "Lugo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q95027",
+      "name": "Lugo Province",
+      "types": [
+        ""
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Emparejar el elemento Lugo Province (Q95027) para las celdas que contienen \"Lugo\" en la columna PROVINCIA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "wikidata_provincia",
+    "description": "Eliminar columna wikidata_provincia"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "PROVINCIA",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank",
+    "newColumnName": "wikidata_provincia",
+    "columnInsertIndex": 1,
+    "description": "Crear la columna wikidata_provincia en el índice 1 basada en la columna PROVINCIA usando la expresión grel:cell.recon.match.id"
+  }
+]

@@ -1,0 +1,46 @@
+# federated_query_2.rq
+# Consulta federada: concellos del KG local enriquecidos con población y
+# superficie desde Wikidata
+#
+# Útil para análisis de densidad de PDIs por habitante o km²
+
+PREFIX gamere:   <http://example.org/def/gamere#>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX wdt:      <http://www.wikidata.org/prop/direct/>
+
+SELECT ?concello ?provincia ?num_pdi ?poblacion ?superficie
+       (?num_pdi / ?poblacion * 1000 AS ?pdi_por_1000hab) WHERE {
+
+    # -- KG local: contar PDIs por concello --
+    {
+        SELECT ?conc (COUNT(?pdi) AS ?num_pdi) WHERE {
+            ?pdi rdf:type ?clase .
+            ?clase rdfs:subClassOf* gamere:PuntoDeInteres .
+            ?pdi gamere:situadaEn ?conc .
+        }
+        GROUP BY ?conc
+    }
+
+    ?conc gamere:nameConcello ?concello .
+    ?conc owl:sameAs ?wikidata .
+    FILTER(STRSTARTS(STR(?wikidata), "http://www.wikidata.org"))
+
+    OPTIONAL {
+        ?conc gamere:perteneceA ?prov .
+        ?prov gamere:nameProvincia ?provincia .
+    }
+
+    BIND(IRI(?wikidata) AS ?item)
+
+    # -- Wikidata (federado) --
+    SERVICE <https://query.wikidata.org/sparql> {
+        OPTIONAL { ?item wdt:P1082 ?poblacion }
+        OPTIONAL { ?item wdt:P2046 ?superficie }
+    }
+
+    FILTER(BOUND(?poblacion) && ?poblacion > 0)
+}
+ORDER BY DESC(?pdi_por_1000hab)
+LIMIT 30
