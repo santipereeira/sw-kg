@@ -1,0 +1,54 @@
+# federated_query_1.rq
+# Consulta federada: enriquece las playas del KG local con datos de Wikidata
+#
+# Parte del KG local: nombre, concello, provincia, URI Wikidata
+# Parte de Wikidata:  longitud oficial (P2043), imagen (P18), etiqueta en gallego
+#
+# Para ejecutar contra un endpoint SPARQL que tenga el KG cargado (ej. Fuseki):
+#   sparql --service http://localhost:3030/galicia/query --query federated_query_1.rq
+#
+# Para ejecutar desde Python con SPARQLWrapper, ver src/federated_wikidata.py
+
+PREFIX gamere: <http://example.org/def/gamere#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX wd:     <http://www.wikidata.org/entity/>
+PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd:     <http://www.bigdata.com/rdf#>
+
+SELECT ?nombre ?concello ?provincia ?lat ?lon
+       ?nombre_gl ?longitud_wd ?imagen WHERE {
+
+    # -- KG local --
+    ?praia rdf:type gamere:Praia .
+    ?praia gamere:banderaAzul true .
+    ?praia gamere:nomePraia ?nombre .
+    ?praia owl:sameAs ?wikidata .
+    FILTER(STRSTARTS(STR(?wikidata), "http://www.wikidata.org"))
+
+    OPTIONAL {
+        ?praia gamere:situadaEn ?conc .
+        ?conc gamere:nameConcello ?concello .
+        ?conc gamere:perteneceA ?prov .
+        ?prov gamere:nameProvincia ?provincia .
+    }
+    OPTIONAL {
+        ?praia gamere:estaEn ?ub .
+        ?ub gamere:coordenadasX ?lat ;
+            gamere:coordenadasY ?lon .
+    }
+
+    # -- Wikidata (federado) --
+    BIND(IRI(?wikidata) AS ?item)
+    SERVICE <https://query.wikidata.org/sparql> {
+        OPTIONAL { ?item wdt:P2043 ?longitud_wd }
+        OPTIONAL { ?item wdt:P18   ?imagen }
+        OPTIONAL {
+            ?item rdfs:label ?nombre_gl .
+            FILTER(LANG(?nombre_gl) = "gl")
+        }
+    }
+}
+ORDER BY ?provincia ?concello ?nombre
