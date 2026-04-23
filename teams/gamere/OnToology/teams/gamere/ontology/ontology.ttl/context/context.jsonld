@@ -1,0 +1,95 @@
+{
+  "@context" : {
+    "estaEn" : {
+      "@id" : "http://example.org/def/gamere#estaEn",
+      "@type" : "@id"
+    },
+    "tipoArena" : {
+      "@id" : "http://example.org/def/gamere#tipoArena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "nameProvincia" : {
+      "@id" : "http://example.org/def/gamere#nameProvincia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coordenadasY" : {
+      "@id" : "http://example.org/def/gamere#coordenadasY",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "url" : {
+      "@id" : "http://example.org/def/gamere#url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "coordenadasX" : {
+      "@id" : "http://example.org/def/gamere#coordenadasX",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "lonxitude" : {
+      "@id" : "http://example.org/def/gamere#lonxitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "nameConcello" : {
+      "@id" : "http://example.org/def/gamere#nameConcello",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "nomePraia" : {
+      "@id" : "http://example.org/def/gamere#nomePraia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Provincia" : {
+      "@id" : "http://example.org/def/gamere#Provincia"
+    },
+    "Ubicacion" : {
+      "@id" : "http://example.org/def/gamere#Ubicacion"
+    },
+    "descripcion" : {
+      "@id" : "http://example.org/def/gamere#descripcion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "perteneceA" : {
+      "@id" : "http://example.org/def/gamere#perteneceA",
+      "@type" : "@id"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "situadaEn" : {
+      "@id" : "http://example.org/def/gamere#situadaEn",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "codigoConcello" : {
+      "@id" : "http://example.org/def/gamere#codigoConcello",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Praia" : {
+      "@id" : "http://example.org/def/gamere#Praia"
+    },
+    "codigoProvincia" : {
+      "@id" : "http://example.org/def/gamere#codigoProvincia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Concello" : {
+      "@id" : "http://example.org/def/gamere#Concello"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "entorno" : {
+      "@id" : "http://example.org/def/gamere#entorno",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

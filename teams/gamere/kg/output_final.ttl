@@ -1,0 +1,1730 @@
+@prefix ns1: <http://example.org/def/gamere#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/resource/praia/15008_Gandar%C3%ADo> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.342715_-8.2424927> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "Gandarío" ;
+    ns1:situadaEn <http://example.org/resource/concello/15008> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10120"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24003799> .
+
+<http://example.org/resource/praia/15016_Arou> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.18472300_-9.10500000> ;
+    ns1:lonxitude 400 ;
+    ns1:nomePraia "Arou" ;
+    ns1:situadaEn <http://example.org/resource/concello/15016> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/10290/arou"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121645> .
+
+<http://example.org/resource/praia/15019_Baldaio%20beach> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.298027_-8.680305> ;
+    ns1:lonxitude 3600 ;
+    ns1:nomePraia "Baldaio beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/15019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=268649359"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24003099> .
+
+<http://example.org/resource/praia/15019_Pedra%20do%20Sal> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.301889_-8.658278> ;
+    ns1:lonxitude 3600 ;
+    ns1:nomePraia "Pedra do Sal" ;
+    ns1:situadaEn <http://example.org/resource/concello/15019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=268882051"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121663> .
+
+<http://example.org/resource/praia/15019_Razo> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.28969600_-8.70877800> ;
+    ns1:lonxitude 1300 ;
+    ns1:nomePraia "Razo" ;
+    ns1:situadaEn <http://example.org/resource/concello/15019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/9863"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121665> .
+
+<http://example.org/resource/praia/15030_Beach%20of%20As%20Lapas> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.383666_-8.40575> ;
+    ns1:lonxitude 70 ;
+    ns1:nomePraia "Beach of As Lapas" ;
+    ns1:situadaEn <http://example.org/resource/concello/15030> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11435"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q18576114> .
+
+<http://example.org/resource/praia/15030_Beach%20of%20Santo%20Amaro> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.381833_-8.397055> ;
+    ns1:lonxitude 210 ;
+    ns1:nomePraia "Beach of Santo Amaro" ;
+    ns1:situadaEn <http://example.org/resource/concello/15030> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9855"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20546375> .
+
+<http://example.org/resource/praia/15030_Playa%20de%20Oza> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.34675000_-8.38308300> ;
+    ns1:lonxitude 110 ;
+    ns1:nomePraia "Playa de Oza" ;
+    ns1:situadaEn <http://example.org/resource/concello/15030> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=30564"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398085> .
+
+<http://example.org/resource/praia/15030_Playa%20del%20Matadero> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.371055_-8.404972> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Playa del Matadero" ;
+    ns1:situadaEn <http://example.org/resource/concello/15030> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9856"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q18576276> .
+
+<http://example.org/resource/praia/15030_Praia%20de%20Riazor> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.368472_-8.411639> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Praia de Riazor" ;
+    ns1:situadaEn <http://example.org/resource/concello/15030> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9857"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q3399382> .
+
+<http://example.org/resource/praia/15034_%C3%89zaro> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.908278_-9.129083> ;
+    ns1:lonxitude 730 ;
+    ns1:nomePraia "Ézaro" ;
+    ns1:situadaEn <http://example.org/resource/concello/15034> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11460"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121828> .
+
+<http://example.org/resource/praia/15041_Salseira%20de%20Caracoleiro> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.315639_-8.610333> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "Salseira de Caracoleiro" ;
+    ns1:situadaEn <http://example.org/resource/concello/15041> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11438"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121860> .
+
+<http://example.org/resource/praia/15058_A%20Aguieira> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.353389_-8.346555> ;
+    ns1:lonxitude 180 ;
+    ns1:nomePraia "A Aguieira" ;
+    ns1:situadaEn <http://example.org/resource/concello/15058> ;
+    ns1:tipoArena "Cantos rodados" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11434"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20545069> .
+
+<http://example.org/resource/praia/15058_Beach%20of%20Bastiagueiro> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.340722_-8.362361> ;
+    ns1:lonxitude 580 ;
+    ns1:nomePraia "Beach of Bastiagueiro" ;
+    ns1:situadaEn <http://example.org/resource/concello/15058> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10258"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398074> .
+
+<http://example.org/resource/praia/15058_Beach%20of%20Santa%20Cristina> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.339777_-8.380083> ;
+    ns1:lonxitude 1800 ;
+    ns1:nomePraia "Beach of Santa Cristina" ;
+    ns1:situadaEn <http://example.org/resource/concello/15058> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9877"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398093> .
+
+<http://example.org/resource/praia/15058_Mera> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.379055_-8.33775> ;
+    ns1:lonxitude 200 ;
+    ns1:nomePraia "Mera" ;
+    ns1:situadaEn <http://example.org/resource/concello/15058> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10254"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398083> .
+
+<http://example.org/resource/praia/15058_Q28121966> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.382777_-8.3425> ;
+    ns1:lonxitude 310 ;
+    ns1:nomePraia "Q28121966" ;
+    ns1:situadaEn <http://example.org/resource/concello/15058> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=265406054"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121966> .
+
+<http://example.org/resource/praia/15068_Balar%C3%A9s> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.24166500_-8.94527700> ;
+    ns1:lonxitude 350 ;
+    ns1:nomePraia "Balarés" ;
+    ns1:situadaEn <http://example.org/resource/concello/15068> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/11448/balares"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122018> .
+
+<http://example.org/resource/praia/15068_Ermida> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.26389000_-8.95000000> ;
+    ns1:lonxitude 200 ;
+    ns1:nomePraia "Ermida" ;
+    ns1:situadaEn <http://example.org/resource/concello/15068> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/10286/ermida"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122017> .
+
+<http://example.org/resource/praia/15068_Osmo> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.29416700_-8.90277800> ;
+    ns1:lonxitude 150 ;
+    ns1:nomePraia "Osmo" ;
+    ns1:situadaEn <http://example.org/resource/concello/15068> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/10284/osmo"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122016> .
+
+<http://example.org/resource/praia/15113_Maior%20de%20Malpica> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.32331266438123_-8.815276501138147> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "Maior de Malpica" ;
+    ns1:situadaEn <http://example.org/resource/concello/15113> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/11447/area-maior"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121685> .
+
+<http://example.org/resource/praia/15117_Laxe> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.217206_-9.0029587> ;
+    ns1:lonxitude 1320 ;
+    ns1:nomePraia "Laxe" ;
+    ns1:situadaEn <http://example.org/resource/concello/15117> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9867"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121874> .
+
+<http://example.org/resource/praia/15143_A%20Salsa> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.320555_-8.525277> ;
+    ns1:lonxitude 20 ;
+    ns1:nomePraia "A Salsa" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Cantos rodados" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=268679921"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121438> .
+
+<http://example.org/resource/praia/15143_Barra%C3%B1%C3%A1n> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.311556_-8.552> ;
+    ns1:lonxitude 1200 ;
+    ns1:nomePraia "Barrañán" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9861"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q25509129> .
+
+<http://example.org/resource/praia/15143_Combouzas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.312667_-8.544277> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Combouzas" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10269"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q25509130> .
+
+<http://example.org/resource/praia/15143_Playa%20Valcovo> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.315444_-8.533555> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Playa Valcovo" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10268"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24024572> .
+
+<http://example.org/resource/praia/15143_Sab%C3%B3n> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.327694_-8.508833> ;
+    ns1:lonxitude 900 ;
+    ns1:nomePraia "Sabón" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9859"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24003520> .
+
+<http://example.org/resource/praia/15143_Suevos> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.35271_-8.48791> ;
+    ns1:lonxitude 20 ;
+    ns1:nomePraia "Suevos" ;
+    ns1:situadaEn <http://example.org/resource/concello/15143> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/268643064/area-grande-suevos"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121617> .
+
+<http://example.org/resource/praia/15250_San%20Francisco> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.759113863184346_-9.073862845516617> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "San Francisco" ;
+    ns1:situadaEn <http://example.org/resource/concello/15250> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10128"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121907> .
+
+<http://example.org/resource/praia/15320_As%20Pontes%20Lake> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.454911751447035_-7.870142559382717> ;
+    ns1:lonxitude 400 ;
+    ns1:nomePraia "As Pontes Lake" ;
+    ns1:situadaEn <http://example.org/resource/concello/15320> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/220620000208/praia-do-lago-das-pontes"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q4802948> .
+
+<http://example.org/resource/praia/15406_Caranza> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.47703822412904_-8.202436910976175> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Caranza" ;
+    ns1:situadaEn <http://example.org/resource/concello/15406> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/10225/caranza"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121455> .
+
+<http://example.org/resource/praia/15406_Doni%C3%B1os> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.495916_-8.319194> ;
+    ns1:lonxitude 1700 ;
+    ns1:nomePraia "Doniños" ;
+    ns1:situadaEn <http://example.org/resource/concello/15406> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10112"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121846> .
+
+<http://example.org/resource/praia/15406_Esmelle> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.53425_-8.295527> ;
+    ns1:lonxitude 160 ;
+    ns1:nomePraia "Esmelle" ;
+    ns1:situadaEn <http://example.org/resource/concello/15406> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=265393177"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121842> .
+
+<http://example.org/resource/praia/15406_Fragata> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.5385_-8.296833> ;
+    ns1:lonxitude 160 ;
+    ns1:nomePraia "Fragata" ;
+    ns1:situadaEn <http://example.org/resource/concello/15406> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10216"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121841> .
+
+<http://example.org/resource/praia/15406_San%20Xurxo> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.526222_-8.301806> ;
+    ns1:lonxitude 2100 ;
+    ns1:nomePraia "San Xurxo" ;
+    ns1:situadaEn <http://example.org/resource/concello/15406> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10111"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121843> .
+
+<http://example.org/resource/praia/15630_Fariones%20Playa> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.35928000_-8.20944400> ;
+    ns1:lonxitude 1400 ;
+    ns1:nomePraia "Fariones Playa" ;
+    ns1:situadaEn <http://example.org/resource/concello/15630> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/10119/grande-de-mino"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24023700> .
+
+<http://example.org/resource/praia/15630_Peque%C3%B1a%20de%20Mi%C3%B1o> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.3495099999242_-8.210029371615443> ;
+    ns1:lonxitude 700 ;
+    ns1:nomePraia "Pequeña de Miño" ;
+    ns1:situadaEn <http://example.org/resource/concello/15630> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/10242/pequena-de-mino-a-ribeira"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121898> .
+
+<http://example.org/resource/praia/15630_Perbes> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.37602600_-8.21491700> ;
+    ns1:lonxitude 500 ;
+    ns1:nomePraia "Perbes" ;
+    ns1:situadaEn <http://example.org/resource/concello/15630> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso/-/detalle/10117/perbes"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121893> .
+
+<http://example.org/resource/praia/15940_Lombi%C3%B1a> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.587299056497315_-8.929797373709878> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Lombiña" ;
+    ns1:situadaEn <http://example.org/resource/concello/15940> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/9914/cabio-lombina"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28121679> .
+
+<http://example.org/resource/praia/27013_O%20Torno> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.698333_-7.438889> ;
+    ns1:lonxitude 700 ;
+    ns1:nomePraia "O Torno" ;
+    ns1:situadaEn <http://example.org/resource/concello/27013> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10174"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122231> .
+
+<http://example.org/resource/praia/27019_A%20Rapadoira> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.57202500_-7.24855500> ;
+    ns1:lonxitude 270 ;
+    ns1:nomePraia "A Rapadoira" ;
+    ns1:situadaEn <http://example.org/resource/concello/27019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=9833"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122198> .
+
+<http://example.org/resource/praia/27019_Area%20da%20Fame> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.620277_-7.318333> ;
+    ns1:lonxitude 280 ;
+    ns1:nomePraia "Area da Fame" ;
+    ns1:situadaEn <http://example.org/resource/concello/27019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10163"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122206> .
+
+<http://example.org/resource/praia/27019_Areoura> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.64000000_-7.34416600> ;
+    ns1:lonxitude 120 ;
+    ns1:nomePraia "Areoura" ;
+    ns1:situadaEn <http://example.org/resource/concello/27019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=11411"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122216> .
+
+<http://example.org/resource/praia/27019_Llas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.580277_-7.262778> ;
+    ns1:lonxitude 760 ;
+    ns1:nomePraia "Llas" ;
+    ns1:situadaEn <http://example.org/resource/concello/27019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9836"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q9060688> .
+
+<http://example.org/resource/praia/27019_Peiz%C3%A1s> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.5875_-7.27861> ;
+    ns1:lonxitude 540 ;
+    ns1:nomePraia "Peizás" ;
+    ns1:situadaEn <http://example.org/resource/concello/27019> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10161"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122200> .
+
+<http://example.org/resource/praia/27025_Beach%20of%20Esteiro%2C%20Xuances> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.711944_-7.559139> ;
+    ns1:lonxitude 400 ;
+    ns1:nomePraia "Beach of Esteiro, Xuances" ;
+    ns1:situadaEn <http://example.org/resource/concello/27025> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10148"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122238> .
+
+<http://example.org/resource/praia/27051_As%20Catedrais%20beach> a ns1:Praia ;
+    ns1:entorno "Monumento Natural: 28,94 ha, das cales 20 ha son augas mariñas. LIC: 304,36 ha" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.554221_-7.155308> ;
+    ns1:nomePraia "As Catedrais beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/27051> ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=32008"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q2561808> .
+
+<http://example.org/resource/praia/27051_Os%20Castros> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.55534_-7.132955> ;
+    ns1:lonxitude 500 ;
+    ns1:nomePraia "Os Castros" ;
+    ns1:situadaEn <http://example.org/resource/concello/27051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9823"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122005> .
+
+<http://example.org/resource/praia/27064_Abrela> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.701822_-7.612778> ;
+    ns1:lonxitude 950 ;
+    ns1:nomePraia "Abrela" ;
+    ns1:situadaEn <http://example.org/resource/concello/27064> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/9853"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122144> .
+
+<http://example.org/resource/praia/27064_Xilloi> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.743777_-7.650277> ;
+    ns1:lonxitude 940 ;
+    ns1:nomePraia "Xilloi" ;
+    ns1:situadaEn <http://example.org/resource/concello/27064> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9852"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122158> .
+
+<http://example.org/resource/praia/27066_Beach%20of%20Area> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.694166_-7.57611> ;
+    ns1:lonxitude 1200 ;
+    ns1:nomePraia "Beach of Area" ;
+    ns1:situadaEn <http://example.org/resource/concello/27066> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10146"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078571> .
+
+<http://example.org/resource/praia/27792_Fontela> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.56172_-7.20108> ;
+    ns1:lonxitude 700 ;
+    ns1:nomePraia "Fontela" ;
+    ns1:situadaEn <http://example.org/resource/concello/27792> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/9830/fontela-balea"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122189> .
+
+<http://example.org/resource/praia/27792_San%20Pedro> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.564465_-7.2200447> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "San Pedro" ;
+    ns1:situadaEn <http://example.org/resource/concello/27792> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10157"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122190> .
+
+<http://example.org/resource/praia/27902_Marosa> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.67486_-7.372333> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Marosa" ;
+    ns1:situadaEn <http://example.org/resource/concello/27902> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9841"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122225> .
+
+<http://example.org/resource/praia/27902_Portelo> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/43.664399_-7.3592247> ;
+    ns1:lonxitude 700 ;
+    ns1:nomePraia "Portelo" ;
+    ns1:situadaEn <http://example.org/resource/concello/27902> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10169"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119618> .
+
+<http://example.org/resource/praia/36004_Area%20de%20Bon> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.314361_-8.818888> ;
+    ns1:lonxitude 1000 ;
+    ns1:nomePraia "Area de Bon" ;
+    ns1:situadaEn <http://example.org/resource/concello/36004> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10464"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119957> .
+
+<http://example.org/resource/praia/36004_Lagos> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.324508_-8.825548> ;
+    ns1:lonxitude 250 ;
+    ns1:nomePraia "Lagos" ;
+    ns1:situadaEn <http://example.org/resource/concello/36004> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10135"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119956> .
+
+<http://example.org/resource/praia/36004_Lapam%C3%A1n%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.341944_-8.7525> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "Lapamán Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36004> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11370"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q9060675> .
+
+<http://example.org/resource/praia/36004_Portomaior> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.334527_-8.768388> ;
+    ns1:lonxitude 750 ;
+    ns1:nomePraia "Portomaior" ;
+    ns1:situadaEn <http://example.org/resource/concello/36004> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10132"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119828> .
+
+<http://example.org/resource/praia/36023_Area%20Grande> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/41.91025_-8.876166> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Area Grande" ;
+    ns1:situadaEn <http://example.org/resource/concello/36023> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10526"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28120073> .
+
+<http://example.org/resource/praia/36023_O%20Mu%C3%AD%C3%B1o> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/41.876444_-8.862944> ;
+    ns1:lonxitude 2000 ;
+    ns1:nomePraia "O Muíño" ;
+    ns1:situadaEn <http://example.org/resource/concello/36023> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10529"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28120087> .
+
+<http://example.org/resource/praia/36026_A%20Covi%C3%B1a> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.348889_-8.751444> ;
+    ns1:lonxitude 350 ;
+    ns1:nomePraia "A Coviña" ;
+    ns1:situadaEn <http://example.org/resource/concello/36026> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10454"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28116185> .
+
+<http://example.org/resource/praia/36026_Aguete%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.37386_-8.731472> ;
+    ns1:lonxitude 920 ;
+    ns1:nomePraia "Aguete Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36026> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10140"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119934> .
+
+<http://example.org/resource/praia/36026_Mogor> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.385972_-8.719416> ;
+    ns1:lonxitude 400 ;
+    ns1:nomePraia "Mogor" ;
+    ns1:situadaEn <http://example.org/resource/concello/36026> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10139"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119933> .
+
+<http://example.org/resource/praia/36026_Portocelo%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.390027_-8.71425> ;
+    ns1:lonxitude 225 ;
+    ns1:nomePraia "Portocelo Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36026> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10138"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119932> .
+
+<http://example.org/resource/praia/36029_O%20Con> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.271083_-8.740527> ;
+    ns1:lonxitude 150 ;
+    ns1:nomePraia "O Con" ;
+    ns1:situadaEn <http://example.org/resource/concello/36029> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10143"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122317> .
+
+<http://example.org/resource/praia/36043_Ponte%20Caldelas> a ns1:Praia ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.39131_-8.491745> ;
+    ns1:nomePraia "Ponte Caldelas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36043> ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=210518000500"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12397853> .
+
+<http://example.org/resource/praia/36051_A%20Lanzada> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.43871_-8.87178> ;
+    ns1:lonxitude 150 ;
+    ns1:nomePraia "A Lanzada" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11362"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20548158> .
+
+<http://example.org/resource/praia/36051_Agra> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.394619_-8.7702212> ;
+    ns1:lonxitude 260 ;
+    ns1:nomePraia "Agra" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9771"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119911> .
+
+<http://example.org/resource/praia/36051_Areas%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.39463800_-8.77880500> ;
+    ns1:lonxitude 350 ;
+    ns1:nomePraia "Areas Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=9767"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078573> .
+
+<http://example.org/resource/praia/36051_Areas%20Gordas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.430972_-8.87261> ;
+    ns1:lonxitude 250 ;
+    ns1:nomePraia "Areas Gordas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9746"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24023257> .
+
+<http://example.org/resource/praia/36051_Bascuas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.404139_-8.858139> ;
+    ns1:lonxitude 210 ;
+    ns1:nomePraia "Bascuas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9750"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078602> .
+
+<http://example.org/resource/praia/36051_Beach%20of%20A%20Lanzada> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.441258_-8.872075> ;
+    ns1:lonxitude 2300 ;
+    ns1:nomePraia "Beach of A Lanzada" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9739"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q3398218> .
+
+<http://example.org/resource/praia/36051_Canelas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.389972_-8.831833> ;
+    ns1:lonxitude 400 ;
+    ns1:nomePraia "Canelas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9754"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119873> .
+
+<http://example.org/resource/praia/36051_Caneli%C3%B1as> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.39186000_-8.82586000> ;
+    ns1:lonxitude 100 ;
+    ns1:nomePraia "Caneliñas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/recurso?cod_rec=9755"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398075> .
+
+<http://example.org/resource/praia/36051_Foxos> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.427138_-8.873694> ;
+    ns1:lonxitude 350 ;
+    ns1:nomePraia "Foxos" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9748"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119890> .
+
+<http://example.org/resource/praia/36051_Lapa> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.434313_-8.8722694> ;
+    ns1:lonxitude 250 ;
+    ns1:nomePraia "Lapa" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9743"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119886> .
+
+<http://example.org/resource/praia/36051_Major> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.413694_-8.866583> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Major" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9749"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119893> .
+
+<http://example.org/resource/praia/36051_Montalvo%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.398944_-8.848194> ;
+    ns1:lonxitude 900 ;
+    ns1:nomePraia "Montalvo Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9751"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078910> .
+
+<http://example.org/resource/praia/36051_Paxari%C3%B1as> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.391639_-8.844083> ;
+    ns1:lonxitude 100 ;
+    ns1:nomePraia "Paxariñas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9753"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398088> .
+
+<http://example.org/resource/praia/36051_Playa%20del%20Silgar> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.401472_-8.812917> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Playa del Silgar" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9757"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24019722> .
+
+<http://example.org/resource/praia/36051_Portonovo> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.398722_-8.822555> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Portonovo" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9778"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078596> .
+
+<http://example.org/resource/praia/36051_Pragueira> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.409472_-8.862528> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Pragueira" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10450"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119894> .
+
+<http://example.org/resource/praia/36051_Q6078544> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.400663_-8.803876> ;
+    ns1:lonxitude 80 ;
+    ns1:nomePraia "Q6078544" ;
+    ns1:situadaEn <http://example.org/resource/concello/36051> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso?cod_rec=9761"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078544> .
+
+<http://example.org/resource/praia/36057_Arei%C3%B1o> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.260028_-8.697027> ;
+    ns1:lonxitude 200 ;
+    ns1:nomePraia "Areiño" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=17431"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24003844> .
+
+<http://example.org/resource/praia/36057_Beach%20of%20Vao> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.197222_-8.792166> ;
+    ns1:lonxitude 800 ;
+    ns1:nomePraia "Beach of Vao" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10126"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6448405> .
+
+<http://example.org/resource/praia/36057_Bouzas> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.22649888193796_-8.754172974181202> ;
+    ns1:lonxitude 450 ;
+    ns1:nomePraia "Bouzas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/268730720/o-adro"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119383> .
+
+<http://example.org/resource/praia/36057_De%20Argazada> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.215944_-8.776055> ;
+    ns1:lonxitude 410 ;
+    ns1:nomePraia "De Argazada" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=30565"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119389> .
+
+<http://example.org/resource/praia/36057_Mende> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.26317000_-8.68097200> ;
+    ns1:lonxitude 90 ;
+    ns1:nomePraia "Mende" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso?cod_rec=268719741"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119361> .
+
+<http://example.org/resource/praia/36057_Os%20Mui%C3%B1os> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.17461_-8.813806> ;
+    ns1:lonxitude 150 ;
+    ns1:nomePraia "Os Muiños" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10514"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q23994789> .
+
+<http://example.org/resource/praia/36057_Playa%20de%20Rodas> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.222916_-8.902917> ;
+    ns1:lonxitude 1300 ;
+    ns1:nomePraia "Playa de Rodas" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10480"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q23993081> .
+
+<http://example.org/resource/praia/36057_Praia%20Canido> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.194139_-8.796805> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Praia Canido" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10127"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24003868> .
+
+<http://example.org/resource/praia/36057_Praia%20de%20Carril> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.223296_-8.7655534> ;
+    ns1:lonxitude 600 ;
+    ns1:nomePraia "Praia de Carril" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10502"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q6078653> .
+
+<http://example.org/resource/praia/36057_Q28120018> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.199555_-8.786416> ;
+    ns1:lonxitude 280 ;
+    ns1:nomePraia "Q28120018" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10508"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28120018> .
+
+<http://example.org/resource/praia/36057_Q65897252> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.220083_-8.775749> ;
+    ns1:nomePraia "Q65897252" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=30566"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q65897252> .
+
+<http://example.org/resource/praia/36057_Q66547532> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.22312_-8.76715> ;
+    ns1:lonxitude 230 ;
+    ns1:nomePraia "Q66547532" ;
+    ns1:situadaEn <http://example.org/resource/concello/36057> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/268730992/santa-baia"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q66547532> .
+
+<http://example.org/resource/praia/36060_Bamio> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.632789_-8.7626038> ;
+    ns1:lonxitude 130 ;
+    ns1:nomePraia "Bamio" ;
+    ns1:situadaEn <http://example.org/resource/concello/36060> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=11353"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28122324> .
+
+<http://example.org/resource/praia/36060_Compostela> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.604798_-8.7695076> ;
+    ns1:lonxitude 2000 ;
+    ns1:nomePraia "Compostela" ;
+    ns1:situadaEn <http://example.org/resource/concello/36060> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10090"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q9060660> .
+
+<http://example.org/resource/praia/36300_Barbeira> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.12393_-8.84854> ;
+    ns1:lonxitude 220 ;
+    ns1:nomePraia "Barbeira" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10523"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20543479> .
+
+<http://example.org/resource/praia/36300_Concheira> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.12268_-8.85157> ;
+    ns1:lonxitude 75 ;
+    ns1:nomePraia "Concheira" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10525"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20543488> .
+
+<http://example.org/resource/praia/36300_Os%20Frades> a ns1:Praia ;
+    ns1:entorno "Praia aberta" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.12574_-8.85184> ;
+    ns1:lonxitude 80 ;
+    ns1:nomePraia "Os Frades" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10524"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20543521> .
+
+<http://example.org/resource/praia/36300_Playa%20Marta> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.11455_-8.83817> ;
+    ns1:lonxitude 250 ;
+    ns1:nomePraia "Playa Marta" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10521"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20543497> .
+
+<http://example.org/resource/praia/36300_Praia%20Ladeira> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.11245394805069_-8.83354753316014> ;
+    ns1:lonxitude 1700 ;
+    ns1:nomePraia "Praia Ladeira" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/9807/ladeira"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q20543532> .
+
+<http://example.org/resource/praia/36300_Praia%20da%20Ribeira> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.12164_-8.84911> ;
+    ns1:lonxitude 170 ;
+    ns1:nomePraia "Praia da Ribeira" ;
+    ns1:situadaEn <http://example.org/resource/concello/36300> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10522"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q24023109> .
+
+<http://example.org/resource/praia/36901_Area%20da%20Secada> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.567972_-8.887111> ;
+    ns1:lonxitude 500 ;
+    ns1:nomePraia "Area da Secada" ;
+    ns1:situadaEn <http://example.org/resource/concello/36901> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=10092"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q12398070> .
+
+<http://example.org/resource/praia/36901_Camaxe> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.544389_-8.867499> ;
+    ns1:nomePraia "Camaxe" ;
+    ns1:situadaEn <http://example.org/resource/concello/36901> ;
+    ns1:tipoArena "Grosa" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=258852417"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119833> .
+
+<http://example.org/resource/praia/36992_Cabeceira%20Beach> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.422453_-8.6823> ;
+    ns1:lonxitude 200 ;
+    ns1:nomePraia "Cabeceira Beach" ;
+    ns1:situadaEn <http://example.org/resource/concello/36992> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "http://www.turismo.gal/ficha-recurso?cod_rec=9796"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119930> .
+
+<http://example.org/resource/praia/36992_Xiorto> a ns1:Praia ;
+    ns1:entorno "Praia resgardada" ;
+    ns1:estaEn <http://example.org/resource/ubicacion/42.422453_-8.6823> ;
+    ns1:lonxitude 300 ;
+    ns1:nomePraia "Xiorto" ;
+    ns1:situadaEn <http://example.org/resource/concello/36992> ;
+    ns1:tipoArena "Fina" ;
+    ns1:url "https://www.turismo.gal/recurso/-/detalle/9784/xiorto"^^xsd:anyURI ;
+    owl:sameAs <https://www.wikidata.org/entity/Q28119914> .
+
+<http://example.org/resource/concello/15008> a ns1:Concello ;
+    ns1:codigoConcello 15008 ;
+    ns1:nameConcello "Bergondo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q644018> .
+
+<http://example.org/resource/concello/15016> a ns1:Concello ;
+    ns1:codigoConcello 15016 ;
+    ns1:nameConcello "Camariñas" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1373985> .
+
+<http://example.org/resource/concello/15034> a ns1:Concello ;
+    ns1:codigoConcello 15034 ;
+    ns1:nameConcello "Dumbría" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q549319> .
+
+<http://example.org/resource/concello/15041> a ns1:Concello ;
+    ns1:codigoConcello 15041 ;
+    ns1:nameConcello "A Laracha" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q924043> .
+
+<http://example.org/resource/concello/15113> a ns1:Concello ;
+    ns1:codigoConcello 15113 ;
+    ns1:nameConcello "Malpica de Bergantiños" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q596761> .
+
+<http://example.org/resource/concello/15117> a ns1:Concello ;
+    ns1:codigoConcello 15117 ;
+    ns1:nameConcello "Laxe" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1620185> .
+
+<http://example.org/resource/concello/15250> a ns1:Concello ;
+    ns1:codigoConcello 15250 ;
+    ns1:nameConcello "Muros" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q578957> .
+
+<http://example.org/resource/concello/15320> a ns1:Concello ;
+    ns1:codigoConcello 15320 ;
+    ns1:nameConcello "As Pontes de García Rodríguez" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1442761> .
+
+<http://example.org/resource/concello/15940> a ns1:Concello ;
+    ns1:codigoConcello 15940 ;
+    ns1:nameConcello "A Pobra do Caramiñal" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q300525> .
+
+<http://example.org/resource/concello/27013> a ns1:Concello ;
+    ns1:codigoConcello 27013 ;
+    ns1:nameConcello "Cervo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1616622> .
+
+<http://example.org/resource/concello/27025> a ns1:Concello ;
+    ns1:codigoConcello 27025 ;
+    ns1:nameConcello "Xove" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1111013> .
+
+<http://example.org/resource/concello/27066> a ns1:Concello ;
+    ns1:codigoConcello 27066 ;
+    ns1:nameConcello "Viveiro" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q641221> .
+
+<http://example.org/resource/concello/36029> a ns1:Concello ;
+    ns1:codigoConcello 36029 ;
+    ns1:nameConcello "Moaña" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1617430> .
+
+<http://example.org/resource/concello/36043> a ns1:Concello ;
+    ns1:codigoConcello 36043 ;
+    ns1:nameConcello "Ponte Caldelas" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1631751> .
+
+<http://example.org/resource/ubicacion/41.876444_-8.862944> a ns1:Ubicacion ;
+    ns1:coordenadasX "41.876444"^^xsd:float ;
+    ns1:coordenadasY "-8.862944"^^xsd:float .
+
+<http://example.org/resource/ubicacion/41.91025_-8.876166> a ns1:Ubicacion ;
+    ns1:coordenadasX "41.91025"^^xsd:float ;
+    ns1:coordenadasY "-8.876166"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.11245394805069_-8.83354753316014> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.11245394805069"^^xsd:float ;
+    ns1:coordenadasY "-8.83354753316014"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.11455_-8.83817> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.11455"^^xsd:float ;
+    ns1:coordenadasY "-8.83817"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.12164_-8.84911> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.12164"^^xsd:float ;
+    ns1:coordenadasY "-8.84911"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.12268_-8.85157> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.12268"^^xsd:float ;
+    ns1:coordenadasY "-8.85157"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.12393_-8.84854> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.12393"^^xsd:float ;
+    ns1:coordenadasY "-8.84854"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.12574_-8.85184> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.12574"^^xsd:float ;
+    ns1:coordenadasY "-8.85184"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.17461_-8.813806> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.17461"^^xsd:float ;
+    ns1:coordenadasY "-8.813806"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.194139_-8.796805> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.194139"^^xsd:float ;
+    ns1:coordenadasY "-8.796805"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.197222_-8.792166> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.197222"^^xsd:float ;
+    ns1:coordenadasY "-8.792166"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.199555_-8.786416> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.199555"^^xsd:float ;
+    ns1:coordenadasY "-8.786416"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.215944_-8.776055> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.215944"^^xsd:float ;
+    ns1:coordenadasY "-8.776055"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.220083_-8.775749> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.220083"^^xsd:float ;
+    ns1:coordenadasY "-8.775749"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.222916_-8.902917> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.222916"^^xsd:float ;
+    ns1:coordenadasY "-8.902917"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.22312_-8.76715> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.22312"^^xsd:float ;
+    ns1:coordenadasY "-8.76715"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.223296_-8.7655534> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.223296"^^xsd:float ;
+    ns1:coordenadasY "-8.7655534"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.22649888193796_-8.754172974181202> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.22649888193796"^^xsd:float ;
+    ns1:coordenadasY "-8.754172974181202"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.260028_-8.697027> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.260028"^^xsd:float ;
+    ns1:coordenadasY "-8.697027"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.26317000_-8.68097200> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.26317"^^xsd:float ;
+    ns1:coordenadasY "-8.680972"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.271083_-8.740527> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.271083"^^xsd:float ;
+    ns1:coordenadasY "-8.740527"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.314361_-8.818888> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.314361"^^xsd:float ;
+    ns1:coordenadasY "-8.818888"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.324508_-8.825548> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.324508"^^xsd:float ;
+    ns1:coordenadasY "-8.825548"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.334527_-8.768388> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.334527"^^xsd:float ;
+    ns1:coordenadasY "-8.768388"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.341944_-8.7525> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.341944"^^xsd:float ;
+    ns1:coordenadasY "-8.7525"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.348889_-8.751444> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.348889"^^xsd:float ;
+    ns1:coordenadasY "-8.751444"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.37386_-8.731472> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.37386"^^xsd:float ;
+    ns1:coordenadasY "-8.731472"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.385972_-8.719416> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.385972"^^xsd:float ;
+    ns1:coordenadasY "-8.719416"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.389972_-8.831833> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.389972"^^xsd:float ;
+    ns1:coordenadasY "-8.831833"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.390027_-8.71425> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.390027"^^xsd:float ;
+    ns1:coordenadasY "-8.71425"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.39131_-8.491745> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.39131"^^xsd:float ;
+    ns1:coordenadasY "-8.491745"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.391639_-8.844083> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.391639"^^xsd:float ;
+    ns1:coordenadasY "-8.844083"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.39186000_-8.82586000> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.39186"^^xsd:float ;
+    ns1:coordenadasY "-8.82586"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.394619_-8.7702212> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.394619"^^xsd:float ;
+    ns1:coordenadasY "-8.7702212"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.39463800_-8.77880500> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.394638"^^xsd:float ;
+    ns1:coordenadasY "-8.778805"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.398722_-8.822555> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.398722"^^xsd:float ;
+    ns1:coordenadasY "-8.822555"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.398944_-8.848194> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.398944"^^xsd:float ;
+    ns1:coordenadasY "-8.848194"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.400663_-8.803876> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.400663"^^xsd:float ;
+    ns1:coordenadasY "-8.803876"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.401472_-8.812917> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.401472"^^xsd:float ;
+    ns1:coordenadasY "-8.812917"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.404139_-8.858139> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.404139"^^xsd:float ;
+    ns1:coordenadasY "-8.858139"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.409472_-8.862528> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.409472"^^xsd:float ;
+    ns1:coordenadasY "-8.862528"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.413694_-8.866583> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.413694"^^xsd:float ;
+    ns1:coordenadasY "-8.866583"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.427138_-8.873694> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.427138"^^xsd:float ;
+    ns1:coordenadasY "-8.873694"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.430972_-8.87261> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.430972"^^xsd:float ;
+    ns1:coordenadasY "-8.87261"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.434313_-8.8722694> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.434313"^^xsd:float ;
+    ns1:coordenadasY "-8.8722694"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.43871_-8.87178> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.43871"^^xsd:float ;
+    ns1:coordenadasY "-8.87178"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.441258_-8.872075> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.441258"^^xsd:float ;
+    ns1:coordenadasY "-8.872075"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.544389_-8.867499> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.544389"^^xsd:float ;
+    ns1:coordenadasY "-8.867499"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.567972_-8.887111> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.567972"^^xsd:float ;
+    ns1:coordenadasY "-8.887111"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.587299056497315_-8.929797373709878> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.587299056497315"^^xsd:float ;
+    ns1:coordenadasY "-8.929797373709878"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.604798_-8.7695076> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.604798"^^xsd:float ;
+    ns1:coordenadasY "-8.7695076"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.632789_-8.7626038> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.632789"^^xsd:float ;
+    ns1:coordenadasY "-8.7626038"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.759113863184346_-9.073862845516617> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.759113863184346"^^xsd:float ;
+    ns1:coordenadasY "-9.073862845516617"^^xsd:float .
+
+<http://example.org/resource/ubicacion/42.908278_-9.129083> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.908278"^^xsd:float ;
+    ns1:coordenadasY "-9.129083"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.18472300_-9.10500000> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.184723"^^xsd:float ;
+    ns1:coordenadasY "-9.105"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.217206_-9.0029587> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.217206"^^xsd:float ;
+    ns1:coordenadasY "-9.0029587"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.24166500_-8.94527700> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.241665"^^xsd:float ;
+    ns1:coordenadasY "-8.945277"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.26389000_-8.95000000> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.26389"^^xsd:float ;
+    ns1:coordenadasY "-8.95"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.28969600_-8.70877800> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.289696"^^xsd:float ;
+    ns1:coordenadasY "-8.708778"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.29416700_-8.90277800> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.294167"^^xsd:float ;
+    ns1:coordenadasY "-8.902778"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.298027_-8.680305> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.298027"^^xsd:float ;
+    ns1:coordenadasY "-8.680305"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.301889_-8.658278> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.301889"^^xsd:float ;
+    ns1:coordenadasY "-8.658278"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.311556_-8.552> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.311556"^^xsd:float ;
+    ns1:coordenadasY "-8.552"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.312667_-8.544277> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.312667"^^xsd:float ;
+    ns1:coordenadasY "-8.544277"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.315444_-8.533555> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.315444"^^xsd:float ;
+    ns1:coordenadasY "-8.533555"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.315639_-8.610333> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.315639"^^xsd:float ;
+    ns1:coordenadasY "-8.610333"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.320555_-8.525277> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.320555"^^xsd:float ;
+    ns1:coordenadasY "-8.525277"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.32331266438123_-8.815276501138147> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.32331266438123"^^xsd:float ;
+    ns1:coordenadasY "-8.815276501138147"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.327694_-8.508833> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.327694"^^xsd:float ;
+    ns1:coordenadasY "-8.508833"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.339777_-8.380083> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.339777"^^xsd:float ;
+    ns1:coordenadasY "-8.380083"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.340722_-8.362361> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.340722"^^xsd:float ;
+    ns1:coordenadasY "-8.362361"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.342715_-8.2424927> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.342715"^^xsd:float ;
+    ns1:coordenadasY "-8.2424927"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.34675000_-8.38308300> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.34675"^^xsd:float ;
+    ns1:coordenadasY "-8.383083"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.3495099999242_-8.210029371615443> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.3495099999242"^^xsd:float ;
+    ns1:coordenadasY "-8.210029371615443"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.35271_-8.48791> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.35271"^^xsd:float ;
+    ns1:coordenadasY "-8.48791"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.353389_-8.346555> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.353389"^^xsd:float ;
+    ns1:coordenadasY "-8.346555"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.35928000_-8.20944400> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.35928"^^xsd:float ;
+    ns1:coordenadasY "-8.209444"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.368472_-8.411639> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.368472"^^xsd:float ;
+    ns1:coordenadasY "-8.411639"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.371055_-8.404972> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.371055"^^xsd:float ;
+    ns1:coordenadasY "-8.404972"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.37602600_-8.21491700> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.376026"^^xsd:float ;
+    ns1:coordenadasY "-8.214917"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.379055_-8.33775> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.379055"^^xsd:float ;
+    ns1:coordenadasY "-8.33775"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.381833_-8.397055> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.381833"^^xsd:float ;
+    ns1:coordenadasY "-8.397055"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.382777_-8.3425> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.382777"^^xsd:float ;
+    ns1:coordenadasY "-8.3425"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.383666_-8.40575> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.383666"^^xsd:float ;
+    ns1:coordenadasY "-8.40575"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.454911751447035_-7.870142559382717> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.454911751447035"^^xsd:float ;
+    ns1:coordenadasY "-7.870142559382717"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.47703822412904_-8.202436910976175> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.47703822412904"^^xsd:float ;
+    ns1:coordenadasY "-8.202436910976175"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.495916_-8.319194> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.495916"^^xsd:float ;
+    ns1:coordenadasY "-8.319194"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.526222_-8.301806> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.526222"^^xsd:float ;
+    ns1:coordenadasY "-8.301806"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.53425_-8.295527> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.53425"^^xsd:float ;
+    ns1:coordenadasY "-8.295527"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.5385_-8.296833> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.5385"^^xsd:float ;
+    ns1:coordenadasY "-8.296833"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.554221_-7.155308> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.554221"^^xsd:float ;
+    ns1:coordenadasY "-7.155308"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.55534_-7.132955> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.55534"^^xsd:float ;
+    ns1:coordenadasY "-7.132955"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.56172_-7.20108> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.56172"^^xsd:float ;
+    ns1:coordenadasY "-7.20108"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.564465_-7.2200447> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.564465"^^xsd:float ;
+    ns1:coordenadasY "-7.2200447"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.57202500_-7.24855500> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.572025"^^xsd:float ;
+    ns1:coordenadasY "-7.248555"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.580277_-7.262778> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.580277"^^xsd:float ;
+    ns1:coordenadasY "-7.262778"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.5875_-7.27861> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.5875"^^xsd:float ;
+    ns1:coordenadasY "-7.27861"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.620277_-7.318333> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.620277"^^xsd:float ;
+    ns1:coordenadasY "-7.318333"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.64000000_-7.34416600> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.64"^^xsd:float ;
+    ns1:coordenadasY "-7.344166"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.664399_-7.3592247> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.664399"^^xsd:float ;
+    ns1:coordenadasY "-7.3592247"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.67486_-7.372333> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.67486"^^xsd:float ;
+    ns1:coordenadasY "-7.372333"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.694166_-7.57611> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.694166"^^xsd:float ;
+    ns1:coordenadasY "-7.57611"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.698333_-7.438889> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.698333"^^xsd:float ;
+    ns1:coordenadasY "-7.438889"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.701822_-7.612778> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.701822"^^xsd:float ;
+    ns1:coordenadasY "-7.612778"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.711944_-7.559139> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.711944"^^xsd:float ;
+    ns1:coordenadasY "-7.559139"^^xsd:float .
+
+<http://example.org/resource/ubicacion/43.743777_-7.650277> a ns1:Ubicacion ;
+    ns1:coordenadasX "43.743777"^^xsd:float ;
+    ns1:coordenadasY "-7.650277"^^xsd:float .
+
+<http://example.org/resource/concello/27051> a ns1:Concello ;
+    ns1:codigoConcello 27051 ;
+    ns1:nameConcello "Ribadeo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q824076> .
+
+<http://example.org/resource/concello/27064> a ns1:Concello ;
+    ns1:codigoConcello 27064 ;
+    ns1:nameConcello "O Vicedo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q944524> .
+
+<http://example.org/resource/concello/27792> a ns1:Concello ;
+    ns1:codigoConcello 27792 ;
+    ns1:nameConcello "Barreiros" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1634820> .
+
+<http://example.org/resource/concello/27902> a ns1:Concello ;
+    ns1:codigoConcello 27902 ;
+    ns1:nameConcello "Burela" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1619456> .
+
+<http://example.org/resource/concello/36023> a ns1:Concello ;
+    ns1:codigoConcello 36023 ;
+    ns1:nameConcello "A Guarda" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q300433> .
+
+<http://example.org/resource/concello/36060> a ns1:Concello ;
+    ns1:codigoConcello 36060 ;
+    ns1:nameConcello "Vilagarcía de Arousa" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1442637> .
+
+<http://example.org/resource/concello/36901> a ns1:Concello ;
+    ns1:codigoConcello 36901 ;
+    ns1:nameConcello "A Illa de Arousa" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q300446> .
+
+<http://example.org/resource/concello/36992> a ns1:Concello ;
+    ns1:codigoConcello 36992 ;
+    ns1:nameConcello "Poio" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1631776> .
+
+<http://example.org/resource/ubicacion/42.422453_-8.6823> a ns1:Ubicacion ;
+    ns1:coordenadasX "42.422453"^^xsd:float ;
+    ns1:coordenadasY "-8.6823"^^xsd:float .
+
+<http://example.org/resource/concello/15019> a ns1:Concello ;
+    ns1:codigoConcello 15019 ;
+    ns1:nameConcello "Carballo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q166137> .
+
+<http://example.org/resource/concello/15068> a ns1:Concello ;
+    ns1:codigoConcello 15068 ;
+    ns1:nameConcello "Ponteceso" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1450823> .
+
+<http://example.org/resource/concello/15630> a ns1:Concello ;
+    ns1:codigoConcello 15630 ;
+    ns1:nameConcello "Miño" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1616112> .
+
+<http://example.org/resource/concello/36004> a ns1:Concello ;
+    ns1:codigoConcello 36004 ;
+    ns1:nameConcello "Bueu" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q1632909> .
+
+<http://example.org/resource/concello/36026> a ns1:Concello ;
+    ns1:codigoConcello 36026 ;
+    ns1:nameConcello "Marín" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q634078> .
+
+<http://example.org/resource/concello/15030> a ns1:Concello ;
+    ns1:codigoConcello 15030 ;
+    ns1:nameConcello "A Coruña" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q8757> .
+
+<http://example.org/resource/concello/15058> a ns1:Concello ;
+    ns1:codigoConcello 15058 ;
+    ns1:nameConcello "Oleiros" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q688611> .
+
+<http://example.org/resource/concello/15406> a ns1:Concello ;
+    ns1:codigoConcello 15406 ;
+    ns1:nameConcello "Ferrol" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q485329> .
+
+<http://example.org/resource/concello/27019> a ns1:Concello ;
+    ns1:codigoConcello 27019 ;
+    ns1:nameConcello "Foz" ;
+    ns1:perteneceA <http://example.org/resource/provincia/27> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q917878> .
+
+<http://example.org/resource/concello/15143> a ns1:Concello ;
+    ns1:codigoConcello 15143 ;
+    ns1:nameConcello "Arteixo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/15> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q996161> .
+
+<http://example.org/resource/concello/36300> a ns1:Concello ;
+    ns1:codigoConcello 36300 ;
+    ns1:nameConcello "Baiona" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q748867> .
+
+<http://example.org/resource/provincia/27> a ns1:Provincia ;
+    ns1:codigoProvincia 27 ;
+    ns1:nameProvincia "Lugo Province" ;
+    owl:sameAs <https://www.wikidata.org/entity/Q95027> .
+
+<http://example.org/resource/provincia/36> a ns1:Provincia ;
+    ns1:codigoProvincia 36 ;
+    ns1:nameProvincia "Pontevedra Province" ;
+    owl:sameAs <https://www.wikidata.org/entity/Q95086> .
+
+<http://example.org/resource/concello/36057> a ns1:Concello ;
+    ns1:codigoConcello 36057 ;
+    ns1:nameConcello "Vigo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q8745> .
+
+<http://example.org/resource/provincia/15> a ns1:Provincia ;
+    ns1:codigoProvincia 15 ;
+    ns1:nameProvincia "A Coruña Province" ;
+    owl:sameAs <https://www.wikidata.org/entity/Q82119> .
+
+<http://example.org/resource/concello/36051> a ns1:Concello ;
+    ns1:codigoConcello 36051 ;
+    ns1:nameConcello "Sanxenxo" ;
+    ns1:perteneceA <http://example.org/resource/provincia/36> ;
+    owl:sameAs <https://www.wikidata.org/entity/Q840355> .
+

@@ -1,0 +1,11 @@
+PREFIX dep: <http://example.org/def/dep#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT DISTINCT ?provincia ?wikidata
+WHERE {
+  ?provincia a dep:Provincia ;
+             owl:sameAs ?wikidata .
+}

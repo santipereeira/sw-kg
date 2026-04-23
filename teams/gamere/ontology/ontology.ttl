@@ -1,103 +1,188 @@
-@prefix gamere: <http://example.org/def/gamere#> .
-@prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@base <http://example.org/def/gamere#> .
+@prefix gamere: <http://example.org/def/gamere#> .
 
-gamere: a owl:Ontology ;
+<http://example.org/def/gamere#> rdf:type owl:Ontology ;
+    dc:title "Ontología de las Playas con bandera azul 2025 de Galicia" ;
+    dcterms:title "Ontología de las Playas con bandera azul 2025 de Galicia" ;
+    rdfs:label "Ontología de las Playas con bandera azul 2025 de Galicia" ;
+    dcterms:description "Ontología diseñada para describir las playas con bandera azul 2025 de Galicia, incluyendo su ubicación, concellos y provincias" ;
+    owl:versionInfo "1.0" ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-gamere:codigoConcello a owl:DatatypeProperty ;
-    rdfs:label "codigo concello" ;
-    rdfs:domain gamere:Concello ;
-    rdfs:range xsd:integer .
+#################################################################
+#    Annotation properties
+#################################################################
 
-gamere:codigoProvincia a owl:DatatypeProperty ;
-    rdfs:label "codigo provincia" ;
-    rdfs:domain gamere:Provincia ;
-    rdfs:range xsd:integer .
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
 
-gamere:coordenadasX a owl:DatatypeProperty ;
-    rdfs:label "coordenadas x" ;
-    rdfs:domain gamere:Ubicacion ;
-    rdfs:range xsd:float .
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
-gamere:coordenadasY a owl:DatatypeProperty ;
-    rdfs:label "coordenadas y" ;
-    rdfs:domain gamere:Ubicacion ;
-    rdfs:range xsd:float .
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
 
-gamere:descripcion a owl:DatatypeProperty ;
-    rdfs:label "descripcion" ;
-    rdfs:domain gamere:Ubicacion ;
-    rdfs:range xsd:string .
 
-gamere:entorno a owl:DatatypeProperty ;
-    rdfs:label "entorno" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range xsd:string .
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
 
-gamere:estaEn a owl:ObjectProperty ;
-    rdfs:label "esta en" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range gamere:Ubicacion .
 
-gamere:lonxitude a owl:DatatypeProperty ;
-    rdfs:label "lonxitude" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range xsd:integer .
+#################################################################
+#    Object Properties
+#################################################################
 
-gamere:nameConcello a owl:DatatypeProperty ;
-    rdfs:label "name concello" ;
-    rdfs:domain gamere:Concello ;
-    rdfs:range xsd:string .
+###  http://example.org/def/gamere#estaEn
+gamere:estaEn rdf:type owl:ObjectProperty ;
+              rdfs:domain gamere:Praia ;
+              rdfs:range gamere:Ubicacion ;
+              rdfs:label "esta en" .
 
-gamere:nameProvincia a owl:DatatypeProperty ;
-    rdfs:label "name provincia" ;
-    rdfs:domain gamere:Provincia ;
-    rdfs:range xsd:string .
 
-gamere:nomePraia a owl:DatatypeProperty ;
-    rdfs:label "nome praia" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range xsd:string .
+###  http://example.org/def/gamere#perteneceA
+gamere:perteneceA rdf:type owl:ObjectProperty ;
+                  rdfs:domain gamere:Concello ;
+                  rdfs:range gamere:Provincia ;
+                  rdfs:label "pertenece a" .
 
-gamere:perteneceA a owl:ObjectProperty ;
-    rdfs:label "pertenece a" ;
-    rdfs:domain gamere:Concello ;
-    rdfs:range gamere:Provincia .
 
-gamere:situadaEn a owl:ObjectProperty ;
-    rdfs:label "situada en" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range gamere:Concello .
+###  http://example.org/def/gamere#situadaEn
+gamere:situadaEn rdf:type owl:ObjectProperty ;
+                 rdfs:domain gamere:Praia ;
+                 rdfs:range gamere:Concello ;
+                 rdfs:label "situada en" .
 
-gamere:tipoArena a owl:DatatypeProperty ;
-    rdfs:label "tipo arena" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range xsd:string .
 
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/def/gamere#codigoConcello
+gamere:codigoConcello rdf:type owl:DatatypeProperty ;
+                      rdfs:domain gamere:Concello ;
+                      rdfs:range xsd:integer ;
+                      rdfs:label "codigo concello" .
+
+
+###  http://example.org/def/gamere#codigoProvincia
+gamere:codigoProvincia rdf:type owl:DatatypeProperty ;
+                       rdfs:domain gamere:Provincia ;
+                       rdfs:range xsd:integer ;
+                       rdfs:label "codigo provincia" .
+
+
+###  http://example.org/def/gamere#coordenadasX
+gamere:coordenadasX rdf:type owl:DatatypeProperty ;
+                    rdfs:domain gamere:Ubicacion ;
+                    rdfs:range xsd:float ;
+                    rdfs:label "coordenadas x" .
+
+
+###  http://example.org/def/gamere#coordenadasY
+gamere:coordenadasY rdf:type owl:DatatypeProperty ;
+                    rdfs:domain gamere:Ubicacion ;
+                    rdfs:range xsd:float ;
+                    rdfs:label "coordenadas y" .
+
+
+###  http://example.org/def/gamere#descripcion
+gamere:descripcion rdf:type owl:DatatypeProperty ;
+                   rdfs:domain gamere:Ubicacion ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "descripcion" .
+
+
+###  http://example.org/def/gamere#entorno
+gamere:entorno rdf:type owl:DatatypeProperty ;
+               rdfs:domain gamere:Praia ;
+               rdfs:range xsd:string ;
+               rdfs:label "entorno" .
+
+
+###  http://example.org/def/gamere#lonxitude
+gamere:lonxitude rdf:type owl:DatatypeProperty ;
+                 rdfs:domain gamere:Praia ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "lonxitude" .
+
+
+###  http://example.org/def/gamere#nameConcello
+gamere:nameConcello rdf:type owl:DatatypeProperty ;
+                    rdfs:domain gamere:Concello ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "name concello" .
+
+
+###  http://example.org/def/gamere#nameProvincia
+gamere:nameProvincia rdf:type owl:DatatypeProperty ;
+                     rdfs:domain gamere:Provincia ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "name provincia" .
+
+
+###  http://example.org/def/gamere#nomePraia
+gamere:nomePraia rdf:type owl:DatatypeProperty ;
+                 rdfs:domain gamere:Praia ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "nome praia" .
+
+
+###  http://example.org/def/gamere#tipoArena
+gamere:tipoArena rdf:type owl:DatatypeProperty ;
+                 rdfs:domain gamere:Praia ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "tipo arena" .
+
+
+###  http://example.org/def/gamere#url
 gamere:url rdf:type owl:DatatypeProperty ;
-    rdfs:label "url" ;
-    rdfs:domain gamere:Praia ;
-    rdfs:range xsd:anyURI .
+           rdfs:domain gamere:Praia ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "url" .
 
+
+###  http://www.w3.org/2002/07/owl#sameAs
 owl:sameAs rdf:type owl:DatatypeProperty ;
-    rdfs:label "same as" ;
-    rdfs:domain [ 
-        rdf:type owl:Class ;
-        owl:unionOf ( gamere:Concello gamere:Praia gamere:Provincia )
-    ] ;
-    rdfs:range xsd:anyURI .
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( gamere:Concello
+                                       gamere:Praia
+                                       gamere:Provincia
+                                     )
+                       ] ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "same as" .
 
-gamere:Provincia a owl:Class ;
-    rdfs:label "Provincia" .
 
-gamere:Ubicacion a owl:Class ;
-    rdfs:label "Ubicacion" .
+#################################################################
+#    Classes
+#################################################################
 
-gamere:Concello a owl:Class ;
-    rdfs:label "Concello" .
+###  http://example.org/def/gamere#Concello
+gamere:Concello rdf:type owl:Class ;
+                rdfs:label "Concello" .
 
-gamere:Praia a owl:Class ;
-    rdfs:label "Praia" .
+
+###  http://example.org/def/gamere#Praia
+gamere:Praia rdf:type owl:Class ;
+             rdfs:label "Praia" .
+
+
+###  http://example.org/def/gamere#Provincia
+gamere:Provincia rdf:type owl:Class ;
+                 rdfs:label "Provincia" .
+
+
+###  http://example.org/def/gamere#Ubicacion
+gamere:Ubicacion rdf:type owl:Class ;
+                 rdfs:label "Ubicacion" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
