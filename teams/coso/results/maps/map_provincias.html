@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4c7a25ec12cbc5d8f20c465e0baeabf4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4c7a25ec12cbc5d8f20c465e0baeabf4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4c7a25ec12cbc5d8f20c465e0baeabf4 = L.map(
+                "map_4c7a25ec12cbc5d8f20c465e0baeabf4",
+                {
+                    center: [42.65666666633333, -8.177777777666668],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dcc0da81c26a8d05a393d6828a37d61a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dcc0da81c26a8d05a393d6828a37d61a.addTo(map_4c7a25ec12cbc5d8f20c465e0baeabf4);
+        
+    
+            var circle_marker_9bf7187ffe16a139e9a32214f831a458 = L.circleMarker(
+                [43.37, -8.4],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2, "stroke": true, "weight": 3}
+            ).addTo(map_4c7a25ec12cbc5d8f20c465e0baeabf4);
+        
+    
+        var popup_f37ebd4982d21ad8f8c917ebe37cb0b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b639ed00708d50c6ebaac90b879db436 = $(`<div id="html_b639ed00708d50c6ebaac90b879db436" style="width: 100.0%; height: 100.0%;">         <b>A Coruña</b><br>         Equipos: 44<br>         Wikidata: <a href="http://www.wikidata.org/entity/Q82119" target="_blank">enlace</a>         </div>`)[0];
+                popup_f37ebd4982d21ad8f8c917ebe37cb0b5.setContent(html_b639ed00708d50c6ebaac90b879db436);
+            
+        
+
+        circle_marker_9bf7187ffe16a139e9a32214f831a458.bindPopup(popup_f37ebd4982d21ad8f8c917ebe37cb0b5)
+        ;
+
+        
+    
+    
+            var circle_marker_a458ba075ec4164448bccee79b2bb129 = L.circleMarker(
+                [42.433333333, -8.633333333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.15, "stroke": true, "weight": 3}
+            ).addTo(map_4c7a25ec12cbc5d8f20c465e0baeabf4);
+        
+    
+        var popup_40a95320ee109329d95ffb846a5a924a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_131c8c416315e434f9b1ca307edce9f5 = $(`<div id="html_131c8c416315e434f9b1ca307edce9f5" style="width: 100.0%; height: 100.0%;">         <b>Pontevedra</b><br>         Equipos: 43<br>         Wikidata: <a href="http://www.wikidata.org/entity/Q95086" target="_blank">enlace</a>         </div>`)[0];
+                popup_40a95320ee109329d95ffb846a5a924a.setContent(html_131c8c416315e434f9b1ca307edce9f5);
+            
+        
+
+        circle_marker_a458ba075ec4164448bccee79b2bb129.bindPopup(popup_40a95320ee109329d95ffb846a5a924a)
+        ;
+
+        
+    
+    
+            var circle_marker_2bf887b34974f6c38998859ffbcad3db = L.circleMarker(
+                [42.166666666, -7.5],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.65, "stroke": true, "weight": 3}
+            ).addTo(map_4c7a25ec12cbc5d8f20c465e0baeabf4);
+        
+    
+        var popup_94bf929f426f769dd2b45f44b5c1a23d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ce1d99ac765cf9afb57ae475ba9ff2b = $(`<div id="html_5ce1d99ac765cf9afb57ae475ba9ff2b" style="width: 100.0%; height: 100.0%;">         <b>Ourense</b><br>         Equipos: 13<br>         Wikidata: <a href="http://www.wikidata.org/entity/Q95038" target="_blank">enlace</a>         </div>`)[0];
+                popup_94bf929f426f769dd2b45f44b5c1a23d.setContent(html_5ce1d99ac765cf9afb57ae475ba9ff2b);
+            
+        
+
+        circle_marker_2bf887b34974f6c38998859ffbcad3db.bindPopup(popup_94bf929f426f769dd2b45f44b5c1a23d)
+        ;
+
+        
+    
+</script>
+</html>

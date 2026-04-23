@@ -1,0 +1,143 @@
+@prefix : <http://weso.es/shapes/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Equipo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#tipoEntidade> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:str ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#numero> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:node :Deporte ;
+            sh:path <http://example.org/def/dep#xoga> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:path <http://example.org/def/dep#telefono2> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Equipo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#nome> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:path <http://example.org/def/dep#nif> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:date ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#dataAlta> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:path <http://example.org/def/dep#telefono1> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:node :Enderezo ;
+            sh:path <http://example.org/def/dep#resideEn> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:path <http://example.org/def/dep#paxinaWeb> ] ;
+    sh:targetClass <http://example.org/def/dep#Equipo> .
+
+:Especialidade a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Deporte ;
+            sh:path <http://example.org/def/dep#relacionadaCon> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#nomeEspecialidade> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Especialidade> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://example.org/def/dep#Especialidade> .
+
+:Concello a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#codigoConcello> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <http://example.org/def/dep#paxinaWeb> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Concello> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:node :Provincia ;
+            sh:path <http://example.org/def/dep#estaEn> ] ;
+    sh:targetClass <http://example.org/def/dep#Concello> .
+
+:Enderezo a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:int ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#codigoPostal> ],
+        [ a sh:PropertyShape ;
+            sh:minCount 1 ;
+            sh:node :Concello ;
+            sh:path <http://example.org/def/dep#estaEn> ],
+        [ a sh:PropertyShape ;
+            sh:dataType xsd:string ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#nomeRua> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Enderezo> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://example.org/def/dep#Enderezo> .
+
+:Provincia a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:dataType xsd:int ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <http://example.org/def/dep#codProvincia> ],
+        [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <http://example.org/def/dep#paxinaWeb> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Provincia> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://example.org/def/dep#Provincia> .
+
+:Deporte a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path <http://example.org/def/dep#paxinaWeb> ],
+        [ a sh:PropertyShape ;
+            sh:in ( <http://example.org/def/dep#Deporte> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path rdf:type ] ;
+    sh:targetClass <http://example.org/def/dep#Deporte> .
+

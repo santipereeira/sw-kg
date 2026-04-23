@@ -1,0 +1,12 @@
+PREFIX dep: <http://example.org/def/dep#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?equipo ?nome ?dataAlta
+WHERE {
+  ?equipo a dep:Equipo ;
+          dep:nome ?nome ;
+          dep:dataAlta ?dataAlta .
+  FILTER(?dataAlta > "2016-12-31"^^xsd:date)
+}
+LIMIT 500
+

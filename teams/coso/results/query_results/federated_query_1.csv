@@ -1,0 +1,4 @@
+provincia,numEquipos,provinciaNombre,wikidata_x,qid,wikidata_y,label,coord,lat,lon
+http://example.org/resource/provincia/15,44,A Coruña,http://www.wikidata.org/entity/Q82119,Q82119,http://www.wikidata.org/entity/Q82119,provincia de La Coruña,Point(-8.4 43.37),43.37,-8.4
+http://example.org/resource/provincia/36,43,Pontevedra,http://www.wikidata.org/entity/Q95086,Q95086,http://www.wikidata.org/entity/Q95086,provincia de Pontevedra,Point(-8.633333333 42.433333333),42.433333333,-8.633333333
+http://example.org/resource/provincia/32,13,Ourense,http://www.wikidata.org/entity/Q95038,Q95038,http://www.wikidata.org/entity/Q95038,provincia de Orense,Point(-7.5 42.166666666),42.166666666,-7.5
